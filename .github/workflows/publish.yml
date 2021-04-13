@@ -1,0 +1,49 @@
+# This is a basic workflow that is manually triggered
+
+name: CI
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  push:
+    branches:
+      - master
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node1-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node1-
+
+    - name: Install Node packages
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm install
+
+    - name: Download Hugo
+      run: |
+        wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.tar.gz
+        tar xvzf hugo_0.31.1_Linux-64bit.tar.gz
+
+    - name: Build site
+      run: |
+        npm run docs-bootstrap
+        ./s/docs-build
+
+#     - name: Upload site
+#       env:
+#         GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
+#       run: |
+#         ./s/upload-to-gcs
