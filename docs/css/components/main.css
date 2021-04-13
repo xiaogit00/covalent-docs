@@ -1,0 +1,132 @@
+/* Docs Main CSS file */
+.DocsSidebar--header-section{
+    margin-top: 3em !important;
+}
+
+.DocsSidebar--nav{
+    margin-top: 1em !important;
+}
+
+.DocsMarkdown h1{
+    margin-bottom: 1em !important;
+}
+
+.DocsMarkdown--link-content{
+    color: #52aee5 !important;
+    font-weight: bold !important;
+}
+
+.DocsSidebar--nav-link-text {
+    font-size: 1.2em !important;
+}
+
+.DocsBody--sidebar{
+    margin-top: 2.1em !important;
+}
+
+th {
+    font-weight: 600 !important;
+    padding: .66em 1em !important;
+}
+
+svg {
+    color: #52aee5 !important;
+}
+
+.DocsSidebar--nav-link-text {
+    color: #52aee5 !important;
+}
+
+.DocsSidebar--nav-link-text:focus {
+    outline: none !important;
+}
+
+.DocsMarkdown--link-content {
+    border-bottom: 1px solid #52aee5 !important;
+}
+
+[theme=dark] .DocsSidebar--nav-link[is-active] .DocsSidebar--nav-link-text:before{
+    background: #52afe535 !important;
+}
+
+.DocsSidebar--nav-expand-collapse-button-content{
+    color: #52aee5 !important;
+}
+
+.DocsMobileTitleHeader--logo-link.Link.Link-without-underline {
+    display: none !important;
+}
+
+.DocsSidebar--nav-link[is-active]:before {
+    background: #52aee5 !important;
+}
+
+.DocsMobileTitleHeader {
+    z-index: 99 !important;
+    margin-top: -3em !important;
+    background: none !important;
+}
+
+.DocsMobileHeader--cloudflare-logo-link.Link.Link-without-underline .DocsNavLogoLockup--logo {
+    padding: 0.5em !important;
+}
+
+.DocsSidebar--nav-link .DocsSidebar--nav-link-text:hover::after {
+    background: #52afe535 !important;
+}
+
+.DocsTableOfContents-link:hover {
+    color: #52aee5 !important;
+}
+
+[theme=dark] .DocsMarkdown--link:hover {
+    background: #52afe535 !important;
+}
+
+.Button.Button-is-docs-primary {
+    --focus-box-shadow: none;
+}
+
+.Button.DocsSidebar--nav-expand-collapse-button:hover {
+    background: #52afe535 !important;
+}
+
+.DocsMarkdown--aside .Button.Button-is-docs-primary {
+    background:  #52afe535 !important;
+}
+
+.CodeBlock--token-number, .CodeBlock--token-boolean, .CodeBlock--token-null {
+    color: #ea088c !important;
+}
+
+.CodeBlock--token-string, .CodeBlock--token-operator {
+    color: #52aee5 !important;
+}
+
+.CodeBlock.CodeBlock-with-rows.CodeBlock-scrolls-horizontally{
+    height: 125px;
+    overflow: scroll;
+    transition: 0.6s;
+    max-height: fit-content;
+    border: 1px solid rgba(196, 196, 196, 0);
+}
+
+.CodeBlock.CodeBlock-with-rows.CodeBlock-scrolls-horizontally:hover {
+    height: 500px;
+    transition: 0.6s;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+.DocsMarkdown--link .DocsMarkdown--link-content {
+    background-color: #52afe507 !important;
+}
+
+@media (hover: hover) {
+    [theme=dark] .DocsSidebar--nav-link:hover .DocsSidebar--nav-link-text:before {
+        background: #52afe535 !important;
+    }
+}
+
+html {
+    --selection-background-color: #52aee5 !important;
+}

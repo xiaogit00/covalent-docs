@@ -1,0 +1,67 @@
+.topics button {
+  background: rgba(82, 175, 229, 0.20784313725490197) !important;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem 0.4rem 1.2rem;
+  color: #52aee5;
+  margin: 1rem 1rem;
+  cursor: pointer;
+}
+
+.topics ul {
+  list-style: none !important;
+}
+
+.topics li {
+  border: none;
+  color: #52aee5;
+  font-size: 1em;
+  font-weight: 600;
+  border-bottom: 1px solid;
+}
+
+.topics label {
+  cursor: pointer;
+}
+
+.topics button:focus {
+  outline: none;
+}
+
+.topics input {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  padding-top: 0.6rem;
+  margin-bottom: 1.9rem;
+  border: 1px solid #1d1f2033;
+}
+
+.topics select {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  padding-top: 0.6rem;
+  margin-bottom: 1.9rem;
+  border: 1px solid #1d1f2033;
+}
+
+.topics input:focus {
+  outline: none;
+}
+
+.topics input[type='radio'] {
+  display: none;
+}
+
+.topics ul {
+  list-style: none !important;
+}
+
+.topics code {
+  display: block;
+  color: #52aee5;
+  background: rgba(var(--gray-5-rgb), 0.2);
+  padding: 10px 6px;
+  border-radius: 8px;
+  overflow: scroll;
+  white-space: nowrap;
+}

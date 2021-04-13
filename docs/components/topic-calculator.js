@@ -1,0 +1,197 @@
+import React from "react"
+import { findDOMNode } from "react-dom";
+
+import "../css/components/topic-calculator.css"
+
+class TopicApp extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {  //set the variables as you like
+      address_input: "0xc00e94cb662c3520282e6f5717214004a7f26888",
+      error: false,
+      error_message: "",
+      selected_event: null,
+      selected: false,
+      event_chosen: false,
+      copied:false,
+      text: "Copy to clipboard"
+    };
+  }
+
+  //call render first
+  render() {
+
+    // if (this.state.wizard === true) {
+      var err = this.state.error ? this.state.error_message : null;
+
+      return <div className="topics">
+        <div>
+        
+      {/* and print the input box here */}
+        <p>Enter the contract address you want to generate topic hashes for:</p>
+        <input placeholder="Contract address"
+          value={this.state.address_input}
+          onChange={this._inputAddress}
+        />
+
+        <button onClick={this._clickNext} >Get events!</button>
+      </div>
+
+       {/* print error here */}
+      {err} 
+
+      {this.state.error?" Try to enter it again. ":(this._renderEvents())}
+      </div>
+
+  }
+
+
+  _renderEvents = () => {
+   if (this.state.events !== undefined){
+    let items = this.state.events.data.items[0].abi_items;
+    let a = items.filter((item)=> {
+      return item.signature !==null; 
+    })
+
+    return <div className="topics">
+        <p>Found {a.length} Topics:</p>
+          {a.map(item => {
+           //return <li><label><input type="radio" name="signature" value={item.topic_hash} onClick={this._pickRadio}/> {item.signature}</label></li>;
+             return <div>
+             <ul style={{listStyleType: "none"}}>
+               <li>{item.signature}</li>
+               <div class="box">
+               <code>{item.topic_hash}</code>
+               <button id={item.topic_hash} className="buttonW" onClick={this._copyFunction.bind(this,item.topic_hash)}>{this.state.text}</button>
+               <button className="buttonA" onClick={event => window.location.href=`https://www.covalenthq.com/docs/api/#get-/v1/{chainId}/events/topics/{topic}/`}>Go to API docs</button>
+               </div>
+               </ul>
+               </div>
+          })}
+
+      </div>;
+
+   }
+ 
+  }
+  
+  _copyFunction = (b,a) => {
+    // console.log(b); //b is topic hash
+    // // this.notification(a.ref);
+    //document.getElementById(b).innerText = "Copied!";
+    let aa = document.getElementsByClassName("buttonW");
+    for (let item of aa){
+      if (item.id === b){
+        document.getElementById(b).innerText = "Copied!";
+      }
+      else{
+        item.innerText = "Copy to clipboard";
+      }
+
+    }
+  
+    this.copyToClipboard(b);
+    
+  }
+
+  // notification = () => ;
+  //React.findDOMNode(this.ref).text = "copied"
+  
+    // console.log("get to notification");
+    // alert("The topic hash is copied!\nYou can go to API docs to try it on");
+
+    // updateState = () => this.setState({myState: ‘The state is updated’})
+    // React.findDOMNode(this.refs.cpDev1).value;
+
+  
+
+//how to use radio box to choose the event
+  _pickRadio = (changeEvent) => {
+    this.setState({
+      selected_event: changeEvent.target.value,
+      selected: true,
+      event_chosen: true
+    });
+  }
+  _clickNext = () => {
+
+    if (this.state.address_input.length === "0xc00e94cb662c3520282e6f5717214004a7f26888".length) {
+      fetch("https://api.covalenthq.com/v1/1/events/address/" +
+        this.state.address_input + "/abi/?&key=ckey_4d5b231f1a584413ae6c3715bcf")
+      .then(response => response.json())
+      .then((data)=> {
+
+        if(data.data.items.length === 0) {
+          console.log("no items");
+          this.setState({
+            error: true,
+            error_message: "Invalid contract address!"
+  
+          });
+        }
+        else {
+          this.setState({
+            events: data,
+            error: false
+          });
+
+        }     
+
+      }).catch((err) => {
+        console.log(err + " thrown out when fetching the API!");
+       
+      })
+    } else {
+      this.setState({
+        error: true,
+        error_message: "Contract address shorter than expected!"
+      });
+    }
+  }
+
+copyToClipboard = (contents) => {
+    // tslint:disable-next-line:no-unused
+    let selectedText = "";
+
+    const fakeElement = document.createElement("textarea");
+
+    fakeElement.style.fontSize = "12pt";
+    fakeElement.style.border = "0";
+    fakeElement.style.padding = "0";
+    fakeElement.style.margin = "0";
+    fakeElement.style.top = (window.pageYOffset || document.documentElement.scrollTop) + "px";
+    fakeElement.style.position = "fixed";
+    fakeElement.style[document.documentElement.getAttribute("dir") === "rtl" ? "right" : "left"] = "-9999px";
+    fakeElement.setAttribute("readonly", "");
+    fakeElement.value = contents;
+    document.body.appendChild(fakeElement);
+    fakeElement.focus();
+    fakeElement.setSelectionRange(0, fakeElement.value.length);
+
+    selectedText = fakeElement.value;
+
+    document.execCommand("copy");
+    (window.getSelection()).removeAllRanges();
+    
+
+};
+
+
+  _inputAddress = (e) => {
+    this.setState({
+      //under setState, can just set one field 
+      //e here is the value when calling this function
+      //when setState is called, calling render function again
+      address_input: e.target.value
+    });
+  }
+}
+
+export default (props) => {
+  return (
+
+    <TopicApp />
+
+  )
+}

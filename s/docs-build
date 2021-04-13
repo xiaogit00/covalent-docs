@@ -1,0 +1,12 @@
+cp -R docs/utils/* .docs/src/utils/
+cp -R docs/components/* .docs/src/components/
+mkdir -p .docs/src/content
+rm -rf .docs/src/content/*
+cp -R docs/content/* .docs/src/content/
+cp -R docs/css/components .docs/src/css/
+
+cp docs-config.js .docs/
+cp gatsby-config.js .docs/
+cp gatsby-node.js .docs/
+# NODE_ENV=production 
+cd .docs && ./node_modules/.bin/gatsby clean && ./node_modules/.bin/gatsby build --prefix-paths && cp -R public/* ../public/

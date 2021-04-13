@@ -1,0 +1,25 @@
+{
+  "name": "covalent-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs-bootstrap": "node_modules/cloudflare-docs-engine/bin/commands.sh bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/covalenthq/covalent-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/covalenthq/covalent-docs/issues"
+  },
+  "homepage": "https://github.com/covalenthq/covalent-docs#readme",
+  "devDependencies": {
+    "cloudflare-docs-engine": "git+https://github.com/cloudflare/cloudflare-docs-engine.git",
+    "gatsby-plugin-google-tagmanager": "^2.11.0",
+    "react-dropdown": "^1.9.2"
+  }
+}
