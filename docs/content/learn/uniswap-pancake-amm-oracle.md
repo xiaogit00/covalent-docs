@@ -1,6 +1,6 @@
 ---
 title: Uniswap as an Oracle Price Feed
-order: 5
+order: 4
 hidden: false
 featuredImage: ../images/uniswap-price-feed/cookbook-uniswap-banner.png
 description: Learn how to use Uniswap as a price oracle.

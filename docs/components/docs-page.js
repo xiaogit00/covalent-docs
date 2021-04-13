@@ -36,8 +36,6 @@ const DocsPage = ({ pageContext: page, children, location }) => {
   const enableSearch = search.apiKey && search.indexName && search.algoliaOptions
   const disableSearchProps = enableSearch ? {} : { "search-disabled": "" }
 
-console.log(page.frontmatter)
-
   const featuredImage = page.frontmatter ? page.frontmatter.featuredImage : null
   const description = page.frontmatter ? page.frontmatter.description : null
 

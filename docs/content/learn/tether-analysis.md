@@ -1,6 +1,6 @@
 ---
 title: Tether Analysis
-order: 4
+order: 3
 hidden: false
 featuredImage: ../images/tether_analysis/cookbook-tether-banner.png
 description: Learn how to easily extract all USDT Issuances and compare with Tether's Transparency Dashboard.
