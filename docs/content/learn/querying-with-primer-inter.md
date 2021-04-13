@@ -1,6 +1,6 @@
 ---
 title: Querying with Primer (Intermediate)
-order: 5
+order: 6
 hidden: true
 ---
 
