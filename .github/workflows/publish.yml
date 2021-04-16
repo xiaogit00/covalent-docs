@@ -32,18 +32,13 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm install
 
-    - name: Download Hugo
-      run: |
-        wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.tar.gz
-        tar xvzf hugo_0.31.1_Linux-64bit.tar.gz
-
     - name: Build site
       run: |
         npm run docs-bootstrap
         ./s/docs-build
 
-#     - name: Upload site
-#       env:
-#         GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
-#       run: |
-#         ./s/upload-to-gcs
+    - name: Upload site
+      env:
+        GCLOUD_SERVICE_KEY: ${{ secrets.GCLOUD_SERVICE_KEY }}
+      run: |
+        ./s/upload-to-gcs
