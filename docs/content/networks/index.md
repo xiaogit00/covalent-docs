@@ -43,3 +43,9 @@ We currently support the following networks:
 | [Matic Mumbai](/networks/matic)     | `80001`   |
 
 </TableWrap>
+
+Blockchains we plan to support in the near future include:
+* Moonbeam
+* Elrond
+* Near
+* StarkWire
