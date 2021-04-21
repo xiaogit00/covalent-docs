@@ -24,7 +24,7 @@ const products = [
   "gateway",
   "http3",
   "images",
-  "internet",
+  // "internet",
   "load-balancing",
   "logs",
   "magic-transit",
