@@ -141,10 +141,6 @@ Let's use a real-world example from the transaction endpoint. We have set `no-lo
 <!-- We can compare dates  -->
 
 
-
-## Logical operators
-
-
 ### Select records using the less-than operator.
 
 The following example retrieves all records from the transaction endpoint where the `gas_spent` field is less than `50000`:
@@ -159,6 +155,11 @@ header: The less-than operator
     }      
 }
 ```
+
+## Logical operators
+
+
+
 
 ### Select records using logical operators
 
@@ -186,6 +187,8 @@ header: The $and logical operator operator
     }      
 }
 ```
+
+## Datetime values
 
 ### Select records using comparison operators on datetimes
 
