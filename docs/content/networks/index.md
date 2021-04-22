@@ -45,7 +45,7 @@ We currently support the following networks:
 </TableWrap>
 
 Blockchains we plan to support in the near future include:
-* Moonbeam
+* Moonbeam (Polkadot)
 * Elrond
 * Near
-* StarkWire
+* StarkWare
