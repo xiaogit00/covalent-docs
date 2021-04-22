@@ -1,12 +1,11 @@
 ---
 title: Querying with Primer (Intermediate)
 order: 6
-hidden: true
 ---
 
 # Querying with Primer (Intermediate)
 
-In the previous cookbook recipe, you were able to use Primer to query the blockchain for exact matches and the dot notation. In this guide, we  will use Primer's comparison operators and combine query criteria to make compound queries.
+In the previous cookbook recipe, you were able to use Primer to query the blockchain for exact matches and with the dot notation. In this guide, we  will use Primer's comparison operators and combine query criteria to make compound queries.
 
 
 ## Comparison operators
@@ -15,18 +14,18 @@ The operators include: >, <, >=, <=, ===, and !==
 
 <TableWrap>
 
-|Operator|Primer|
-|---|---|
-|>|Greater than|
-|<|Less than|
-|>=|Greater than or equal|
-|<=|Less than or equal|
-|===|Equal to|
-|!==|Not equal to|
+|Operator|Primer|Description|
+|---|---|---|
+|>|`$gt`|Greater than|
+|<|`$lt`|Less than|
+|>=|`$ge`|Greater than or equal|
+|<=|`$le`|Less than or equal|
+|===|`$eq`|Equal to|
+|!==|`$ne`|Not equal to|
 
 </TableWrap>
 
-Let's use a real-world example from the transaction endpoint. We have set `no-logs` to `true` to emit logs for simplicity. 
+Let's use a real-world example from the transaction endpoint. We have set `no-logs` to `true` to omit logs for simplicity. 
 
 ```json
 // https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?no-logs=true&page-number=0&page-size=5&key=...
@@ -137,54 +136,69 @@ Let's use a real-world example from the transaction endpoint. We have set `no-lo
 }
 
 ```
-We can compare dates 
+
+
+<!-- We can compare dates  -->
 
 
 
 ## Logical operators
 
 
-### Select documents using the less-than operator.¶
+### Select records using the less-than operator.
 
-The following example retrieves all documents from the inventory collection where the size.h field is less than 15. MongoDB uses dot notation to specify fields within embedded documents. size.h refers to the h field in the size document.
+The following example retrieves all records from the transaction endpoint where the `gas_spent` field is less than `50000`:
 
-    myCursor = db.inventory.find( { "size.h": { $lt: 15 } } )
+```json
+---
+header: The less-than operator
+---
+{
+    "gas_spent": {
+      "$lt": 50000
+    }      
+}
+```
 
+### Select records using logical operators
 
-### Read Data with Compound Queries¶
-
-Now you will read data from MongoDB using AND and OR logic to form compound queries.
-
-#### Write an implied AND query.
-
-To write a compound query in MongoDB that matches all of the query predicates (i.e. a logical AND), specify all of the fields that you wish to match in your find document. By default, MongoDB matches all of the fields.
-
-The following example retrieves all documents in the inventory collection where the status equals "A" and qty is less than ($lt) 30:
-
-    myCursor = db.inventory.find( { status: "A", qty: { $lt: 30 } } )
-
-MongoDB also provides a $and logical operator as part of its logical query operators, but the “implied AND” described above is a more common pattern.
-
-#### Write an “or” query.¶
+The following example retrieves all records from the transaction endpoint where the `gas_spent` field is between `50000` and `10000`:
 
 
-Using the $or query operator, specify a compound query that joins each clause with a logical OR conjunction so that the query selects the documents in the collection that match at least one condition.
+```json
+---
+header: The $and logical operator operator
+---
+{
+    "gas_spent": {
+      "$and": [
+        {
+          "gas_spent": {
+            "$gt": 50000
+          }
+        },
+        {
+          "gas_spent": {
+            "$le": 100000
+          }
+        }
+      ]
+    }      
+}
+```
 
-The following example retrieves all documents in the collection where the status equals "A" or qty is less than 30:
+### Select records using comparison operators on datetimes
 
-    myCursor = db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
+The comparison operators also work with date time values. Here's an example of selecting records that belong to a block after a certain date:
 
-#### Retrieving Data with More Than One Compounding Clause¶
-
-
-Now you will retrieve data from MongoDB using AND and OR logic together to form compound queries.
-
-Write an implied AND query with an “or” clause.
-In the following example, the compound query document selects all documents in the collection where the status equals "A" and either qty is less than 30 or item starts with the character p:
-
-    myCursor = db.inventory.find( {
-        status: "A",
-        $or: [ { qty: { $lt: 30 } }, { item: /^p/ } ]
-    } )
-
+```json
+---
+header: Compariosn operators on datetimes
+---
+{
+    "block_signed_at": {
+      "$gt": "2021-01-02"
+    }      
+}
+```
 
