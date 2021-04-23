@@ -44,8 +44,10 @@ We currently support the following networks:
 
 </TableWrap>
 
-Blockchains we plan to support in the near future include:
-* Moonbeam (Polkadot)
-* Elrond
-* Near
-* StarkWare
+## Upcoming Networks
+
+Blockchains next to be indexed or planned for the near future include:
+* [Moonbeam (Polkadot)](https://moonbeam.network/)
+* [Elrond](https://elrond.com/)
+* [Near](https://near.org/)
+* [StarkWare](https://starkware.co/)
