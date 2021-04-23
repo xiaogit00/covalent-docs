@@ -30,9 +30,14 @@ Our ecosystem of community developers continue to astonish us with their creativ
 ### [Collectors Cafe](/project-showcase/collectors-cafe)
 ![Collectors Cafe](../images/project-showcase/collectors-cafe-banner.png)
 
-
+&nbsp;
 ## Dungeons & Data Challenges
 
 ### [Aave Governance](/project-showcase/aave-governance)
 ![Aave Governance](../images/project-showcase/aave-governance-banner.png)
+
+&nbsp;
+## Alchemists Buidlers
+### [Nifty NFTS](/project-showcase/nifty-nfts)
+![Nifty NFTs](../images/project-showcase/nifty-nfts.png)
 
