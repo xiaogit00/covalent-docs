@@ -24,11 +24,17 @@ Our ecosystem of community developers continue to astonish us with their creativ
 ### [Dash Monke](/project-showcase/dash-monke)
 ![Dash Monke](../images/project-showcase/dashmonke-banner.png)
 
+### [Avalanche Wallet Checker](/project-showcase/omw-awc)
+![Avalanche Wallet Checker](../images/project-showcase/omw-awc.png)
+
 &nbsp;
 ## ETHGlobal Hackathons
 
 ### [Collectors Cafe](/project-showcase/collectors-cafe)
 ![Collectors Cafe](../images/project-showcase/collectors-cafe-banner.png)
+
+### [NFTree Token](/project-showcase/nftree)
+![Collectors Cafe](../images/project-showcase/nftree.png)
 
 &nbsp;
 ## Dungeons & Data Challenges
