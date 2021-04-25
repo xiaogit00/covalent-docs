@@ -1,7 +1,7 @@
 ---
 title: Nifty NFTs
 order: 7
-hidden: true
+hidden: false
 featuredImage: ../images/project-showcase/nifty-nfts.png
 description: Twitter Bot showcasing inspiring NFTs and highlights the power of Covalent's API!
 ---

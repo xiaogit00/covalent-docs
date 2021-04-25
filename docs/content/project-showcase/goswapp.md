@@ -1,7 +1,7 @@
 ---
 title: GoSwapp
 order: 6
-hidden: true
+hidden: false
 featuredImage: ../images/project-showcase/goswapp-banner.png
 description: The first defi app to bring the Uniswap And Pancakeswap trading experience to mobile phones.
 ---

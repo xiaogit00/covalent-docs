@@ -1,7 +1,7 @@
 ---
 title: Coin Defit
 order: 4
-hidden: true
+hidden: false
 featuredImage: ../images/project-showcase/coindefit-banner.png
 description: Know how much profit you would have made in a Uniswap pool
 ---
