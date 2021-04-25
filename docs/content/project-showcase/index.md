@@ -24,11 +24,17 @@ Our ecosystem of community developers continue to astonish us with their creativ
 ### [Dash Monke](/project-showcase/dash-monke)
 [![Dash Monke](../images/project-showcase/dashmonke-banner.png)](/project-showcase/dash-monke)
 
+### [Avalanche Wallet Checker](/project-showcase/omw-awc)
+[![Avalanche Wallet Checker](../images/project-showcase/omw-awc.png)](/project-showcase/omw-awc)
+
 &nbsp;
 ## ETHGlobal Hackathons
 
 ### [Collectors Cafe](/project-showcase/collectors-cafe)
 [![Collectors Cafe](../images/project-showcase/collectors-cafe-banner.png)](/project-showcase/collectors-cafe)
+
+### [NFTree Token](/project-showcase/nftree)
+[![NFTree](../images/project-showcase/nftree.png)](/project-showcase/nftree)
 
 &nbsp;
 ## Dungeons & Data Challenges
@@ -41,9 +47,8 @@ Our ecosystem of community developers continue to astonish us with their creativ
 ### [Nifty NFTS](/project-showcase/nifty-nfts)
 [![Nifty NFTs](../images/project-showcase/nifty-nfts.png)](/project-showcase/nifty-nfts)
 
-
-
-
-
-
+&nbsp;
+## Alchemists Buidlers
+### [Nifty NFTS](/project-showcase/nifty-nfts)
+![Nifty NFTs](../images/project-showcase/nifty-nfts.png)
 
