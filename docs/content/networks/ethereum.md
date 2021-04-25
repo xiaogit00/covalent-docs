@@ -34,3 +34,8 @@ Covalent is the only project to fully index the entire [Ethereum](https://ethere
 Having the entire Ethereum Mainnet indexed also means access to all the DeFi data from top protocols such as Uniswap, Aave, Balancer, and Compound to name a few. 
 
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent API docs</a>
+
+
+### Infrastructure Providers
+The following Covalent service partners provide infrastructure for this blockchain network:
+* [Chainstack](../../service-partners/chainstack)
