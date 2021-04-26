@@ -1,7 +1,7 @@
 ---
 title: Collectors Cafe
 order: 3
-hidden: true
+hidden: false
 featuredImage: ../images/project-showcase/collectors-cafe-banner.png
 description: A social network to discover, exhibit and trade NFTs
 ---
