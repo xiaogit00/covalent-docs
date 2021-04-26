@@ -1,6 +1,12 @@
 ---
-title: Querying with Primer (Intermediate)
-order: 6
+updated: 2021-03-09
+type: "📝 Text"
+order: 2
+author: Ganesh
+tags: 
+  - Primer
+  - MongoDB
+  - Intermediate
 ---
 
 # Querying with Primer (Intermediate)

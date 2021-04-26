@@ -1,12 +1,18 @@
 ---
 title: Class A Endpoints
+updated: 2021-04-25
+type: "📝 Text"
 order: 1
 hidden: false
+author: Ganesh
 featuredImage: ../images/cookbook-class-a-banner.png
 description: Learn about the core endpoints that make the Covalent API best-in-class.
+tags: 
+  - Class A
+  - Beginner
 ---
 
-![Recipe logo](../images/cookbook-class-a-banner.png)
+![Class A Banner logo](../images/cookbook-class-a-banner.png)
 
 
 # Class A Endpoints
@@ -73,7 +79,7 @@ The following are the most popular Class A endpoints with a description of the e
 
 The following tutorials use JavaScript code templates and the Covalent [API docs](https://www.covalenthq.com/docs/api/#overview) to explore several API endpoints and how they can individually power entire apps. The code templates are hosted on Repl.it. 
 
-## Tutorials
+## Tutorial Videos
 
 <Definitions>
 

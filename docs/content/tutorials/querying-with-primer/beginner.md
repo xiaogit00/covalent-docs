@@ -1,9 +1,15 @@
 ---
-title: Querying with Primer (Beginner)
-order: 5
+updated: 2021-03-09
+type: "📝 Text"
+order: 1
+author: Ganesh
+tags: 
+  - Primer
+  - MongoDB
+  - Beginner
 ---
 
-import Prerequisites from "../../components/prerequisites.js";
+import Prerequisites from "../../../components/prerequisites.js";
 
 
 # Querying with Primer (Beginner)
@@ -299,3 +305,4 @@ header: Query with dot notation
 By succesfuly completing this learning series, you would have been able to match/filter records from Covalent using a specific criteria as expressed with Primer's query syntax. Additionally, you have also used the dot notation query syntax to match/filter records based on embedded fields.
 
 Next in the series, we will learn how to use Primer's query operators.
+

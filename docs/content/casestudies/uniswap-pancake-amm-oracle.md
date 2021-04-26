@@ -1,10 +1,19 @@
 ---
 title: Uniswap as an Oracle Price Feed
-order: 4
+updated: 2021-04-05
+type: "📝 Text"
 hidden: false
+author: Ganesh
 featuredImage: ../images/uniswap-price-feed/cookbook-uniswap-banner.png
 description: Learn how to use Uniswap as a price oracle.
+tags: 
+  - Class A
+  - Intermediate
+  - Uniswap
+  - Log Events
 ---
+
+
 
 ![Recipe logo](../images/uniswap-price-feed/cookbook-uniswap-banner.png)
 

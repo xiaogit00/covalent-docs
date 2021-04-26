@@ -1,9 +1,15 @@
 ---
 title: Tether Analysis
-order: 3
+updated: 2021-03-31
+type: "📝 Text"
 hidden: false
+author: Harish
 featuredImage: ../images/tether_analysis/cookbook-tether-banner.png
 description: Learn how to easily extract all USDT Issuances and compare with Tether's Transparency Dashboard.
+tags: 
+  - Class A
+  - Intermediate
+  - Log Events
 ---
 
 ![Recipe logo](../images/tether_analysis/cookbook-tether-banner.png)
