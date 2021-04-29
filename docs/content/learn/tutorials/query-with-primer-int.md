@@ -1,8 +1,10 @@
 ---
+title: Querying with Primer (Int)
 updated: 2021-03-09
 type: "📝 Text"
 order: 2
-author: Ganesh
+hidden: false
+author: gane5h
 tags: 
   - Primer
   - MongoDB

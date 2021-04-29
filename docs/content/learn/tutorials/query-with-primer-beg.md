@@ -1,8 +1,10 @@
 ---
+title: Querying with Primer (Beg)
 updated: 2021-03-09
 type: "📝 Text"
 order: 1
-author: Ganesh
+hidden: false
+author: gane5h
 tags: 
   - Primer
   - MongoDB
