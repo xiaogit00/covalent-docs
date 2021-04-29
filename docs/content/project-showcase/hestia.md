@@ -1,12 +1,12 @@
 ---
 title: Hestia
 order: 1
-hidden: true
-featuredImage: ../images/project-showcase/hestia-banner.png
+hidden: false
+featuredImage: ./images/hestia-banner.png
 description: A one-stop shop to Create, Sell and Showcase your Artwork aiming to democratize the control and pricing of assets via Harberger Taxes
 ---
 
-![Hestia Banner](../images/project-showcase/hestia-banner.png)
+![Hestia Banner](./images/hestia-banner.png)
 
 &nbsp;
 # Hestia

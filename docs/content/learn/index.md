@@ -6,17 +6,13 @@ hidden: false
 
 # Alchemist Cookbook
 
-We have branded our learning series as the *Alchemist Cookbook*! Here you will find content in the form of how-to guides and case studies to help you learn how to use the [Covalent API](https://www.covalenthq.com/docs/api/#overview) in more detail.
+We have branded our learning series as the *Alchemist Cookbook*! Here you will find content in the form of Tutorials, How-to Guides and Case Studies to help you learn how to use the [Covalent API](https://www.covalenthq.com/docs/api/#overview) in more detail.
 
-## How-to Guides
+## [Tutorials](/learn/tutorials)
+Our tutorials are short, learning-oriented lessons designed for those new to the blockchain space and blockchain data to learn more about the Covalent API and specific endpoints. 
 
-* [Use Class A endpoints](/learn/class-a)
-* [Work with NFTs](/learn/tracking-nft-data)
-<!-- * [Querying with Primer (Beginner)](/learn/querying-with-primer) -->
+## [How-to Guides](/learn/guides)
+Our guides address a specific question or problem and assumes some basic knowledge and understanding of blockchain data.
 
-
-## Case Studies
-The following are detailed case studies or guiding you through a descriptive and exploratory analysis of popular blockchain topics. 
-
-* [Tether analysis](/learn/tether-analysis)
-* [Uniswap as an Oracle Price Feed](/learn/uniswap-pancake-amm-oracle)
+## [Case Studies](/learn/casestudies)
+Our case studies are deep dives into interesting blockchain topics and concepts and use the Covalent API to explore the underlying data behind those topics and concepts. 
