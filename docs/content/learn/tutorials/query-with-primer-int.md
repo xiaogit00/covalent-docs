@@ -1,6 +1,15 @@
 ---
-title: Querying with Primer (Intermediate)
-order: 6
+title: Querying with Primer (Int)
+updated: 2021-03-09
+type: "📝 Article"
+order: 2
+hidden: false
+author: gane5h
+description: Learn how to use Primer's comparison operators and combine query criteria to make compound queries
+tags: 
+  - Primer
+  - MongoDB
+  - Intermediate
 ---
 
 # Querying with Primer (Intermediate)

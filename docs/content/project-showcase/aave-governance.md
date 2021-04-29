@@ -1,12 +1,12 @@
 ---
 title: Aave Governance
 order: 5
-hidden: true
-featuredImage: ../images/project-showcase/aave-governance-banner.png
+hidden: false
+featuredImage: ./images/aave-governance-banner.png
 description: A governance dashboard for the Aave Protocol
 ---
 
-![Coin Defit Banner](../images/project-showcase/aave-governance-banner.png)
+![Coin Defit Banner](./images/aave-governance-banner.png)
 
 &nbsp;
 # Aave Governance Dashboard
