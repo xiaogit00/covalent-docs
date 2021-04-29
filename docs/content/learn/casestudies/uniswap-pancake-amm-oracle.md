@@ -1,7 +1,8 @@
 ---
 title: Uniswap as an Oracle Price Feed
 updated: 2021-04-05
-type: "📝 Text"
+type: "📝 Article"
+order: 2
 hidden: false
 author: gane5h
 featuredImage: ./images/uniswap-price-feed/cookbook-uniswap-banner.png

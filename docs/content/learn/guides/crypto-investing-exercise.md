@@ -1,14 +1,15 @@
 ---
 title: Crypto Investing Exercise
 updated: 2021-04-27
-type: "📝 Text"
-order: 4
+type: "📝 Article"
+order: 1
 hidden: false
-author: Ganesh
-featuredImage: ../images/cookbook-class-a-banner.png
+author: gane5h
+featuredImage: ../images/crypto-investing.png
 description: Learn about how we make every new employee invest in crypto as part of their onboarding.
 tags: 
   - Beginner
+  - Onboarding
 ---
 
 ![Recipe logo](../images/crypto-investing.png)
@@ -87,7 +88,7 @@ To understand the various types of transactions that are required when people us
 
 &nbsp;
 
-## What we’ve learnt
+## What we’ve learned
 
 _The big takeaway – providing a supporting and welcoming channel to ask questions or vent your frustrations can be a big deal! When people know there’s a safety net, they somehow find the motivation to power through any challenge_.
 

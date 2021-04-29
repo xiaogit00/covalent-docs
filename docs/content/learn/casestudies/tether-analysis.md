@@ -1,7 +1,8 @@
 ---
 title: Tether Analysis
 updated: 2021-03-31
-type: "📝 Text"
+type: "📝 Article"
+order: 1
 hidden: false
 author: harishraisinghani
 featuredImage: ./images/tether_analysis/cookbook-tether-banner.png

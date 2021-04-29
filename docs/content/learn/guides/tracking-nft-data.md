@@ -1,7 +1,8 @@
 ---
 title: Working with NFTs
 updated: 2021-04-25
-type: "📝 Text"
+type: "📝 Article"
+order: 3
 hidden: false
 author: gane5h
 featuredImage: ./images/working-with-nfts.png

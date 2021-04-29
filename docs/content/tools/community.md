@@ -11,12 +11,6 @@ The following tools have been built by the community to provide value to users o
 
 ## API Clients
 
-<TableWrap>
+- [**Python**](https://covalent-python-api.readthedocs.io/en/latest/) 
 
-| Programming Language |
-| -------------------- |
-| [Python](https://covalent-python-api.readthedocs.io/en/latest/ |
-
-
-</TableWrap>
 

@@ -1,8 +1,8 @@
 ---
 title: Class A Endpoints
 updated: 2021-04-25
-type: "📝 Text"
-order: 1
+type: "📝 Article"
+order: 2
 hidden: false
 author: gane5h
 featuredImage: ./images/cookbook-class-a-banner.png
