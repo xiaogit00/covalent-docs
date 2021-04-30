@@ -16,6 +16,9 @@ tags:
 
 import EmbeddedREPL from "../../../components/embedded-repl.js";
 
+![Transaction Parsing logo](./images/transaction-parsing.png)
+
+
 # Transaction Parsing
 
 
