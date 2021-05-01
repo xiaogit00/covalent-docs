@@ -24,12 +24,16 @@ Covalent uses the [Cloudflare documentation engine](https://developers.cloudflar
    npm run docs-bootstrap --legacy-peer-deps
    ```
 
+   **Note: You may get an error message suggesting you to install `gatsby`. You do not need to do this.**
+
 5. Build the docs site with:
    ```
    ./s/docs-build
    ```
 
-6. Run the `hugo` server which should render the contents from `public/`. If this does not happen by default, direct `hugo` to the `public` folder with the following:
+6. Create an empty `config.yaml` in your project root folder. This is required in order to run the `hugo` server. 
+
+7. Run the `hugo` server which should render the contents from `public/`. If this does not happen by default, direct `hugo` to the `public` folder with the following:
    ```
    hugo server --contentDir ./public
    ``` 
