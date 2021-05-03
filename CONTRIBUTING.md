@@ -32,6 +32,3 @@ Request both [@emmaodia](https://github.com/emmaodia) and [@harishraisinghani](h
 
 &nbsp;
 
-Copyright and Licensing
------------------------
-
