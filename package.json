@@ -22,6 +22,7 @@
     "react-dropdown": "^1.9.2"
   },
   "dependencies": {
-    "gatsby-plugin-google-gtag": "^3.4.0"
+    "gatsby-plugin-google-gtag": "^3.4.0",
+    "gatsby-plugin-google-tagmanager": "^3.4.0"
   }
 }
