@@ -19,7 +19,9 @@
   "homepage": "https://github.com/covalenthq/covalent-docs#readme",
   "devDependencies": {
     "cloudflare-docs-engine": "git+https://github.com/cloudflare/cloudflare-docs-engine.git",
-    "gatsby-plugin-google-tagmanager": "^2.11.0",
     "react-dropdown": "^1.9.2"
+  },
+  "dependencies": {
+    "gatsby-plugin-google-gtag": "^3.4.0"
   }
 }
