@@ -1,6 +1,6 @@
 ---
 title: Querying with Primer (Int)
-updated: 2021-03-09
+updated: 2021-04-09
 type: "📝 Article"
 order: 2
 hidden: false

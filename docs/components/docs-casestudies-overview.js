@@ -51,7 +51,7 @@ const DocsCaseStudiesData = props => {
       url: page.fields.slug,
       tags: page.frontmatter.tags,
       demo: page.frontmatter.demo,
-      updated: page.parent.modifiedTime,
+      updated: page.frontmatter.updated,
       type: page.frontmatter.type,
       author: page.frontmatter.author,
       wordCount: page.wordCount.words,
