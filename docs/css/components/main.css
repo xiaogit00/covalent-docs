@@ -130,3 +130,18 @@ svg {
 html {
     --selection-background-color: #52aee5 !important;
 }
+
+.DocsPage .Link {
+    color: white;
+    text-decoration: none;
+    --underline-size: none;
+}
+
+.DocsPage .Link:hover {
+    color: #52aee5;
+    text-decoration-color: #52aee5;
+}
+
+.DocsPage .Button-is-docs-primary {
+    color: white !important;
+}
