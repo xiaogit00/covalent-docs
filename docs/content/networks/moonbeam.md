@@ -24,10 +24,13 @@ Moonbeam is much more than just an EVM implementation: it’s a highly specializ
 
 | Property              | Value                |
 | --------------------- | -------------------- |
-| Network name          | Moonbeam Polkadot         |
-| Chain ID              | `1284`                |
-| Moonbeam Block Explorer |  |
+| Moonbeam Testnet Moonbase Alpha chainId          | `1287`         |
+| Moonbeam Polkadot (not live yet)             | `1284`                |
+| Moonriver Kusama (not live yet) | `1285` |
+| Blockchain Explorer|https://moonbase-blockscout.testnet.moonbeam.network/|
 | Block time            | ~2 seconds           |
+| Data refresh latency|~12 seconds|
+
 
 </TableWrap>
 
@@ -77,7 +80,7 @@ All **Class A** endpoints are supported for the Moonbeam network. You can query 
 
 The Moonbeam token `GLMR` is the native token of the Moonbeam network. This is similar to Ether in Ethereum. To interact with the Moonbeam network, `GLMR` tokens are required to pay gas fees. The Covalent API response returns `gas_*` fields in fiat units.
 
-### Token mapping
+<!-- ### Token mapping
 
 Covalent maintains an on-chain real-time mapping of token addresses between Ethereum mainnet and the Moonbeam network. These addresses are used to reverse-lookup prices on Moonbeam and also to return the right token logo urls.
 
@@ -92,4 +95,4 @@ For the current token mapping list, see:
 
 ### Token prices
 
-For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices.
+For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices. -->

@@ -26,7 +26,6 @@ The [Polygon / Matic Network](https://matic.network/) brings massive scale to Et
 |Matic Mumbai Testnet chainId|`80001`|
 |Matic Blockchain Explorer|https://explorer-mainnet.maticvigil.com/|
 |Block time|~1 second|
-|Date|~1 second|
 |Data refresh latency|~12 seconds|
 </TableWrap>
 
