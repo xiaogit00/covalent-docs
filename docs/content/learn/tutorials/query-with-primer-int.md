@@ -172,7 +172,7 @@ header: The less-than operator
 
 ### Select records using logical operators
 
-The following example retrieves all records from the transaction endpoint where the `gas_spent` field is between `50000` and `10000`:
+The following example retrieves all records from the transaction endpoint where the `gas_spent` field is between `50000` and `100000`:
 
 
 ```json
