@@ -12,5 +12,4 @@ The following tools have been built by the community to provide value to users o
 ## API Clients
 
 - [**Python**](https://covalent-python-api.readthedocs.io/en/latest/) 
-
-
+- [**NodeJS](https://www.npmjs.com/package/covalentjs)
