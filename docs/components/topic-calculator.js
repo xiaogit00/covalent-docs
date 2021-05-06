@@ -91,7 +91,6 @@ class TopicApp extends React.Component {
         document.getElementById(b).innerText = "Copied!";
       }
       else{
-        item.innerText = "Copy to clipboard";
       }
 
     }
