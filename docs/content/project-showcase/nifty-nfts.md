@@ -37,9 +37,5 @@ The project was built as part of the Covalent [Alchemist](https://www.covalenthq
 ### Developers
 
 - Corina Pascu: *Discord - @snowdot#8235*
-<<<<<<< HEAD
 - Samer Haidar: *Discord - @GodSamix#6189*
-=======
-- Samer Haider: *Discord - @GodSamix#6189*
->>>>>>> main
 
