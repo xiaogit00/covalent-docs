@@ -74,8 +74,15 @@ body {
     font-weight: 300 !important;
 }
 
-.DocsSidebar--nav-link-text {
-    font-size: 0.8em !important;
+.Button.Button-is-docs-primary .DocsMarkdown--link-content{
+    color: white !important;
+}
+.DocsSidebar--nav-link-text .DocsSidebar--nav-link-text {
+    font-size: 18px;
+}
+
+.DocsSidebar--nav-subnav {
+    font-size: 16px !important;
 }
 
 .DocsBody--sidebar{
@@ -178,6 +185,10 @@ th {
     background: #FF4C8B !important;
 }
 
+[theme=dark] .CodeBlock {
+    background: rgb(15 15 15) !important;
+}
+
 .CodeBlock--token-number, .CodeBlock--token-boolean, .CodeBlock--token-null {
     color: #FF4C8B !important;
 }
@@ -188,15 +199,20 @@ th {
 
 .CodeBlock.CodeBlock-with-rows.CodeBlock-scrolls-horizontally{
     height: 125px;
-    overflow: scroll;
+    overflow: hidden;
     transition: 0.6s;
     max-height: fit-content;
     border: 1px solid rgba(196, 196, 196, 0);
+    font-family: 'Roboto Mono',
+    monospace;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .CodeBlock.CodeBlock-with-rows.CodeBlock-scrolls-horizontally:hover {
     height: 500px;
     transition: 0.6s;
+    overflow: scroll;
     border: 1px solid rgb(196, 196, 196);
 }
 
@@ -307,4 +323,10 @@ p.DocsMarkdown--small-header {
 
 .DocsSidebar--nav-item+.DocsSidebar--nav-item {
     margin-right: 1rem;
+}
+
+.InlineCode {
+    font-family: 'Roboto Mono', monospace !important;
+    border-radius: 0px !important;
+    border: 1px solid #a9a9a91c !important;
 }
