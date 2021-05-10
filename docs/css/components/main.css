@@ -1,8 +1,56 @@
 /* Docs Main CSS file */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
 * {
     font-family: 'Titillium Web', sans-serif;
 }
+
+code,
+.topics code,
+.topics pre {
+    font-family: 'Roboto Mono', monospace;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+code::-webkit-scrollbar,
+.topics code::-webkit-scrollbar,
+.topics pre::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+body {
+    overflow: overlay;
+}
+/* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 3px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #FF4C8B;
+        height: 30px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #FF4C8B;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        display: none;
+    }
+
 
 .DocsSidebar--header-section{
     margin-top: 3em !important;
@@ -22,8 +70,8 @@
 }
 
 .DocsMarkdown--link-content{
-    color: #52aee5 !important;
-    font-weight: bold !important;
+    color: #FF4C8B !important;
+    font-weight: 300 !important;
 }
 
 .DocsSidebar--nav-link-text {
@@ -52,11 +100,11 @@ th {
 }
 
 .DocsMarkdown--link-content {
-    border-bottom: 1px solid #52aee5 !important;
+    border-bottom: 1px solid #FF4C8B !important;
 }
 
 [theme=dark] .DocsSidebar--nav-link[is-active] .DocsSidebar--nav-link-text:before{
-    background: #52afe535 !important;
+    background: #FF4C8B !important;
 }
 
 .DocsSidebar--nav-expand-collapse-button-content {
@@ -76,7 +124,11 @@ th {
 }
 
 .DocsSidebar--nav-link[is-active]:before {
-    background: #52aee5 !important;
+    background: #FF4C8B !important;
+}
+
+.DocsSidebar--nav-link[is-active]:hover:before {
+    background: #FF4C8B !important;
 }
 
 .DocsSidebar--shadow {
@@ -103,15 +155,15 @@ th {
 }
 
 .DocsSidebar--nav-link .DocsSidebar--nav-link-text:hover::after {
-    background: #52afe535 !important;
+    background: none !important;
 }
 
 .DocsTableOfContents-link:hover {
-    color: #52aee5 !important;
+    color: #FF4C8B !important;
 }
 
 [theme=dark] .DocsMarkdown--link:hover {
-    background: #52afe535 !important;
+    background: #ff4c8b24 !important;
 }
 
 .Button.Button-is-docs-primary {
@@ -123,15 +175,15 @@ th {
 }
 
 .DocsMarkdown--aside .Button.Button-is-docs-primary {
-    background:  #52afe535 !important;
+    background: #FF4C8B !important;
 }
 
 .CodeBlock--token-number, .CodeBlock--token-boolean, .CodeBlock--token-null {
-    color: #ea088c !important;
+    color: #FF4C8B !important;
 }
 
 .CodeBlock--token-string, .CodeBlock--token-operator {
-    color: #52aee5 !important;
+    color: #FF4C8B !important;
 }
 
 .CodeBlock.CodeBlock-with-rows.CodeBlock-scrolls-horizontally{
@@ -149,17 +201,17 @@ th {
 }
 
 .DocsMarkdown--link .DocsMarkdown--link-content {
-    background-color: #52afe507 !important;
+    background-color: transparent !important;
 }
 
 @media (hover: hover) {
     [theme=dark] .DocsSidebar--nav-link:hover .DocsSidebar--nav-link-text:before {
-        background: #52afe535 !important;
+        background: #e4e4e435 !important;
     }
 }
 
 html {
-    --selection-background-color: #52aee5 !important;
+    --selection-background-color: #FF4C8B !important;
 }
 
 [theme=dark] .DocsPage .Link {
@@ -172,8 +224,8 @@ html {
 }
 
 .DocsPage .Link:hover {
-    color: #52aee5;
-    text-decoration-color: #52aee5;
+    color: #FF4C8B;
+    text-decoration-color: #FF4C8B;
 }
 
 [theme=dark] .DocsPage .Button-is-docs-primary {
@@ -215,4 +267,44 @@ html {
 
 [theme=dark] .DocsSidebar--nav-section-shadow {
     border-top: none;
+}
+
+[theme=dark] #gatsby-focus-wrapper {
+    background: #0f0f0f;
+}
+
+.DocsMarkdown h1,
+.DocsMarkdown h2,
+.DocsMarkdown h3,
+.DocsMarkdown h4,
+.DocsMarkdown h5,
+.DocsMarkdown h6,
+p.DocsMarkdown--small-header {
+    font-weight: 300 !important;
+}
+
+.DocsMarkdown--table-wrap tr>:first-child {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+[theme=dark] .DocsMarkdown--aside[data-type=note] {
+    border-left-color: #FF4C8B !important;
+}
+
+.Button-is-docs-primary {
+    background: transparent !important;
+    border: 1px solid black !important;
+}
+
+[theme=dark] .Button-is-docs-primary {
+    background: black !important;
+}
+
+.DocsBody--sidebar-content-scroll-fade {
+    background: none !important;
+}
+
+.DocsSidebar--nav-item+.DocsSidebar--nav-item {
+    margin-right: 1rem;
 }
