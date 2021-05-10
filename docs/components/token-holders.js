@@ -55,7 +55,7 @@ const TokenHolders = () => {
   // You can use the address and block height below to run tests
   // 0x7d91e637589EC3Bb54D8213a9e92Dc6E8D12da91
   //12044973
-  
+
   const handleSubmit = () => {
     window.location.replace(`${URL_String}`);
   };
@@ -76,22 +76,22 @@ const TokenHolders = () => {
             value={address}
             onChange={handleAddress}
           />{" "}
-        
+
           <input
             placeholder="Enter Block height"
             value={blockHeight}
             onChange={handleBlockHeight}
           />{" "}
         </div>
-        
+
         <div>
           <p>Enter the Page Number</p>
           <input value={pageNumber} onChange={handlePageNumber} />{" "}
-        
+
           <p>Enter the Page Size</p>
           <input value={pageSize} onChange={handlePageSize} />{" "}
         </div>
-        
+
         <Dropdown
           placeholder="Select Network"
           value={network}
@@ -99,7 +99,7 @@ const TokenHolders = () => {
           onChange={setNetwork}
         />
 
-        <button onClick={handleSubmit}>Submit</button>
+        <button style={{marginTop: "1rem"}} onClick={handleSubmit}>Submit</button>
       </div>
     </div>
   );
