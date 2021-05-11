@@ -119,7 +119,7 @@ WHERE <br />
                      onClick={
                        this._copyFunction.bind(this, result, item.topic_hash)
                      }>
-                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <svg style={{width:25, height:25}} width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="3" y="3" width="17" height="17" rx="2" stroke="white" strokeWidth="3"/>
 <path d="M12 19.9688V27C12 28.1046 12.8954 29 14 29H27C28.1046 29 29 28.1046 29 27V14C29 12.8954 28.1046 12 27 12H19.9688" stroke="white" strokeWidth="3"/>
 </svg>
