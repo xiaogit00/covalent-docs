@@ -27,7 +27,7 @@ class TopicApp extends React.Component {
 
       return <div className="topics">
         <div>
-        
+
       {/* and print the input box here */}
         <p>Enter the contract address you want to generate topic hashes for:</p>
         <input placeholder="Contract address"
@@ -35,11 +35,11 @@ class TopicApp extends React.Component {
           onChange={this._inputAddress}
         />
 
-        <button onClick={this._clickNext} >Get events!</button>
+        <button style={{marginLeft: "1rem"}} onClick={this._clickNext} >Get events!</button>
       </div>
 
        {/* print error here */}
-      {err} 
+      {err}
 
       {this.state.error?" Try to enter it again. ":(this._renderEvents())}
       </div>
@@ -51,7 +51,7 @@ class TopicApp extends React.Component {
    if (this.state.events !== undefined){
     let items = this.state.events.data.items[0].abi_items;
     let a = items.filter((item)=> {
-      return item.signature !==null; 
+      return item.signature !==null;
     })
 
     return <div className="topics">
@@ -59,12 +59,17 @@ class TopicApp extends React.Component {
           {a.map(item => {
            //return <li><label><input type="radio" name="signature" value={item.topic_hash} onClick={this._pickRadio}/> {item.signature}</label></li>;
              return <div>
-             <ul style={{listStyleType: "none"}}>
-               <li>{item.signature}</li>
-               <div class="box">
+             <ul style={{listStyleType: "none", paddingLeft: 0}}>
+               <h3>{item.signature.replace(/([A-Z])/g, ' $1').trim()}</h3>
+               <div class="box" style={{position: "relative"}}>
                <code>{item.topic_hash}</code>
-               <button id={item.topic_hash} className="buttonW" onClick={this._copyFunction.bind(this,item.topic_hash)}>{this.state.text}</button>
+               <div style={{marginTop: "1rem"}}>
+               <button style={{position: "absolute", right: 0, top: 0, paddingLeft: 10, paddingRight: 10, height: 44}} id={item.topic_hash} className="buttonW" onClick={this._copyFunction.bind(this,item.topic_hash)}><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="3" width="17" height="17" rx="2" stroke="white" strokeWidth="3"/>
+<path d="M12 19.9688V27C12 28.1046 12.8954 29 14 29H27C28.1046 29 29 28.1046 29 27V14C29 12.8954 28.1046 12 27 12H19.9688" stroke="white" strokeWidth="3"/>
+</svg></button>
                <button className="buttonA" onClick={event => window.location.href=`https://www.covalenthq.com/docs/api/#get-/v1/{chainId}/events/topics/{topic}/`}>Go to API docs</button>
+               </div>
                </div>
                </ul>
                </div>
@@ -73,9 +78,9 @@ class TopicApp extends React.Component {
       </div>;
 
    }
- 
+
   }
-  
+
   _copyFunction = (b,a) => {
     // console.log(b); //b is topic hash
     // // this.notification(a.ref);
@@ -86,25 +91,24 @@ class TopicApp extends React.Component {
         document.getElementById(b).innerText = "Copied!";
       }
       else{
-        item.innerText = "Copy to clipboard";
       }
 
     }
-  
+
     this.copyToClipboard(b);
-    
+
   }
 
   // notification = () => ;
   //React.findDOMNode(this.ref).text = "copied"
-  
+
     // console.log("get to notification");
     // alert("The topic hash is copied!\nYou can go to API docs to try it on");
 
     // updateState = () => this.setState({myState: ‘The state is updated’})
     // React.findDOMNode(this.refs.cpDev1).value;
 
-  
+
 
 //how to use radio box to choose the event
   _pickRadio = (changeEvent) => {
@@ -127,7 +131,7 @@ class TopicApp extends React.Component {
           this.setState({
             error: true,
             error_message: "Invalid contract address!"
-  
+
           });
         }
         else {
@@ -136,11 +140,11 @@ class TopicApp extends React.Component {
             error: false
           });
 
-        }     
+        }
 
       }).catch((err) => {
         console.log(err + " thrown out when fetching the API!");
-       
+
       })
     } else {
       this.setState({
@@ -173,14 +177,14 @@ copyToClipboard = (contents) => {
 
     document.execCommand("copy");
     (window.getSelection()).removeAllRanges();
-    
+
 
 };
 
 
   _inputAddress = (e) => {
     this.setState({
-      //under setState, can just set one field 
+      //under setState, can just set one field
       //e here is the value when calling this function
       //when setState is called, calling render function again
       address_input: e.target.value

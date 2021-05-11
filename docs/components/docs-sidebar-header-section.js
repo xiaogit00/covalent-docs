@@ -13,8 +13,8 @@ const DocsSidebarHeaderSection = () => (
     <a className="DocsSidebar--cloudflare-logo-link DocsSidebar--link" href="/docs/">
       <DocsNavLogoLockup
         logo={<span>
-          <img className="light" style={style} src="/static/images/covalent-logomark.png" />
-          <img className="dark" style={style} src="/static/images/covalent-logomark-white.png" />
+          <img className="light" style={style} src="https://covalenthq.com/static/images/covalent-logomark.png" />
+          <img className="dark" style={style} src="https://covalenthq.com/static/images/covalent-logomark-white.png" />
         </span>}
         text={(
           <>

@@ -4,8 +4,8 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1.2rem 0.4rem 1.2rem;
   color: #52aee5;
-  margin: 1rem 1rem;
   cursor: pointer;
+  margin-bottom: 2rem !important;
 }
 
 .topics ul {
@@ -34,6 +34,8 @@
   padding-top: 0.6rem;
   margin-bottom: 1.9rem;
   border: 1px solid #1d1f2033;
+  width: 10rem;
+  font-size: 14px;
 }
 
 .topics select {
@@ -41,7 +43,9 @@
   border-radius: 0.5rem;
   padding-top: 0.6rem;
   margin-bottom: 1.9rem;
-  border: 1px solid #1d1f2033;
+  border: 0px solid #1d1f2033;
+  width: 10rem;
+  font-size: 14px;
 }
 
 .topics input:focus {
@@ -56,7 +60,7 @@
   list-style: none !important;
 }
 
-.topics code {
+.topics code, .topics pre {
   display: block;
   color: #52aee5;
   background: rgba(var(--gray-5-rgb), 0.2);
@@ -64,4 +68,8 @@
   border-radius: 8px;
   overflow: scroll;
   white-space: nowrap;
+}
+
+.topics pre {
+  margin-top: 1rem;
 }

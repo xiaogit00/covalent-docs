@@ -1,4 +1,9 @@
 /* Docs Main CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
 .DocsSidebar--header-section{
     margin-top: 3em !important;
 }
@@ -9,6 +14,11 @@
 
 .DocsMarkdown h1{
     margin-bottom: 1em !important;
+    font-weight: 200 !important;
+}
+
+.DocsMarkdown h1 {
+    font-weight: 300 !important;
 }
 
 .DocsMarkdown--link-content{
@@ -17,7 +27,7 @@
 }
 
 .DocsSidebar--nav-link-text {
-    font-size: 1.2em !important;
+    font-size: 0.8em !important;
 }
 
 .DocsBody--sidebar{
@@ -29,12 +39,12 @@ th {
     padding: .66em 1em !important;
 }
 
-svg {
-    color: #52aee5 !important;
+[theme=dark] svg {
+    color: white !important;
 }
 
-.DocsSidebar--nav-link-text {
-    color: #52aee5 !important;
+[theme=dark] .DocsSidebar--nav-link-text {
+    color: white !important;
 }
 
 .DocsSidebar--nav-link-text:focus {
@@ -49,8 +59,16 @@ svg {
     background: #52afe535 !important;
 }
 
-.DocsSidebar--nav-expand-collapse-button-content{
-    color: #52aee5 !important;
+.DocsSidebar--nav-expand-collapse-button-content {
+     font-size: 12px !important;
+}
+
+[theme=dark] .DocsSidebar--nav-expand-collapse-button-content {
+    color: white !important;
+}
+
+.DocsSidebar--nav-expand-collapse-button{
+    top: -5px !important;
 }
 
 .DocsMobileTitleHeader--logo-link.Link.Link-without-underline {
@@ -61,6 +79,10 @@ svg {
     background: #52aee5 !important;
 }
 
+.DocsSidebar--shadow {
+    display: none;
+}
+
 .DocsMobileTitleHeader {
     z-index: 99 !important;
     margin-top: -3em !important;
@@ -69,6 +91,15 @@ svg {
 
 .DocsMobileHeader--cloudflare-logo-link.Link.Link-without-underline .DocsNavLogoLockup--logo {
     padding: 0.5em !important;
+}
+
+.DocsNavLogoLockup--text {
+    font-size: var(--font-size, 1em);
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 0.2em !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
 }
 
 .DocsSidebar--nav-link .DocsSidebar--nav-link-text:hover::after {
@@ -88,7 +119,7 @@ svg {
 }
 
 .Button.DocsSidebar--nav-expand-collapse-button:hover {
-    background: #52afe535 !important;
+    background: none !important;
 }
 
 .DocsMarkdown--aside .Button.Button-is-docs-primary {
@@ -129,4 +160,59 @@ svg {
 
 html {
     --selection-background-color: #52aee5 !important;
+}
+
+[theme=dark] .DocsPage .Link {
+    color: white;
+}
+
+.DocsPage .Link {
+    text-decoration: none;
+    --underline-size: none;
+}
+
+.DocsPage .Link:hover {
+    color: #52aee5;
+    text-decoration-color: #52aee5;
+}
+
+[theme=dark] .DocsPage .Button-is-docs-primary {
+    color: white !important;
+}
+
+.topics input {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    padding-top: 0.6rem;
+    margin-bottom: 1.9rem;
+    border: 1px solid #1d1f2033;
+    width: 10rem;
+    font-size: 14px;
+}
+
+.topics select {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    padding-top: 0.6rem;
+    margin-bottom: 1.9rem;
+    border: 0px solid #1d1f2033;
+    width: 10rem;
+    font-size: 14px;
+}
+
+[theme=dark] .DocsBody {
+    background: black;
+}
+
+[theme=dark] .DocsSidebar:before {
+    background: #0f0f0f !important;
+}
+
+[theme=dark] .DocsFooter{
+    background: #0f0f0f;
+    border: none;
+}
+
+[theme=dark] .DocsSidebar--nav-section-shadow {
+    border-top: none;
 }
