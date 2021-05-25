@@ -41,6 +41,8 @@ We currently support the following networks:
 | ----------------------------------- | --------- |
 | [Fuji C-Chain](/networks/avalanche) | `43113`   |
 | [Matic Mumbai](/networks/matic)     | `80001`   |
+| [Moonbeam Testnet Moonbase Alpha](/networks/moonbeam)     | `1287`   |
+| [Binance Smart Chain Testnet](/networks/bsc)     | `97`   |
 
 </TableWrap>
 

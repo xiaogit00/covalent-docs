@@ -25,6 +25,7 @@ description: Supporting a faster, cheaper, EVM-compatible network
 |Property|Value|
 |---|---|
 |BSC Mainnet chainId|`56`|
+|BSC Testnet chainId|`97`|
 |BSC Blockchain Explorer|https://bscscan.com/|
 |Block time|~5 seconds|
 
