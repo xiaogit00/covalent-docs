@@ -6,7 +6,7 @@ featuredImage: ../images/project-showcase/collectors-cafe-banner.png
 description: A social network to discover, exhibit and trade NFTs
 ---
 
-![Collectors Cafe Banner](../images/project-showcase/collectors-cafe-banner.png)
+![Collectors Cafe Banner](./images/collectors-cafe-banner.png)
 
 &nbsp;
 # Collectors Cafe

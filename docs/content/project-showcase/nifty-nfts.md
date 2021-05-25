@@ -6,7 +6,7 @@ featuredImage: ../images/project-showcase/nifty-nfts.png
 description: Twitter Bot showcasing inspiring NFTs and highlights the power of Covalent's API!
 ---
 
-![Nifty NFTs Banner](../images/project-showcase/nifty-nfts.png)
+![Nifty NFTs Banner](./images/nifty-nfts.png)
 
 &nbsp;
 # Nifty NFTs
@@ -37,5 +37,5 @@ The project was built as part of the Covalent [Alchemist](https://www.covalenthq
 ### Developers
 
 - Corina Pascu: *Discord - @snowdot#8235*
-- Samer Hader: *Discord - @GodSamix#6189*
+- Samer Haidar: *Discord - @GodSamix#6189*
 

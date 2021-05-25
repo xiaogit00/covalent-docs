@@ -1,9 +1,18 @@
 ---
-title: Querying with Primer (Beginner)
-order: 0
+title: Querying with Primer (Beg)
+updated: 2021-05-18
+type: "📝 Article"
+order: 1
+hidden: false
+author: gane5h
+description: Learn some of the basics of Primer
+tags: 
+  - Primer
+  - MongoDB
+  - Beginner
 ---
 
-import Prerequisites from "../../components/prerequisites.js";
+import Prerequisites from "../../../components/prerequisites.js";
 
 
 # Querying with Primer (Beginner)
@@ -13,11 +22,7 @@ import Prerequisites from "../../components/prerequisites.js";
 
 Covalent offers the query language **Primer** which makes it easy for users to further process and transform the records in the Covalent API responses for their custom use-cases. Although you can transform and process the records in Javascript or your spreadsheet of choice, learning to query using Primer will make your job much easier.
 
-Primer is currently available on these endpoints:
-
-1. [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
-2. [Get log events by topic hash(es)](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
-3. [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/)
+Primer is now available on ALL [Class A endpoints](https://www.covalenthq.com/docs/api/index.html#tag--Class-A):
 
 
 ## Primer intro
@@ -330,3 +335,4 @@ header: Query with dot notation
 By succesfuly completing this learning series, you would have been able to match/filter records from Covalent using a specific criteria as expressed with Primer's query syntax. Additionally, you have also used the dot notation query syntax to match/filter records based on embedded fields.
 
 Next in the series, we will learn how to use Primer's query operators.
+

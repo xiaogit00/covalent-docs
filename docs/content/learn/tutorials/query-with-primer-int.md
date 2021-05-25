@@ -1,6 +1,15 @@
 ---
-title: Querying with Primer (Intermediate)
-order: 1
+title: Querying with Primer (Int)
+updated: 2021-04-09
+type: "📝 Article"
+order: 2
+hidden: false
+author: gane5h
+description: Learn how to use Primer's comparison operators and combine query criteria to make compound queries
+tags: 
+  - Primer
+  - MongoDB
+  - Intermediate
 ---
 
 # Querying with Primer (Intermediate)
@@ -163,7 +172,7 @@ header: The less-than operator
 
 ### Select records using logical operators
 
-The following example retrieves all records from the transaction endpoint where the `gas_spent` field is between `50000` and `10000`:
+The following example retrieves all records from the transaction endpoint where the `gas_spent` field is between `50000` and `100000`:
 
 
 ```json

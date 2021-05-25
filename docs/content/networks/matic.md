@@ -2,11 +2,11 @@
 title: Polygon/Matic indexing & querying data API
 order: 2
 hidden: false
-featuredImage: ../images/networks/Matic.png
+featuredImage: ./images/Matic.png
 description: Working together to bring massive scale to Ethereum
 ---
 
-![Matic network banner](../images/networks/Matic.png)
+![Matic network banner](./images/Matic.png)
 
 # Polygon / Matic Network
 
@@ -26,7 +26,6 @@ The [Polygon / Matic Network](https://matic.network/) brings massive scale to Et
 |Matic Mumbai Testnet chainId|`80001`|
 |Matic Blockchain Explorer|https://explorer-mainnet.maticvigil.com/|
 |Block time|~1 second|
-|Date|~1 second|
 |Data refresh latency|~12 seconds|
 </TableWrap>
 

@@ -6,7 +6,7 @@ featuredImage: ../images/project-showcase/goswapp-banner.png
 description: The first defi app to bring the Uniswap And Pancakeswap trading experience to mobile phones.
 ---
 
-![GoSwapp Banner](../images/project-showcase/goswapp-banner.png)
+![GoSwapp Banner](./images/goswapp-banner.png)
 
 &nbsp;
 # GoSwapp

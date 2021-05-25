@@ -1,19 +1,26 @@
 ---
 title: Working with NFTs
-order: 2
+updated: 2021-04-25
+type: "📝 Article"
+order: 3
 hidden: false
-eaturedImage: ../images/working-with-nfts.png
+author: gane5h
+featuredImage: ./images/working-with-nfts.png
 description: Learn how to quickly extract detailed NFT data including balances, transactions with decoded log events and detailed metadata.
+tags:
+  - Class A
+  - Beginner
+  - NFT
 ---
 
-![Working with NFTs logo](../images/working-with-nfts.png)
+![Working with NFTs logo](./images/working-with-nfts.png)
 
 # Working with NFTs
 
 <Aside>
 
 **Outcome:** Learn how to quickly extract detailed NFT data including balances, transactions with decoded log events and detailed metadata using the Covalent API.
-
+Learn how to use Primer to achieve the above.
 </Aside>
 
 &nbsp;
@@ -159,6 +166,38 @@ This endpoint is helpful if you want to retrieve metadata for a particular NFT t
   "error_code": null
 }
 ```
+&nbsp;
+# Using Primer to query NFT data.
+
+Covalent offers the query language **Primer** which makes it easy for users to further process and transform the records in the Covalent API responses for their custom use-cases.
+
+You can read more about [Primer](/tutorials).
+
+You can use the simplest query parameter of Primer, `match` to return NFT token balances ONLY for an address. Querying the same address as above we have:
+
+**https://api.covalenthq.com/v1/1/address/0xe4605d46fd0b3f8329d936a8b258d69276cba264/balances_v2/?nft=true&match={$or:[{supports_erc:{$elemmatch:"erc721"}},{supports_erc:{$elemmatch:"erc1155"}}]}**
+
+The URL demonstrates a basic outlook on how to write a Primer query. The endpoint queried is the `Get Token Balances for Address` endpoint. It takes the following parameters:
+- Set `nft=true`
+- A Primer `match` query which takes the `$or` condition to filter the response by checking for elements (`$elemmatch`) which match `erc721` and `erc1155` NFT tokens.
+
+```json
+match={
+        "$or":[
+              {
+                "supports_erc":
+                  {"$elemmatch":"erc721"}
+              },
+              {
+                "supports_erc":
+                  {"$elemmatch":"erc1155"}
+              }
+           ]
+      }
+```
+
+
+&nbsp;
 
 # FAQ
 
