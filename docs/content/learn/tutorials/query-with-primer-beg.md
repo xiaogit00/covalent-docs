@@ -1,6 +1,6 @@
 ---
 title: Querying with Primer (Beg)
-updated: 2021-03-09
+updated: 2021-05-18
 type: "📝 Article"
 order: 1
 hidden: false
@@ -22,11 +22,7 @@ import Prerequisites from "../../../components/prerequisites.js";
 
 Covalent offers the query language **Primer** which makes it easy for users to further process and transform the records in the Covalent API responses for their custom use-cases. Although you can transform and process the records in Javascript or your spreadsheet of choice, learning to query using Primer will make your job much easier.
 
-Primer is currently available on these endpoints:
-
-1. [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
-2. [Get log events by topic hash(es)](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
-3. [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/)
+Primer is now available on ALL [Class A endpoints](https://www.covalenthq.com/docs/api/index.html#tag--Class-A):
 
 
 ## Primer intro
