@@ -22,8 +22,7 @@ https://ethhole.link
 
 &nbsp;
 ### Use of Covalent API
-convenient for getting tokens info with price in an address https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/balances_v2/ in JSON format. Covalent API is suppoer convinient when you need bootstrap a project with plenty addresses,
-its save lots of effort to query balances of each token, and find related prices
+EthHole is convenient for getting tokens info with price in an address. Using the Covalent API endpoint `Get token balances for address` returning responses in JSON format. Covalent API was super convenient in bootstrapping the project as they needed to handle multiple addresses, it saved lots of effort to query balances of each token, and find related prices.
 
 &nbsp;
 ### Event

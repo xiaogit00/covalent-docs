@@ -22,7 +22,7 @@ https://coinport.fi
 
 &nbsp;
 ### Use of Covalent API
-We grabbed user token balances as JSON, we also use it to get the individual pool balances.
+CoinPort returns user token balances as JSON, using the `Get token balances for address` the team also returns the individual pool balances.
 
 &nbsp;
 ### Event
