@@ -2,14 +2,14 @@
 title: NFTree
 order: 8
 hidden: false
-featuredImage: ./images/nftree.png
+featuredImage: ../images/project-showcase/nftree.png
 description: This project allows users to save and invest crypto in a fun new way and create NFT art at the same time.
 ---
 
-![NFTree Banner](./images/nftree.png)
+![NFTree Banner](../images/project-showcase/nftree.png)
 
 &nbsp;
-# NFTree
+# Nifty NFTs
 
 ### Website
 https://nftreetoken.com/
@@ -23,7 +23,7 @@ I love that it uses human inputs like ticker symbols and dates rather than contr
 
 &nbsp;
 ### Use of Covalent API
-Hitting API and getting json to convert block numbers to dates, get historical prices in date ranges. Used the Covalent API to get NFT holdings for an address to display images in wallet/gallery.
+Hitting API and getting json to convert block numbers to dates, get historical prices in date ranges. Used the COvalent API to get NFT holdings for an address to display images in wallet/gallert.
 
 &nbsp;
 ### Event

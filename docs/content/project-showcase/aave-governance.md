@@ -2,7 +2,7 @@
 title: Aave Governance
 order: 5
 hidden: false
-featuredImage: ./images/aave-governance-banner.png
+featuredImage: ../images/project-showcase/aave-governance-banner.png
 description: A governance dashboard for the Aave Protocol
 ---
 

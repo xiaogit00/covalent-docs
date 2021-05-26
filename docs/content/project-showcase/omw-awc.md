@@ -2,14 +2,14 @@
 title: Avalanche Wallet Checker
 order: 9
 hidden: false
-featuredImage: ./images/omw-awc.png
+featuredImage: ../images/project-showcase/omw-awc.png
 description: Avalanche wallet address checker built to learn about NFT in blockchain on Ethereum like C-Chain of Avalanche
 ---
 
-![Avalanche Wallet Checker Banner](./images/omw-awc.png)
+![Collectors Cafe Banner](../images/project-showcase/omw-awc.png)
 
 &nbsp;
-# Avalanche Wallet Checker
+# Collectors Cafe
 
 ### Website
 https://onemillionwallets.aurelienfoucault.fr/
