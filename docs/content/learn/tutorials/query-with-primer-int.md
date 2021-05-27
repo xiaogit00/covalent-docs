@@ -216,7 +216,7 @@ header: Comparisons operators on datetimes
 
 ## Access array elements
 
-### Dot operator to access to elements on an array in the result
+### Dot notation to access an element at a particular index on an array
 
 You can use the dot notation to access an array by index. For example, you can access the second parameter of a decoded event:
 
