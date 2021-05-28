@@ -205,7 +205,7 @@ The comparison operators also work with date time values. Here's an example of s
 
 ```json
 ---
-header: Compariosn operators on datetimes
+header: Comparisons operators on datetimes
 ---
 {
     "block_signed_at": {
@@ -214,3 +214,17 @@ header: Compariosn operators on datetimes
 }
 ```
 
+## Access array elements
+
+### Dot notation to access an element at a particular index on an array
+
+You can use the dot notation to access an array by index. For example, you can access the second parameter of a decoded event:
+
+```json
+---
+header: Access the second element of the params array and only return result if value is 120000
+---
+{
+    "decoded.params.1.value": 120000      
+}
+```
