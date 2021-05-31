@@ -4,7 +4,7 @@ updated: 2021-05-27
 type: "📝 Article"
 order: 3
 hidden: false
-author: gane5h
+author: Dennis
 description: Learn how to query historical aave borrow rate with primer
 tags: 
   - Primer
@@ -23,18 +23,14 @@ In this guide, we want to get the historical borrow rates for Aave Markets acros
 
 ## Primer URL Syntax
 
-For reference, we have the following top-level query parameters.
+For reference, we will use the following top-level query parameters as shown below. The rest of the top-level query parameters are available [here](https://www.covalenthq.com/docs/learn/tutorials/query-with-primer-beg)
 
 <TableWrap>
 
 |Name|Description|
 |---|---|
-|primer|Records enter a multi-stage pipeline that transforms the records into aggregated results. Supports `$group` and `Aggregation` operators.|
 |match|Filters the records to pass only the documents that match the specified condition(s).|
 |group|Groups input elements by the specified _id expression and for each distinct grouping, outputs an element. Grouping by _date_ operators is also possible.|
-|sort|Sorts all input records and returns them in ascending or descending sorted order.|
-|skip|Skips over the specified number of records|
-|limit|Limits the number of records.|
 
 </TableWrap>
 
@@ -46,7 +42,7 @@ This is the Log Events endpoint. We set `topic` to `0x804c9b842b2748a22bb64b3454
 `Reserve Data Updated` is an event in Aave that for everytime you borrow something or you lend something, Aave updates the reserve data and this updates the variable borrow rate. 
 
 
-Now, let's add Primer to the endpoint `primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$sum":"decoded.params.3.value"}}}]`
+Now, let's add Primer to the endpoint `primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$avg":"decoded.params.3.value"}}}]`
 
 Here is a better look at the Primer Query.
 
@@ -54,7 +50,7 @@ Here is a better look at the Primer Query.
 ---
 header: Primer Query Parameters
 ---
-// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12000000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$sum":"decoded.params.3.value"}}}]
+// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12000000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$avg":"decoded.params.3.value"}}}]
 [
    {
       "$match": {
@@ -87,7 +83,7 @@ header: Primer Query Parameters
             "$sum": 1
          },
          "variable_borrow_rate": {
-            "$sum": "decoded.params.3.value"
+            "$avg": "decoded.params.3.value"
          }
       }
    }
@@ -114,8 +110,7 @@ We can do this by using `decoded.params.0.value` which accesses the value of the
 }
 ```
 
-After, we can count how many times that data was updated at that particular reserve. We can group it by year, month, day, hour, minutes and seconds using Primer's top-level query parameter `$group`. We will also add up all values of the variable borrow rate corresponding to that
-particular reserve using Primer's Aggregation `$sum`.
+After, we can count how many times that data was updated at that particular reserve. We can group it by year, month, day, hour, minutes and seconds using Primer's top-level query parameter `$group`. We will then compute the average from all values of the variable borrow rate corresponding to that particular reserve using Primer's Aggregation `$avg`.
 
 ```json
 {
@@ -144,7 +139,7 @@ particular reserve using Primer's Aggregation `$sum`.
             "$sum": 1
          },
          "variable_borrow_rate": {
-            "$sum": "decoded.params.3.value"
+            "$avg": "decoded.params.3.value"
          }
       }
    }
@@ -156,9 +151,10 @@ particular reserve using Primer's Aggregation `$sum`.
 There you have it! We have gotten the historical borrow rates for Aave Markets. This is the result after using Primer to filter out the API response. 
 
 ```json
+// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12000000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$avg":"decoded.params.3.value"}}}]
 {
     "data": {
-        "updated_at": "2021-05-28T21:33:33.906752197Z",
+        "updated_at": "2021-05-31T00:36:38.813786470Z",
         "items": [
             {
                 "id": {
@@ -169,7 +165,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 1234,
                     "secondOfDay": 74055
                 },
-                "variable_borrow_rate": 2.158009962204262E26,
+                "variable_borrow_rate": 1.079004981102131E26,
                 "count": 2.0
             },
             {
@@ -301,7 +297,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 1276,
                     "secondOfDay": 76586
                 },
-                "variable_borrow_rate": 3.6243599371896806E26,
+                "variable_borrow_rate": 1.2081199790632268E26,
                 "count": 3.0
             },
             {
@@ -361,7 +357,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 1305,
                     "secondOfDay": 78348
                 },
-                "variable_borrow_rate": 2.352544226236079E26,
+                "variable_borrow_rate": 1.1762721131180395E26,
                 "count": 2.0
             },
             {
@@ -457,7 +453,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 1324,
                     "secondOfDay": 79450
                 },
-                "variable_borrow_rate": 4.223144998985634E26,
+                "variable_borrow_rate": 1.407714999661878E26,
                 "count": 3.0
             },
             {
@@ -673,7 +669,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 19,
                     "secondOfDay": 1182
                 },
-                "variable_borrow_rate": 3.6460506649100444E26,
+                "variable_borrow_rate": 1.8230253324550222E26,
                 "count": 2.0
             },
             {
@@ -889,7 +885,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 132,
                     "secondOfDay": 7938
                 },
-                "variable_borrow_rate": 4.016378620428013E26,
+                "variable_borrow_rate": 2.0081893102140065E26,
                 "count": 2.0
             },
             {
@@ -901,7 +897,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 137,
                     "secondOfDay": 8223
                 },
-                "variable_borrow_rate": 4.0278331896227716E26,
+                "variable_borrow_rate": 2.0139165948113858E26,
                 "count": 2.0
             },
             {
@@ -1225,7 +1221,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 313,
                     "secondOfDay": 18802
                 },
-                "variable_borrow_rate": 5.213424418761858E26,
+                "variable_borrow_rate": 2.606712209380929E26,
                 "count": 2.0
             },
             {
@@ -1237,7 +1233,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 323,
                     "secondOfDay": 19396
                 },
-                "variable_borrow_rate": 5.211335484892029E26,
+                "variable_borrow_rate": 2.6056677424460145E26,
                 "count": 2.0
             },
             {
@@ -1321,7 +1317,7 @@ There you have it! We have gotten the historical borrow rates for Aave Markets. 
                     "minuteOfDay": 331,
                     "secondOfDay": 19906
                 },
-                "variable_borrow_rate": 4.811502533676487E26,
+                "variable_borrow_rate": 2.4057512668382434E26,
                 "count": 2.0
             },
             {
