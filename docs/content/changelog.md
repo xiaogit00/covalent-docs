@@ -12,7 +12,6 @@ Every change to our API matters and reflects our belief in one of the following 
 - `<no-code>` - support for non-devs
 
 &nbsp;
-<<<<<<< HEAD
 
 ## 2021-05-31
 ### Added
@@ -52,11 +51,11 @@ Added annualized fee field. `<data-accessibility>`
 
 
 &nbsp;
+
 ## 2021-04-30
 ### Added
 
 - Pricing Endpoint - Get historical prices by addresses v2 `<data-accessibility>`
-
 
 - Class B Endpoint - GET Pancakeswap V2 network assets -  Return a paginated list of Pancake V2 pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included. `<data-accessibility>`
 - Class B Endpoint - GET Pancakeswap V2 address exchange balances - Gets Pancakeswap V2 address exchange balances. `<data-accessibility>`
@@ -77,33 +76,6 @@ Added annualized fee field. `<data-accessibility>`
 
 - PricingService - Historical Prices - ensure that yesterday is populated when we transition into today using UTC [Issue-557](https://github.com/covalenthq/scout/issues/557)
 
-=======
-## 2021-04-30
-### Added
-
-- Pricing Endpoint - Get historical prices by addresses v2 `<data-accessibility>`
-
-
-- Class B Endpoint - GET Pancakeswap V2 network assets -  Return a paginated list of Pancake V2 pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included. `<data-accessibility>`
-- Class B Endpoint - GET Pancakeswap V2 address exchange balances - Gets Pancakeswap V2 address exchange balances. `<data-accessibility>`
-- Class B Endpoint - GET Pancakeswap V2 address exchange liquidity transactions - Gets Pancakeswap V2 address exchange liquidity transactions  `<data-accessibility>`
-
-
-- Class B Endpoint - GET Pancakeswap network assets -  Return a paginated list of Pancake pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included. `<data-accessibility>`
-- Class B Endpoint - GET Pancakeswap address exchange balances - Gets Pancakeswap address exchange balances. `<data-accessibility>`
-- Class B Endpoint - GET Pancakeswap address exchange liquidity transactions - Gets Pancakeswap address exchange liquidity transactions. `<data-accessibility>` 
-
-- Class A Endpoint -  GET Block Height `block_v2` `<data-accessibility>`
-
-- Added Support for Zora NFTs `<data-accessibility>`
-
-### Fixed
-
-- Fix `TokenBalanceService` - Use PricingServiceV2 quote rates [Issue-594](https://github.com/covalenthq/scout/issues/594)
-
-- PricingService - Historical Prices - ensure that yesterday is populated when we transition into today using UTC [Issue-557](https://github.com/covalenthq/scout/issues/557)
-
->>>>>>> 031904788118114bcef1b8875f92b0f724e32b2c
 - Fix `TokenBalanceService` and `TokenTransferService` in Avalanche portfolio returns http 500 error message. [Issue-530](https://github.com/covalenthq/scout/issues/530)
 
 - Fix parameterize pancake swap by setting Switch chain_id for the router [Issue-527](https://github.com/covalenthq/scout/issues/527)
@@ -118,10 +90,10 @@ Added annualized fee field. `<data-accessibility>`
 
 - Fix Primer Exceptions should be typed: Primer exceptions are now less generic. Most of them are JSONParseExceptions but we also created a few more specific ones for other cases. [Issue-332](https://github.com/covalenthq/scout/issues/332)
 
-
 - Primer enabled on all class A endpoints. Added two query parameters: `match` - to filter responses. `primer` - to filter, aggregate, sort, limit responses. [Issue-323](https://github.com/covalenthq/scout/issues/323)
 
 &nbsp;
+
 ## 2021-03-30
 ### Added
 
