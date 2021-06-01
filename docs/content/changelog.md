@@ -29,11 +29,12 @@ Every change to our API matters and reflects our belief in one of the following 
 
 - Added Contract MetaData info to be returned on queries to Transaction Endpoint. `<data-accessibility>`
 
-- PancakeSwap - Added BNB as a fiat/quote_currency. 
-Added new PancakeSwap endpoint for filtering by a token.
-Added 7-day volume fields in assets endpoint.
-Added new endpoint to calculate list of PancakeSwap exchange tokens.
-Added annualized fee field. `<data-accessibility>`
+- PancakeSwap 
+    - Added BNB as a fiat/quote_currency. 
+    - Added new PancakeSwap endpoint for filtering by a token.
+    - Added 7-day volume fields in assets endpoint.
+    - Added new endpoint to calculate list of PancakeSwap exchange tokens.
+    - Added annualized fee field. `<data-accessibility>`
 
 - Added `query param` for secondary `topics` filtering. `<data-accessibility>`
 
