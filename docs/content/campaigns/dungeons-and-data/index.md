@@ -1,6 +1,8 @@
 ---
 title: Dungeons & Data
 order: 2
+featuredImage: ./images/dnd_logo.png
+description: Industry-leading data science campaign
 ---
 
 # Dungeons & Data
