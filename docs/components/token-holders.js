@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Dropdown from 'react-dropdown';
-import { allChainData } from "./chain-info";
 import 'react-dropdown/style.css';
 import "../css/components/topic-calculator.css";
 
@@ -44,15 +43,13 @@ const TokenHolders = () => {
     if (response.ok) {
       const data = await response.json()
       for (var i = 0; i < data.data.items.length; i++) {
-        if (allChainData.has(Number(data.data.items[i].chain_id))) {
           temp[i] = {
             value: data.data.items[i].chain_id,
-            label: allChainData.get(Number(data.data.items[i].chain_id)).chain_name
-          }
-        }  
+            label: data.data.items[i].label
+          } 
       }
-      setChainData(temp);
-    } 
+      setChainData(temp); 
+    }
   }
 
   const handleNetwork = (e) => {
