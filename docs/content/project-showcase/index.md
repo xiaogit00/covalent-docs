@@ -56,10 +56,6 @@ Our ecosystem of community developers continue to astonish us with their creativ
 &nbsp;
 ## Alchemists Buidlers
 ### [Nifty NFTS](/project-showcase/nifty-nfts)
-[![Nifty NFTs](../images/project-showcase/nifty-nfts.png)](/project-showcase/nifty-nfts)
+[![Nifty NFTs](./images/nifty-nfts.png)](/project-showcase/nifty-nfts)
 
 &nbsp;
-## Alchemists Buidlers
-### [Nifty NFTS](/project-showcase/nifty-nfts)
-![Nifty NFTs](../images/project-showcase/nifty-nfts.png)
-
