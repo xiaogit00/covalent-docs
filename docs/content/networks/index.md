@@ -39,10 +39,11 @@ We currently support the following networks:
 
 | Network                             | `chainId` |
 | ----------------------------------- | --------- |
+| [Ethereum Kovan](/networks/ethereum) | `42`   |
 | [Fuji C-Chain](/networks/avalanche) | `43113`   |
 | [Matic Mumbai](/networks/matic)     | `80001`   |
 | [Moonbeam Testnet Moonbase Alpha](/networks/moonbeam)     | `1287`   |
-| [Binance Smart Chain Testnet](/networks/bsc)     | `97`   |
+| [Binance Smart Chain](/networks/bsc)     | `97`   |
 
 </TableWrap>
 
