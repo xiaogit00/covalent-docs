@@ -24,6 +24,8 @@ In this guide, we want to get the historical borrow rates for `Aave v2 Markets` 
 
 </Aside>
 
+![Graphical Display](./images/DAI_Borrow_Rate_For_Last_10_days.png)
+
 ## Primer URL Syntax
 
 For reference, we will use the following top-level query parameters as shown below. The rest of the top-level query parameters are available [here](https://www.covalenthq.com/docs/learn/tutorials/query-with-primer-beg)
@@ -75,7 +77,7 @@ We can also change the blockchain ID and the contract address and get the histor
 From Etherscan, the current Ethereum mainnet block height, as of "2021-06-01T17:31:52Z" is 12551266. For the ending-block field, we can use the value latest to ensure we get data up to the latest block height.
 
 
-After feeding the parameters, this is what the endpoint looks like [https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_abc](https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_abc). 
+After feeding the parameters, this is what the endpoint looks like [https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_docs](https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_docs). 
 
 Our response from the Covalent API looks something like this (only first couple records shown):
 
@@ -250,9 +252,6 @@ Quick reference, these are the Primer's Date Aggregation (Available within `$gro
 |`$year`|Returns the year portion of a date.|
 |`$month`|Returns the month of a year as a number between 1 and 12.|
 |`$dayOfMonth`|Returns the day of the month as a number between 1 and 31.|
-|`$hourOfDay`|Returns the hour of a day as a number between 0 and 23.|
-|`$minuteOfDay`|Returns the minute of a day as a number between 0 and 1439.|
-|`$secondOfDay`|Returns the second of a day as a number between 0 and 86400.|
 
 </TableWrap>
 
@@ -271,7 +270,7 @@ With all that in mind, let's add Primer to the endpoint
 ---
 header: Primer Query Parameters
 ---
-// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$avg":"decoded.params.3.value"}}}]&key=ckey_abc
+// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{%22$match%22:{%22decoded.params.0.value%22:%220x6b175474e89094c44da98b954eedeac495271d0f%22}},{%22$group%22:{%22_id%22:{%22year%22:{%22$year%22:%22block_signed_at%22},%22month%22:{%22$month%22:%22block_signed_at%22},%22day%22:{%22$dayOfMonth%22:%22block_signed_at%22}},%22count%22:{%22$sum%22:1},%22variable_borrow_rate%22:{%22$avg%22:%22decoded.params.3.value%22}}}]&key=ckey_docs
 [
    {
       "$match": {
@@ -289,15 +288,6 @@ header: Primer Query Parameters
             },
             "day": {
                "$dayOfMonth": "block_signed_at"
-            },
-            "hour": {
-               "$hourOfDay": "block_signed_at"
-            },
-            "minuteOfDay": {
-               "$minuteOfDay": "block_signed_at"
-            },
-            "secondOfDay": {
-               "$secondOfDay": "block_signed_at"
             }
          },
          "count": {
@@ -314,7 +304,7 @@ header: Primer Query Parameters
 
 ## Understanding how Primer filters historical borrow rates for Aave Markets
 
-Please reference this endpoint to understand what Primer is trying to filter for. [https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_abc](https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_abc)
+Please reference this endpoint to understand what Primer is trying to filter for. [https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_docs](https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&key=ckey_docs)
 
 
 Reference above, we want to filter out a reserve, in this case we have chosen `0x6b175474e89094c44da98b954eedeac495271d0f` which is a DAI stable coin. A reserve is the address of the underlying asset of the reserve.  
@@ -331,7 +321,7 @@ We can do this by using `decoded.params.0.value` which accesses the value of the
 }
 ```
 
-After, we can count how many times that data was updated at that particular reserve using Primer's Aggregation `$sum`. We can group it by year, month, day, hour, minutes and seconds using Primer's top-level query parameter `$group`. We will then compute the average from all values of the variable borrow rate corresponding to that particular reserve using Primer's Aggregation `$avg`.
+After, we can count how many times that data was updated at that particular reserve using Primer's Aggregation `$sum`. We can group it by year, month, and day using Primer's top-level query parameter `$group`. We will then compute the average from all values of the variable borrow rate corresponding to that particular reserve using Primer's Aggregation `$avg`.
 
 ```json
 {
@@ -345,15 +335,6 @@ After, we can count how many times that data was updated at that particular rese
             },
             "day": {
                "$dayOfMonth": "block_signed_at"
-            },
-            "hour": {
-               "$hourOfDay": "block_signed_at"
-            },
-            "minuteOfDay": {
-               "$minuteOfDay": "block_signed_at"
-            },
-            "secondOfDay": {
-               "$secondOfDay": "block_signed_at"
             }
          },
          "count": {
@@ -382,1210 +363,109 @@ What is returned:
 </Aside>
 
 ```json
-// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{"$match":{"decoded.params.0.value":"0x6b175474e89094c44da98b954eedeac495271d0f"}},{"$group":{"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"},"minuteOfDay":{"$minuteOfDay":"block_signed_at"},"secondOfDay":{"$secondOfDay":"block_signed_at"}},"count":{"$sum":1},"variable_borrow_rate":{"$avg":"decoded.params.3.value"}}}]&key=ckey_abc
+// https://api.covalenthq.com/v1/1/events/topics/0x804c9b842b2748a22bb64b345453a3de7ca54a6ca45ce00d415894979e22897a/?starting-block=12500000&ending-block=latest&sender-address=0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9&primer=[{%22$match%22:{%22decoded.params.0.value%22:%220x6b175474e89094c44da98b954eedeac495271d0f%22}},{%22$group%22:{%22_id%22:{%22year%22:{%22$year%22:%22block_signed_at%22},%22month%22:{%22$month%22:%22block_signed_at%22},%22day%22:{%22$dayOfMonth%22:%22block_signed_at%22}},%22count%22:{%22$sum%22:1},%22variable_borrow_rate%22:{%22$avg%22:%22decoded.params.3.value%22}}}]&key=ckey_docs
 {
   "data": {
-    "updated_at": "2021-06-01T21:52:26.529672492Z",
+    "updated_at": "2021-06-03T20:35:45.432451418Z",
     "items": [
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1398,
-          "secondOfDay": 83906
+          "day": 24
         },
-        "variable_borrow_rate": 3.879150133419968e+25,
-        "count": 1.0
+        "variable_borrow_rate": 3.886201304093548e+25,
+        "count": 26.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1401,
-          "secondOfDay": 84096
+          "day": 25
         },
-        "variable_borrow_rate": 3.8921211840774505e+25,
-        "count": 2.0
+        "variable_borrow_rate": 3.879000666476045e+25,
+        "count": 349.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1402,
-          "secondOfDay": 84153
+          "day": 26
         },
-        "variable_borrow_rate": 3.875405390666916e+25,
-        "count": 1.0
+        "variable_borrow_rate": 3.889214780074118e+25,
+        "count": 297.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1403,
-          "secondOfDay": 84183
+          "day": 27
         },
-        "variable_borrow_rate": 3.89186192070371e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.640587159027803e+25,
+        "count": 327.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1404,
-          "secondOfDay": 84240
+          "day": 28
         },
-        "variable_borrow_rate": 3.870630017747742e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.06120627967394e+25,
+        "count": 314.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1406,
-          "secondOfDay": 84395
+          "day": 29
         },
-        "variable_borrow_rate": 3.891768066862186e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.006701953684034e+25,
+        "count": 270.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1406,
-          "secondOfDay": 84400
+          "day": 30
         },
-        "variable_borrow_rate": 3.891767660584495e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.1062287935383295e+25,
+        "count": 282.0
       },
       {
         "id": {
           "year": 2021,
           "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1407,
-          "secondOfDay": 84421
+          "day": 31
         },
-        "variable_borrow_rate": 3.8644622176549773e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.600270904928996e+25,
+        "count": 283.0
       },
       {
         "id": {
           "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1408,
-          "secondOfDay": 84532
-        },
-        "variable_borrow_rate": 3.864464148932104e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1409,
-          "secondOfDay": 84551
-        },
-        "variable_borrow_rate": 3.89073400262501e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1410,
-          "secondOfDay": 84634
-        },
-        "variable_borrow_rate": 3.8567451266008e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1412,
-          "secondOfDay": 84741
-        },
-        "variable_borrow_rate": 3.889797797493098e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1413,
-          "secondOfDay": 84821
-        },
-        "variable_borrow_rate": 3.890465019094867e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1417,
-          "secondOfDay": 85043
-        },
-        "variable_borrow_rate": 3.891663579469018e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1418,
-          "secondOfDay": 85101
-        },
-        "variable_borrow_rate": 3.89202722027799e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1418,
-          "secondOfDay": 85138
-        },
-        "variable_borrow_rate": 3.8924686798359035e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1421,
-          "secondOfDay": 85269
-        },
-        "variable_borrow_rate": 3.889814398520134e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1422,
-          "secondOfDay": 85357
-        },
-        "variable_borrow_rate": 3.889840632923453e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1423,
-          "secondOfDay": 85421
-        },
-        "variable_borrow_rate": 3.891392317124788e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1425,
-          "secondOfDay": 85513
-        },
-        "variable_borrow_rate": 3.893492327861948e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 24,
-          "hour": 23,
-          "minuteOfDay": 1431,
-          "secondOfDay": 85887
-        },
-        "variable_borrow_rate": 3.893492743911589e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 1,
-          "secondOfDay": 110
-        },
-        "variable_borrow_rate": 3.893997895209308e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 3,
-          "secondOfDay": 181
-        },
-        "variable_borrow_rate": 3.8940131079198475e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 10,
-          "secondOfDay": 645
-        },
-        "variable_borrow_rate": 3.894797816503824e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 12,
-          "secondOfDay": 757
-        },
-        "variable_borrow_rate": 3.89478390943628e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 19,
-          "secondOfDay": 1176
-        },
-        "variable_borrow_rate": 3.895568847830933e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 22,
-          "secondOfDay": 1320
-        },
-        "variable_borrow_rate": 3.8958213383170915e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 22,
-          "secondOfDay": 1328
-        },
-        "variable_borrow_rate": 3.8966060457058414e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 24,
-          "secondOfDay": 1449
-        },
-        "variable_borrow_rate": 3.897391092384924e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 25,
-          "secondOfDay": 1537
-        },
-        "variable_borrow_rate": 3.898262780553528e+25,
-        "count": 3.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 31,
-          "secondOfDay": 1869
-        },
-        "variable_borrow_rate": 3.898241449878913e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 34,
-          "secondOfDay": 2092
-        },
-        "variable_borrow_rate": 3.898257582468607e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 49,
-          "secondOfDay": 2945
-        },
-        "variable_borrow_rate": 3.898038303797787e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 56,
-          "secondOfDay": 3374
-        },
-        "variable_borrow_rate": 3.898048877136657e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 0,
-          "minuteOfDay": 56,
-          "secondOfDay": 3394
-        },
-        "variable_borrow_rate": 3.898063601267551e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 64,
-          "secondOfDay": 3840
-        },
-        "variable_borrow_rate": 3.898056224608564e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 65,
-          "secondOfDay": 3944
-        },
-        "variable_borrow_rate": 3.897856995880074e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 65,
-          "secondOfDay": 3949
-        },
-        "variable_borrow_rate": 3.8973608033433715e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 68,
-          "secondOfDay": 4088
-        },
-        "variable_borrow_rate": 3.897411436627493e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 73,
-          "secondOfDay": 4397
-        },
-        "variable_borrow_rate": 3.89723864760894e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 76,
-          "secondOfDay": 4601
-        },
-        "variable_borrow_rate": 3.897119884338404e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 78,
-          "secondOfDay": 4694
-        },
-        "variable_borrow_rate": 3.896962627941463e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 81,
-          "secondOfDay": 4916
-        },
-        "variable_borrow_rate": 3.8890088333921555e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 82,
-          "secondOfDay": 4931
-        },
-        "variable_borrow_rate": 3.888983420682211e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 86,
-          "secondOfDay": 5176
-        },
-        "variable_borrow_rate": 3.888809027657363e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 90,
-          "secondOfDay": 5435
-        },
-        "variable_borrow_rate": 3.888746786065787e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 93,
-          "secondOfDay": 5604
-        },
-        "variable_borrow_rate": 3.888745011788024e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 94,
-          "secondOfDay": 5664
-        },
-        "variable_borrow_rate": 3.888639099470259e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 94,
-          "secondOfDay": 5672
-        },
-        "variable_borrow_rate": 3.888740044679757e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 95,
-          "secondOfDay": 5706
-        },
-        "variable_borrow_rate": 3.888563414921824e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 95,
-          "secondOfDay": 5755
-        },
-        "variable_borrow_rate": 3.888542564704985e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 96,
-          "secondOfDay": 5795
-        },
-        "variable_borrow_rate": 3.888290677583152e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 99,
-          "secondOfDay": 5980
-        },
-        "variable_borrow_rate": 3.888044347260161e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 103,
-          "secondOfDay": 6205
-        },
-        "variable_borrow_rate": 3.886760526020513e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 105,
-          "secondOfDay": 6313
-        },
-        "variable_borrow_rate": 3.886572431761168e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 1,
-          "minuteOfDay": 109,
-          "secondOfDay": 6576
-        },
-        "variable_borrow_rate": 3.886079147683127e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 120,
-          "secondOfDay": 7255
-        },
-        "variable_borrow_rate": 3.8859961146917245e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 134,
-          "secondOfDay": 8065
-        },
-        "variable_borrow_rate": 3.885316168834514e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 138,
-          "secondOfDay": 8310
-        },
-        "variable_borrow_rate": 3.88531644228531e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 138,
-          "secondOfDay": 8313
-        },
-        "variable_borrow_rate": 3.8848486716963e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 140,
-          "secondOfDay": 8458
-        },
-        "variable_borrow_rate": 3.88426261542778e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 142,
-          "secondOfDay": 8577
-        },
-        "variable_borrow_rate": 3.883483795365911e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 143,
-          "secondOfDay": 8596
-        },
-        "variable_borrow_rate": 3.883414200442297e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 144,
-          "secondOfDay": 8674
-        },
-        "variable_borrow_rate": 3.883148258487292e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 145,
-          "secondOfDay": 8732
-        },
-        "variable_borrow_rate": 3.883096985571517e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 149,
-          "secondOfDay": 8985
-        },
-        "variable_borrow_rate": 3.883077096210029e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 150,
-          "secondOfDay": 9019
-        },
-        "variable_borrow_rate": 3.882877754415074e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 150,
-          "secondOfDay": 9026
-        },
-        "variable_borrow_rate": 3.8828342983879325e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 153,
-          "secondOfDay": 9214
-        },
-        "variable_borrow_rate": 3.882815346022951e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 154,
-          "secondOfDay": 9283
-        },
-        "variable_borrow_rate": 3.882805337639939e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 154,
-          "secondOfDay": 9289
-        },
-        "variable_borrow_rate": 3.8828083699826605e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 159,
-          "secondOfDay": 9593
-        },
-        "variable_borrow_rate": 3.882813752326817e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 162,
-          "secondOfDay": 9755
-        },
-        "variable_borrow_rate": 3.882791235973704e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 166,
-          "secondOfDay": 9976
-        },
-        "variable_borrow_rate": 3.882576072427745e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 167,
-          "secondOfDay": 10035
-        },
-        "variable_borrow_rate": 3.8825683632385505e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 2,
-          "minuteOfDay": 171,
-          "secondOfDay": 10270
-        },
-        "variable_borrow_rate": 3.88255981244673e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 181,
-          "secondOfDay": 10893
-        },
-        "variable_borrow_rate": 3.882346725106794e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 183,
-          "secondOfDay": 10988
-        },
-        "variable_borrow_rate": 3.882342920249498e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 185,
-          "secondOfDay": 11141
-        },
-        "variable_borrow_rate": 3.882202106086252e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 186,
-          "secondOfDay": 11190
-        },
-        "variable_borrow_rate": 3.8820622783658446e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 186,
-          "secondOfDay": 11198
-        },
-        "variable_borrow_rate": 3.882063799892603e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 195,
-          "secondOfDay": 11714
-        },
-        "variable_borrow_rate": 3.881986046192135e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 197,
-          "secondOfDay": 11838
-        },
-        "variable_borrow_rate": 3.881974676976748e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 201,
-          "secondOfDay": 12088
-        },
-        "variable_borrow_rate": 3.8819654484734945e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 202,
-          "secondOfDay": 12179
-        },
-        "variable_borrow_rate": 3.881810663042514e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 209,
-          "secondOfDay": 12556
-        },
-        "variable_borrow_rate": 3.881791063629001e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 210,
-          "secondOfDay": 12653
-        },
-        "variable_borrow_rate": 3.882043262480889e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 215,
-          "secondOfDay": 12923
-        },
-        "variable_borrow_rate": 3.8825401523772294e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 3,
-          "minuteOfDay": 227,
-          "secondOfDay": 13672
-        },
-        "variable_borrow_rate": 3.8825488203000025e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 241,
-          "secondOfDay": 14465
-        },
-        "variable_borrow_rate": 3.8825553064452225e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 251,
-          "secondOfDay": 15061
-        },
-        "variable_borrow_rate": 3.882608590976547e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 252,
-          "secondOfDay": 15146
-        },
-        "variable_borrow_rate": 3.88123950027034e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 254,
-          "secondOfDay": 15254
-        },
-        "variable_borrow_rate": 3.881200492687993e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 255,
-          "secondOfDay": 15331
-        },
-        "variable_borrow_rate": 3.881215700854468e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 269,
-          "secondOfDay": 16181
-        },
-        "variable_borrow_rate": 3.881218112830658e+25,
-        "count": 2.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 281,
-          "secondOfDay": 16898
-        },
-        "variable_borrow_rate": 3.883568383403202e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 283,
-          "secondOfDay": 17025
-        },
-        "variable_borrow_rate": 3.883565811014332e+25,
-        "count": 1.0
-      },
-      {
-        "id": {
-          "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 288,
-          "secondOfDay": 17323
+          "month": 6,
+          "day": 1
         },
-        "variable_borrow_rate": 3.882736074142609e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.3261550223796084e+25,
+        "count": 277.0
       },
       {
         "id": {
           "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 289,
-          "secondOfDay": 17354
+          "month": 6,
+          "day": 2
         },
-        "variable_borrow_rate": 3.882745689821699e+25,
-        "count": 1.0
+        "variable_borrow_rate": 4.451015189994744e+25,
+        "count": 280.0
       },
       {
         "id": {
           "year": 2021,
-          "month": 5,
-          "day": 25,
-          "hour": 4,
-          "minuteOfDay": 299,
-          "secondOfDay": 17983
+          "month": 6,
+          "day": 3
         },
-        "variable_borrow_rate": 3.882757990629665e+25,
-        "count": 1.0
+        "variable_borrow_rate": 3.958298095888893e+25,
+        "count": 245.0
       }
     ],
     "pagination": null
