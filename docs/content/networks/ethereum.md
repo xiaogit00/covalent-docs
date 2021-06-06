@@ -38,6 +38,5 @@ Having the entire Ethereum Mainnet and Kovan Testnet indexed also means access t
 
 
 ### Infrastructure Providers
-The following provide infrastructure services for this blockchain network:
-* [Chainstack](../../service-providers/chainstack)
-* [Ankr](../../service-providers/ankr)
+The following Covalent service partners provide infrastructure for this blockchain network:
+* [Chainstack](../../service-partners/chainstack)

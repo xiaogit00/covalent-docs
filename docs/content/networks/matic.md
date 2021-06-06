@@ -97,6 +97,5 @@ Some example of mapped tokens:
 For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices.
 
 ### Infrastructure Providers
-The following provide infrastructure services for this blockchain network:
-* [Chainstack](../../service-providers/chainstack)
-* [Ankr](../../service-providers/ankr)
+The following Covalent service partners provide infrastructure for this blockchain network:
+* [Chainstack](../../service-partners/chainstack)
