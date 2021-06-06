@@ -1,11 +1,9 @@
 ---
 title: One Million Wallets
 order: 1
-featuredImage: ./images/omw-banner.png
-description: Industry-leading crypto-wallet design competition
 ---
-
 # One Million Wallets
+
 
 ![One Million Wallets Banner](./images/omw-banner.png)
 
