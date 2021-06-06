@@ -66,7 +66,35 @@ All __Class A__ endpoints are supported for the BSC mainnet. You can query eithe
 
 </Definitions>
 
+&nbsp;
+<Aside>
 
+Key __Class B__ endpoints for SushiSwap and PancakeSwap V2 are also supported for the BSC mainnet. Fetch all SushiSwap and PancakeSwap network assets, exchange liquidity transactions and balances. 
+
+</Aside>
+
+<Definitions>
+
+- `api.covalenthq.com/v1/{chainId}/networks/sushiswap/assets/` 
+  - Return a paginated list of Sushiswap pools sorted by exchange volume.
+
+- `api.covalenthq.com/v1/{chainId}/address/{address}/stacks/sushiswap/acts/` 
+  - Get Sushiswap address exchange liquidity transactions.
+
+- `api.covalenthq.com/v1/{chainId}/address/{address}/stacks/sushiswap/balances/` 
+  - Get Sushiswap address exchange balances. 
+
+- `api.covalenthq.com/v1/56/networks/pancakeswap_v2/assets/` 
+  - Return a paginated list of Pancake V2 pools sorted by exchange volume. Only pools with swaps in the last 24 hours are included.
+
+- `api.covalenthq.com/v1/56/networks/pancakeswap_v2/assets/{address}/` 
+  - Return detailed pool information for the specified pool address.
+
+- `api.covalenthq.com/v1/56/address/{address}/stacks/pancakeswap_v2/balances/` 
+  - Get Pancakeswap V2 address exchange balances.
+
+
+</Definitions>
 
 <a target="_blank" class="Button Button-is-docs-primary" href="https://www.covalenthq.com/docs/api/">Go to Covalent's API Reference</a>
 
