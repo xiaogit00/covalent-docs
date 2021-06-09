@@ -1,5 +1,4 @@
 import React from "react"
-import { allChainData } from "./chain-info";
 
 import "../css/components/topic-calculator.css"
 
@@ -31,10 +30,8 @@ class SQLApp extends React.Component {
       }
     }
     
-    _renderOptions = (chain_id) => {
-      if (allChainData.has(Number(chain_id))) {
-        return (<option value={allChainData.get(Number(chain_id)).dbname}>{allChainData.get(Number(chain_id)).chain_name}</option>);
-      }
+    _renderOptions = (db_schema_name, label) => {
+        return (<option value={db_schema_name}>{label}</option>);
     }
 
 
@@ -53,7 +50,7 @@ class SQLApp extends React.Component {
         />
 
         <select style={{marginRight: "1rem", height: 39}} onChange={this._inputChainId}>
-          {this.state.all_chains_data.map(o => this._renderOptions(o.chain_id))}
+          {this.state.all_chains_data.map(o => this._renderOptions(o.db_schema_name, o.label))}
         </select>
 
         <button onClick={this._clickNext} >Get event SQL!</button>

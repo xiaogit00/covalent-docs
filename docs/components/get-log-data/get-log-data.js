@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import "../../css/components/topic-calculator.css";
 import GetContractLogs from "./get-contract-logs";
 import GetTopicHashLogs from "./log-events-topic-hash";
-import { allChainData } from '../chain-info';
 import "./accordion.css";
 
 const GetLogs = () => {
@@ -25,15 +24,13 @@ const GetLogs = () => {
     if (response.ok) {
       const data = await response.json()
       for (var i = 0; i < data.data.items.length; i++) {
-        if (allChainData.has(Number(data.data.items[i].chain_id))) {
           temp[i] = {
             value: data.data.items[i].chain_id,
-            label: allChainData.get(Number(data.data.items[i].chain_id)).chain_name
+            label: data.data.items[i].label
           }
-        }  
-      }
-      setChainData(temp);
-    } 
+      } 
+      setChainData(temp); 
+    }
   }
 
 
