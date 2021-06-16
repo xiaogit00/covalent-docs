@@ -29,6 +29,7 @@ We currently support the following networks:
 | [Matic](/networks/matic)                 | `137`     |
 | [Fantom](/networks/fantom)               | `250`     |
 | [RSK](/networks/rsk)               | `30`     |
+| [Arbitrum](/networks/arbitrum)               | `42161`     |
 
 </TableWrap>
 
@@ -45,6 +46,7 @@ We currently support the following networks:
 | [Moonbeam Testnet Moonbase Alpha](/networks/moonbeam)     | `1287`   |
 | [Binance Smart Chain Testnet](/networks/bsc)     | `97`   |
 | [RSK Testnet](/networks/rsk)               | `31`     |
+| [Arbitrum Testnet](/networks/arbitrum)               | `421611`     |
 
 </TableWrap>
 
