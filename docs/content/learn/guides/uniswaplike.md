@@ -29,10 +29,10 @@ We at Covalent have generally built out custom *Class B* endpoints to provide ex
 <Aside>
 
 Current supported Uniswap clone `dexname`s include:
-* `quickswap`
 * `sushiswap`
-* `spiritswap`
+* `quickswap`
 * `pangolin`
+* `spiritswap`
 * `spookyswap`
 
 </Aside>
