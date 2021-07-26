@@ -12,3 +12,9 @@ hideChildren: false
 
 ## [GoSwapp](./goswapp)
 [![GoSwapp](../images/goswapp-banner.png)](./goswapp)
+
+## [SpiritSwap Overview](./spiritswap-overview)
+[![SpiritSwap Overview](../images/spiritswap-overview.png)](./spiritswap-overview)
+
+## [Dokodemodoa](./dokodemodoa)
+[![Dokodemodoa](../images/dokodemodoa.png)](./dokodemodoa)
