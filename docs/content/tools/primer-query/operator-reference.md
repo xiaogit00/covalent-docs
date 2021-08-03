@@ -411,11 +411,11 @@ primer=
 
 ##4.0 | Example usages of mathematical operators ($multiply, $divide, $subtract)
 
-Here are some examples on how to perform simple operations between numbers with $multiple, $divide and $subtract.
+Here are some examples on how to perform simple operations between numbers with `$multiple`, `$divide` and `$subtract`.
 
-Both $subtract and $divide can only take in two inputs as arguments, while $multiply can take in many inputs into an array.
+Both `$subtract` and `$divide` can only take in two inputs as arguments, while `$multiply` can take in many inputs into an array.
 
-Field name inputs must hold a number type and not string type, whille $subtract can accept both string type and number type, but the string type must only be date inputs.
+Field name inputs must hold a number type and not string type, whille `$subtract` can accept both string type and number type, but the string type must only be date inputs.
 
 group=
 ```json
