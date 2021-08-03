@@ -64,8 +64,8 @@ _Comparison by date objects is also available._
 |$avg|Averages all values with a specified value.|
 |$max|Determines maximum of a specified value.|
 |$min|Determines minimum of a specified value.|
-|$subtract|Determines minimum of a specified value.| 
-|$divide|Determines minimum of a specified value.| 
+|$subtract|Subtracts two numbers, or two dates, or date and number in milliseconds.| 
+|$divide|Divides two numbers and returns the quotient.| 
 |$multiply|Determines minimum of a specified value.| 
 |$toInt|Determines minimum of a specified value.|  
 |$concat|Determines minimum of a specified value.|                   
