@@ -411,6 +411,36 @@ primer=
 
 ##4.0 | Example usages of mathematical operators ($multiply, $divide, $subtract)
 
+Here are some examples on how to perform simple operations between numbers with $multiple, $divide and $subtract.
+
+Both $subtract and $divide can only take in two inputs as arguments, while $multiply can take in many inputs into an array.
+
+Field name inputs must hold a number type and not string type, whille $subtract can accept both string type and number type, but the string type must only be date inputs.
+
+group=
+```json
+{
+    "_id": "block_signed_at",
+    "product": {
+        "$multiply": [10, 100, 15]
+    },
+    "productWithFields": {
+        "$multiply": ["block_height", "log_offset", "tx_offset"]
+    },
+    "quotient": {
+        "$divide": ["tx_offset", 2]
+    },
+    "differenceBetweenDates": {
+        "$subtract": ["2021-08-03T21:51:36Z", "2021-07-03T06:23:43Z"]
+    },
+    "differenceBetweenNumbers": {
+        "$subtract": [10, 2]
+    }
+}
+```
+
+[https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=latest&key=ckey_key&group={"_id":"block_signed_at","product":{"$multiply":[10,100,15]},"productWithFields":{"$multiply":["block_height","log_offset","tx_offset"]},"quotient":{"$divide":["tx_offset",2]},"differenceBetweenDates":{"$subtract":["2021-08-03T21:51:36Z","2021-07-03T06:23:43Z"]},"differenceBetweenNumbers":{"$subtract":[10,2]}}](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=latest&key=ckey_key&group={"_id":"block_signed_at","product":{"$multiply":[10,100,15]},"productWithFields":{"$multiply":["block_height","log_offset","tx_offset"]},"quotient":{"$divide":["tx_offset",2]},"differenceBetweenDates":{"$subtract":["2021-08-03T21:51:36Z","2021-07-03T06:23:43Z"]},"differenceBetweenNumbers":{"$subtract":[10,2]}})
+
 ##4.1| Example usages of string concatenation with _$concat_
 
 The `$concat` operator takes in expressions in an array format and can only take in expressions that resolves to a string. If the the string is null or missing, `$concat` will return a `null`. 
