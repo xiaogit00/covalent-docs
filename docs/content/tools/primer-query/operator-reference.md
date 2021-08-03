@@ -66,9 +66,9 @@ _Comparison by date objects is also available._
 |$min|Determines minimum of a specified value.|
 |$subtract|Determines minimum of a specified value.| 
 |$divide|Determines minimum of a specified value.| 
-|$multiply|Determines minimum of a specified value.| 
-|$toInt|Determines minimum of a specified value.|  
-|$concat|Determines minimum of a specified value.|                   
+|$multiply|Multiplies numbers together and returns the result.| 
+|$toInt|Converts a value to an integer.|  
+|$concat|Concatenates strings together and returns the concatentated string as a result.|                   
 
 
 ##2.5 | Projection
