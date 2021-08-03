@@ -413,7 +413,52 @@ primer=
 
 ##4.1| Example usages of string concatenation with _$concat_
 
+The `$concat` operator takes in expressions in an array format and can only take in expressions that resolves to a string. If the the string is null or missing, `$concat` will return a `null`. 
+
+Let's concatenate the `block_signed_at` field with the the `tx_hash` to show when the the transaction hash was timestamped. 
+
+primer=
+```json
+[
+    {
+        "$match": {
+            "decoded.name": "Buy"
+        }
+    },
+    {
+        "$group": {
+            "_id": {
+                "buyer": "decoded.params.7.value"
+            },
+            "concatString": {
+                "$concat": ["block_signed_at", "-", "tx_hash"]
+            } 
+        }
+    }
+]
+```
+
+[https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}])
+
+
 ##4.2| Using $toInt
+
+The `$toInt` operator converts any valid expression that resolves to a number or a number value to an integer. If there are any `null` or `missing values`, `$toInt` will return a null value. The `$toInt` operator also converts hex values into integers. 
+
+Let's convert a token Id that is in hex format into an integer so we can see what the token Id value is. The token Id hex value format is located in index 2 of the `raw_log_topics` array.
+
+primer=
+```json
+[
+    {
+        "$match": {
+            "$toInt": "log_events.0.raw_log_topics.2"
+        }
+    }
+]
+```
+
+[https://api.covalenthq.com/v1/56/address/0x2d923e1e5992bc7a56fd090f23e3e687997af60a/transactions_v2/?key=ckey_e0...&page-number=2&page-size=2&primer=[{"$match":{"$toInt":"log_events.0.raw_log_topics.2"}}]](https://api.covalenthq.com/v1/56/address/0x2d923e1e5992bc7a56fd090f23e3e687997af60a/transactions_v2/?key=ckey_e0...&page-number=2&page-size=2&primer=[{"$match":{"$toInt":"log_events.0.raw_log_topics.2"}}])
 
 
 
