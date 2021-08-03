@@ -65,10 +65,10 @@ _Comparison by date objects is also available._
 |$max|Determines maximum of a specified value.|
 |$min|Determines minimum of a specified value.|
 |$subtract|Subtracts two numbers, or two dates, or date and number in milliseconds.| 
-|$divide|Divides two numbers and returns the quotient.| 
-|$multiply|Determines minimum of a specified value.| 
-|$toInt|Determines minimum of a specified value.|  
-|$concat|Determines minimum of a specified value.|                   
+|$divide|Divides two numbers and returns the quotient.|                   
+|$multiply|Multiplies numbers together and returns the result.| 
+|$toInt|Converts a value to an integer.|  
+|$concat|Concatenates strings together and returns the concatentated string as a result.|                   
 
 
 ##2.5 | Projection
