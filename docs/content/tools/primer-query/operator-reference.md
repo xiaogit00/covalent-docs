@@ -446,7 +446,7 @@ group=
 
 The `$pow` operator takes in two expressions. The first expression is the number and the second expression is the exponent. Raising 0 to the power of a negative exponent will return `Infinity`.  
 
-Let's convert a `eth` price to USD. The `89000000000000000` price is in WEI and `eth` has a contract decimal of `18`. So we need to divide the price in WEI by the power of `18`.
+Let's convert a `WEI` price to `eth`. The `89000000000000000` price is in WEI and `eth` has a contract decimal of `18`. So we need to divide the price in `WEI` by the power of `18`.
 
 primer=
 ```json
@@ -461,14 +461,14 @@ primer=
             "_id": {
                 "buyer": "decoded.params.7.value"
             },
-            "USDPrice": {
+            "ethPrice": {
                 "$divide": [89000000000000000, {"$pow": [10,18]}]
             } 
         }
     }
 ]
 ```
-[https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"USDPrice":{"$divide":[89000000000000000,{"$pow": [10,18]}]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"USDPrice":{"$divide":[89000000000000000,{"$pow":[10,18]}]}}}])
+[https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"ethPrice":{"$divide":[89000000000000000,{"$pow": [10,18]}]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"ethPrice":{"$divide":[89000000000000000,{"$pow":[10,18]}]}}}])
 
 
 ##4.2| Example usages of string concatenation with _$concat_
