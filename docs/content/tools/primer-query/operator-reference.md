@@ -68,7 +68,8 @@ _Comparison by date objects is also available._
 |$divide|Divides two numbers and returns the quotient.|                   
 |$multiply|Multiplies numbers together and returns the result.| 
 |$toInt|Converts a value to an integer.|  
-|$concat|Concatenates strings together and returns the concatentated string as a result.|                   
+|$concat|Concatenates strings together and returns the concatentated string as a result.| 
+|$pow|Raises a number to an exponent and returns the result.|                  
 
 
 ##2.5 | Projection
@@ -441,7 +442,36 @@ group=
 
 [https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=latest&key=ckey_key&group={"_id":"block_signed_at","product":{"$multiply":[10,100,15]},"productWithFields":{"$multiply":["block_height","log_offset","tx_offset"]},"quotient":{"$divide":["tx_offset",2]},"differenceBetweenDates":{"$subtract":["2021-08-03T21:51:36Z","2021-07-03T06:23:43Z"]},"differenceBetweenNumbers":{"$subtract":[10,2]}}](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=latest&key=ckey_key&group={"_id":"block_signed_at","product":{"$multiply":[10,100,15]},"productWithFields":{"$multiply":["block_height","log_offset","tx_offset"]},"quotient":{"$divide":["tx_offset",2]},"differenceBetweenDates":{"$subtract":["2021-08-03T21:51:36Z","2021-07-03T06:23:43Z"]},"differenceBetweenNumbers":{"$subtract":[10,2]}})
 
-##4.1| Example usages of string concatenation with _$concat_
+##4.1| Example usages of _$pow_
+
+The `$pow` operator takes in two expressions. The first expression is the number and the second expression is the exponent. Raising 0 to the power of a negative exponent will return `Infinity`.  
+
+Let's convert a `WEI` price to `eth`. The `89000000000000000` price is in WEI and `eth` has a contract decimal of `18`. So we need to divide the price in `WEI` by the power of `18`.
+
+primer=
+```json
+[
+    {
+        "$match": {
+            "decoded.name": "Buy"
+        }
+    },
+    {
+        "$group": {
+            "_id": {
+                "buyer": "decoded.params.7.value"
+            },
+            "ethPrice": {
+                "$divide": [89000000000000000, {"$pow": [10,18]}]
+            } 
+        }
+    }
+]
+```
+[https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"ethPrice":{"$divide":[89000000000000000,{"$pow": [10,18]}]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"ethPrice":{"$divide":[89000000000000000,{"$pow":[10,18]}]}}}])
+
+
+##4.2| Example usages of string concatenation with _$concat_
 
 The `$concat` operator takes in expressions in an array format and can only take in expressions that resolves to a string. If the the string is null or missing, `$concat` will return a `null`. 
 
@@ -471,7 +501,7 @@ primer=
 [https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}])
 
 
-##4.2| Using $toInt
+##4.3| Using $toInt
 
 The `$toInt` operator converts any valid expression that resolves to a number or a number value to an integer. If there are any `null` or `missing values`, `$toInt` will return a null value. The `$toInt` operator also converts hex values into integers. 
 
