@@ -73,8 +73,18 @@ class TopicApp extends React.Component {
 
 
   _renderEvents = () => {
-   if (this.state.events !== undefined){
-    let items = this.state.events.data.items[0].abi_items;
+   if (this.state.events !== undefined) { 
+    let items;
+    for (var i = 0; i < this.state.events.data.items.length; i++) { 
+      if ("contract_address" in this.state.events.data.items[i]) {
+        if (items === undefined) {
+          items = this.state.events.data.items[i].abi_items;
+        } else {
+          items = items.concat(this.state.events.data.items[i].abi_items);
+        }
+      }
+    }
+    // let items = this.state.events.data.items[0].abi_items;
     let a = items.filter((item)=> {
       return item.signature !==null;
     })
