@@ -11,7 +11,8 @@ class SQLApp extends React.Component {
             error: false,
             error_message: "",
             text: "Copy to clipboard",
-            chain_id: "chain_eth_mainnet",
+            chain_name: "chain_eth_mainnet",
+            chain_id: "1",
             all_chains_data: []
         };
     }
@@ -30,8 +31,8 @@ class SQLApp extends React.Component {
       }
     }
     
-    _renderOptions = (db_schema_name, label) => {
-        return (<option value={db_schema_name}>{label}</option>);
+    _renderOptions = (db_schema_name, label, chain_id) => {
+        return (<option value={db_schema_name+","+chain_id}>{label}</option>);
     }
 
 
@@ -50,7 +51,7 @@ class SQLApp extends React.Component {
         />
 
         <select style={{marginRight: "1rem", height: 39}} onChange={this._inputChainId}>
-          {this.state.all_chains_data.map(o => this._renderOptions(o.db_schema_name, o.label))}
+          {this.state.all_chains_data.map(o => this._renderOptions(o.db_schema_name, o.label, o.chain_id))}
         </select>
 
         <button onClick={this._clickNext} >Get event SQL!</button>
@@ -91,7 +92,7 @@ SELECT <br/>
 {"    '0x' || encode(e.tx_hash, 'hex') AS tx_hash,"} <br />
 {"    " + ifields.join(", \n    ")}{dfields.length > 0 ? "," : ""}   <br/>
 {"    " + dfields.join(", \n    ")} <br />
-FROM {this.state.chain_id}.block_log_events e <br />
+FROM {this.state.chain_name}.block_log_events e <br />
 WHERE <br />
 {"    "} e.sender = {"'\\x" + this.state.address_input.substr(2) + "'"} <br />
 {"    "} AND e.topics[1] = {"'\\x" + s.substr(2) + "'"}
@@ -103,7 +104,17 @@ WHERE <br />
 
     _renderEvents = () => {
         if (this.state.events !== undefined){
-         let items = this.state.events.data.items[0].abi_items;
+          let items;
+          for (var i = 0; i < this.state.events.data.items.length; i++) { 
+            if ("contract_address" in this.state.events.data.items[i]) {
+              if (items === undefined) {
+                items = this.state.events.data.items[i].abi_items;
+              } else {
+                items = items.concat(this.state.events.data.items[i].abi_items);
+              }
+            }
+          }
+        //  let items = this.state.events.data.items[0].abi_items;
          let a = items.filter((item)=> {
            return item.signature !==null;
          })
@@ -156,7 +167,7 @@ WHERE <br />
     _clickNext = () => {
 
         if (this.state.address_input.length === "0xc00e94cb662c3520282e6f5717214004a7f26888".length) {
-          fetch("https://api.covalenthq.com/v1/1/events/address/" +
+          fetch(`https://api.covalenthq.com/v1/${this.state.chain_id}/events/address/` +
             this.state.address_input + "/abi/?&key=ckey_4d5b231f1a584413ae6c3715bcf")
           .then(response => response.json())
           .then((data)=> {
@@ -262,8 +273,10 @@ WHERE <br />
       }
 
       _inputChainId = (e) => {
+        const myArr = e.target.value.split(",");
         this.setState({
-          chain_id: e.target.value
+          chain_name: myArr[0],
+          chain_id: myArr[1]
         })
       }
 }
