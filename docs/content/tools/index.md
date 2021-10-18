@@ -22,5 +22,10 @@ The Topic SQL Generator allows you to easily calculate topic hashes for events e
 ## [Token Holders Calculator](/tools/token-holders/)
 The Token Holders Calculator allows you to get the **complete list** of token holders and token balances for any token contract as of a specific `block_height`.  
 
-## [Get Event Logs Data](/tools/get-logs-data/)
+&nbsp;
+## [Get Event Logs Data](/tools/get-log-data/)
 The Get Event Logs Data tool allows you to get the **downloadable csv** giving the set parameters `block_height`, `transaction hash` and `sender address`.  
+
+&nbsp;
+## [Code Templates](https://replit.com/teams/join/ebrcwtxpfocwsffqdtgxxtlrywyyjfux-Covalent)
+Join our team on [Replit.com](https://replit.com/team/Covalent) to access our suite of code templates for different use cases and get building rapidly!
