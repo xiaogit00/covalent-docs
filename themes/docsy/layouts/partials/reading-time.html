@@ -1,0 +1,9 @@
+<div class="reading-time">
+    <p><strong>Reading time:</strong>
+        {{ if gt .ReadingTime 1 }}
+        {{ .ReadingTime }} {{ T "post_reading_time" }}
+        {{ else }}
+        {{ T "post_less_than_a_minute_read" }}
+        {{ end }}
+    </p>
+</div>

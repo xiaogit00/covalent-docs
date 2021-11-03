@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+
+  <div class=" overflow-hidden bg-white">
+
+
+    <div
+      class="h-16 pl-5 pr-5 fixed left-0 right-0 bg-covalent-blue-dark text-white flex justify-between z-50 transition-all duration-500">
+      <div class="flex place-self-center mr-40">
+        <h1 class="w-max text-white ct-lg uppercase ml-2 font-sans transition">
+          <img class="h-8 place-self-center mr-2 inline-block" src="https://www-covalenthq-com-git-apidocs-v3-covalenthq.vercel.app/static/images/covalent-logo-white.svg">
+          <div class="place-self-center inline-block">Covalent Docs</div>
+        </h1>
+      </div>
+
+      <a href="/platform/#/auth/register/"
+        class="place-self-center flex-none bg-white bg-opacity-10 hover:bg-opacity-5 text-white hover:text-white px-4 py-2 hover:no-underline lg:mb-0 md:mb-0 sm:mb-0">
+        Get an API Key
+      </a>
+
+    </div>
+
+
+    <!-- <div class="hidden lg:flex lg:flex-shrink-0 nav">
+      <div class="flex flex-col w-64 pb-0 bg-covalent-blue-dark">
+        <div class="h-0 flex-1 flex flex-col overflow-y-auto mt-2 code">
+          <div class="px-6 mt-20 h-full flex flex-col">
+
+            {{ partial "sidebar.html" . }}
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="left-0 bottom-0 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex transition-all cursor-pointer text-gray-200">
+      <span icon="chevron-left" aria-hidden="true" class="bp3-icon bp3-icon-chevron-left self-center"><svg
+          data-icon="chevron-left" width="16" height="16" viewBox="0 0 16 16">
+          <path
+            d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
+            fill-rule="evenodd"></path>
+        </svg></span>
+    </div> 
+  -->
+
+
+
+
+
+
+
+    <div class="py-16  ">
+      <div class="-max-w-3xl -mx-auto -max-w-7xl -px-8 grid grid-cols-12 gap-8">
+        <div class="col-span-2 bg-covalent-blue-dark">
+          <nav aria-label="Sidebar" class="pl-5 ml-2 -sticky top-6 ">
+
+            {{ partial "sidebar.html" . }}
+
+          </nav>
+          <div
+            class="left-0 bottom-0 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex transition-all cursor-pointer text-gray-200">
+            <span icon="chevron-left" aria-hidden="true" class="bp3-icon bp3-icon-chevron-left self-center"><svg
+                data-icon="chevron-left" width="16" height="16" viewBox="0 0 16 16">
+                <path
+                  d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
+                  fill-rule="evenodd"></path>
+              </svg></span>
+          </div>
+
+        </div>
+        <main class=" col-span-8 overflow-y-scroll mt-6 main-content" role="main">
+
+          {{ partial "version-banner.html" . }}
+
+          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+
+          {{ block "main" . }}{{ end }}
+
+        </main>
+        <aside class="  col-span-2 right-nav border-l border-gray-200 bg-gray-200 bg-opacity-75 ">
+          <div class=" -sticky ml-6 mt-6 ">
+            {{/*
+            {{ partial "page-meta-links.html" . }}
+            {{ partial "taxonomy_terms_clouds.html" . }}
+            */}}
+
+            {{ partial "toc.html" . }}
+
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
