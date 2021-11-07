@@ -212,6 +212,15 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
 
+```mermaid
+flowchart TD
+    B["fa:fa-twitter for peace"]
+    B-->C[fa:fa-ban forbidden]
+    B-->D(fa:fa-spinner);
+    B-->E(A fa:fa-camera-retro perhaps?);
+```
+
+
 ### Alerts
 
 {{< alert >}}This is an alert.{{< /alert >}}

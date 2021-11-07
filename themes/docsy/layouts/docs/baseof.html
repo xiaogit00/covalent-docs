@@ -14,7 +14,8 @@
       class="h-16 pl-5 pr-5 fixed left-0 right-0 bg-covalent-blue-dark text-white flex justify-between z-50 transition-all duration-500">
       <div class="flex place-self-center mr-40">
         <h1 class="w-max text-white ct-lg uppercase ml-2 font-sans transition">
-          <img class="h-8 place-self-center mr-2 inline-block" src="https://www-covalenthq-com-git-apidocs-v3-covalenthq.vercel.app/static/images/covalent-logo-white.svg">
+          <img class="h-8 place-self-center mr-2 inline-block"
+            src="https://www-covalenthq-com-git-apidocs-v3-covalenthq.vercel.app/static/images/covalent-logo-white.svg">
           <div class="place-self-center inline-block">Covalent Docs</div>
         </h1>
       </div>
@@ -99,5 +100,24 @@
     </div>
 
   </div>
+
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+
+    var element = document.getElementsByClassName("language-mermaid");
+
+    var insertSvg = function (el, svgCode, bindFunctions) {
+      el.innerHTML = svgCode;
+    };
+
+    for (var i = 0; i < element.length; i++) {
+      mermaid.mermaidAPI.render('graphDiv_' + i, element[i].textContent, function (svgCode, bindFunctions) {
+        element[i].innerHTML = svgCode;
+      });
+    }
+  </script>
+
+
 </body>
+
 </html>
