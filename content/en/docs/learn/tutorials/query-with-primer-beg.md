@@ -11,8 +11,6 @@ tags:
   - Beginner
 ---
 
-import Prerequisites from "../../../components/prerequisites.js";
-
 
 # Querying with Primer (Beginner)
 
@@ -146,7 +144,8 @@ The Compound Governance contract is at `0xc0da01a04c3f3e0be433606045bb7017a7323e
 
 ### Prerequisites
 
-<Prerequisites />
+{{< prerequisites >}}
+{{< /prerequisites >}}
 
 ### About the data
 
