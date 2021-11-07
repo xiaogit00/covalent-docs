@@ -1,6 +1,6 @@
 ---
 title: Supported Networks
-weight: 3
+weight: 2
 ---
 
 # Networks
