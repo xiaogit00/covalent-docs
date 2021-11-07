@@ -1,6 +1,6 @@
 ---
-title: July
-order: 7
+title: July 2021
+weight: 7
 hidden: false
 ---
 

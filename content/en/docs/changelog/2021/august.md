@@ -1,6 +1,6 @@
 ---
-title: August
-order: 8
+title: August 2021
+weight: 8
 hidden: false
 ---
 

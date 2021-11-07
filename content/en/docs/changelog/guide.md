@@ -1,6 +1,6 @@
 ---
 title: Changelog guide
-order: 0
+weight: 0
 hidden: true
 draft: true
 
