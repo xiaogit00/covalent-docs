@@ -1,6 +1,11 @@
-<div class="">
+<div class="px-20 py-10 md:p-2 sm:p-0 overflow-hidden">
 
-    <h1>{{ .Title }}</h1>
+    <div class="border-b mb-12">
+        <div class="text-5xl my-6 font-sans leading-20 tracking-wide">
+            {{ .Title }}
+        </div>
+    </div>
+    {{ partial "reading-time.html" . }}
     {{ with .Params.description }}<div class="">{{ . | markdownify }}</div>{{ end }}
 
 
@@ -18,7 +23,7 @@
 
         */}}
 
-        {{ partial "reading-time.html" . }}
+   
 
     </header>
     {{ .Content }}

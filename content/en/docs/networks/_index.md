@@ -3,7 +3,6 @@ title: Supported Networks
 weight: 2
 ---
 
-# Networks
 
 ## Indexing process
 

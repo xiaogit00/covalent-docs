@@ -1,8 +1,14 @@
 {{ define "main" }}
 
-<div class="">
+<div class="px-20 py-10 md:p-4 sm:p-0">
+    
+    <div class="border-b mb-12">
+        <div class="text-5xl my-6 font-sans leading-20 tracking-wide">
+            {{ .Title }}
+        </div>
+    </div>
 
-    <h1>{{ .Title }}</h1>
+
     {{ with .Params.description }}<div class=" ">{{ . | markdownify }}</div>{{ end }}
     {{/* <header class=" ">
         {{ $context := . }}
