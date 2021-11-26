@@ -1,7 +1,56 @@
 ---
-title: Home
+title: Knowledge Base
 weight: 0
 ---
+
+
+<section class="">
+    <p class="text-xl max-w-2xl text-gray-800 mb-6">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    </p>
+    <div class="my-12">
+        <div class="flex text-lg text-gray-800 my-6">
+            <img class="mr-3" src="/static/images/icons/Learn.svg"></img>
+            Before we begin, choose what kind of user you are.
+        </div>
+        <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-20 gap-x-12">
+            <div class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-7 cursor-pointer hover:bg-opacity-70">
+                <div class="mb-4">
+                    <img src="/static/images/icons/Code.svg"></img>
+                </div>
+                <div class="ct-3xl mb-3">
+                    Developer
+                </div>
+                <div class="ct-md">
+                    An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
+                </div>
+            </div>
+            <div class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-5 cursor-pointer hover:bg-opacity-70">
+                <div class="mb-4">
+                    <img src="/static/images/icons/Alchemist.svg"></img>
+                </div>
+                <div class="ct-3xl mb-3">
+                    Alchemist
+                </div>
+                <div class="ct-md">
+                    An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
+                </div>
+            </div>
+            <div class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl  p-5 cursor-pointer hover:bg-opacity-70">
+                <div class="mb-4">
+                    <img src="/static/images/icons/Screen Chart.svg"></img>
+                </div>
+                <div class="ct-3xl mb-3">
+                    Validator
+                </div>
+                <div class="ct-md">
+                    An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
+                </div>
+            </div>
+        </div>
+    </div>
+    {{< networks >}}
+</section>
 
 
 <section class="max-w-5xl">
