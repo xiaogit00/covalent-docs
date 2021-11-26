@@ -49,6 +49,7 @@ weight: 0
             </div>
         </div>
     </div>
+    <!-- Networks -->
     {{< networks >}}
 </section>
 

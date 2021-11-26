@@ -5,7 +5,7 @@
             {{ .Title }}
         </div>
     </div>
-    {{ partial "reading-time.html" . }}
+    <!-- {{ partial "reading-time.html" . }} -->
     {{ with .Params.description }}<div class="">{{ . | markdownify }}</div>{{ end }}
 
 
@@ -34,6 +34,6 @@
     <br />
     {{ end }}
 
-    {{ partial "page-meta-lastmod.html" . }}
+    <!-- {{ partial "page-meta-lastmod.html" . }} -->
 
 </div>
