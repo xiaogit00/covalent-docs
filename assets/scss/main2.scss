@@ -30,6 +30,7 @@
     }
 }
 
+
 .main-content {
 
     .pageinfo {
@@ -41,20 +42,37 @@
     }
 
     h1 {
-        @apply  mt-2 mb-4 max-w-2xl text-5xl font-sans font-light tracking-tight text-gray-900 sm:text-4xl ;
+        @apply  my-8 max-w-2xl text-5xl font-sans font-light tracking-tight text-gray-900  sm:text-4xl ;
     }
 
     h2 {
-        @apply  mt-2 mb-4 max-w-2xl text-3xl font-sans font-light tracking-tight text-gray-900 sm:text-4xl ;
+        @apply  mt-2 mb-6 max-w-2xl text-4xl font-sans font-light tracking-tight text-gray-900 border-b py-4 sm:text-3xl ;
     }
 
     h3 {
-        @apply  mt-2 mb-4 max-w-2xl text-xl font-sans font-light tracking-tight text-gray-900 sm:text-4xl ;
+        @apply  mt-2 mb-4 max-w-2xl text-3xl font-sans font-light tracking-tight text-gray-900 sm:text-2xl ;
     }
 
     p {
-        @apply text-xl text-gray-800 mb-4 w-4/5;
+        @apply text-xl text-gray-800 mb-6 w-4/5 sm:text-lg;
     }
+
+    a{  
+        @apply text-covalent-pink ;
+    }
+
+    ul {
+        @apply list-disc my-6 text-lg text-gray-800 ;
+
+        li {
+            @apply my-4 ;
+    
+        }
+    
+    }
+    
+
+
 
     .section-index {
         .panel-line {
@@ -70,7 +88,7 @@
     }
 
     table {
-        @apply divide-y divide-gray-200;
+        @apply my-8 divide-y divide-gray-200;
 
         thead {
             @apply bg-gray-50;
