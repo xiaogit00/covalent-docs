@@ -1,0 +1,167 @@
+  -
+    title: Supported Networks
+    link: /docs/networks
+    published: true
+    subsection:
+      - 
+        title: Ethereum
+        link: /docs/networks/ethereum
+        icon:
+        banner:
+        published: true
+      - 
+        title: Ronin
+        link: /docs/networks/ronin
+        icon:
+        banner:
+        published: true
+      - 
+        title: Polygon / Matic 
+        link: /docs/networks/matic
+        icon:
+        banner:
+        published: true
+      - 
+        title: Avalanche
+        link: /docs/networks/avalanche
+        icon:
+        banner:
+        published: true
+      - 
+        title: BSC
+        link: /docs/networks/bsc
+        icon:
+        banner:
+        published: true
+      - 
+        title: Fantom
+        link: /docs/networks/fantom
+        icon:
+        banner:
+        published: true
+      - 
+        title: Moonbeam
+        link: /docs/networks/moonbeam
+        icon:
+        banner:
+        published: true
+      - 
+        title: Moonriver
+        link: /docs/networks/moonriver
+        icon:
+        banner:
+        published: true
+      - 
+        title: RSK
+        link: /docs/networks/rsk
+        icon:
+        banner:
+        published: true
+      - 
+        title: Arbitrum
+        link: /docs/networks/arbitrum
+        icon:
+        banner:
+        published: true
+      - 
+        title: Palm
+        link: /docs/networks/palm
+        icon:
+        banner:
+        published: true
+      - 
+        title: Klaytn
+        link: /docs/networks/klaytn
+        icon:
+        banner:
+        published: true
+      - 
+        title: Heco
+        link: /docs/networks/heco
+        icon:
+        banner:
+        published: true
+      - 
+        title: Polyjuice
+        link: /docs/networks/polyjuice
+        icon:
+        banner:
+        published: true
+  -
+    title: Developer Tools
+    link: /docs/tools
+    published: false
+    subsection:
+      - 
+        title: Community Tools
+        link: /docs/tools/community
+        published: false
+      - 
+        title: Get Log Data
+        link: /docs/tools/get-log-data
+        published: false
+      - 
+        title: Primer
+        link: /docs/tools/primer-query
+        published: false
+      - 
+        title: Token Holders
+        link: /docs/tools/token-holders
+        published: false
+      - 
+        title: Topic Calculator
+        link: /docs/tools/topic-calculator
+        published: false
+      - 
+        title: Topic Calculator (SQL)
+        link: /docs/tools/topic-calculator-sql
+        published: false
+  -
+    title: Changelog
+    link: /docs/changelog
+    published: true
+    subsection:
+      - 
+        title: January 2021
+        link: /docs/changelog/2021/january
+        published: true
+      - 
+        title: February 2021
+        link: /docs/changelog/2021/february
+        published: true
+      - 
+        title: March 2021
+        link: /docs/changelog/2021/march
+        published: true
+      - 
+        title: April 2021
+        link: /docs/changelog/2021/april
+        published: true
+      - 
+        title: May 2021
+        link: /docs/changelog/2021/may
+        published: true
+      - 
+        title: June 2021
+        link: /docs/changelog/2021/june
+        published: true
+      - 
+        title: July 2021
+        link: /docs/changelog/2021/july
+        published: true
+      - 
+        title: August 2021
+        link: /docs/changelog/2021/august
+        published: true
+      - 
+        title: September 2021
+        link: /docs/changelog/2021/september
+        published: true
+      - 
+        title: October 2021
+        link: /docs/changelog/2021/october
+        published: true
+      - 
+        title: Changelog guide
+        link: /docs/changelog/2021/guide
+        published: true

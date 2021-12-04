@@ -1,0 +1,123 @@
+  -
+    title: Alchemist Cookbook
+    link: /docs/learn
+    published: true
+    subsection:
+      - 
+        title: Case Studies
+        link: /docs/learn/casestudies
+        published: true
+        subsection:
+          -
+            title: Tether Analysis
+            link: /docs/learn/casestudies
+            published: true
+          -
+            title: Uniswap as an Oracle Price Feed
+            link: /docs/learn/casestudies/uniswap-pancake-amm-oracle
+            published: true
+      - 
+        title: How-to Guides
+        link: /docs/learn/guides
+        published: true
+        subsection:
+          -
+            title: Analyze
+            link: /docs/learn/guides/analyze
+            published: true
+          -
+            title: Basics
+            link: /docs/learn/guides/basics
+            published: true
+          -
+            title: Configure
+            link: /docs/learn/guides/configure
+            published: true
+          -
+            title: Front-end
+            link: /docs/learn/guides/frontend
+            published: true
+      - 
+        title: References
+        link: /docs/learn/references
+        published: true
+      - 
+        title: Research Training
+        link: /docs/learn/research-training
+        published: true
+        subsection:
+          -
+            title: Assignment 1
+            link: /docs/learn/research-training/research-assignment-1
+            published: true
+          -
+            title: Assignment 2
+            link: /docs/learn/research-training/research-assignment-1
+            published: true
+          -
+            title: Configure
+            link: /docs/learn/guides/configure
+            published: true
+          -
+            title: Front-end
+            link: /docs/learn/guides/frontend
+            published: true
+      - 
+        title: Tutorial Video
+        link: /docs/learn/_video_guidelines
+        published: true
+      - 
+        title: Tutorials
+        link: /docs/learn/tutorials
+        published: true
+        subsection:
+          -
+            title: Query Historical Aave Borrow rate with Primer
+            link: /docs/learn/tutorials/query-historical-aave-borrow-rate-with-primer
+            published: true
+          -
+            title: Query with Primer (Beg)
+            link: /docs/learn/tutorials/query-with-primer-beg/
+            published: true
+          -
+            title: Query with Primer (Int)
+            link: /docs/learn/tutorials/query-with-primer-int/
+            published: true
+  -
+    title: Campaigns
+    link: /docs/campaigns
+    published: true
+    subsection:
+      - 
+        title: One Million Wallets
+        link: /docs/campaigns/one-million-wallets
+        published: true
+        subsection:
+      - 
+        title: Dungeons & Data
+        link: /docs/campaigns/dungeons-and-data
+        published: true
+        subsection:
+          -
+            title: Puzzle Paladin - Aave flash loans
+            link: /docs/campaigns/aave-flashloans
+            published: true
+          -
+            title: Puzzle Paladin - Aave Liquidations
+            link: /docs/campaigns/casestudies/aave-liquidations
+            published: true
+  -
+    title: Glossary
+    link: /docs/glossary
+    published: true
+    subsection:
+  -
+    title: Alpha Alarm
+    link: /docs/alpha-alarm
+    published: true
+    subsection:
+  -
+    title: FAQ
+    link: /docs/faq
+    published: true
+    subsection:

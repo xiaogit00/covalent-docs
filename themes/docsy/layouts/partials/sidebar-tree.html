@@ -4,7 +4,7 @@
 
 
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
-    {{ if not .Site.Params.ui.sidebar_search_disable -}}
+    <!-- {{ if not .Site.Params.ui.sidebar_search_disable -}}
     <form class="td-sidebar__search d-flex align-items-center">
         {{ partial "search-input.html" . }}
         <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button"
@@ -23,7 +23,7 @@
         </form>
     </div>
     <div id="content-desktop"></div>
-    {{ end -}}
+    {{ end -}} -->
     <nav class="collapse td-sidebar-nav{{ if .Site.Params.ui.sidebar_menu_foldable }} foldable-nav{{ end }}"
         id="td-section-nav">
         {{ if (gt (len .Site.Home.Translations) 0) -}}
@@ -100,5 +100,23 @@ link{{ if $s.IsPage }} td-sidebar-link__page{{ else }} td-sidebar-link__section{
 </li>
 {{ if (eq $ulNr 1 ) }}
 <hr class="mt-3 mb-3 border-covalent-purple-dark">
+
+
 {{ end }}
+
+<!-- <script>
+    // Sections
+    console.log(`
+    {{ range $pages }}
+    {{ .Title }}
+    {{ end }}
+    `)
+</script> -->
+<script>
+    // Sections
+    console.log(`
+    {{ $s.Params }}
+`)
+</script>
 {{- end }}
+
