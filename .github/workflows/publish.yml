@@ -38,10 +38,16 @@ jobs:
       with:
         cmd: install
 
-    - name: Build site
+    - name: Bootstrap build dir
       run: |
-        npm run docs-bootstrap
-        ./s/docs-build
+        rm -rf .docs
+        cp -r node_modules/cloudflare-docs-engine/ .docs
+        cd .docs
+        rm -rf node_modules/
+        yarn install
+
+    - name: Build site
+      run: ./s/docs-build
 
     - name: Upload site
       env:
