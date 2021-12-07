@@ -6,35 +6,58 @@
 <script>
 function expand (type, className){
     var element; 
-    var imgElement;
+
+    var plus = document.querySelector(`#plus-${className}`)
+    var minus = document.querySelector(`#minus-${className}`)
+
     if(type === "parent"){
       element = document.querySelector(`#expand-${className}`)
-      imgElement = document.getElementById(`img-${className}`)
     }else{
       element = document.querySelector(`#expand-child-${className}`)
-      imgElement = document.getElementById(`img-${className}`)
     }
-    imgElement.src = "/static/images/icons/minus.svg"
+
     
     if(element.style.display === "hidden"){
       element.style.display = "block"
-      imgElement.src = "/static/images/icons/minus.svg"
+      plus.style.display = "none"
+      minus.style.display = "block"
     }else if(element.style.display === "block"){
       element.style.display = "none"
-      imgElement.src = "/static/images/icons/Add.svg"
+      plus.style.display = "block"
+      minus.style.display = "none"
     }else{
       element.style.display = "block"
+      plus.style.display = "none"
+      minus.style.display = "block"
     }
   }
 </script>
-
 
 <div class="flex justify-between items-center mb-2 cursor-pointer " onclick="expand('parent', '{{ $type }}')" >
     <div class="text-white text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
       {{ $Title }}
     </div>
-    <div class="flex justify-center h-4 w-4">
-      <img id="img-{{ .type }}" src="/static/images/icons/Add.svg"></img>
+    <div id="plus-{{ .type }}" style="display:block" class="flex justify center fill-current text-covalent-pink w-6 h-6">
+        <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+        <g id="plus_11_">
+          <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16,9h-5V4c0-0.55-0.45-1-1-1S9,3.45,9,4v5H4c-0.55,0-1,0.45-1,1
+              c0,0.55,0.45,1,1,1h5v5c0,0.55,0.45,1,1,1s1-0.45,1-1v-5h5c0.55,0,1-0.45,1-1C17,9.45,16.55,9,16,9z"/>
+          </g>
+        </g>
+        </svg>
+    </div>
+    <div id="minus-{{ .type }}" style="display:none"  class="hidden flex justify center fill-current text-covalent-pink w-6 h-6">
+      <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+      <g id="minus_6_">
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16,9H4c-0.55,0-1,0.45-1,1c0,0.55,0.45,1,1,1h12c0.55,0,1-0.45,1-1
+            C17,9.45,16.55,9,16,9z"/>
+        </g>
+      </g>
+      </svg>
     </div>
 </div>
 <div id="expand-{{ .type }}" class="hidden">
@@ -49,11 +72,32 @@ function expand (type, className){
     {{ if eq .published true }}
         <div class="flex justify-between items-center">
           <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
-            <a href="{{ .link }}">{{ .title }}</a>
+              <a href="{{ .link }}">{{ .title }}</a>
           </div>
-          <div class="flex justify-center h-3 w-3 cursor-pointer">
+          <div class="flex justify-center items-center cursor-pointer mr-1 mb-2" >
             {{ if .subsection }}
-            <img id="img-{{ $parentTitle }}" onclick="expand('child','{{ $parentTitle }}')" src="/static/images/icons/Add.svg"></img>
+            <div id="plus-{{ $parentTitle }}" style="display:block" class="flex justify center fill-current text-white opacity-80  w-4 h-4" onclick="expand('child','{{ $parentTitle }}')">
+              <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <g id="plus_11_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16,9h-5V4c0-0.55-0.45-1-1-1S9,3.45,9,4v5H4c-0.55,0-1,0.45-1,1
+                    c0,0.55,0.45,1,1,1h5v5c0,0.55,0.45,1,1,1s1-0.45,1-1v-5h5c0.55,0,1-0.45,1-1C17,9.45,16.55,9,16,9z"/>
+                </g>
+              </g>
+              </svg>
+          </div>
+          <div id="minus-{{ $parentTitle }}" style="display:none"  class="hidden flex justify center fill-current text-white opacity-80  w-4 h-4" onclick="expand('child','{{ $parentTitle }}')">
+            <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+            <g id="minus_6_">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16,9H4c-0.55,0-1,0.45-1,1c0,0.55,0.45,1,1,1h12c0.55,0,1-0.45,1-1
+                  C17,9.45,16.55,9,16,9z"/>
+              </g>
+            </g>
+            </svg>
+          </div>
             {{ end }}
           </div>
         </div>
@@ -66,8 +110,15 @@ function expand (type, className){
                     </script>
                 {{ end }}
                 {{ if eq .published true }}
-                    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-8 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all"> 
-                        <a href="{{ .link }}">{{ .title }}</a>
+                    <div class="relative">
+                      {{ if .icon }}
+                      <div class="absolute left-6 top-1 flex justify-center h-3 w-3">
+                        <img src="{{ .icon }}"></img>
+                      </div>
+                      {{ end }}
+                      <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-8 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all"> 
+                          <a href="{{ .link }}">{{ .title }}</a>
+                      </div>
                     </div>
                     {{ range .subsection }}
                         {{ if eq .title $LinkTitle }} 

@@ -4,6 +4,8 @@ weight: 6
 hidden: false
 ---
 
+# Alpha Alarm
+
 ![Banner](./images/Alpha_Banner.png)
 
 ## Previous Visuals

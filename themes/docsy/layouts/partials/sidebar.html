@@ -1,39 +1,14 @@
-
-
-<div id="side-nav" class="flex fixed h-screen ">
-  <div class="code top-0 w-72 bg-covalent-blue-dark px-6 flex flex-col px-6 pt-6 pb-12 overflow-y-auto">
-      <div class="text-white mb-3 text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink cursor-pointer">
+<div class="code top-0 w-72 bg-covalent-blue-dark px-6 flex flex-col px-6 pt-6 pb-12 overflow-y-auto">
+    <div class="text-white mb-3 text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink cursor-pointer">
         <a href="/docs/">Overview</a>
-      </div>
-      <hr class="mb-3 border-covalent-purple-dark" />
-
-      {{ partial "sidebar-tree.html" (dict "context" . "title" "Developer" "type" "dev" "arr" $.Site.Data.navbar.developer) }}
-
-      {{ partial "sidebar-tree.html" (dict "context" . "title" "Alchemist" "type" "alchemist" "arr" $.Site.Data.navbar.alchemist) }}
-
-      {{ partial "sidebar-tree.html" (dict "context" . "title" "Validator" "type" "validator" "arr" $.Site.Data.navbar.validator) }}
-
-  </div>
-  <div class="left-0 bottom-0 w-4 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex items-center transition-all cursor-pointer text-gray-200 " onclick="collapse()">
-    <div class="flex justify-center h-4 w-4 ">
-      <img src="/static/images/icons/Close.svg"></img>
     </div>
-  </div>
+    <hr class="mb-3 border-covalent-purple-dark" />
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Developer" "type" "dev" "arr" $.Site.Data.navbar.developer) }}
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Alchemist" "type" "alchemist" "arr" $.Site.Data.navbar.alchemist) }}
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Validator" "type" "validator" "arr" $.Site.Data.navbar.validator) }}
 </div>
 
-<script>
-  var nav = document.querySelector('#side-nav')
-  
-  var navState = true;
-
-  function collapse (){
-    if(navState){
-      nav.style.left = "-285px"
-      navState = false
-    }else{
-      nav.style.left = "0"
-      navState = true
-    }
-  }
-</script>
 

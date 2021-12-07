@@ -19,7 +19,7 @@
       - 
         title: How-to Guides
         link: /docs/learn/guides
-        published: true
+        published: false
         subsection:
           -
             title: Analyze

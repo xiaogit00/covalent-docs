@@ -4,6 +4,8 @@ weight: 6
 hidden: false
 ---
 
+# June 2021
+
 ## 2021-06-30
 ### ADDED
 - RSK Mainnet and Testnet are now fully indexed. RSK is the first general purpose smart contract platform secured by the Bitcoin Network. Mainnet `chainID: 30`, Testnet `chainID: 31`. `<multichain>`
