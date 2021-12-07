@@ -1,167 +1,40 @@
-{{/* The "active" toggle here may delay rendering, so we only cache this side bar menu for bigger sites.
-*/}}
-
-<!-- {{ $sidebarCacheLimit := cond (isset .Site.Params.ui "sidebar_cache_limit") .Site.Params.ui.sidebar_cache_limit 2000 -}}
-{{ $shouldCache := ge (len .Site.Pages) $sidebarCacheLimit -}}
-{{ $sidebarCacheTypeRoot := cond (isset .Site.Params.ui "sidebar_cache_type_root") .Site.Params.ui.sidebar_cache_type_root false -}}
-{{ if $shouldCache -}}
-  {{ $mid := printf "m-%s" (.RelPermalink | anchorize) }}
-  <script>
-    $(function() {
-    $("#td-section-nav a").removeClass("active");
-    $("#td-section-nav #{{ $mid }}").addClass("active");
-    $("#td-section-nav #{{ $mid }}-li span").addClass("td-sidebar-nav-active-item");
-    $("#td-section-nav #{{ $mid }}").parents("li").addClass("active-path");
-    $("#td-section-nav li.active-path").addClass("show");
-    $("#td-section-nav li.active-path").children("input").prop('checked', true);
-    $("#td-section-nav #{{ $mid }}-li").siblings("li").addClass("show");
-    $("#td-section-nav #{{ $mid }}-li").children("ul").children("li").addClass("show");
-    $("#td-sidebar-menu").toggleClass("d-none");
-    });
-  </script>
-  {{ partialCached "sidebar-tree.html" . .FirstSection.RelPermalink }}
-{{ else -}}
-  {{ partial "sidebar-tree.html" . }}
-{{- end }} -->
 
 
-<div class="flex fixed h-screen">
+<div id="side-nav" class="flex fixed h-screen transition-all duration-500 ease-in-out">
   <div class="code top-0 w-72 bg-covalent-blue-dark px-6 flex flex-col px-6 pt-6 pb-12 overflow-y-auto">
       <div class="text-white mb-3 text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink cursor-pointer">
         <a href="/docs/">Overview</a>
       </div>
       <hr class="mb-3 border-covalent-purple-dark" />
 
-      <div class="flex justify-between items-center mb-2 cursor-pointer " onclick="expand('dev')" >
-        <div class="text-white text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
-          Developer
-        </div>
-        <div class="flex justify-center">
-          <img src="/static/images/icons/Add.svg"></img>
-        </div>
-      </div>
-      <div id="expand-dev" class="hidden">
-          {{ range .Site.Data.navbar.developer }}
-            <div class="flex justify-between items-center">
-              <div class="text-white text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
-                <a href="{{ .link }}">{{ .title }}</a>
-              </div>
-              {{ $parentTitle := replaceRE "(\\s)" "" .title }}
-              <div class="flex justify-center h-3 w-3 cursor-pointer">
-                {{ if .subsection }}
-                <img onclick="expandChild('{{ $parentTitle }}')" src="/static/images/icons/Add.svg"></img>
-                {{ end }}
-              </div>
-            </div>
-            <div id="expand-child-{{ $parentTitle }}" class="hidden -mt-2">
-                  {{ range .subsection }}
-                    <div class="text-white text-sm truncate pl-8 my-2 text-white mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
-                      <a href="{{ .link }}">{{ .title }}</a>
-                    </div>
-                    {{ range .subsection }}
-                      <div class="text-white text-sm truncate pl-12 my-2 text-white mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
-                        <a href="{{ .link }}">{{ .title }}</a>
-                      </div>
-                    {{ end }}
-                  {{ end }}
-            </div>
-          {{ end }}
-      </div>
-      <hr class="mb-3 border-covalent-purple-dark" />
-      
+      {{ partial "sidebar-tree.html" (dict "context" . "title" "Developer" "type" "dev" "arr" $.Site.Data.navbar.developer) }}
 
-      <div class="flex justify-between items-center mb-2 cursor-pointer" onclick="expand('alchemist')" >
-        <div class="text-white text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
-          Alchemist
-        </div>
-        <div class="flex justify-center">
-          <img src="/static/images/icons/Add.svg"></img>
-        </div>
-      </div>
-      <div id="expand-alchemist" class="hidden">
-        {{ range .Site.Data.navbar.alchemist }}
-          <div class="flex justify-between items-center">
-            <div class="text-white text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
-              <a href="{{ .link }}">{{ .title }}</a>
-            </div>
-            {{ $parentTitle := replaceRE "(\\s)" "" .title }}
-            <div class="flex justify-center h-3 w-3 cursor-pointer">
-              {{ if .subsection }}
-              <img onclick="expandChild('{{ $parentTitle }}')" src="/static/images/icons/Add.svg"></img>
-              {{ end }}
-            </div>
-          </div>
-          <div id="expand-child-{{ $parentTitle }}" class="hidden -mt-2">
-                {{ range .subsection }}
-                  <div class="text-white text-sm truncate pl-8 my-2 text-white mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
-                    <a href="{{ .link }}">{{ .title }}</a>
-                  </div>
-                  {{ range .subsection }}
-                    <div class="text-white text-sm truncate pl-12 my-2 text-white mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
-                      <a href="{{ .link }}">{{ .title }}</a>
-                    </div>
-                  {{ end }}
-                {{ end }}
-          </div>
-        {{ end }}
-      </div>
-      <hr class="mb-3 border-covalent-purple-dark" />
+      {{ partial "sidebar-tree.html" (dict "context" . "title" "Alchemist" "type" "alchemist" "arr" $.Site.Data.navbar.alchemist) }}
 
-
-      <div class="flex justify-between items-center mb-2 cursor-pointer" onclick="expand('validator')">
-        <div class="text-white text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
-          Validator
-        </div>
-        <div class="flex justify-center">
-          <img src="/static/images/icons/Add.svg"></img>
-        </div>
-      </div>
-      <div id="expand-validator" class="hidden">
-        {{ range .Site.Data.navbar.validator }}
-          <div class="flex justify-between items-center">
-            <div class="text-white text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
-              <a href="{{ .link }}">{{ .title }}</a>
-            </div>
-            {{ $parentTitle := replaceRE "(\\s)" "" .title }}
-            <div class="flex justify-center h-3 w-3 cursor-pointer">
-              {{ if .subsection }}
-              <img onclick="expandChild('{{ $parentTitle }}')" src="/static/images/icons/Add.svg"></img>
-              {{ end }}
-            </div>
-          </div>
-          <div id="expand-child-{{ $parentTitle }}" class="hidden -mt-2">
-                {{ range .subsection }}
-                  <div class="text-white text-sm truncate pl-8 my-2 text-white mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
-                    <a href="{{ .link }}">{{ .title }}</a>
-                  </div>
-                  {{ range .subsection }}
-                    <div class="text-white text-sm truncate pl-12 my-2 text-white mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
-                      <a href="{{ .link }}">{{ .title }}</a>
-                    </div>
-                  {{ end }}
-                {{ end }}
-          </div>
-        {{ end }}
-      </div>
-      <hr class="mb-3 border-covalent-purple-dark" />
-
+      {{ partial "sidebar-tree.html" (dict "context" . "title" "Validator" "type" "validator" "arr" $.Site.Data.navbar.validator) }}
 
   </div>
-  <div class="left-0 bottom-0 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex transition-all cursor-pointer text-gray-200">
+  <div class="left-0 bottom-0 w-4 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex items-center transition-all cursor-pointer text-gray-200 " onclick="collapse()">
+    <div class="flex justify-center h-4 w-4 ">
+      <img src="/static/images/icons/Close.svg"></img>
+    </div>
   </div>
 </div>
 
-
 <script>
+  var nav = document.querySelector('#side-nav')
 
-  function expand (type){
-    console.log(type)
-    document.querySelector(`#expand-${type}`).style.display = "block"
-  }
-  function expandChild (type){
-    console.log(type)
-    document.querySelector(`#expand-child-${type}`).style.display = "block"
-  }
+  var navState = true;
 
+  function collapse (){
+      console.log(navState)
+    if(navState){
+      nav.style.left = "-285px"
+      navState = false
+    }else{
+      nav.style.left = "0"
+      navState = true
+    }
+  }
 </script>
 

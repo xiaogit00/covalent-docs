@@ -1,122 +1,87 @@
-{{/* We cache this partial for bigger sites and set the active class client side. */}}
-{{ $sidebarCacheLimit := cond (isset .Site.Params.ui "sidebar_cache_limit") .Site.Params.ui.sidebar_cache_limit 2000 -}}
-{{ $shouldDelayActive := ge (len .Site.Pages) $sidebarCacheLimit -}}
 
+{{ $LinkTitle := .context.Page.LinkTitle }}
+{{ $type := .type }}
+{{ $Title := .title }}
 
-<div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
-    <!-- {{ if not .Site.Params.ui.sidebar_search_disable -}}
-    <form class="td-sidebar__search d-flex align-items-center">
-        {{ partial "search-input.html" . }}
-        <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button"
-            data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false"
-            aria-label="Toggle section navigation">
-        </button>
-    </form>
-    {{ else -}}
-    <div id="content-mobile">
-        <form class="td-sidebar__search d-flex align-items-center">
-            {{ partial "search-input.html" . }}
-            <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button"
-                data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false"
-                aria-label="Toggle section navigation">
-            </button>
-        </form>
-    </div>
-    <div id="content-desktop"></div>
-    {{ end -}} -->
-    <nav class="collapse td-sidebar-nav{{ if .Site.Params.ui.sidebar_menu_foldable }} foldable-nav{{ end }}"
-        id="td-section-nav">
-        {{ if (gt (len .Site.Home.Translations) 0) -}}
-        <div class="nav-item dropdown d-block d-lg-none">
-            {{ partial "navbar-lang-selector.html" . }}
-        </div>
-        {{ end -}}
-        {{ $navRoot := cond (and (ne .Params.toc_root true) (eq .Site.Home.Type "docs")) .Site.Home .FirstSection -}}
-        {{ $ulNr := 0 -}}
-        {{ $ulShow := cond (isset .Site.Params.ui "ul_show") .Site.Params.ui.ul_show 1 -}}
-        {{ $sidebarMenuTruncate := cond (isset .Site.Params.ui "sidebar_menu_truncate") .Site.Params.ui.sidebar_menu_truncate 50 -}}
-        <ul class="td-sidebar-nav__section pr-md-3 ul-{{ $ulNr }}">
-            {{ template "section-tree-nav-section" (dict "page" . "section" $navRoot "shouldDelayActive"
-            $shouldDelayActive "sidebarMenuTruncate" $sidebarMenuTruncate "ulNr" $ulNr "ulShow" (add $ulShow 1)) }}
-        </ul>
-    </nav>
-</div>
-
-{{ define "section-tree-nav-section" -}}
-{{ $s := .section -}}
-{{ $p := .page -}}
-{{ $shouldDelayActive := .shouldDelayActive -}}
-{{ $sidebarMenuTruncate := .sidebarMenuTruncate -}}
-{{ $treeRoot := cond (eq .ulNr 0) true false -}}
-{{ $ulNr := .ulNr -}}
-{{ $ulShow := .ulShow -}}
-{{ $active := and (not $shouldDelayActive) (eq $s $p) -}}
-{{ $activePath := and (not $shouldDelayActive) ($p.IsDescendant $s) -}}
-{{ $show := cond (or (lt $ulNr $ulShow) $activePath (and (not $shouldDelayActive) (eq $s.Parent $p.Parent)) (and (not
-$shouldDelayActive) (eq $s.Parent $p)) (not $p.Site.Params.ui.sidebar_menu_compact) (and (not $shouldDelayActive)
-($p.IsDescendant $s.Parent))) true false -}}
-{{ $mid := printf "m-%s" ($s.RelPermalink | anchorize) -}}
-{{ $pages_tmp := where (union $s.Pages $s.Sections).ByWeight ".Params.toc_hide" "!=" true -}}
-{{ $pages := $pages_tmp | first $sidebarMenuTruncate -}}
-{{ $withChild := gt (len $pages) 0 -}}
-{{ $manualLink := cond (isset $s.Params "manuallink") $s.Params.manualLink ( cond (isset $s.Params "manuallinkrelref")
-(relref $s $s.Params.manualLinkRelref) $s.RelPermalink) -}}
-{{ $manualLinkTitle := cond (isset $s.Params "manuallinktitle") $s.Params.manualLinkTitle $s.Title -}}
-
-<li class="text-white td-sidebar-nav__section-title td-sidebar-nav__section{{ if $withChild }} with-child{{ else }} without-child{{ end }}{{ if $activePath }} active-path{{ end }}{{ if (not (or $show $p.Site.Params.ui.sidebar_menu_foldable )) }} collapse{{ end }}"
-    id="{{ $mid }}-li">
-    {{ if (and $p.Site.Params.ui.sidebar_menu_foldable (ge $ulNr 2)) -}}
-    <input type="checkbox" id="{{ $mid }}-check" {{ if $activePath}} checked{{ end }} />
-    <label for="{{ $mid }}-check"><a href="{{ $manualLink }}" {{ if ne $s.LinkTitle $manualLinkTitle }}
-            title="{{ $manualLinkTitle }}" {{ end }}{{ with $s.Params.manualLinkTarget }} target="{{ . }}" {{ if eq
-            . "_blank" }} rel="noopener" {{ end }}{{ end }}
-            class="align-left pl-0 {{ if $active}} active{{ end }} td-sidebar-
-link{{ if $s.IsPage }} td-sidebar-link__page{{ else }} td-sidebar-link__section{{ end }}{{ if $treeRoot }} tree-root{{ end }}" id="{{ $mid }}">{{ with $s.Params.Icon}}<i class="{{ . }}"></i>{{ end }}<span
-                class="{{ if $active }}td-sidebar-nav-active-item{{ end }}">{{ $s.LinkTitle }}</span></a></label>
-    {{ else -}}
-    
-{{ if (isset $s.Params "favicon" )}} 
-<img class="h-6 inline-block"  src="//www.covalenthq.com/static/images/icons/display-icons/{{  $s.Params.favicon }}.svg" />
-{{ end }}
-    
-    <a href="{{ $manualLink }}" {{ if ne $s.LinkTitle $manualLinkTitle }} title="{{ $manualLinkTitle }}" {{ end }}{{
-        with $s.Params.manualLinkTarget }} target="{{
- . }}" {{ if eq . "_blank" }} rel="noopener" {{ end }}{{ end }} class="align-left pl-0{{ if $active}} active{{ end }} td-sidebar-link{{ if $s.IsPage }} td-sidebar-link__page{{ else }} td-sidebar-link__section{{ end }}{{ if $treeRoot }} tree-root{{ end }}" id="{{ $mid }}">{{ with
-        $s.Params.Icon}}<i class="{{ . }}"></i>{{ end }}<span
-            class="{{ if $active }}td-sidebar-nav-active-item{{ end }}">{{ $s.LinkTitle }}</span></a>
-    {{- end }}
-
-    {{- if $withChild }}
-    {{- $ulNr := add $ulNr 1 }}
-    <ul class="ul-{{ $ulNr }}{{ if (gt $ulNr 1)}} foldable{{end}}">
-        {{ range $pages -}}
-        {{ if (not (and (eq $s $p.Site.Home) (eq .Params.toc_root true))) -}}
-        {{ template "section-tree-nav-section" (dict "page" $p "section" . "shouldDelayActive" $shouldDelayActive
-        "sidebarMenuTruncate" $sidebarMenuTruncate "ulNr" $ulNr "ulShow" $ulShow) }}
-        {{- end }}
-        {{- end }}
-    </ul>
-    {{- end }}
-</li>
-{{ if (eq $ulNr 1 ) }}
-<hr class="mt-3 mb-3 border-covalent-purple-dark">
-
-
-{{ end }}
-
-<!-- <script>
-    // Sections
-    console.log(`
-    {{ range $pages }}
-    {{ .Title }}
-    {{ end }}
-    `)
-</script> -->
 <script>
-    // Sections
-    console.log(`
-    {{ $s.Params }}
-`)
+function expand (type, className){
+    var element; 
+    var imgElement;
+    if(type === "parent"){
+      element = document.querySelector(`#expand-${className}`)
+      imgElement = document.getElementById(`img-${className}`)
+    }else{
+      element = document.querySelector(`#expand-child-${className}`)
+      imgElement = document.getElementById(`img-${className}`)
+    }
+    imgElement.src = "/static/images/icons/minus.svg"
+    
+    if(element.style.display === "hidden"){
+      element.style.display = "block"
+      imgElement.src = "/static/images/icons/minus.svg"
+    }else if(element.style.display === "block"){
+      element.style.display = "none"
+      imgElement.src = "/static/images/icons/Add.svg"
+    }else{
+      element.style.display = "block"
+    }
+  }
 </script>
-{{- end }}
+
+
+<div class="flex justify-between items-center mb-2 cursor-pointer " onclick="expand('parent', '{{ $type }}')" >
+    <div class="text-white text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
+      {{ $Title }}
+    </div>
+    <div class="flex justify-center h-4 w-4">
+      <img id="img-{{ .type }}" src="/static/images/icons/Add.svg"></img>
+    </div>
+  </div>
+  <div id="expand-{{ .type }}" class="hidden">
+      {{ range .arr }}
+      {{ $parentTitle := replaceRE "(\\s)" "" .title }}
+      {{ if eq .title $LinkTitle }} 
+        <script>
+          expand('parent', '{{ $type }}')
+          expand('child','{{ $parentTitle }}')
+        </script>
+      {{ end }}
+        <div class="flex justify-between items-center">
+          <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
+            <a href="{{ .link }}">{{ .title }}</a>
+          </div>
+          <div class="flex justify-center h-3 w-3 cursor-pointer">
+            {{ if .subsection }}
+            <img id="img-{{ $parentTitle }}" onclick="expand('child','{{ $parentTitle }}')" src="/static/images/icons/Add.svg"></img>
+            {{ end }}
+          </div>
+        </div>
+        <div id="expand-child-{{ $parentTitle }}" class="-mt-2 hidden">
+              {{ range .subsection }}
+              {{ if eq .title $LinkTitle }} 
+              <script>
+                expand('parent', '{{ $type }}')
+                expand('child','{{ $parentTitle }}')
+              </script>
+              {{ end }}
+                <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-8 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all"> 
+                  <a href="{{ .link }}">{{ .title }}</a>
+                </div>
+                {{ range .subsection }}
+                    {{ if eq .title $LinkTitle }} 
+                    <script>
+                        expand('parent', '{{ $type }}')
+                        expand('child','{{ $parentTitle }}')
+                    </script>
+                    {{ end }}
+                    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-12 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
+                        <a href="{{ .link }}">{{ .title }}</a>
+                    </div>
+                    {{ end }}
+              {{ end }}
+        </div>
+      {{ end }}
+  </div>
+  <hr class="mb-3 border-covalent-purple-dark" />
+
 
