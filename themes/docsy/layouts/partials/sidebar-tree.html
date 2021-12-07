@@ -36,16 +36,17 @@ function expand (type, className){
     <div class="flex justify-center h-4 w-4">
       <img id="img-{{ .type }}" src="/static/images/icons/Add.svg"></img>
     </div>
-  </div>
-  <div id="expand-{{ .type }}" class="hidden">
-      {{ range .arr }}
-      {{ $parentTitle := replaceRE "(\\s)" "" .title }}
-      {{ if eq .title $LinkTitle }} 
+</div>
+<div id="expand-{{ .type }}" class="hidden">
+    {{ range .arr }}
+    {{ $parentTitle := replaceRE "(\\s)" "" .title }}
+    {{ if eq .title $LinkTitle }} 
         <script>
           expand('parent', '{{ $type }}')
           expand('child','{{ $parentTitle }}')
         </script>
-      {{ end }}
+    {{ end }}
+    {{ if eq .published true }}
         <div class="flex justify-between items-center">
           <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
             <a href="{{ .link }}">{{ .title }}</a>
@@ -57,31 +58,36 @@ function expand (type, className){
           </div>
         </div>
         <div id="expand-child-{{ $parentTitle }}" class="-mt-2 hidden">
-              {{ range .subsection }}
-              {{ if eq .title $LinkTitle }} 
-              <script>
-                expand('parent', '{{ $type }}')
-                expand('child','{{ $parentTitle }}')
-              </script>
-              {{ end }}
-                <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-8 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all"> 
-                  <a href="{{ .link }}">{{ .title }}</a>
-                </div>
-                {{ range .subsection }}
-                    {{ if eq .title $LinkTitle }} 
+            {{ range .subsection }}
+                {{ if eq .title $LinkTitle }} 
                     <script>
                         expand('parent', '{{ $type }}')
                         expand('child','{{ $parentTitle }}')
                     </script>
-                    {{ end }}
-                    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-12 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
+                {{ end }}
+                {{ if eq .published true }}
+                    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-8 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all"> 
                         <a href="{{ .link }}">{{ .title }}</a>
                     </div>
+                    {{ range .subsection }}
+                        {{ if eq .title $LinkTitle }} 
+                            <script>
+                                expand('parent', '{{ $type }}')
+                                expand('child','{{ $parentTitle }}')
+                            </script>
+                        {{ end }}
+                        {{ if eq .published true }}
+                            <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-12 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all">
+                                <a href="{{ .link }}">{{ .title }}</a>
+                            </div>
+                        {{ end }}
                     {{ end }}
-              {{ end }}
+                {{ end }}
+            {{ end }}
         </div>
       {{ end }}
-  </div>
+    {{ end }}
+</div>
   <hr class="mb-3 border-covalent-purple-dark" />
 
 
