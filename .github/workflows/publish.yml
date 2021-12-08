@@ -34,7 +34,6 @@ jobs:
           ${{ runner.os }}-yarn-
 
     - uses: borales/actions-yarn@v2.3.0
-      if: steps.yarn-cache.outputs.cache-hit != 'true'
       with:
         cmd: install
 
