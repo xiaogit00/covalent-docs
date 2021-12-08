@@ -9,7 +9,7 @@ weight: 0
      What is Covalent
     </div>
     <p class="text-xl max-w-2xl text-gray-800 mb-6">
-        Covalent provides an industry-leading <strong>Unified API</strong> bringing visibility to billions of Web3 data points. 
+        Covalent provides the industry-leading <strong>Unified API</strong> bringing visibility to billions of Web3 data points. 
     </p>
     <p class="text-xl max-w-2xl text-gray-800 mb-6">
         Developers use Covalent to build exciting multi-chain applications like crypto wallets, NFT galleries, and investor dashboard tools utilizing data from 15+ blockchains. Covalent is trusted by a community of 15,000+ developers and 500+ applications including 0x, Zerion, Rainbow Wallet, Bitski and many others.
