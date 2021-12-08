@@ -9,7 +9,7 @@ weight: 0
     <div class="font-light text-4xl text-covalent-black pb-12  max-w-screen-md">
      What is Covalent
     </div>
-    <p class="text-xl max-w-2xl text-gray-800 mb-6">
+    <p class="text-xl max-w-4xl text-gray-800 mb-6">
         Covalent provides the industry-leading <strong>Unified API</strong> bringing visibility to billions of Web3 data points. 
     </p>
     <p class="text-xl max-w-4xl text-gray-800 mb-6">
