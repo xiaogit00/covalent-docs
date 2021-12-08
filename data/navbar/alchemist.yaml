@@ -10,7 +10,7 @@
         subsection:
           -
             title: Tether Analysis
-            link: /docs/learn/casestudies
+            link: /docs/learn/casestudies/tether-analysis
             published: true
           -
             title: Uniswap as an Oracle Price Feed
@@ -19,7 +19,7 @@
       - 
         title: How-to Guides
         link: /docs/learn/guides
-        published: true
+        published: false
         subsection:
           -
             title: Analyze
@@ -34,7 +34,7 @@
             link: /docs/learn/guides/configure
             published: true
           -
-            title: Front-end
+            title: Front-end Guides
             link: /docs/learn/guides/frontend
             published: true
       - 
@@ -47,23 +47,15 @@
         published: true
         subsection:
           -
-            title: Assignment 1
+            title: Research Training Assignment 1
             link: /docs/learn/research-training/research-assignment-1
             published: true
           -
-            title: Assignment 2
-            link: /docs/learn/research-training/research-assignment-1
-            published: true
-          -
-            title: Configure
-            link: /docs/learn/guides/configure
-            published: true
-          -
-            title: Front-end
-            link: /docs/learn/guides/frontend
+            title: Research Training Assignment 2
+            link: /docs/learn/research-training/research-assignment-2
             published: true
       - 
-        title: Tutorial Video
+        title: Tutorial Video Guidelines
         link: /docs/learn/_video_guidelines
         published: true
       - 
@@ -72,15 +64,15 @@
         published: true
         subsection:
           -
-            title: Query Historical Aave Borrow rate with Primer
+            title: Querying Historical Aave Borrow rate with Primer
             link: /docs/learn/tutorials/query-historical-aave-borrow-rate-with-primer
             published: true
           -
-            title: Query with Primer (Beg)
+            title: Querying with Primer (Beg)
             link: /docs/learn/tutorials/query-with-primer-beg/
             published: true
           -
-            title: Query with Primer (Int)
+            title: Querying with Primer (Int)
             link: /docs/learn/tutorials/query-with-primer-int/
             published: true
   -
@@ -99,17 +91,17 @@
         published: true
         subsection:
           -
-            title: Puzzle Paladin - Aave flash loans
-            link: /docs/campaigns/aave-flashloans
+            title: Puzzle Paladin - Aave FlashLoans
+            link: /docs/campaigns/dungeons-and-data/aave-flashloans
             published: true
           -
             title: Puzzle Paladin - Aave Liquidations
-            link: /docs/campaigns/casestudies/aave-liquidations
+            link: /docs/campaigns/dungeons-and-data/aave-liquidations
             published: true
   -
     title: Glossary
     link: /docs/glossary
-    published: true
+    published: false
     subsection:
   -
     title: Alpha Alarm
@@ -118,6 +110,6 @@
     subsection:
   -
     title: FAQ
-    link: /docs/faq
+    link: /docs/faqs
     published: true
     subsection:

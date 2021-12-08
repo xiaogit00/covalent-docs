@@ -51,7 +51,7 @@
         subsection:
           -
             title: Aave Governance
-            link: /docs/project-showcase/dex/aave-governance
+            link: /docs/project-showcase/governance/aave-governance/
             published: true
       - 
         title: MultiChain-Analysis
@@ -146,7 +146,7 @@
             published: true
           -
             title: SpiritSwap Analytics
-            link: /docs/project-showcase/tools/spiritswap-analystics
+            link: /docs/project-showcase/tools/spiritswap-analytics
             published: true
           -
             title: Yung Fantom
@@ -190,10 +190,6 @@
             link: /docs/project-showcase/wallet/spectre
             published: true
           -
-            title: SpiritSwap Analytics
-            link: /docs/project-showcase/wallet/spiritswap-analystics
-            published: true
-          -
-            title: Stack WatchOS
+            title: Stack WatchOS Wallet
             link: /docs/project-showcase/wallet/stacks-watchos-wallet
             published: true

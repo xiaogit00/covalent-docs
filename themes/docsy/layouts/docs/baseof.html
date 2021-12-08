@@ -9,7 +9,6 @@
 
   <div class=" overflow-hidden bg-white">
 
-
     <div
       class="h-16 pl-5 pr-5 fixed left-0 right-0 bg-covalent-blue-dark text-white flex justify-between z-50 transition-all duration-500">
       <div class="flex place-self-center mr-40">
@@ -28,87 +27,39 @@
     </div>
 
 
-    <!-- <div class="hidden lg:flex lg:flex-shrink-0 nav">
-      <div class="flex flex-col w-64 pb-0 bg-covalent-blue-dark">
-        <div class="h-0 flex-1 flex flex-col overflow-y-auto mt-2 code">
-          <div class="px-6 mt-20 h-full flex flex-col">
-
-            {{ partial "sidebar.html" . }}
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="left-0 bottom-0 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex transition-all cursor-pointer text-gray-200">
-      <span icon="chevron-left" aria-hidden="true" class="bp3-icon bp3-icon-chevron-left self-center"><svg
-          data-icon="chevron-left" width="16" height="16" viewBox="0 0 16 16">
-          <path
-            d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
-            fill-rule="evenodd"></path>
-        </svg></span>
-    </div> 
-  -->
-
-    <!-- <div class="pt-16">
-      <div class="-max-w-3xl -mx-auto -max-w-7xl -px-8 grid grid-cols-12 gap-8">
-        <div class="col-span-2 bg-covalent-blue-dark">
-          <nav aria-label="Sidebar" class="pl-5 ml-2 -sticky top-6 ">
-
-            {{ partial "sidebar.html" . }}
-
-          </nav>
-          <div
-            class="left-0 bottom-0 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex transition-all cursor-pointer text-gray-200">
-            <span icon="chevron-left" aria-hidden="true" class="bp3-icon bp3-icon-chevron-left self-center"><svg
-                data-icon="chevron-left" width="16" height="16" viewBox="0 0 16 16">
-                <path
-                  d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
-                  fill-rule="evenodd"></path>
-              </svg></span>
-          </div>
-
-        </div>
-        <main class="col-span-8 overflow-y-scroll mt-6 main-content" role="main">
-
-          {{ partial "version-banner.html" . }}
-
-          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
-
-          {{ block "main" . }}{{ end }}
-
-        </main>
-        <aside class="right-nav relative col-span-2 right-nav border-l border-gray-200 bg-gray-200 bg-opacity-75 ">
-          <div class="sticky top-50 pl-5 pt-5">
-            {{ partial "toc.html" . }}
-          </div>
-        </aside>
-      </div>
-    </div>
-
-  </div> -->
 
   <div class="pt-16">
     <div class="-max-w-3xl -mx-auto -max-w-7xl -px-8 flex">
-      <!-- <div class="col-span-2 bg-covalent-blue-dark">
-        <nav aria-label="Sidebar" class="pl-5 ml-2 -sticky top-6 ">
-
-          {{ partial "sidebar.html" . }}
-
-        </nav>
-        <div
-          class="left-0 bottom-0 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex transition-all cursor-pointer text-gray-200">
-          <span icon="chevron-left" aria-hidden="true" class="bp3-icon bp3-icon-chevron-left self-center"><svg
-              data-icon="chevron-left" width="16" height="16" viewBox="0 0 16 16">
-              <path
-                d="M7.41 8l3.29-3.29c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-4 4C5.11 7.47 5 7.72 5 8c0 .28.11.53.29.71l4 4a1.003 1.003 0 001.42-1.42L7.41 8z"
-                fill-rule="evenodd"></path>
-            </svg></span>
+      <div id="side-nav" class="flex fixed h-screen ">
+        {{ partial "sidebar.html" . }}
+        <div class="left-0 bottom-0 w-4 top-16 bg-covalent-blue-dark bg-opacity-90 hover:bg-opacity-70 flex items-center transition-all cursor-pointer text-gray-200 " onclick="collapse()">
+          <div id="chev-left" style="display:block" class="flex justify center fill-current text-white opacity-80  w-6 h-6">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+            <g id="chevron_left_1_">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.41,10l5.29-5.29C13.89,4.53,14,4.28,14,4c0-0.55-0.45-1-1-1
+                  c-0.28,0-0.53,0.11-0.71,0.29l-6,6C6.11,9.47,6,9.72,6,10c0,0.28,0.11,0.53,0.29,0.71l6,6C12.47,16.89,12.72,17,13,17
+                  c0.55,0,1-0.45,1-1c0-0.28-0.11-0.53-0.29-0.71L8.41,10z"/>
+              </g>
+            </g>
+            </svg>
         </div>
-      </div> -->
-      {{ partial "sidebar.html" . }}
-      <main class="w-4/5 overflow-y-scroll mt-6 main-content ml-72 pl-12" role="main">
+        <div id="chev-right" style="display:none"  class="hidden flex justify center fill-current text-white opacity-80  w-6 h-6">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+          <g id="chevron_right_1_">
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.71,9.29l-6-6C7.53,3.11,7.28,3,7,3C6.45,3,6,3.45,6,4
+                c0,0.28,0.11,0.53,0.29,0.71L11.59,10l-5.29,5.29C6.11,15.47,6,15.72,6,16c0,0.55,0.45,1,1,1c0.28,0,0.53-0.11,0.71-0.29l6-6
+                C13.89,10.53,14,10.28,14,10C14,9.72,13.89,9.47,13.71,9.29z"/>
+            </g>
+          </g>
+          </svg>
+        </div>
+        </div>
+      </div>
+      <main class="w-full overflow-y-scroll mt-6 main-content ml-72 pl-20 h-full sm:p-0" id="main">
 
         {{ partial "version-banner.html" . }}
 
@@ -117,7 +68,7 @@
         {{ block "main" . }}{{ end }}
 
       </main>
-      <aside class="right-nav relative w-1/6 right-nav border-l border-gray-200 bg-gray-200 bg-opacity-75 ">
+      <aside class="right-nav relative w-1/6 right-nav border-l border-gray-200 bg-gray-200 bg-opacity-75 sm:hidden">
         <div class=" right-nav  sticky top-50 px-6">
           {{ partial "toc.html" . }}
         </div>
@@ -127,7 +78,31 @@
 
 </div>
 
-  <script>
+<script>
+    var nav = document.querySelector('#side-nav')
+    var main = document.querySelector('#main')
+    var left = document.querySelector(`#chev-left`)
+    var right = document.querySelector(`#chev-right`)
+
+    var navState = true;
+
+    function collapse (){
+      if(navState){
+        nav.style.left = "-285px"
+        main.style.marginLeft = "3rem"
+        navState = false
+        left.style.display = "none"
+        right.style.display = "block"
+
+      }else{
+        nav.style.left = "0"
+        main.style.marginLeft = "18rem"
+        navState = true
+        left.style.display = "block"
+        right.style.display = "none"
+      }
+    }
+
     mermaid.initialize({ startOnLoad: true });
 
     var element = document.getElementsByClassName("language-mermaid");

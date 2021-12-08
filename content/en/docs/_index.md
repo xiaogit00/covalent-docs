@@ -3,6 +3,7 @@ title: Overview
 weight: 0
 ---
 
+# Overview
 
 <section class="">    
     <div class="font-light text-4xl text-covalent-black pb-12  max-w-screen-md">
@@ -11,19 +12,19 @@ weight: 0
     <p class="text-xl max-w-2xl text-gray-800 mb-6">
         Covalent provides the industry-leading <strong>Unified API</strong> bringing visibility to billions of Web3 data points. 
     </p>
-    <p class="text-xl max-w-2xl text-gray-800 mb-6">
+    <p class="text-xl max-w-4xl text-gray-800 mb-6">
         Developers use Covalent to build exciting multi-chain applications like crypto wallets, NFT galleries, and investor dashboard tools utilizing data from 15+ blockchains. Covalent is trusted by a community of 15,000+ developers and 500+ applications including 0x, Zerion, Rainbow Wallet, Bitski and many others.
     </p>
     <div class="font-light text-4xl text-covalent-black pt-12 pb-12  max-w-screen-md">
      Why Covalent
     </div>
-    <p class="text-xl max-w-2xl text-gray-800 mb-6">
+    <p class="text-xl max-w-4xl text-gray-800 mb-6">
     Simply put, Covalent's Unified API allows you to pull detailed, historical and granular blockchain data from multiple blockchains with no code. Covalent allows developers to drastically cut time, costs and complexity from blockchain application development. 
     </p>
-    <p class="text-xl max-w-2xl text-gray-800 ">
+    <p class="text-xl max-w-4xl text-gray-800 ">
     Developers love Covalent for the following reasons:
     </p>
-    <ul class="list-disc max-w-2xl">
+    <ul class="list-disc max-w-3xl">
     <li class="text-xl "><strong>Automatically indexed:</strong> All code on the underlying blockchain is automatically indexed for you, the developer. Covalent makes an exact replica of every single contract, every wallet and every single transaction to the Covalent database. The Covalent database hosts billions of rows of data and terabytes of data.</li>
     <li class="text-xl "><strong>No-code:</strong> Covalent offers a "no-code" solution and all customizations can be done without writing a single line of code by the developer. No need to invest expensive engineering time in building indexing code that you'd rather invest in building your application.</li>
     <li class="text-xl "><strong>Multiple blockchains, multiple usecases:</strong> The same unified API works across 15+ blockchains and dozens of use-cases like crypto-wallets, NFT galleries, investor dashboard tools, DAO tooling - the possibilities are endless.</li>
@@ -36,7 +37,7 @@ weight: 0
             Pick your path, so we can direct you to relevant content:
         </div>
         <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-20 gap-x-12">
-            <div class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-7 cursor-pointer hover:bg-opacity-70">
+            <div onclick="expandNav('dev')" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-7 cursor-pointer hover:bg-opacity-70">
                 <div class="mb-4">
                     <img src="/static/images/icons/Code.svg"></img>
                 </div>
@@ -47,7 +48,7 @@ weight: 0
                     An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
                 </div>
             </div>
-            <div class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-5 cursor-pointer hover:bg-opacity-70">
+            <div onclick="expandNav('alchemist')" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-5 cursor-pointer hover:bg-opacity-70">
                 <div class="mb-4">
                     <img src="/static/images/icons/Alchemist.svg"></img>
                 </div>
@@ -58,7 +59,7 @@ weight: 0
                     An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
                 </div>
             </div>
-            <div class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl  p-5 cursor-pointer hover:bg-opacity-70">
+            <div onclick="expandNav('validator')" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl  p-5 cursor-pointer hover:bg-opacity-70">
                 <div class="mb-4">
                     <img src="/static/images/icons/Screen Chart.svg"></img>
                 </div>
@@ -74,4 +75,27 @@ weight: 0
     <!-- Networks -->
     {{< networks >}}
 </section>
+
+<script>
+function expandNav (className){
+
+    var plus = document.querySelector(`#plus-${className}`)
+    var minus = document.querySelector(`#minus-${className}`)
+    var element = document.querySelector(`#expand-${className}`)
+    
+    if(element.style.display === "hidden"){
+      element.style.display = "block"
+      plus.style.display = "none"
+      minus.style.display = "block"
+    }else if(element.style.display === "block"){
+      element.style.display = "none"
+      plus.style.display = "block"
+      minus.style.display = "none"
+    }else{
+      element.style.display = "block"
+      plus.style.display = "none"
+      minus.style.display = "block"
+    }
+  }
+</script>
 

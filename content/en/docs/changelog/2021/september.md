@@ -4,6 +4,8 @@ weight: 9
 hidden: false
 ---
 
+# September 2021
+
 ## 2021-09-30
 
 For the start of the last quarter, we took a step back from implementing new features and focused mainly on infrastructure and decentralization. Therefore, in the month of September, our commitment was geared towards strengthening our core infrastructure and upgrading our endpoints to better serve our customers.

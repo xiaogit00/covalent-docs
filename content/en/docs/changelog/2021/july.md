@@ -4,6 +4,8 @@ weight: 7
 hidden: false
 ---
 
+# July 2021
+
 ## 2021-07-31
 
 ### ADDED
