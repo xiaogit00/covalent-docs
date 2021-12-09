@@ -4,7 +4,7 @@ updated: 2021-06-21
 order: 1
 hidden: false
 author: leilani ledingham
-featuredImage: ./images/research-assignment-1.jpg
+featuredImage: /static/images/alchemist/Research-Assignment-1.png
 description: Learn how to retrieve and clean a dataset for swaps of a specific pair, returning the spreadsheet in a CSV format and create charts with th data.
 
 tags: 
@@ -12,7 +12,7 @@ tags:
   - CSV
 ---
 
-![Research Assignment 1 Banner](../images/research-assignment-1.jpg)
+![Research Assignment 1 Banner](/static/images/alchemist/Research-Assignment-1.png)
 
 # Research Training Assignment 1
 

@@ -9,10 +9,10 @@ Covalent is pleased to endorse industry-leading service providers who may be of 
 ## Infrastructure
 
 ### [Chainstack](/service-providers/chainstack)
-[![Chainstack](./images/chainstack-banner.png)](/docs/service-providers/chainstack)
+[![Chainstack](/static/images/service-providers/Chainstack.png)](/static/images/service-providers/Chainstack.png)
 
 ### [ANKR](/service-providers/ankr)
-[![ANKR](./images/ankr-banner.png)](/docs/service-providers/ankr)
+[![ANKR](/static/images/service-providers/ANKR.png)](/static/images/service-providers/ANKR.png)
 
 ### [GetBlock](/service-providers/getblock)
-[![GetBlock](./images/getblock-banner.png)](/docs/service-providers/getblock)
+[![GetBlock](/static/images/service-providers/GetBlock.png)](/static/images/service-providers/GetBlock.png)

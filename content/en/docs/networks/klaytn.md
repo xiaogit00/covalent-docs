@@ -3,12 +3,12 @@ title: Klaytn Network
 LinkTitle: Klaytn
 weight: 11
 hidden: false
-featuredImage: ./images/Klaytn.png
+featuredImage: /static/images/networks/banners/Klaytn.png
 description: Klaytn is an enterprise-grade, service-centric platform that brings user-friendly blockchain experience to millions.
 favicon: klaytn-mainnet-logo
 ---
 
-![Klaytn network banner](../images/Klaytn.png)
+![Klaytn network banner](/static/images/networks/banners/Klaytn.png)
 
 # Klaytn Network
 

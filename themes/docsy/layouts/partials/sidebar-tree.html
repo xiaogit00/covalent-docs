@@ -71,8 +71,15 @@ function expand (type, className){
     {{ end }}
     {{ if eq .published true }}
         <div class="flex justify-between items-center">
-          <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
+          <div class="flex">
+            {{ if .icon }}
+            <div class="flex justify-center h-4 w-4 ml-5 mt-1">
+              <img src="{{ .icon }}"></img>
+            </div>
+            {{ end }}
+            <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">
               <a href="{{ .link }}">{{ .title }}</a>
+          </div>
           </div>
           <div class="flex justify-center items-center cursor-pointer mr-1 mb-2" >
             {{ if .subsection }}
@@ -111,11 +118,6 @@ function expand (type, className){
                 {{ end }}
                 {{ if eq .published true }}
                     <div class="relative">
-                      {{ if .icon }}
-                      <div class="absolute left-6 top-1 flex justify-center h-3 w-3">
-                        <img src="{{ .icon }}"></img>
-                      </div>
-                      {{ end }}
                       <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-sm truncate pl-8 my-2 mb-3 ml-4 text-xs opacity-80 cursor-pointer hover:text-covalent-pink transition-all"> 
                           <a href="{{ .link }}">{{ .title }}</a>
                       </div>

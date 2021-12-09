@@ -3,12 +3,12 @@ title: RSK indexing & querying data API
 LinkTitle: RSK
 weight: 8
 hidden: false
-featuredImage: ./images/RSK.png
+featuredImage: /static/images/networks/banners/RSK.png
 description: Support for RSK network
 favicon: rsk-mainnet-logo
 ---
 
-![Recipe logo](../images/RSK.png)
+![Recipe logo](/static/images/networks/banners/RSK.png)
 
 # RSK Network
 

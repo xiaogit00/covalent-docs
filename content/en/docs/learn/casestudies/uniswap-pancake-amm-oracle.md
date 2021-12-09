@@ -4,7 +4,7 @@ updated: 2021-04-05
 order: 2
 hidden: false
 author: gane5h
-featuredImage: ../images/uniswap-price-feed/cookbook-uniswap-banner.png
+featuredImage: /static/images/alchemist/Uniswap.png
 description: Learn how to use Uniswap as a price oracle.
 tags: 
   - Class A
@@ -15,7 +15,7 @@ tags:
 
 
 
-![Recipe logo](../images/uniswap-price-feed/cookbook-uniswap-banner.png)
+![Recipe logo](/static/images/alchemist/Uniswap.png)
 
 
 # Uniswap as an Oracle Price Feed

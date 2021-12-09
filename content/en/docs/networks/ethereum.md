@@ -3,12 +3,12 @@ title: Ethereum indexing & querying data API
 LinkTitle: Ethereum
 weight: 1
 hidden: false
-featuredImage: ./images/Ethereum.png
+featuredImage: /static/images/networks/banners/Ethereum.png
 description: Fully indexed and providing billions of rows of data at your fingertips. 
 favicon: ethereum-eth-logo
 ---
 
-![Ethereum network banner](../images/Ethereum.png)
+![Ethereum network banner](/static/images/networks/banners/Ethereum.png)
 
 # Ethereum
 

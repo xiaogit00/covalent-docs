@@ -3,12 +3,12 @@ title: Ronin Network
 LinkTitle: Ronin
 weight: 14
 hidden: false
-featuredImage: ./images/Ronin.png
+featuredImage: /static/images/networks/banners/Ronin.png
 description: Ronin is an Ethereum-linked sidechain made specifically for Axie Infinity. A Ronin was a samurai without a master in feudal Japan and Ronin represents the Axie desire to take the destiny of our product into our own hands.
 favicon: axie-logo
 ---
 
-![Ronin network banner](../images/Ronin.png)
+![Ronin network banner](/static/images/networks/banners/Ronin.png)
 
 # Ronin Network
 

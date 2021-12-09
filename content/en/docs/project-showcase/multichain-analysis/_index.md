@@ -14,7 +14,7 @@ hideChildren: false
 [![Dokodemodoa](../images/dokodemodoa.png)](./dokodemodoa)
 
 ## [GoSwapp](./goswapp)
-[![GoSwapp](../images/goswapp-banner.png)](./goswapp)
+[![GoSwapp](/static/images/project-showcase/banners/go-swapp.png)](./goswapp)
 
 ## [SpiritSwap Overview](./spiritswap-overview)
 [![SpiritSwap Overview](../images/spiritswap-overview.png)](./spiritswap-overview)

@@ -9,7 +9,7 @@ hideChildren: false
 # DeFi
 
 ## [Coin Defit](./coindefit)
-[![Coin Defit](../images/coindefit-banner.png)](./coindefit)
+[![Coin Defit](/static/images/project-showcase/banners/coin-defit.png)](./coindefit)
 
 ## [Crypto Trust](./crypto-trust)
 [![Crypto Trust](../images/crypto-trust.png)](./crypto-trust)

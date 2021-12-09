@@ -2,7 +2,7 @@
 title: GoSwapp
 order: 2
 hidden: false
-featuredImage: ../images/goswapp-banner.png
+featuredImage: /static/images/project-showcase/banners/go-swapp.png
 author: anadi2311
 updated: 2021-05-30
 description: The first defi app to bring the Uniswap And Pancakeswap trading experience to mobile phones.
@@ -11,7 +11,7 @@ tags:
   -  Independent Projects
 ---
 
-![GoSwapp Banner](../../images/goswapp-banner.png)
+![GoSwapp Banner](/static/images/project-showcase/banners/go-swapp.png)
 
 &nbsp;
 # GoSwapp

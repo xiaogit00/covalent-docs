@@ -3,12 +3,12 @@ title: Moonbeam indexing & querying data API
 LinkTitle: Moonbeam
 weight: 6
 hidden: false
-featuredImage: ./images/Moonbeam.png
+featuredImage: /static/images/networks/banners/Moonbeam.png
 description: Support for the Moonbeam network
 favicon: moonbeam-logo
 ---
 
-![Moonbeam banner](../images/Moonbeam.png)
+![Moonbeam banner](/static/images/networks/banners/Moonbeam.png)
 
 # Moonbeam Network
 

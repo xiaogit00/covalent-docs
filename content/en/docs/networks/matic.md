@@ -3,12 +3,12 @@ title: Polygon/Matic indexing & querying data API
 LinkTitle: Polygon/Matic
 weight: 2
 hidden: false
-featuredImage: ./images/Matic.png
+featuredImage: /static/images/networks/banners/Matic.png
 description: Working together to bring massive scale to Ethereum
 favicon: polygon-matic-logo
 ---
 
-![Matic network banner](../images/Matic.png)
+![Matic network banner](/static/images/networks/banners/Matic.png)
 
 # Polygon / Matic Network
 

@@ -3,12 +3,12 @@ title: Heco Network
 LinkTitle: Heco
 weight: 12
 hidden: false
-featuredImage: ./images/Heco.png
+featuredImage: /static/images/networks/banners/Heco.png
 description: HECO is a decentralized and cost efficient public chain that Ethereum developers can easily get started with and smart contracts are seamlessly compatible.
 favicon: heco-mainnet-logo
 ---
 
-![HECO network banner](../images/Heco.png)
+![HECO network banner](/static/images/networks/banners/Heco.png)
 
 # Huobi ECO - HECO Network
 

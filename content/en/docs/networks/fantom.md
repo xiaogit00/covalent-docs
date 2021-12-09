@@ -3,12 +3,12 @@ title: Fantom indexing & querying data API
 LinkTitle: Fantom
 weight: 5
 hidden: false
-featuredImage: ./images/Fantom.png
+featuredImage: /static/images/networks/banners/fantom.png
 description: Support for Fantom network
 favicon: fantom-ftm-logo
 ---
 
-![Recipe logo](../images/Fantom.png)
+![Recipe logo](/static/images/networks/banners/fantom.png)
 
 # Fantom Network
 

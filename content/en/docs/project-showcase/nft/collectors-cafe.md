@@ -4,7 +4,7 @@ order: 1
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: ../images/collectors-cafe-banner.png
+featuredImage: /static/images/project-showcase/banners/collectors-cafe.png
 description: A social network to discover, exhibit and trade NFTs
 tags:
   - NFT
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![Collectors Cafe Banner](../../images/collectors-cafe-banner.png)
+![Collectors Cafe Banner](/static/images/project-showcase/banners/collectors-cafe.png)
 
 &nbsp;
 # Collectors Cafe

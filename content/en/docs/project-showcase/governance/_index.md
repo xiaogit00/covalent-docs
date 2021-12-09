@@ -8,4 +8,4 @@ hideChildren: false
 # Governance
 
 ## [Aave Governance](./aave-governance)
-[![Aave Governance](../images/aave-governance-banner.png)](./aave-governance)
+[![Aave Governance](/static/images/project-showcase/banners/aave-governance.png)](./aave-governance)

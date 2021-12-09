@@ -3,12 +3,12 @@ title: Moonriver indexing & querying data API
 LinkTitle: Moonriver
 weight: 7
 hidden: false
-featuredImage: ./images/Moonriver.png
+featuredImage: /static/images/networks/banners/Moonriver.png
 description: Support for the Moonriver network
 favicon: moonbeam-logo
 ---
 
-![Moonriver banner](../images/Moonriver.png)
+![Moonriver banner](/static/images/networks/banners/Moonriver.png)
 
 # Moonriver Network
 

@@ -11,7 +11,7 @@ tags:
   - Independent Projects
 ---
 
-![Coin Defit Banner](../../images/coindefit-banner.png)
+![Coin Defit Banner](/static/images/project-showcase/banners/coin-defit.png)
 
 &nbsp;
 # Coin Defit

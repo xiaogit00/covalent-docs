@@ -3,13 +3,13 @@ title: Avalanche indexing & querying data API
 LinkTitle: Avalanche
 weight: 3
 hidden: false
-featuredImage: ./images/Avalanche.png
+featuredImage: /static/images/networks/banners/Avalanche.png
 description: Support for both Avalanche and Fuji C-Chain networks
 favicon: avalanche-avax-logo
 
 ---
 
-![Recipe logo](../images/Avalanche.png)
+![Recipe logo](/static/images/networks/banners/Avalanche.png)
 
 # Avalanche Network
 

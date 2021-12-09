@@ -3,12 +3,12 @@ title: Palm indexing & querying data API
 LinkTitle: Palm
 weight: 10
 hidden: false
-featuredImage: ./images/Palm.png
+featuredImage: /static/images/networks/banners/Palm.png
 description: Support for the Palm NFTs network
 favicon: palm-mainnet-logo
 ---
 
-![Palm banner](../images/Palm.png)
+![Palm banner](/static/images/networks/banners/Palm.png)
 
 # Palm
 

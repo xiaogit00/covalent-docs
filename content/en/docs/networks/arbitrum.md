@@ -3,12 +3,12 @@ title: Arbitrum indexing & querying data API
 LinkTitle: Arbitrum
 weight: 9
 hidden: false
-featuredImage: ./images/Arbitrum.png
+featuredImage: /static/images/networks/banners/Avalanche.png
 description: Support for Arbitrum network
 favicon: arbitrum-mainnet-logo
 ---
 
-![Recipe logo](../images/Arbitrum.png)
+![Recipe logo](/static/images/networks/banners/Arbitrum.png)
 
 # Arbitrum Network
 

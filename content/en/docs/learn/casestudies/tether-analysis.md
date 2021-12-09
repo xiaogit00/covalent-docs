@@ -4,7 +4,7 @@ updated: 2021-03-31
 order: 1
 hidden: false
 author: harishraisinghani
-featuredImage: ./images/tether_analysis/cookbook-tether-banner.png
+featuredImage: /static/images/alchemist/Tether.png
 description: Learn how to easily extract all USDT Issuances and compare with Tether's Transparency Dashboard.
 tags: 
   - Class A
@@ -12,7 +12,7 @@ tags:
   - Log Events
 ---
 
-![Recipe logo](../images/tether_analysis/cookbook-tether-banner.png)
+![Recipe logo](/static/images/alchemist/Tether.png)
 
 
 # Analyze Tether issuances

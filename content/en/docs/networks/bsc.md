@@ -3,12 +3,12 @@ title: Binance Smart Chain indexing & querying data API
 LinkTitle: BSC
 weight: 4
 hidden: false
-featuredImage: ./images/Binance.png
+featuredImage: /static/images/networks/banners/Binance.png
 description: Supporting a faster, cheaper, EVM-compatible network
 favicon: binance-coin-bnb-logo
 ---
 
-![BSC network banner](../images/Binance.png)
+![BSC network banner](/static/images/networks/banners/Binance.png)
 
 # Binance Smart Chain
 

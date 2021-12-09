@@ -10,13 +10,13 @@ hideChildren: false
 ## [Burst NFTS](./burst-nft)
 [![Burst NFTs](../images/burst-nft.png)](./burst-nft)
 ## [Collectors Cafe](./collectors-cafe)
-[![Collectors Cafe](../images/collectors-cafe-banner.png)](./collectors-cafe)
+[![Collectors Cafe](/static/images/project-showcase/banners/collectors-cafe.png)](./collectors-cafe)
 
 ## [ETHBlox](./ethblox)
 [![ETHblox](../images/ethblox.png)](./ethblox)
 
 ## [Hestia](./nft/hestia)
-[![Hestia](../images/hestia-banner.png)](./hestia)
+[![Hestia](/static/images/project-showcase/banners/Hestia.png)](./hestia)
 ## [NFTree Token](./nftree)
 [![NFTree](../images/nftree.png)](./nftree)
 

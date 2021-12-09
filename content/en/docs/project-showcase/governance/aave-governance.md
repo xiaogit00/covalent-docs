@@ -4,7 +4,7 @@ order: 1
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: ../images/aave-governance-banner.png
+featuredImage: /static/images/project-showcase/banners/aave-governance.png
 description: A governance dashboard for the Aave Protocol
 tags:
   - Governance
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![Coin Defit Banner](../../images/aave-governance-banner.png)
+![Coin Defit Banner](/static/images/project-showcase/banners/aave-governance.png)
 
 &nbsp;
 # Aave Governance Dashboard
