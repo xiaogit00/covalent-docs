@@ -16,6 +16,8 @@ function expand (type, className){
       element = document.querySelector(`#expand-child-${className}`)
     }
 
+    console.log(element)
+
     
     if(element.style.display === "hidden"){
       element.style.display = "block"
@@ -33,11 +35,11 @@ function expand (type, className){
   }
 </script>
 
-<div class="flex justify-between items-center mb-2 cursor-pointer " onclick="expand('parent', '{{ $type }}')" >
-    <div class="text-white text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
-      {{ $Title }}
+<div class="flex justify-between items-center mb-2 cursor-pointer " >
+    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
+      <a href="/docs/{{ $type }}">{{ $Title }}</a>
     </div>
-    <div id="plus-{{ .type }}" style="display:block" class="flex justify center fill-current text-covalent-pink w-6 h-6">
+    <div id="plus-{{ .type }}" style="display:block" class="flex justify center fill-current text-covalent-pink w-6 h-6" onclick="expand('parent', '{{ $type }}')">
         <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
         <g id="plus_11_">
@@ -48,7 +50,7 @@ function expand (type, className){
         </g>
         </svg>
     </div>
-    <div id="minus-{{ .type }}" style="display:none"  class="hidden flex justify center fill-current text-covalent-pink w-6 h-6">
+    <div id="minus-{{ .type }}" style="display:none"  class="hidden flex justify center fill-current text-covalent-pink w-6 h-6" onclick="expand('parent', '{{ $type }}')">
       <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
       <g id="minus_6_">
@@ -60,7 +62,7 @@ function expand (type, className){
       </svg>
     </div>
 </div>
-<div id="expand-{{ .type }}" class="hidden">
+<div id="expand-{{ .type }}" class="hidden" >
     {{ range .arr }}
     {{ $parentTitle := replaceRE "(\\s)" "" .title }}
     {{ if eq .title $LinkTitle }} 
@@ -141,6 +143,11 @@ function expand (type, className){
       {{ end }}
     {{ end }}
 </div>
-  <hr class="mb-3 border-covalent-purple-dark" />
+<hr class="mb-3 border-covalent-purple-dark" />
 
+  {{ if eq .title $LinkTitle }} 
+  <script>
+    expand('parent', '{{ $type }}')
+  </script>
+  {{ end }}
 

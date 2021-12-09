@@ -14,7 +14,7 @@ hideChildren: false
 [![Allchain](../images/allchain-xyz.png)](./allchain-xyz)
 
 ## [Dash Monke](./dash-monke)
-[![Dash Monke](../images/dashmonke-banner.png)](./dash-monke)
+[![Dash Monke](/static/images/project-showcase/banners/dashmonke.png)](./dash-monke)
 
 ## [Avalanche Wallet Checker](./omw-awc)
 [![Avalanche Wallet Checker](../images/omw-awc.png)](./omw-awc)

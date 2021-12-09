@@ -4,7 +4,7 @@ order: 3
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: ../images/dashmonke-banner.png
+featuredImage: /static/images/project-showcase/banners/dashmonke.png
 description: The most secure wallet app which does not transfer funds, or even store your keys!
 tags:
   - Wallet
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![Dash Monke Banner](../../images/dashmonke-banner.png)
+![Dash Monke Banner](/static/images/project-showcase/banners/dashmonke.png)
 
 &nbsp;
 # Dash Monke

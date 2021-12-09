@@ -38,15 +38,15 @@
       -
         Name: Moonbeam
         img: "/static/images/networks/Moonbeam.svg"
-      -
-        Name: Arbitrum
-        img: "/static/images/networks/Arbitrum.svg"
+      # -
+      #   Name: Arbitrum
+      #   img: "/static/images/networks/Arbitrum.svg"
       -
         Name: Optimism
         img: "/static/images/networks/Optimisim.svg"
-      -
-        Name: RSK
-        img: "/static/images/networks/RSK.svg"
+      # -
+      #   Name: RSK
+      #   img: "/static/images/networks/RSK.svg"
       -
         Name: HECO
         img: "/static/images/networks/HECO.svg"

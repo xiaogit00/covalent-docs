@@ -56,8 +56,8 @@
             published: true
       - 
         title: Tutorial Video Guidelines
-        link: /docs/learn/_video_guidelines
-        published: true
+        link: /docs/learn/_video_guidelines/
+        published: false
       - 
         title: Tutorials
         link: /docs/learn/tutorials

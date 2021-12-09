@@ -4,7 +4,7 @@ hidden: false
 order: 1
 ---
 
-import DocsTutorialsOverview from "../../../components/docs-tutorials-overview"
+<!-- import DocsTutorialsOverview from "../../../components/docs-tutorials-overview" -->
 
 # Tutorials
 

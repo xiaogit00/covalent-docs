@@ -10,7 +10,7 @@ tags:
   - MongoDB
 ---
 
-import Prerequisites from "../../../components/prerequisites.js";
+<!-- import Prerequisites from "../../../components/prerequisites.js"; -->
 
 # Querying Historical Aave Borrow rate with Primer
 
