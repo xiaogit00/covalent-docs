@@ -1,6 +1,6 @@
 ---
 title: IoTeX Mainnet & Testnet
-LinkTitle: IoTex
+LinkTitle: IoTeX
 weight: 14
 hidden: false
 featuredImage: /static/images/networks/banners/IoTex.png

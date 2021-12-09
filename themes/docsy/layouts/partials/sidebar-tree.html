@@ -16,8 +16,6 @@ function expand (type, className){
       element = document.querySelector(`#expand-child-${className}`)
     }
 
-    console.log(element)
-
     
     if(element.style.display === "hidden"){
       element.style.display = "block"
@@ -75,8 +73,8 @@ function expand (type, className){
         <div class="flex justify-between items-center">
           <div class="flex">
             {{ if .icon }}
-            <div class="flex justify-center h-5 w-5 ml-5 ">
-              <img class="bg-white	pt-1 pb-1 rounded-full" src="{{ .icon }}"></img>
+            <div class="flex bg-white rounded-full justify-center h-5 w-5 ml-5 ">
+              <img class="pt-1 pb-1" src="{{ .icon }}"></img>
             </div>
             {{ end }}
             <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-md truncate pl-5 mb-2 cursor-pointer hover:text-covalent-pink transition-all">

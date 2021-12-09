@@ -43,7 +43,7 @@
       - 
         title: Moonriver
         link: /docs/networks/moonriver
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/moonbeam-logo.svg"
+        icon: "//www.covalenthq.com/static/images/icons/display-icons/moonriver.png"
         banner:
         published: true
       - 
@@ -73,7 +73,7 @@
       - 
         title: Heco
         link: /docs/networks/heco
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/heco-mainnet-logo.svg"
+        icon: "//www.covalenthq.com/static/images/icons/display-icons/heco.svg"
         banner:
         published: true
       - 

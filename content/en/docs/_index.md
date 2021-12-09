@@ -41,7 +41,7 @@ weight: 0
             <img class="mr-3" src="/static/images/icons/Learn.svg"></img>
             Pick your path, so we can direct you to relevant content:
         </div>
-        <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-20 gap-x-12">
+        <div class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-y-20 gap-x-12">
             <div onclick="location.href='/docs/developer';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-7 cursor-pointer hover:bg-opacity-70">
                 <div class="mb-4">
                     <img src="/static/images/icons/Code.svg"></img>
