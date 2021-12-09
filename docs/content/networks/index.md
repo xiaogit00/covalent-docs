@@ -34,7 +34,8 @@ We currently support the following networks:
 | [Moonriver](/networks/moonriver)         | `1285` |
 | [Klaytn](/networks/klaytn)               | `8217` |
 | [HECO](/networks/heco)               | `128` |
-| [IoTex](/networks/iotex)               | `4789` |
+| [IoTeX](/networks/iotex)               | `4789` |
+| [Astar Shiden](/networks/astar)               | `336` |
 
 </TableWrap>
 
