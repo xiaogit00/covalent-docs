@@ -79,8 +79,11 @@ weight: 0
     </div>
     <!-- Networks -->
     {{< networks >}}
+    <div class="font-light text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
+        Latest Updates
+    </div>
     <!-- Updates -->
-    <!-- {{< updateTimeline >}} -->
+    {{< updateTimeline >}}
 </section>
 
 

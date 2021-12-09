@@ -63,12 +63,6 @@ function expand (type, className){
 <div id="expand-{{ .type }}" class="hidden" >
     {{ range .arr }}
     {{ $parentTitle := replaceRE "(\\s)" "" .title }}
-    {{ if eq .title $LinkTitle }} 
-        <script>
-          expand('parent', '{{ $type }}')
-          expand('child','{{ $parentTitle }}')
-        </script>
-    {{ end }}
     {{ if eq .published true }}
         <div class="flex justify-between items-center">
           <div class="flex">
@@ -109,6 +103,12 @@ function expand (type, className){
           </div>
         </div>
         <div id="expand-child-{{ $parentTitle }}" class="-mt-2 hidden">
+          {{ if eq .title $LinkTitle }} 
+          <script>
+            expand('parent', '{{ $type }}')
+            expand('child','{{ $parentTitle }}')
+          </script>
+         {{ end }}
             {{ range .subsection }}
                 {{ if eq .title $LinkTitle }} 
                     <script>
