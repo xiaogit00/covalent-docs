@@ -5,12 +5,6 @@
         banner:
         published: true
       - 
-        title: Ronin
-        link: /docs/networks/ronin
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/axie-logo.svg"
-        banner:
-        published: true
-      - 
         title: Polygon/Matic
         link: /docs/networks/matic
         icon: "//www.covalenthq.com/static/images/icons/display-icons/polygon-matic-logo.svg"
@@ -32,6 +26,12 @@
         title: Fantom
         link: /docs/networks/fantom
         icon: "//www.covalenthq.com/static/images/icons/display-icons/fantom-ftm-logo.svg"
+        banner:
+        published: true
+      - 
+        title: Ronin
+        link: /docs/networks/ronin
+        icon: "//www.covalenthq.com/static/images/icons/display-icons/axie-logo.svg"
         banner:
         published: true
       - 
@@ -82,3 +82,10 @@
         icon: "//www.covalenthq.com/static/images/icons/display-icons/nervos-polyjuice-testnet-logo.svg"
         banner:
         published: true
+      - 
+        title: IoTeX
+        link: /docs/networks/iotex
+        icon: "//www.covalenthq.com/static/images/icons/display-icons/iotex-logo.svg"
+        banner:
+        published: true
+                   
