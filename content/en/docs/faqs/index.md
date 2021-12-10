@@ -10,11 +10,11 @@ These questions serve as a self serve resource for using the [Covalent API](http
 ## How do I get an API KEY?
 Visit https://www.covalenthq.com/platform/#/auth/register/ and fill the form.
 
-![Sign Up Form](./images/sign-up.png)
+![Sign Up Form](/static/images/faq/sign-up.png)
 
 Your `API_KEY` will be available on the dashboard.
 
-![API KEY](./images/api-key.png)
+![API KEY](/static/images/faq/api-key.png)
 
 &nbsp;
 ## How do I query an endpoint?
@@ -25,7 +25,7 @@ Request URL = api path + endpoint path + API_KEY
 https://api.covalenthq.com/v1/{chain_id}/address/{address}/balances_v2/
 Note - the `/v1/` is NOT repeated
 
-![Query Endpoint](./images/query-endpoint.png)
+![Query Endpoint](/static/images/faq/query-endpoint.png)
 
 Example URL: https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B/balances_v2/?&key=”API_KEY”
 
@@ -79,7 +79,7 @@ Example: https://api.covalenthq.com/v1/1/address/0xAb5801a7D398351b8bE11C439e05C
 
 When using the API docs, put `csv` in the `format` input field. 
 
-![format csv](./images/format-csv.png)
+![format csv](/static/images/faq/format-csv.png)
 
 &nbsp;
 ## How do I contact Developer Support when I’m stuck?

@@ -2,11 +2,11 @@
 title: Stake All Finance
 order: 4
 hidden: false
-featuredImage: ../images/stakeall-finance.png
+featuredImage: /static/images/project-showcase/stakeall-finance.png
 description: DeFi Platform for staking in various POS protocols.  
 ---
 
-![Stake All Finance Banner](../../images/stakeall-finance.png)
+![Stake All Finance Banner](/static/images/project-showcase/stakeall-finance.png)
 
 &nbsp;
 

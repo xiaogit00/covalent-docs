@@ -2,7 +2,7 @@
 title: ETHBlox
 order: 6
 hidden: false
-featuredImage: ../images/ethblox.png
+featuredImage: /static/images/project-showcase/ethblox.png
 author: anadi2311
 updated: 2021-08-30
 description: A social platform for users to share their NFTs, join communities, and make friends with all posts and communication hosted on IPFS.
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![ETHBlox Banner](../../images/ethblox.png)
+![ETHBlox Banner](/static/images/project-showcase/ethblox.png)
 
 &nbsp;
 # ETHBlox

@@ -4,14 +4,14 @@ order: 6
 hidden: false
 author: emmaodia
 updated: 2021-05-30
-featuredImage: ../images/stacks-watchos-wallet.png
+featuredImage: /static/images/project-showcase/stacks-watchos-wallet.png
 description: SwiftUI based iOS and watchOS app for querying blockchain data via the Covalent API. Listing token balances, NFTs and searching for transactions on a particular wallet network and address. 
 tags: 
   - DeFi
   - Independent Projects
 ---
 
-![Stack WatchOS Wallet Banner](../../images/stacks-watchos-wallet.png)
+![Stack WatchOS Wallet Banner](/static/images/project-showcase/stacks-watchos-wallet.png)
 
 &nbsp;
 # Stack WatchOS Wallet

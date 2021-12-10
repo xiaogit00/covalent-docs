@@ -2,11 +2,11 @@
 title: Bokfolio
 order: 9
 hidden: false
-featuredImage: ../images/project-showcase/bokfolio.png
+featuredImage: /static/images/project-showcase/bokfolio.png
 description: Simple and efficient way to keep track of wallets on the Binance Smart Chain in fiat currency.
 ---
 
-![Bokfolio Banner](../../images/bokfolio.png)
+![Bokfolio Banner](/static/images/project-showcase/bokfolio.png)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ https://bokfolio.springbokcrypto.com/
 
 &nbsp;
 
-![Bokfolio Asset](../images/bokfolio-asset.png)
+![Bokfolio Asset](/static/images/project-showcase/bokfolio-asset.png)
 
 **Simple and efficient way to keep track of your own and other wallets on the Binance Smart Chain in multiple fiat currencies other than USD and without having to connect your wallets.**
 

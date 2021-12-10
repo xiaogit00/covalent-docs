@@ -2,7 +2,7 @@
 title: Easy Web3
 order: 10
 hidden: false
-featuredImage: ../images/easyweb3.png
+featuredImage: /static/images/project-showcase/easyweb3.png
 author: anadi2311
 updated: 2021-08-30
 description: A simple drag-and-drop interface to create dynamic web3 DApps with no code. 
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![Easy Web3 Banner](../../images/easyweb3.png)
+![Easy Web3 Banner](/static/images/project-showcase/easyweb3.png)
 
 &nbsp;
 # Easy Web3

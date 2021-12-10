@@ -6,7 +6,7 @@ hidden: false
 
 # Alpha Alarm
 
-![Banner](./images/Alpha_Banner.png)
+![Banner](/static/images/alpha-alarm/Alpha_Banner.png)
 
 ## Previous Visuals
 

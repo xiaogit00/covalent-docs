@@ -4,7 +4,7 @@ order: 3
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: ../images/nftree.png
+featuredImage: /static/images/project-showcase/nftree.png
 description: This project allows users to save and invest crypto in a fun new way and create NFT art at the same time.
 tags:
   - NFT
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![NFTree Banner](../../images/nftree.png)
+![NFTree Banner](/static/images/project-showcase/nftree.png)
 
 &nbsp;
 # NFTree

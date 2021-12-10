@@ -2,11 +2,11 @@
 title: SOVY Wallet
 order: 8
 hidden: false
-featuredImage: ../images/sovy-wallet.png
+featuredImage: /static/images/project-showcase/sovy-wallet.png
 description: This is web-app that uses Covalent API to provide users with information about RSK wallet details. 
 ---
 
-![SOVY Wallet Banner](../../images/sovy-wallet.png)
+![SOVY Wallet Banner](/static/images/project-showcase/sovy-wallet.png)
 
 &nbsp;
 

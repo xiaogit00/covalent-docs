@@ -9,13 +9,13 @@ hideChildren: false
 # Dex
 
 ## [AppDEX](./appdex)
-[![AppdDEX](../images/appdex.png)](./appdex)
+[![AppdDEX](/static/images/project-showcase/appdex.png)](./appdex)
 
 ## [CrystalETH](./crystaleth)
-[![CrystalETH](../images/crystaleth.png)](./crystaleth)
+[![CrystalETH](/static/images/project-showcase/crystaleth.png)](./crystaleth)
 
 ## [Li.Finance](./li-finance)
-[![Li.Finance](../images/li-finance.png)](./li-finance)
+[![Li.Finance](/static/images/project-showcase/li-finance.png)](./li-finance)
 
 ## [Stake All Finance](./stakeall-finance)
-[![Stake All Finance](../images/stakeall-finance.png)](./stakeall-finance)
+[![Stake All Finance](/static/images/project-showcase/stakeall-finance.png)](./stakeall-finance)

@@ -2,7 +2,7 @@
 title: FungyProof
 order: 9
 hidden: false
-featuredImage: ../images/fungyproof.png
+featuredImage: /static/images/project-showcase/fungyproof.png
 author: anadi2311
 updated: 2021-08-30
 description: A grading and enrichments platform for the metaverse, allowing one to digitally ‘encase’ a token to preserve its data.
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![FungyProof Banner](../../images/fungyproof.png)
+![FungyProof Banner](/static/images/project-showcase/fungyproof.png)
 
 &nbsp;
 # FungyProof

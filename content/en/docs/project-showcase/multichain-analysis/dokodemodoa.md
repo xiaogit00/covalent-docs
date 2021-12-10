@@ -2,11 +2,11 @@
 title: Dokodemodoa
 order: 4
 hidden: false
-featuredImage: ../images/dokodemodoa.png
+featuredImage: /static/images/project-showcase/dokodemodoa.png
 description: All-in-one blockchain explorer. 
 ---
 
-![Dokodemodoa](../../images/dokodemodoa.png)
+![Dokodemodoa](/static/images/project-showcase/dokodemodoa.png)
 
 &nbsp;
 

@@ -4,13 +4,13 @@ order: 5
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: ../images/burst-nft.png
+featuredImage: /static/images/project-showcase/burst-nft.png
 description: Create, sell and buy token baskets by NFTs
 tags:
   - NFT
 ---
 
-![Burst NFT Banner](../../images/burst-nft.png)
+![Burst NFT Banner](/static/images/project-showcase/burst-nft.png)
 
 &nbsp;
 # Burst NFT

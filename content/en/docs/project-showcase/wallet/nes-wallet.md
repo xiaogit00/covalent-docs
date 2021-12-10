@@ -5,14 +5,14 @@ hidden: true
 draft: true
 author: emmaodia
 updated: 2021-05-30
-featuredImage: ../images/nes-wallet.png
+featuredImage: /static/images/project-showcase/nes-wallet.png
 description: A crypto wallet to track balances and token amounts for registered addresses.
 tags: 
   - DeFi
   - Independent Projects
 ---
 
-![NES Wallet Banner](../../images/nes-wallet.png)
+![NES Wallet Banner](/static/images/project-showcase/nes-wallet.png)
 
 &nbsp;
 # NES Wallet

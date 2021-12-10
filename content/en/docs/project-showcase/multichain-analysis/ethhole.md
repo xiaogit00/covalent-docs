@@ -2,11 +2,11 @@
 title: EthHole.Link
 order: 1
 hidden: false
-featuredImage: ../images/project-showcase/eth-hole.png
+featuredImage: /static/images/project-showcase/eth-hole.png
 description: A dApp to monitor the token flow from ethereum to layer2 and it’s sidechains.
 ---
 
-![EthHole Banner](../../images/eth-hole.png)
+![EthHole Banner](/static/images/project-showcase/eth-hole.png)
 
 &nbsp;
 # EthHole.Link

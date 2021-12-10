@@ -2,11 +2,11 @@
 title: All chain
 order: 1
 hidden: false
-featuredImage: ../images/project-showcase/allchain-xyz.png
+featuredImage: /static/images/project-showcase/allchain-xyz.png
 description: Check data wallet all chains - real time
 ---
 
-![All chain Banner](../../images/allchain-xyz.png)
+![All chain Banner](/static/images/project-showcase/allchain-xyz.png)
 
 &nbsp;
 

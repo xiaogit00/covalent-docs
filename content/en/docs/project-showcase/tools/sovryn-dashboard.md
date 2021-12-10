@@ -2,11 +2,11 @@
 title: Sovryn Dashboard
 order: 8
 hidden: false
-featuredImage: ../images/sovryn-dashboard.png
+featuredImage: /static/images/project-showcase/sovryn-dashboard.png
 description: A dashboard with analytics for the Sovryn project. Providing deep, granular insights into Margin Trading and Swaps, Borrowing/Lending and Liquidity using the Covalent API.
 ---
 
-![Sovryn Dashboard Banner](../../images/sovryn-dashboard.png)
+![Sovryn Dashboard Banner](/static/images/project-showcase/sovryn-dashboard.png)
 
 &nbsp;
 
