@@ -5,6 +5,18 @@
       -
         Name: Polygon
         img: "/static/images/networks/Polygon.svg"
+      -
+        Name: Klaytn
+        img: "/static/images/networks/Klaytn.svg"
+      -
+        Name: Ronin
+        img: "/static/images/networks/Ronin.svg"
+      -
+        Name: Moonriver
+        img: "/static/images/networks/Moonriver.svg"
+      -
+        Name: Iotex
+        img: "/static/images/networks/Iotex.svg"
       # -
       #   Name: Elrond
       #   img: "/static/images/networks/Elrond.svg"
