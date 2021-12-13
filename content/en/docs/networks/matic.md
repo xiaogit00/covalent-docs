@@ -8,7 +8,7 @@ description: Working together to bring massive scale to Ethereum
 favicon: polygon-matic-logo
 ---
 
-![Matic network banner](/static/images/networks/banners/Matic.png)
+![Matic network banner](/static/images/networks/banners/Polygon.png)
 
 # Polygon / Matic Network
 

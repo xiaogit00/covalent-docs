@@ -17,6 +17,9 @@
       -
         Name: Iotex
         img: "/static/images/networks/Iotex.svg"
+      -
+        Name: Polyjuice
+        img: "/static/images/networks/Polyjuice.png"
       # -
       #   Name: Elrond
       #   img: "/static/images/networks/Elrond.svg"
