@@ -1,91 +1,91 @@
       - 
         title: Ethereum
         link: /docs/networks/ethereum
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/ethereum-eth-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/eth.svg"
         banner:
         published: true
       - 
         title: Polygon/Matic
         link: /docs/networks/matic
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/polygon-matic-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/matic.svg"
         banner:
         published: true
       - 
         title: Avalanche
         link: /docs/networks/avalanche
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/avalanche-avax-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/avalanche.svg"
         banner:
         published: true
       - 
         title: BSC
         link: /docs/networks/bsc
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/binance-coin-bnb-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/bsc.svg"
         banner:
         published: true
       - 
         title: Fantom
         link: /docs/networks/fantom
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/fantom-ftm-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/fantom.svg"
         banner:
         published: true
       - 
         title: Ronin
         link: /docs/networks/ronin
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/axie-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/axie.svg"
         banner:
         published: true
       - 
         title: Moonbeam
         link: /docs/networks/moonbeam
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/moonbeam-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/moonbeam.svg"
         banner:
         published: true
       - 
         title: Moonriver
         link: /docs/networks/moonriver
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/moonriver.png"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/moonriver.svg"
         banner:
         published: true
       - 
         title: RSK
         link: /docs/networks/rsk
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/rsk-mainnet-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/rsk.svg"
         banner:
         published: true
       - 
         title: Arbitrum
         link: /docs/networks/arbitrum
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/arbitrum-mainnet-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/arbitrum.svg"
         banner:
         published: true
       - 
         title: Palm
         link: /docs/networks/palm
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/palm-mainnet-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/palm.svg"
         banner:
         published: true
       - 
         title: Klaytn
         link: /docs/networks/klaytn
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/klaytn-mainnet-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/klaytn.svg"
         banner:
         published: true
       - 
         title: Heco
         link: /docs/networks/heco
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/heco.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/heco.svg"
         banner:
         published: true
       - 
         title: Polyjuice
         link: /docs/networks/polyjuice
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/nervos-polyjuice-testnet-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/nervos.svg"
         banner:
         published: true
       - 
         title: IoTeX
         link: /docs/networks/iotex
-        icon: "//www.covalenthq.com/static/images/icons/display-icons/iotex-logo.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/iotex.svg"
         banner:
         published: true
                    
