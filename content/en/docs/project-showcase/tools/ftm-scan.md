@@ -4,14 +4,14 @@ order: 2
 hidden: false
 author: emmaodia
 updated: 2021-05-30
-featuredImage: /static/images/project-showcase/ftm-scan.png
+featuredImage: /static/images/project-showcase/banners/ftm-scan.png
 description: FTM Scan is an address scanner that fetches the balance, transactions and NFTs on Fantom Opera (Mainnet) and Testnet.
 tags: 
   - DeFi
   - Independent Projects
 ---
 
-![FTM Scan Banner](/static/images/project-showcase/ftm-scan.png)
+![FTM Scan Banner](/static/images/project-showcase/banners/ftm-scan.png)
 
 &nbsp;
 # FTM Scan

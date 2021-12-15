@@ -4,14 +4,14 @@ order: 4
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: /static/images/project-showcase/nifty-nfts.png
+featuredImage: /static/images/project-showcase/banners/nifty_nfts.png
 description: Twitter Bot showcasing inspiring NFTs and highlights the power of Covalent's API!
 tags:
   - NFT
   - Alchemists
 ---
 
-![Nifty NFTs Banner](/static/images/project-showcase/nifty-nfts.png)
+![Nifty NFTs Banner](/static/images/project-showcase/banners/nifty_nfts.png)
 
 &nbsp;
 # Nifty NFTs

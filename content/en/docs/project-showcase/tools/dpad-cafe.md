@@ -2,11 +2,11 @@
 title: d-Pad Cafe
 order: 7
 hidden: false
-featuredImage: /static/images/project-showcase/dpad-cafe.png
+featuredImage: /static/images/project-showcase/banners/dpad-cafe.png
 description: A protocol for Profit-Sharing Economy as a Service - allowing any Decentralized Protocol to bootstrap their Web3-Native Economy on the Polygon Network. 
 ---
 
-![d-Pad Cafe Banner](/static/images/project-showcase/dpad-cafe.png)
+![d-Pad Cafe Banner](/static/images/project-showcase/banners/dpad-cafe.png)
 
 &nbsp;
 

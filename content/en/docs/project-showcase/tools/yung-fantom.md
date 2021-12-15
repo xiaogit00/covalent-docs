@@ -4,14 +4,14 @@ order: 4
 hidden: false
 author: emmaodia
 updated: 2021-05-30
-featuredImage: /static/images/project-showcase/yung-fantom.png
+featuredImage: /static/images/project-showcase/banners/yung-fantom.png
 description: 3D React Wallet using on chain transactions to generate a network of recently-interacted addresses.
 tags: 
   - DeFi
   - Independent Projects
 ---
 
-![Yung Fantom Banner](/static/images/project-showcase/yung-fantom.png)
+![Yung Fantom Banner](/static/images/project-showcase/banners/yung-fantom.png)
 
 &nbsp;
 # Yung Fantom

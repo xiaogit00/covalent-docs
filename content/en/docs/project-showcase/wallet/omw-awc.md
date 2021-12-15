@@ -4,7 +4,7 @@ order: 2
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: /static/images/project-showcase/omw-awc.png
+featuredImage: /static/images/project-showcase/banners/omw-awc.png
 description: Avalanche wallet address checker built to learn about NFT in blockchain on Ethereum like C-Chain of Avalanche
 tags:
   - Wallet
@@ -12,7 +12,7 @@ tags:
   -  Hackathons
 ---
 
-![Avalanche Wallet Checker Banner](/static/images/project-showcase/omw-awc.png)
+![Avalanche Wallet Checker Banner](/static/images/project-showcase/banners/omw-awc.png)
 
 &nbsp;
 # Avalanche Wallet Checker

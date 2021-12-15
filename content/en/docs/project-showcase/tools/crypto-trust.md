@@ -2,11 +2,11 @@
 title: Crypto Trust
 order: 6
 hidden: false
-featuredImage: /static/images/project-showcase/crypto-trust.png
+featuredImage: /static/images/project-showcase/banners/Crypto-Trust.png
 description: The worlds first fully automated yield earning trust fund platform powered by crypto. 
 ---
 
-![Crypto Trust](/static/images/project-showcase/crypto-trust.png)
+![Crypto Trust](/static/images/project-showcase/banners/Crypto-Trust.png)
 
 &nbsp;
 

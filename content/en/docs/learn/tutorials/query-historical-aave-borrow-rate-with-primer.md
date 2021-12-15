@@ -23,7 +23,7 @@ In this guide, we want to get the historical borrow rates for `Aave v2 Markets` 
 
 </Aside>
 
-![Graphical Display](./images/DAI_Borrow_Rate_For_Last_10_days.png)
+<!-- ![Graphical Display](./images/DAI_Borrow_Rate_For_Last_10_days.png) -->
 
 ## Primer URL Syntax
 

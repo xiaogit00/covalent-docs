@@ -1,7 +1,7 @@
     display:
       -
         Name: Ethereum
-        img: "/static/images/networks/Ethereum.svg"
+        img: "/static/images/networks/Ethereum.png"
       -
         Name: Polygon
         img: "/static/images/networks/Polygon.svg"
@@ -43,7 +43,7 @@
         img: "/static/images/networks/Avalance.svg"
       -
         Name: Palm
-        img: "/static/images/networks/Palm.svg"
+        img: "/static/images/networks/Palm.png"
       # -
       #   Name: Near
       #   img: "/static/images/networks/Near.svg"

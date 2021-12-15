@@ -2,7 +2,7 @@
 title: TXN Wallet
 order: 5
 hidden: false
-featuredImage: /static/images/project-showcase/txnwallet.png
+featuredImage: /static/images/project-showcase/banners/txnwallet.png
 author: anadi2311
 updated: 2021-08-30
 description: A single wallet that allows analysis of all owned tokens and note making of all transactions across any blockchain.
@@ -12,7 +12,7 @@ tags:
   - Hackathons
 ---
 
-![TXN Wallet Banner](/static/images/project-showcase/txnwallet.png)
+![TXN Wallet Banner](/static/images/project-showcase/banners/txnwallet.png)
 
 &nbsp;
 # TXN Wallet

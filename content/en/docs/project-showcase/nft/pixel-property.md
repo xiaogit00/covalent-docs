@@ -2,11 +2,11 @@
 title: PixelProperty
 order: 12
 hidden: false
-featuredImage: /static/images/project-showcase/pixel-property.png
+featuredImage: /static/images/project-showcase/banners/pixel-property.png
 description: A fun and engaging app for artists and marketers to come together and enjoy.
 ---
 
-![Pixel Property Banner](/static/images/project-showcase/pixel-property.png)
+![Pixel Property Banner](/static/images/project-showcase/banners/pixel-property.png)
 
 &nbsp;
 # Pixel Property

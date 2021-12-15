@@ -42,7 +42,7 @@ weight: 0
             Pick your path, so we can direct you to relevant content:
         </div>
         <div class="grid grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-y-20 gap-x-12">
-            <div onclick="location.href='/docs/developer';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-7 cursor-pointer hover:bg-opacity-70">
+            <div onclick="location.href='/docs/developer';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-7 cursor-pointer hover:bg-covalent-blue-dark hover:text-white">
                 <div class="mb-4">
                     <img src="/static/images/icons/Code.svg"></img>
                 </div>
@@ -53,7 +53,7 @@ weight: 0
                     An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
                 </div>
             </div>
-            <div onclick="location.href='/docs/alchemist';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-5 cursor-pointer hover:bg-opacity-70">
+            <div onclick="location.href='/docs/alchemist';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl p-5 cursor-pointer hover:bg-covalent-blue-dark hover:text-white">
                 <div class="mb-4">
                     <img src="/static/images/icons/Alchemist.svg"></img>
                 </div>
@@ -64,7 +64,7 @@ weight: 0
                     An opportunity to work with one of the leading, fastest-growing and technically challenging blockchain companies founded by veterans of the space.
                 </div>
             </div>
-            <div onclick="location.href='/docs/validator';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl  p-5 cursor-pointer hover:bg-opacity-70">
+            <div onclick="location.href='/docs/validator';" class="max-w-md bg-gray-100 md:w-full max-w-xl drop-shadow-md filter shadow-md rounded-xl  p-5 cursor-pointer hover:bg-covalent-blue-dark hover:text-white">
                 <div class="mb-4">
                     <img src="/static/images/icons/Screen Chart.svg"></img>
                 </div>

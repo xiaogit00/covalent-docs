@@ -71,6 +71,10 @@
             link: /docs/project-showcase/multichain-analysis/goswapp
             published: true
           -
+            title: SpiritSwap Overview
+            link: /docs/project-showcase/multichain-analysis/spiritswap-overview
+            published: true
+          -
             title: TXN Wallet
             link: /docs/project-showcase/multichain-analysis/txnwallet
             published: true
@@ -176,7 +180,7 @@
           -
             title: NES Wallet
             link: /docs/project-showcase/wallet/nes-wallet
-            published: true
+            published: false
           -
             title: Sovryn - RSK Multi-Wallet
             link: /docs/project-showcase/wallet/rsk-wallet

@@ -6,7 +6,7 @@ featuredImage: /static/images/project-showcase/stakeall-finance.png
 description: DeFi Platform for staking in various POS protocols.  
 ---
 
-![Stake All Finance Banner](/static/images/project-showcase/stakeall-finance.png)
+![Stake All Finance Banner](/static/images/project-showcase/banners/stakeall-finance.png)
 
 &nbsp;
 

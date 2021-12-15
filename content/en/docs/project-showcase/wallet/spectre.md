@@ -2,11 +2,11 @@
 title: Spectre
 order: 5
 hidden: false
-featuredImage: /static/images/project-showcase/spectre.png
+featuredImage: /static/images/project-showcase/banners/spectre.png
 description: This wallets allows users to create multiple address and supports Fantom Opera Mainnet, Fantom Testnet, Kovan testnet and Ethereum Mainnet.
 ---
 
-![Spectre Banner](/static/images/project-showcase/spectre.png)
+![Spectre Banner](/static/images/project-showcase/banners/spectre.png)
 
 &nbsp;
 

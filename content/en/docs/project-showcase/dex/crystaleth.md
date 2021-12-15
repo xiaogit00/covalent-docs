@@ -4,13 +4,13 @@ order: 2
 hidden: false
 author: anadi2311
 updated: 2021-05-30
-featuredImage: /static/images/project-showcase/.png
+featuredImage: /static/images/project-showcase/banners/CrystalETH.png
 description: DeFi Yield Management
 tags:
   - NFT
 ---
 
-![Crystal ETH Banner](/static/images/project-showcase/crystaleth.png)
+![Crystal ETH Banner](/static/images/project-showcase/banners/CrystalETH.png)
 
 &nbsp;
 # Crystal ETH

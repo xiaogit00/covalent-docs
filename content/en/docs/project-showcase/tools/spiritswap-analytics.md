@@ -4,14 +4,14 @@ order: 5
 hidden: false
 author: emmaodia
 updated: 2021-05-30
-featuredImage: /static/images/project-showcase/spiritswap-analytics.png
+featuredImage: /static/images/project-showcase/banners/spiritswap-analytics.png
 description: etch token balances and pool data for the SpiritSwap DEX.
 tags: 
   - DeFi
   - Independent Projects
 ---
 
-![SpiritSwap Analytics Banner](/static/images/project-showcase/spiritswap-analytics.png)
+![SpiritSwap Analytics Banner](/static/images/project-showcase/banners/spiritswap-analytics.png)
 
 &nbsp;
 # SpiritSwap Analytics

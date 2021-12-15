@@ -2,11 +2,11 @@
 title: SpiritSwap Overview
 order: 3
 hidden: false
-featuredImage: /static/images/project-showcase/spiritswap-overview.png
+featuredImage: /static/images/project-showcase/banners/spiritswap-overviewpng
 description: A web application which gather various data such as pools, statistics, tokens, etc from the SpiritSwap DEX. 
 ---
 
-![SpiritSwap Overview Banner](./static/images/project-showcase/spiritswap-overview.png)
+![SpiritSwap Overview Banner](/static/images/project-showcase/banners/spiritswap-overview.png)
 
 &nbsp;
 
