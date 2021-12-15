@@ -8,32 +8,32 @@ hideChildren: false
 &nbsp;
 # DeFi
 
-## [Coin Defit](./coindefit)
-[![Coin Defit](/static/images/project-showcase/banners/coin-defit.png)](./coindefit)
+## [Coin Defit](/docs/project-showcase/tools/coindefit)
+[![Coin Defit](/static/images/project-showcase/banners/coin-defit.png)](/docs/project-showcase/tools/coindefit)
 
-## [Crypto Trust](./crypto-trust)
-[![Crypto Trust](/static/images/project-showcase/banners/Crypto-Trust.png)](./crypto-trust)
+## [Crypto Trust](/docs/project-showcase/tools/crypto-trust)
+[![Crypto Trust](/static/images/project-showcase/banners/Crypto-Trust.png)](/docs/project-showcase/tools/crypto-trust)
 
-## [d-Pad Cafe](./dpad-cafe)
-[![Crypto Trust](/static/images/project-showcase/banners/dpad-cafe.png)](./dpad-cafe)
+## [d-Pad Cafe](/docs/project-showcase/tools/dpad-cafe)
+[![Crypto Trust](/static/images/project-showcase/banners/dpad-cafe.png)](/docs/project-showcase/tools/dpad-cafe)
 
-## [Easy Web3](./easyweb3)
-[![Easy Web3](/static/images/project-showcase/banners/web3.png)](./easyweb3)
+## [Easy Web3](/docs/project-showcase/tools/easyweb3)
+[![Easy Web3](/static/images/project-showcase/banners/web3.png)](/docs/project-showcase/tools/easyweb3)
 
-## [FTM Scan](./ftm-scan)
-[![FTM Scan](/static/images/project-showcase/banners/ftm-scan.png)](./ftm-scan)
+## [FTM Scan](/docs/project-showcase/tools/ftm-scan)
+[![FTM Scan](/static/images/project-showcase/banners/ftm-scan.png)](/docs/project-showcase/tools/ftm-scan)
 
-## [FungyProof](./fungyproof)
-[![FungyProof](/static/images/project-showcase/banners/fungyproof.png)](./fungyproof)
+## [FungyProof](/docs/project-showcase/tools/fungyproof)
+[![FungyProof](/static/images/project-showcase/banners/fungyproof.png)](/docs/project-showcase/tools/fungyproof)
 
-## [SpiritSwap Analytics](./spiritswap-analytics)
-[![SpiritSwap Analytics](/static/images/project-showcase/banners/spiritswap-analytics.png)](./spiritswap-analytics)
+## [SpiritSwap Analytics](/docs/project-showcase/tools/spiritswap-analytics)
+[![SpiritSwap Analytics](/static/images/project-showcase/banners/spiritswap-analytics.png)](/docs/project-showcase/tools/spiritswap-analytics)
 
-## [Spirit View](./spirit-view)
-[![Spirit View](/static/images/project-showcase/banners/spirit-view.png)](./spirit-view)
+## [Spirit View](/docs/project-showcase/tools/spirit-view)
+[![Spirit View](/static/images/project-showcase/banners/spirit-view.png)](/docs/project-showcase/tools/spirit-view)
 
-## [Sovryn Dashboard](./sovryn-dashboard)
-[![Crypto Trust](/static/images/project-showcase/banners/Sovryn-Dashboard.png)](./sovryn-dashboard)
+## [Sovryn Dashboard](/docs/project-showcase/tools/sovryn-dashboard)
+[![Crypto Trust](/static/images/project-showcase/banners/Sovryn-Dashboard.png)](/docs/project-showcase/tools/sovryn-dashboard)
 
-## [Yung Fantom](./yung-fantom)
-[![Yung Fantom](/static/images/project-showcase/banners/yung-fantom.png)](./yung-fantom)
+## [Yung Fantom](/docs/project-showcase/tools/yung-fantom)
+[![Yung Fantom](/static/images/project-showcase/banners/yung-fantom.png)](/docs/project-showcase/tools/yung-fantom)

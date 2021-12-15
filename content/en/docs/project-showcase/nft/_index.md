@@ -7,22 +7,22 @@ hideChildren: false
 
 &nbsp;
 # NFT
-## [Burst NFTS](./burst-nft)
-[![Burst NFTs](/static/images/project-showcase/banners/BurstNFT.png)](./burst-nft)
-## [Collectors Cafe](./collectors-cafe)
-[![Collectors Cafe](/static/images/project-showcase/banners/collectors-cafe.png)](./collectors-cafe)
+## [Burst NFTS](/docs/project-showcase/nft/burst-nft)
+[![Burst NFTs](/static/images/project-showcase/banners/BurstNFT.png)](/docs/project-showcase/nft/burst-nft)
+## [Collectors Cafe](/docs/project-showcase/nft/collectors-cafe)
+[![Collectors Cafe](/static/images/project-showcase/banners/collectors-cafe.png)](/docs/project-showcase/nft/collectors-cafe)
 
-## [ETHBlox](./ethblox)
-[![ETHblox](/static/images/project-showcase/banners/ethblox.png)](./ethblox)
+## [ETHBlox](/docs/project-showcase/nft/ethblox)
+[![ETHblox](/static/images/project-showcase/banners/ethblox.png)](/docs/project-showcase/nft/ethblox)
 
-## [Hestia](./nft/hestia)
-[![Hestia](/static/images/project-showcase/banners/Hestia.png)](./hestia)
-## [NFTree Token](./nftree)
-[![NFTree](/static/images/project-showcase/banners/nftree.png)](./nftree)
+## [Hestia](/docs/project-showcase/nft/nft/hestia)
+[![Hestia](/static/images/project-showcase/banners/Hestia.png)](/docs/project-showcase/nft/hestia)
+## [NFTree Token](/docs/project-showcase/nft/nftree)
+[![NFTree](/static/images/project-showcase/banners/nftree.png)](/docs/project-showcase/nft/nftree)
 
-## [Nifty NFTS](./nifty-nfts)
-[![Nifty NFTs](/static/images/project-showcase/banners/nifty_nfts.png)](./nifty-nfts)
+## [Nifty NFTS](/docs/project-showcase/nft/nifty-nfts)
+[![Nifty NFTs](/static/images/project-showcase/banners/nifty_nfts.png)](/docs/project-showcase/nft/nifty-nfts)
 
-## [Pixel Property](./pixel-property)
-[![Pixel Property](/static/images/project-showcase/banners/pixel-property.png)](./pixel-property)
+## [Pixel Property](/docs/project-showcase/nft/pixel-property)
+[![Pixel Property](/static/images/project-showcase/banners/pixel-property.png)](/docs/project-showcase/nft/pixel-property)
 

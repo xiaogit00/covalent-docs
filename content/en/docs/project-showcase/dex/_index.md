@@ -8,14 +8,14 @@ hideChildren: false
 &nbsp;
 # Dex
 
-## [AppDEX](./appdex)
-[![AppdDEX](/static/images/project-showcase/banners/appdex.png)](./appdex)
+## [AppDEX](/docs/project-showcase/dex/appdex)
+[![AppdDEX](/static/images/project-showcase/banners/appdex.png)](/docs/project-showcase/dex/appdex)
 
-## [CrystalETH](./crystaleth)
-[![CrystalETH](/static/images/project-showcase/banners/CrystalETH.png)](./crystaleth)
+## [CrystalETH](/docs/project-showcase/dex/crystaleth)
+[![CrystalETH](/static/images/project-showcase/banners/CrystalETH.png)](/docs/project-showcase/dex/crystaleth/)
 
-## [Li.Finance](./li-finance)
-[![Li.Finance](/static/images/project-showcase/banners/li-finance.png)](./li-finance)
+## [Li.Finance](/docs/project-showcase/dex/li-finance)
+[![Li.Finance](/static/images/project-showcase/banners/li-finance.png)](/docs/project-showcase/dex/li-finance)
 
-## [Stake All Finance](./stakeall-finance)
-[![Stake All Finance](/static/images/project-showcase/banners/stakeall-finance.png)](./stakeall-finance)
+## [Stake All Finance](/docs/project-showcase/dex/stakeall-finance)
+[![Stake All Finance](/static/images/project-showcase/banners/stakeall-finance.png)](/docs/project-showcase/dex/stakeall-finance)

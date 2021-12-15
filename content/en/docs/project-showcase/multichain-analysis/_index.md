@@ -7,17 +7,17 @@ hideChildren: false
 
 # Multi-Chain Analytics
 
-## [EthHole](./ethhole)
-[![EthHole](/static/images/project-showcase/banners/eth-hole.png)](./ethhole)
+## [EthHole](/docs/project-showcase/ethhole)
+[![EthHole](/static/images/project-showcase/banners/eth-hole.png)](/docs/project-showcase/multichain-analysis/ethhole)
 
-## [Dokodemodoa](./dokodemodoa)
-[![Dokodemodoa](/static/images/project-showcase/banners/Dokodemodoa.png)](./dokodemodoa)
+## [Dokodemodoa](/docs/project-showcase/dokodemodoa)
+[![Dokodemodoa](/static/images/project-showcase/banners/Dokodemodoa.png)](/docs/project-showcase/multichain-analysis/dokodemodoa)
 
-## [GoSwapp](./goswapp)
-[![GoSwapp](/static/images/project-showcase/banners/go-swapp.png)](./goswapp)
+## [GoSwapp](/docs/project-showcase/goswapp)
+[![GoSwapp](/static/images/project-showcase/banners/go-swapp.png)](/docs/project-showcase/multichain-analysis/goswapp)
 
-## [SpiritSwap Overview](./spiritswap-overview)
-[![SpiritSwap Overview](/static/images/project-showcase/banners/spiritswap-overview.png)](./spiritswap-overview)
+## [SpiritSwap Overview](/docs/project-showcase/spiritswap-overview)
+[![SpiritSwap Overview](/static/images/project-showcase/banners/spiritswap-overview.png)](/docs/project-showcase/multichain-analysis/spiritswap-overview)
 
-## [TXN Wallet](./txnwallet)
-[![TXN Wallet](/static/images/project-showcase/banners/txnwallet.png)](./txnwallet)
+## [TXN Wallet](/docs/project-showcase/txnwallet)
+[![TXN Wallet](/static/images/project-showcase/banners/txnwallet.png)](/docs/project-showcase/multichain-analysis/txnwallet)
