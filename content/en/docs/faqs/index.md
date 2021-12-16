@@ -1,6 +1,7 @@
 ---
 title: FAQ
 weight: 99
+draft: true
 ---
 
 # Frequently Asked Questions

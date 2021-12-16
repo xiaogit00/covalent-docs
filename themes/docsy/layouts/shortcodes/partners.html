@@ -1,7 +1,7 @@
 {{ $expandCount := len .Site.Data.partners.expand }}
 
 <div id="ecosystem" class="covalent-light pt-12 pb-24 max-w-4xl">
-    <div class=" sm:mt-8 sm:mb-4 grid place-items-center grid-cols-4 md:grid-cols-4 sm:grid-cols-2 z-10">
+    <div class=" sm:mt-8 sm:mb-4 grid place-items-center grid-cols-5 md:grid-cols-5 sm:grid-cols-2 z-10">
       {{ range .Site.Data.partners.display }}
       <div class="col-span-1 flex md:px-0 md:justify-start lg:responsive-box-2x border-l border-b border-t border-r">
           <img class="md:w-80 h-full w-full sm:w-full" src="{{ .img }}" />

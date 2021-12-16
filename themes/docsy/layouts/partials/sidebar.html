@@ -6,11 +6,12 @@
 
     {{ partial "sidebar-tree.html" (dict "context" . "title" "Developer" "type" "developer" "arr" $.Site.Data.navbar.developer) }}
 
-    <!-- {{ partial "sidebar-tree.html" (dict "context" . "title" "Alchemist" "type" "alchemist" "arr" $.Site.Data.navbar.alchemist) }}
-
-    {{ partial "sidebar-tree.html" (dict "context" . "title" "Validator" "type" "validator" "arr" $.Site.Data.navbar.validator) }} -->
-
     {{ partial "sidebar-tree.html" (dict "context" . "title" "Supported Networks" "type" "networks" "arr" $.Site.Data.navbar.supportedNetworks) }}
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Alchemist" "type" "alchemist" "arr" $.Site.Data.navbar.alchemist) }} 
+
+    <!-- {{ partial "sidebar-tree.html" (dict "context" . "title" "Validator" "type" "validator" "arr" $.Site.Data.navbar.validator) }}  -->
+
 </div>
 
 
