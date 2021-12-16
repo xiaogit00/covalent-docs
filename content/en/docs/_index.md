@@ -15,7 +15,7 @@ weight: 0
     <p class="text-xl max-w-4xl text-gray-800 mb-6">
         Developers use Covalent to build exciting multi-chain applications like <a href="/docs/project-showcase/wallet">crypto wallets</a>, <a href="/docs/project-showcase/nft">NFT galleries</a>, and <a href="/docs/project-showcase/tools">investor dashboard tools</a> utilizing data from <a href="/docs/networks/">26+ blockchains</a>. Covalent is trusted by a community of 15,000+ developers and 500+ applications including 0x, Zerion, Rainbow Wallet, Rotki, Bitski and many others.
     </p>
-    <div class="font-light text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
+    <div class="font-light text-4xl text-covalent-black pt-12 max-w-screen-md">
      Built for builders
     </div>
     {{< partners >}}
