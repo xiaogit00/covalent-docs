@@ -2,11 +2,11 @@
 title: EVMOS
 order: 15
 hidden: true
-featuredImage: ./images/Evmos.png
+featuredImage: /static/images/networks/banners/Evmos.png
 description: Evmos is an application-agnostic Cosmos chain that will be interoperable with the Ethereum mainnet.
 ---
 
-![EVMOS network banner](/static/images/networks/Evmos.png)
+![EVMOS network banner](/static/images/networks/banners/Evmos.png)
 
 # EVMOS
 

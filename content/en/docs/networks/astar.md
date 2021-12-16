@@ -2,11 +2,11 @@
 title: Astar
 order: 15
 hidden: false
-featuredImage: ./images/Astar.png
+featuredImage: /static/images/networks/banners/Astar.png
 description: Support for the Astar network
 ---
 
-![Astar banner](/static/images/networks/Astar.png)
+![Astar banner](/static/images/networks/banners/Astar.png)
 
 # Astar Network
 
