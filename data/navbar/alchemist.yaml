@@ -4,9 +4,22 @@
     published: true
     subsection:
       - 
+        title: Research Training
+        link: /docs/alchemist/research-training
+        published: true
+        subsection:
+          -
+            title: Research Training Assignment 1
+            link: /docs/alchemist/research-training/research-assignment-1
+            published: true
+          -
+            title: Research Training Assignment 2
+            link: /docs/alchemist/research-training/research-assignment-2
+            published: true
+      - 
         title: Case Studies
         link: /docs/learn/casestudies
-        published: true
+        published: false
         subsection:
           -
             title: Tether Analysis
@@ -40,20 +53,7 @@
       - 
         title: References
         link: /docs/learn/references
-        published: true
-      - 
-        title: Research Training
-        link: /docs/learn/research-training
-        published: true
-        subsection:
-          -
-            title: Research Training Assignment 1
-            link: /docs/learn/research-training/research-assignment-1
-            published: true
-          -
-            title: Research Training Assignment 2
-            link: /docs/learn/research-training/research-assignment-2
-            published: true
+        published: false
       - 
         title: Tutorial Video Guidelines
         link: /docs/learn/_video_guidelines/
@@ -61,7 +61,7 @@
       - 
         title: Tutorials
         link: /docs/learn/tutorials
-        published: true
+        published: false
         subsection:
           -
             title: Querying Historical Aave Borrow rate with Primer
@@ -78,7 +78,7 @@
   -
     title: Campaigns
     link: /docs/campaigns
-    published: true
+    published: false
     subsection:
       - 
         title: One Million Wallets
@@ -106,10 +106,10 @@
   -
     title: Alpha Alarm
     link: /docs/alpha-alarm
-    published: true
+    published: false
     subsection:
   -
     title: FAQ
     link: /docs/faqs
-    published: true
+    published: false
     subsection:

@@ -5,7 +5,7 @@ order: 2
 hidden: false
 author: leilani ledingham
 featuredImage: /static/images/alchemist/Research-Assignment-2.png
-description: Learn how to retrieve and clean a dataset for swaps of a specific pair, returning the spreadsheet in a CSV format and create charts with th data.
+description: Learn how to create Visualizing blockchain data in Tableau.
 
 tags: 
   - Beginner
