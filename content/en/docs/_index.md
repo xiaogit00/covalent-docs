@@ -13,8 +13,13 @@ weight: 0
         Covalent provides the industry-leading <strong>Unified API</strong> bringing visibility to billions of Web3 data points. 
     </p>
     <p class="text-xl max-w-4xl text-gray-800 mb-6">
-        Developers use Covalent to build exciting multi-chain applications like crypto wallets, NFT galleries, and investor dashboard tools utilizing data from 15+ blockchains. Covalent is trusted by a community of 15,000+ developers and 500+ applications including 0x, Zerion, Rainbow Wallet, Bitski and many others.
+        Developers use Covalent to build exciting multi-chain applications like <a href="/docs/project-showcase/wallet">crypto wallets</a>, <a href="/docs/project-showcase/nft">NFT galleries</a>, and <a href="/docs/project-showcase/tools">investor dashboard tools</a> utilizing data from <a href="/docs/networks/">26+ blockchains</a>. Covalent is trusted by a community of 15,000+ developers and 500+ applications including 0x, Zerion, Rainbow Wallet, Rotki, Bitski and many others.
     </p>
+    <div class="font-light text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
+     Join our socials
+    </div>
+    <!-- Socials -->
+    {{< socials >}}
     <div class="font-light text-4xl text-covalent-black pt-12 pb-12  max-w-screen-md">
      Why Covalent
     </div>
@@ -29,11 +34,6 @@ weight: 0
     <li class="text-xl "><strong>No-code:</strong> Covalent offers a "no-code" solution and all customizations can be done without writing a single line of code by the developer. No need to invest expensive engineering time in building indexing code that you'd rather invest in building your application.</li>
     <li class="text-xl "><strong>Multiple blockchains, multiple usecases:</strong> The same unified API works across 15+ blockchains and dozens of use-cases like crypto-wallets, NFT galleries, investor dashboard tools, DAO tooling - the possibilities are endless.</li>
     </ul>
-    <div class="font-light text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
-     Join our socials
-    </div>
-    <!-- Socials -->
-    {{< socials >}}
     <!-- <p>FIXME: Enter social icons for help here discord, yt, twitter</p> -->
     <hr />
     <div class="my-12">
