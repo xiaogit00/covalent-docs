@@ -3,7 +3,6 @@ title: _Template_
 updated: 2021-04-30
 type: "📝 Article"
 order: 1
-hidden: true
 draft: true
 author: Your GitHub username
 featuredImage: ./guides/images/cookbook-class-a-banner.png

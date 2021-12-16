@@ -6,6 +6,8 @@ featuredImage: ./images/ankr-banner.png
 description: Ankr is democratizing Web3 for everyone to leverage decentralized applications and play an active role in the future internet.
 ---
 
+[![ANKR](/static/images/service-providers/ANKR.png)](docs/service-providers/ankr/)
+
 # Ankr
 
 ## Overview

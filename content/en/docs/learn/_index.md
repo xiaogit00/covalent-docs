@@ -1,7 +1,7 @@
 ---
 title: Alchemist Cookbook
 weight: 4
-hidden: false
+draft: true
 ---
 
 # Alchemist Cookbook
