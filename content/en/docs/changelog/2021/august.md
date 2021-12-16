@@ -2,6 +2,8 @@
 title: August 2021
 weight: 8
 hidden: false
+description: Image resizing for NFTs.
+
 ---
 
 # August 2021

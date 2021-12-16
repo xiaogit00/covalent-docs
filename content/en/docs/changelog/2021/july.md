@@ -2,6 +2,7 @@
 title: July 2021
 weight: 7
 hidden: false
+description: Palm indexed.
 ---
 
 # July 2021

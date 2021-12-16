@@ -2,6 +2,7 @@
 title: March 2021
 weight: 3
 hidden: false
+description: Avalanche C-chain indexed. All Class A endpoints now supported.
 ---
 
 # March 2021

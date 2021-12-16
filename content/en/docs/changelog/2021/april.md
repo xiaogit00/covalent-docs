@@ -2,6 +2,7 @@
 title: April 2021
 weight: 4
 hidden: false
+description: New pricing endpoints.
 ---
 
 # April 2021

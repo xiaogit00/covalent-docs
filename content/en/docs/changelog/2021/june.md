@@ -2,6 +2,7 @@
 title: June 2021
 weight: 6
 hidden: false
+description: RSK and Arbitrum indexed.
 ---
 
 # June 2021
