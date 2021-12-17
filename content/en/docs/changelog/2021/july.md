@@ -16,7 +16,7 @@ description: Palm indexed.
 Example: `https://api.covalenthq.com/v1/1/tokens/0xbbbee5503a40d51893674f3dd234196a115ce4aa/nft_metadata/27900010001/?key="API-KEY"` `<multichain>`
 
 ### UPDATE
-- `XY=K` - Added token `quote_rates` to returned responses. The XY=K endpoint provides granular and historical data for large DEXs such as QuickSwap and SushiSwap, which are clones of the core Uniswap code base. Read more in the [June](./june) Changelog. We updated the endpoint to include `quote_rates` in it’s response.  Token `quote_rate` is the current spot exchange rate in quote-currency. This enables developers to validate the default returned `quote` for a Token.
+- `XY=K` - Added token `quote_rates` to returned responses. The XY=K endpoint provides granular and historical data for large DEXs such as QuickSwap and SushiSwap, which are clones of the core Uniswap code base. Read more in the [June](/docs/changelog/2021/june) Changelog. We updated the endpoint to include `quote_rates` in it’s response.  Token `quote_rate` is the current spot exchange rate in quote-currency. This enables developers to validate the default returned `quote` for a Token.
 
 - `XY=K` - Added DEX `name` and `chain_id` fields to ecosystem charts, pools and tokens thus further increasing the Developer experience building using these set of endpoints. 
 
