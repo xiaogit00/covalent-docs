@@ -21,10 +21,8 @@ weight: 0
     <ol class="list-decimal max-w-3xl">
     <li class="text-xl "><a target="_blank" href="https://www.covalenthq.com/platform/#/auth/register">Signup for a free API key</a>.</li>
     <li class="text-xl ">Try making a sample API request via <pre>cURL</pre>.</li>
-    <li class="text-xl ">Try building a wallet interface, a tax calculator or a NFT gallery using our read-made templates</li>
+    <li class="text-xl ">Try building a wallet interface, a tax calculator or a NFT gallery using our read-made templates.</li>
     <li class="text-xl "><a target="_blank" href="https://www.covalenthq.com/docs/api/#/">Read the API Reference</a> documentation for further customizations.</li>
     <li class="text-xl">Join one of our ongoing or upcoming hackathons.</li>
     </ol>
-</section>
-
-
+</section> 

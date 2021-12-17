@@ -69,18 +69,27 @@
         @apply text-covalent-pink ;
     }
 
-    ul {
-        @apply list-disc my-6 text-lg text-gray-800 ml-6 ;
+    ul, ol {
+        @apply my-6 text-lg text-gray-800 ml-6 ;
 
         li {
-            @apply my-8 ;
-    
+            @apply my-8 ;    
         }
-    
+    }
+
+    ul {
+        @apply list-disc;
+    }
+
+    ol {
+        @apply list-decimal;
     }
     
 
-
+    pre {
+        @apply bg-gray-500 text-white py-1 px-2 rounded-md;
+        display: inline;
+    }
 
     .section-index {
         .panel-line {
