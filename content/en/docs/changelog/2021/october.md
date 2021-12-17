@@ -1,20 +1,17 @@
 ---
-title: October 2021
-weight: 10
+title: October
+order: 10
 hidden: false
-description: Axie/Ronin indexed.
 ---
-
-# October 2021
 
 ## 2021-10-31
 
 ### ADDED
-- Axie/Ronin Mainnet is now fully indexed! You can read more in the networks info page on our [docs](/docs/networks/ronin). Ronin is an Ethereum-linked sidechain made specifically for Axie Infinity. Axie was built as a fun and educational way to introduce the world to blockchain technology. `Mainnet ChainID: 2020`. `<multichain>`
+- Axie/Ronin Mainnet is now fully indexed! You can read more in the networks info page on our [docs](../networks/ronin). Ronin is an Ethereum-linked sidechain made specifically for Axie Infinity. Axie was built as a fun and educational way to introduce the world to blockchain technology. `Mainnet ChainID: 2020`. `<multichain>`
 
 - To increase support for more developers and regions across the globe, we have added a list of new fiat currencies: **NGN - Nigerian Naira, ARS - Argentina Pesos, AUD - Australian Dollars and CHF - Swiss Francs**. `<no-code>`
 
-- We have added Moonriver data and return responses which include the `gas-currency` support for Moonriver which has `MOVR` as it’s fiat currency. Read more about [Moonriver](/docs/networks/moonriver) on Covalent. `<multichain>`
+- We have added Moonriver data and return responses which include the `gas-currency` support for Moonriver which has `MOVR` as it’s fiat currency. Read more about [Moonriver](../networks/moonriver) on Covalent. `<multichain>`
 
 - When NFTs are newly minted, they can be transferred from the originating address to another address in batches. [Here](https://etherscan.io/tx/0xe0ed83f1cdeddfcf83000e6e748390000636655e1fe2ce15489c9e81032a3d42#eventlog) is an example of  batch transfer of NFTs on etherscan. We have built out the feature to track NFTs that undergo batch transfers. The response is parsed using `TransferBatch` to have the NFT in the [`Balances_v2`](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/balances_v2/) endpoint. [Example](https://api.covalenthq.com/v1/1/address/0x63677bc4a00d551fb3cba444b75a91da19297f2b/balances_v2/?nft=true) `<data-accessibility>`
 

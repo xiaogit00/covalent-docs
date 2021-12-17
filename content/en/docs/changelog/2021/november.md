@@ -1,8 +1,7 @@
 ---
-title: November 2021
+title: November
 order: 11
 hidden: false
-description: More performance improvements.
 ---
 
 ## 2021-11-30
