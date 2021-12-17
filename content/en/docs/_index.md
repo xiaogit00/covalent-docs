@@ -18,6 +18,9 @@ weight: 0
     <div class="font-light text-4xl text-covalent-black pt-12 max-w-screen-md">
      Built for builders
     </div>
+    <div class="font-light text-xl text-covalent-black pt-1 max-w-screen-md">
+Over 500 projects building with Covalent
+    </div>
     {{< partners >}}
     <div class="font-light text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
      Join our socials
