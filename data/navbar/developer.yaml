@@ -76,7 +76,7 @@
       - 
         title: Changelog guide
         link: /docs/changelog/guide
-        published: true
+        published: false
   -
     title: Service Providers
     link: /docs/service-providers

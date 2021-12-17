@@ -1,11 +1,8 @@
 ---
-title: October 2021
-weight: 10
+title: October
+order: 10
 hidden: false
-description: Axie/Ronin indexed.
 ---
-
-# October 2021
 
 ## 2021-10-31
 
