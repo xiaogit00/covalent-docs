@@ -37,14 +37,11 @@ jobs:
       with:
         cmd: install
 
-    - name: Bootstrap build dir
+    - name: Download Hugo
       run: |
-        rm -rf .docs
-        cp -r node_modules/cloudflare-docs-engine/ .docs
-        cd .docs
-        rm -rf node_modules/
-        yarn install
-
+        wget https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Linux-64bit.tar.gz
+        tar xvzf hugo_0.89.4_Linux-64bit.tar.gz
+        
     - name: Build site
       run: ./s/docs-build
 
