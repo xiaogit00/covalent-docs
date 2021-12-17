@@ -1,0 +1,28 @@
+{{ $dataJ := getJSON "https://www.covalenthq.com/static/documents/latestUpdates.json" }}
+
+<div class="drop-shadow-md filter shadow-sm rounded-xl px-12 py-6 bg-gray-50 max-w-6xl mb-28">
+    <div class="flex flex-col border-l-2">
+        {{range $index, $element := $dataJ }}
+        <div class="flex md:flex-col sm:flex-col hover:bg-white py-6 rounded-xl relative cursor-pointer" onclick="window.open('{{ $element.cta }}')">
+            <div class="absolute -left-4 h-8 w-8 bg-gray-50 flex justify-center items-center z-10 rounded-full {{ if eq $index 0 }} border-2 border-covalent-pink {{ end }}">
+                <div class="rounded-full {{ if eq $index 0 }} bg-covalent-pink {{ else }} bg-gray-300 {{ end }} w-4 h-4"></div>
+            </div>
+            <div class="mr-12 ml-12 w-1/3">
+                {{ $element.date }}
+            </div>
+            <div class="md:ml-12 sm:ml-12">
+                <div class="font-semibold text-gray-900">
+                    {{ $element.title }}
+                </div>
+                <div class="max-w-5xl">
+                    {{ $element.desc }}
+                </div>
+                <div className="mt-5">
+                    <a target="_blank" href="{{$element.cta}}" className="covalent-button-pink">Read More</a>
+                </div>
+</div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+

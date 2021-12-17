@@ -1,0 +1,75 @@
+    display:
+      -
+        Name: Ethereum
+        img: "/static/images/networks/Ethereum.png"
+      -
+        Name: Polygon
+        img: "/static/images/networks/Polygon.svg"
+      -
+        Name: Avalance
+        img: "/static/images/networks/Avalance.svg"
+      -
+        Name: Binance Smart Chain
+        img: "/static/images/networks/BSC.svg"
+      -
+        Name: Fantom
+        img: "/static/images/networks/Fantom.svg"
+      -
+        Name: Ronin
+        img: "/static/images/networks/Ronin.svg"
+      -
+        Name: Moonbeam
+        img: "/static/images/networks/Moonbeam.svg"
+      -
+        Name: Moonriver
+        img: "/static/images/networks/Moonriver.svg"
+      -
+        Name: RSK
+        img: "/static/images/networks/RSK.png"
+      -
+        Name: Arbitrum
+        img: "/static/images/networks/Arbitrum.png"
+      -
+        Name: Palm
+        img: "/static/images/networks/Palm.png"
+      -
+        Name: Klaytn
+        img: "/static/images/networks/Klaytn.svg"
+      -
+        Name: HECO
+        img: "/static/images/networks/HECO.svg"
+      -
+        Name: Polyjuice
+        img: "/static/images/networks/Polyjuice.png"
+      -
+        Name: Iotex
+        img: "/static/images/networks/Iotex.svg"
+      # -
+      #   Name: Elrond
+      #   img: "/static/images/networks/Elrond.svg"
+      # -
+      #   Name: Casper Labs
+      #   img: "/static/images/networks/Casper Labs.svg"
+      # -
+      #   Name: Strakware
+      #   img: "/static/images/networks/Strakware.svg"
+      # -
+      #   Name: Skale
+      #   img: "/static/images/networks/Skale.svg"
+      # -
+      #   Name: Near
+      #   img: "/static/images/networks/Near.svg"
+      # -
+      #   Name: Polkadot
+      #   img: "/static/images/networks/Polkadot.svg"
+      -
+        Name: Optimism
+        img: "/static/images/networks/Optimisim.svg"
+      # -
+      #   Name: Edgewear
+      #   img: "/static/images/networks/Edgewear.svg"
+    expand:
+      -
+        Name: 
+        img: 
+        type: 

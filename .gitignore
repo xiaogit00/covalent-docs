@@ -1,4 +1,8 @@
+*._DS*
+
 hugo
+public
+resources
 
 # Logs
 logs

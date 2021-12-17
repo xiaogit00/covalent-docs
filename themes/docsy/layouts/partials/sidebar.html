@@ -1,0 +1,17 @@
+<div class="code top-0 w-72 bg-covalent-blue-dark px-6 flex flex-col px-6 pt-6 pb-12 overflow-y-auto">
+    <div class="text-white mb-3 text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink cursor-pointer">
+        <a href="/docs/">Overview</a>
+    </div>
+    <hr class="mb-3 border-covalent-purple-dark" />
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Developer" "type" "developer" "arr" $.Site.Data.navbar.developer) }}
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Supported Networks" "type" "networks" "arr" $.Site.Data.navbar.supportedNetworks) }}
+
+    {{ partial "sidebar-tree.html" (dict "context" . "title" "Alchemist" "type" "alchemist" "arr" $.Site.Data.navbar.alchemist) }} 
+
+    <!-- {{ partial "sidebar-tree.html" (dict "context" . "title" "Validator" "type" "validator" "arr" $.Site.Data.navbar.validator) }}  -->
+
+</div>
+
+

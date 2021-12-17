@@ -1,8 +1,11 @@
 {
   "name": "covalent-docs",
   "version": "1.0.0",
-  "description": "",
+  "description": "The official docs site for Covalent. This is also referred to as the *Knowledge Base*.",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +20,12 @@
   },
   "homepage": "https://github.com/covalenthq/covalent-docs#readme",
   "devDependencies": {
-    "cloudflare-docs-engine": "git+https://github.com/cloudflare/cloudflare-docs-engine.git",
-    "react-dropdown": "^1.9.2"
-  },
-  "dependencies": {
-    "gatsby-plugin-google-gtag": "^3.4.0",
-    "gatsby-plugin-google-tagmanager": "^3.4.0"
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/line-clamp": "^0.2.2",
+    "autoprefixer": "^10.4.0",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.19",
+    "tailwindcss-border-gradient-radius": "^2.0.0"
   }
 }

@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{{ hugo.Generator }}
+
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+{{ $scssMain := "scss/main2.scss"}}
+{{ if not hugo.IsProduction }}
+{{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other browsers. */}}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) | postCSS }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet">
+{{ else }}
+{{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" false) | postCSS | minify | fingerprint }}
+<link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
+{{ end }}
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+
+<script src="/static/dist/covalent-tailwind.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.3/mermaid.min.js" integrity="sha512-vX5cO7kaCba9A31Bri5mtDGHU5Q/6/3Wmt1D1rpvq0M+JQuFwGNrfpmgHJTVvwsKUwstfVn3mpIntbwha+BMww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -1,0 +1,116 @@
+
+// @import "tailwindcss/base.css";
+
+// @import "/node_modules/tailwindcss/dist/base.css";
+// @import "/node_modules/tailwindcss/dist/components.css";
+// @import "/node_modules/tailwindcss/dist/utilities.css";
+// @import "/node_modules/tailwindcss/dist/forms.css";
+
+
+#td-sidebar-menu {
+    .ul {
+        @apply ml-2;
+    }
+
+    .ul-0, .ul-1 {
+        li {
+            @apply mb-1 text-xl;
+        }
+    }
+    .ul-1 {
+        @apply mt-1;
+    }
+
+    .ul-2 {
+        @apply ml-4;
+    }
+
+    .ul-3 {
+        @apply ml-6;
+    }
+}
+
+
+.right-nav{
+    li{
+        @apply text-lg my-4 ; 
+
+    }
+}
+
+.main-content {
+
+    .pageinfo {
+        @apply text-base tracking-widest text-covalent-pink font-semibold uppercase mt-12 mb-12 flex;
+
+        p {
+            @apply mt-4  bg-gray-100 pt-4 pb-4 pl-4 ;
+        }
+    }
+
+    h1 {
+        @apply mb-12 max-w-2xl text-5xl font-sans text-gray-900 text-5xl tracking-wide border-b py-6 sm:text-4xl ;
+    }
+
+    h2 {
+        @apply  mt-2 mb-6 max-w-2xl text-4xl font-sans font-light tracking-tight text-gray-900 border-b py-4 sm:text-3xl ;
+    }
+
+    h3 {
+        @apply  mt-2 mb-4 max-w-2xl text-3xl font-sans font-light tracking-tight text-gray-900 sm:text-2xl ;
+    }
+
+    p {
+        @apply text-xl text-gray-800 mb-6 w-4/5 sm:text-lg;
+        font-family: -apple-system, “BlinkMacSystemFont”, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Open Sans”, “Helvetica Neue”, “Icons16”, sans-serif;
+    }
+
+    a{  
+        @apply text-covalent-pink ;
+    }
+
+    ul {
+        @apply my-6 text-lg text-gray-800 ml-6 list-disc;
+
+        li {
+            @apply my-8 ;    
+        }
+    }
+
+    pre {
+        @apply bg-gray-500 text-white py-1 px-2 rounded-md;
+        display: inline;
+    }
+
+    .section-index {
+        .panel-line {
+            @apply mt-4 mb-4;
+        }
+
+        .entry {
+            a {
+                @apply text-2xl font-bold mb-4 w-4/5;
+            }
+            @apply mb-8;
+        }
+    }
+
+    table {
+        @apply my-8 divide-y divide-gray-200;
+
+        thead {
+            @apply bg-gray-50;
+
+            th {
+                @apply px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider;
+            }
+        }
+
+        tbody {
+            td {
+                @apply px-6 py-4 whitespace-nowrap  text-gray-500;
+            }
+        }
+    }
+
+}
