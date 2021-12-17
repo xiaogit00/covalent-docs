@@ -1,9 +1,9 @@
 ---
-title: Developer
+title: API Overview
 weight: 0
 ---
 
-# Developer
+# API Overview
 
 <section class="">    
     <div class="font-light text-4xl text-covalent-black pb-12  max-w-screen-md">
