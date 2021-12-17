@@ -11,7 +11,7 @@ The directions on how to showcase your project is [here](./docs/content/project-
 Please read the contribution guidelines [here](CONTRIBUTING.md).
 
 ## Running docs site locally
-Covalent uses the [Cloudflare documentation engine](https://developers.cloudflare.com/docs-engine/) for the docs site.
+Covalent uses a static site generator `hugo` for generating the website.
 
 1. Install the `hugo` server for your machine: https://gohugo.io/getting-started/installing/
 
@@ -44,7 +44,6 @@ Covalent uses the [Cloudflare documentation engine](https://developers.cloudflar
 
 &nbsp;
 ## How it works
-For a comprehensive overview of how the Cloudflare docs engine works, see [this excellent resource.](https://developers.cloudflare.com/docs-engine/how-it-works)
 
 The content is generated as static HTML pages in `public/` and then rendered. 
 
