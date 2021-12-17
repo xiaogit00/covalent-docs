@@ -34,10 +34,10 @@ function expand (type, className){
 </script>
 
 <div class="flex justify-between items-center mb-2 cursor-pointer " >
-    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all">
-      <a href="/docs/{{ $type }}">{{ $Title }}</a>
+    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all" onclick="expand('parent', '{{ $type }}')">
+      <a>{{ $Title }}</a>
     </div>
-    <div id="plus-{{ .type }}" style="display:block" class="flex justify center fill-current text-covalent-pink w-6 h-6" onclick="expand('parent', '{{ $type }}')">
+    <div id="plus-{{ .type }}" style="display:block" class="flex justify center fill-current text-covalent-pink w-6 h-6" >
         <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
         <g id="plus_11_">
