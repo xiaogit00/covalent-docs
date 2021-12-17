@@ -18,11 +18,11 @@ weight: 0
     <div class="font-light text-4xl text-covalent-black py-6 max-w-screen-md">
      Getting started with the Unified API
     </div>
-    <ol class="list-decimal max-w-3xl">
-    <li class="text-xl "><a target="_blank" href="https://www.covalenthq.com/platform/#/auth/register">Signup for a free API key</a>.</li>
-    <li class="text-xl ">Try making a sample API request via <pre>cURL</pre>.</li>
-    <li class="text-xl ">Try building a wallet interface, a tax calculator or a NFT gallery using our read-made templates.</li>
-    <li class="text-xl "><a target="_blank" href="https://www.covalenthq.com/docs/api/#/">Read the API Reference</a> documentation for further customizations.</li>
-    <li class="text-xl">Join one of our ongoing or upcoming hackathons.</li>
+    <ol class="list-decimal max-w-3xl my-6 text-lg ">
+    <li class="text-xl my-8"><a target="_blank" href="https://www.covalenthq.com/platform/#/auth/register">Signup for a free API key</a>.</li>
+    <li class="text-xl my-8">Try making a sample API request via <pre>cURL</pre>.</li>
+    <li class="text-xl my-8">Try building a wallet interface, a tax calculator or a NFT gallery using our read-made templates.</li>
+    <li class="text-xl my-8"><a target="_blank" href="https://www.covalenthq.com/docs/api/#/">Read the API Reference</a> documentation for further customizations.</li>
+    <li class="text-xl my-8">Join one of our ongoing or upcoming hackathons.</li>
     </ol>
 </section> 
