@@ -1,10 +1,10 @@
 ---
-title: Querying with Primer (Beg)
+title: Querying with Primer (Beginner)
 updated: 2021-05-18
 order: 1
 hidden: false
 author: gane5h
-description: Learn some of the basics of Primer
+description: Learn some of the basics of Primer.
 tags: 
   - Primer
   - MongoDB
@@ -26,9 +26,9 @@ Primer is now available on ALL [Class A endpoints](https://www.covalenthq.com/do
 
 Primer has three kinds of query functionality:
 
-1. The basic functionality is a simple `match` feature that allows users to keep or reject certain records based on a criteria.  
-2. The intermediate functionality is to combine the operators with logical operators to create sophisticated rule sets.
-3. The advanced functionality allows you to build an aggregation pipeline that closely resembles a data pipeline that can not only match/filter records, but also sort, skip, limit and aggregate records.
+* The basic functionality is a simple `match` feature that allows users to keep or reject certain records based on a criteria.  
+* The intermediate functionality is to combine the operators with logical operators to create sophisticated rule sets.
+* The advanced functionality allows you to build an aggregation pipeline that closely resembles a data pipeline that can not only match/filter records, but also sort, skip, limit and aggregate records.
 
 We use the generic term "record" in reference to the underlying data models available on a supported blockchain: `blocks`, `transactions`, `balances`, `log events`, etc. In the case of `log events`, the data model is even richer and includes the multi-schema business model logic of the underlying smart contract protocol.
 

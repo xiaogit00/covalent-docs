@@ -67,18 +67,6 @@
         link: /docs/learn/tutorials
         published: false
         subsection:
-          -
-            title: Querying Historical Aave Borrow rate with Primer
-            link: /docs/learn/tutorials/query-historical-aave-borrow-rate-with-primer
-            published: true
-          -
-            title: Querying with Primer (Beg)
-            link: /docs/learn/tutorials/query-with-primer-beg/
-            published: true
-          -
-            title: Querying with Primer (Int)
-            link: /docs/learn/tutorials/query-with-primer-int/
-            published: true
   -
     title: Campaigns
     link: /docs/campaigns

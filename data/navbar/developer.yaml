@@ -33,6 +33,28 @@
         link: /docs/tools/topic-calculator-sql
         published: false
   -
+    title: Primer
+    link: /docs/developer/primer/
+    published: true
+    subsection:
+        -
+          title: Primer Operator Reference
+          link: /docs/developer/primer/operator-reference/
+          published: true
+        -
+          title: Querying Historical Aave Borrow rate with Primer
+          link: /docs/developer/primer/query-historical-aave-borrow-rate-with-primer/
+          published: true
+        -
+          title: Querying with Primer (Beginner)
+          link: /docs/developer/primer/query-with-primer-beg/
+          published: true
+        -
+          title: Querying with Primer (Intermediate)
+          link: /docs/developer/primer/query-with-primer-int/
+          published: true
+
+  -
     title: Changelog
     link: /docs/changelog/
     published: true

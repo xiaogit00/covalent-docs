@@ -1,10 +1,10 @@
 ---
-title: Operator Reference
+title: Primer Operator Reference
 order: 1
-hidden: true
-draft: true
+description: Complete reference guide for Primer Operators.
 ---
-#1.0 | Primer Query Parameters
+
+# 1.0 | Primer Query Parameters
 
 |Name|Description|
 |---|---|
@@ -21,9 +21,9 @@ Notes:
 
 2. All top-level queries including the _primer pipeline_ are executed on the set of records returned after _pagination_. In other words, if you want these queries to include _all_ records, you must set the ```page-number=0``` and the ```page-size=...``` to an amount that includes all records.
 
-#2.0 | Operator Reference
+# 2.0 | Operator Reference
 
-##2.1 | Comparison
+## 2.1 | Comparison
 
 |Name|Description|
 |---|---|
@@ -38,7 +38,7 @@ Notes:
 
 _Comparison by date objects is also available._
 
-##2.2 | Logical
+## 2.2 | Logical
 
 
 |Name|Description|
@@ -49,7 +49,7 @@ _Comparison by date objects is also available._
 |$or|Joins query clauses with a logical OR returns all documents that match the conditions of either clause.|
 
 
-##2.3 | Element
+## 2.3 | Element
 
 
 |Name|Description|
@@ -57,7 +57,7 @@ _Comparison by date objects is also available._
 |$exists|Matches documents that have the specified field.|
 
 
-##2.4 | Aggregation
+## 2.4 | Aggregation
 
 |Name|Description|
 |---|---|
@@ -73,14 +73,14 @@ _Comparison by date objects is also available._
 |$pow|Raises a number to an exponent and returns the result.|                  
 
 
-##2.5 | Projection
+## 2.5 | Projection
 
 |Name|Description|
 |---|---|
 |$elemMatch|Projects the first element in an array that matches the specified $elemMatch condition.|
 |$group|Groups input elements by the specified _id expression and for each distinct grouping, outputs an element.|
 
-##2.6 | Date Aggregation (Available within ```$group```)
+## 2.6 | Date Aggregation (Available within ```$group```)
 
 |Name|Description|
 |---|---|
@@ -90,7 +90,7 @@ _Comparison by date objects is also available._
 |$hourOfDay|Returns the hour of a day as a number between 0 and 23.|
 |$minuteOfDay|Returns the minute of a day as a number between 0 and 1439.|
 
-##2.7 | Aggregation (Available within the ```primer pipeline```)
+## 2.7 | Aggregation (Available within the ```primer pipeline```)
 
 |Name|Description|
 |---|---|
@@ -100,7 +100,7 @@ _Comparison by date objects is also available._
 |$limit|Limits the number of records passed to the next stage in the pipeline.|
 |$skip|Skips over the specified number of records and passes the remaining records to the next stage in the pipeline.|
 
-##2.8 | Accessing Array indexes and nested objects using _dot_ (.) notation
+## 2.8 | Accessing Array indexes and nested objects using _dot_ (.) notation
 
 Access elements within nested objects and arrays.
 
@@ -116,11 +116,11 @@ We have the following top-level query parameters.
 
 Primer is currently available on these endpoints:
 
-1. [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
-2. [Get log events by topic hash(es)](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
-3. [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/)
+* [Get log events by contract address](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/address/{address}/)
+* [Get log events by topic hash(es)](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/events/topics/{topic}/)
+* [Get transactions](https://www.covalenthq.com/docs/api/#get-/v1/{chain_id}/address/{address}/transactions_v2/)
 
-##3.1 | Basic _Sort_
+## 3.1 | Basic _Sort_
 
 We can sort by simply selecting the element and determine the sort order, _1_ for acsending and _-1_ for decsending order.
 Note: Sorting is currently executed _after_ paginiation.
@@ -152,7 +152,7 @@ sort=
 ```
 [https://api.covalenthq.com/v1/1/address/0xA361718326c15715591c299427c62086F69923D9/transactions_v2/?match={"log_events.0.decoded.name":"Repay"}&sort={"log_events.0.decoded.params.3.value":-1}](https://api.covalenthq.com/v1/1/address/0xA361718326c15715591c299427c62086F69923D9/transactions_v2/?match={%22log_events.0.decoded.name%22:%22Repay%22}&sort={%22log_events.0.decoded.params.3.value%22:-1})
 
-##3.2 | Getting "Claimed" and "Mint" event transactions using _match_
+## 3.2 | Getting "Claimed" and "Mint" event transactions using _match_
 
 Lets get the "Claimed" and "Mint" events from the last 100 transactions of the eth/zero pair exchange on uniswap (0x40f0e70a7d565985b967bcdb0ba5801994fc2e80) using the query parameter _match_ and the ```$or``` operator.
 
@@ -172,7 +172,7 @@ match=
 
 [https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?match={"$or":[{"log_events.0.decoded.name":"Claimed"},{"log_events.0.decoded.name":"Mint"}]}](https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?match={%20%22$or%22:%20[%20{%22log_events.0.decoded.name%22:%22Claimed%22},%20{%22log_events.0.decoded.name%22:%22Mint%22}%20]%20})
 
-##3.3 | Counting transactions with "Transfer" events using the _primer_ pipeline
+## 3.3 | Counting transactions with "Transfer" events using the _primer_ pipeline
 
 Lets count the number of transactions that contain "Transfer" event(s) from the last 1000 transactions by _hour_ using ```$match```, ```$elemmatch```, ```$group```, and ```$sum``` within the _primer_ pipeline.
 
@@ -217,7 +217,7 @@ primer=
 [https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?page-size=10000&primer=[{"$match":{"log_events":{"$elemmatch":{"decoded.name":"Transfer"}}}},{"$group":{"_id":{"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"year":{"$year":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"}},"transfer_count":{"$sum":1}}}]](https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?page-size=10000&primer=[%20{%20%22$match%22:{%22log_events%22:{%22$elemmatch%22:{%22decoded.name%22:%22Transfer%22}}}%20},%20{%22$group%22:{%22_id%22:{%22month%22:{%22$month%22:%22block_signed_at%22},%22day%22:{%22$dayOfMonth%22:%22block_signed_at%22},%22year%22:{%22$year%22:%22block_signed_at%22},%22hour%22:{%22$hourOfDay%22:%22block_signed_at%22}},%22transfer_count%22:{%22$sum%22:1}}}%20])
 
 
-##3.4 | Using a Logical Operator to filter transactions
+## 3.4 | Using a Logical Operator to filter transactions
 
 Suppose we want all events from the Aave interest-bearing BUSD contract, which is not a "Transfer" and not an "Approval" We also wish to see only the transactions with the remaining events emitted by the 0x6f858d52ff946d3a4c91fe5a7cdc408212d17a1b account. This is possible by using the _primer_ pipeline, the ```$match``` filter, and the ```$not``` logical operator.
 
@@ -269,7 +269,7 @@ primer=
 
 eg: http://google.com
 
-##3.5 | Using group by date with aggragtion
+## 3.5 | Using group by date with aggragtion
 
 Lets count the number of transactions per day between block 11_000_000 and 12_000_000 from the Aave interest-bearing BUSD contract.
 
@@ -299,7 +299,7 @@ group=
 eg: [https://api.covalenthq.com/v1/1/events/address/0xA361718326c15715591c299427c62086F69923D9/?starting-block=11000000&ending-block=12000000&group={"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"}},"tx_count":{"$sum":1}}](https://api.covalenthq.com/v1/1/events/address/0xA361718326c15715591c299427c62086F69923D9/?starting-block=11000000&ending-block=12000000&group={"_id":{"year":{"$year":"block_signed_at"},"month":{"$month":"block_signed_at"},"day":{"$dayOfMonth":"block_signed_at"},"hour":{"$hourOfDay":"block_signed_at"}},"tx_count":{"$sum":1}})
 
 
-##3.6 | Using skip
+## 3.6 | Using skip
 
 we can limit the amount of records as a top level query.
 
@@ -319,7 +319,7 @@ primer=
 
 eg: [https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?no-logs=true&page-number=0&page-size=6&key=abc&limit=2&skip=5](https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?no-logs=true&page-number=0&page-size=6&key=abc&limit=2&skip=5)
 
-##3.7 | Using limit
+## 3.7 | Using limit
 
 we can limit the amount of records as a top level query.
 
@@ -339,7 +339,7 @@ primer=
 
 [https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?no-logs=true&page-number=0&page-size=50&key=abc&limit=5](https://api.covalenthq.com/v1/1/address/0x5a6d3b6bf795a3160dc7c139dee9f60ce0f00cae/transactions_v2/?no-logs=true&page-number=0&page-size=50&key=abc&limit=5)
 
-##3.8 | Sum of gas by failed and succeeded transactions
+## 3.8 | Sum of gas by failed and succeeded transactions
 
 If you want to see how much gas a particular contract has burned, we can simply run the following query to sum the costs.
 
@@ -356,7 +356,7 @@ group=
 [https://api.covalenthq.com/v1/1/address/0x9fd3e6610C543ee6A9e199B143505b2172057623/transactions_v2/?page-size=9000&group={"_id":"successful","gas_sum":{"$sum":"gas_quote"}}](https://api.covalenthq.com/v1/1/address/0x9fd3e6610C543ee6A9e199B143505b2172057623/transactions_v2/?page-size=9000&group={%20_id:%20%22successful%22%20,%20gas_sum:%20{%20$sum:%20gas_quote%20}%20})
 
 
-##3.9 | Tracking Compound Governance Proposal #41 supporting votes by hour
+## 3.9 | Tracking Compound Governance Proposal #41 supporting votes by hour
 
 Lets count and sum the supporting and non supporting votes for the Compound Governance Proposal #41.
 
@@ -411,7 +411,7 @@ primer=
 
 ## Notable Aggregations Usages
 
-##4.0 | Example usages of mathematical operators ($multiply, $divide, $subtract)
+## 4.0 | Example usages of mathematical operators ($multiply, $divide, $subtract)
 
 Here are some examples on how to perform simple operations between numbers with `$multiple`, `$divide` and `$subtract`.
 
@@ -443,7 +443,7 @@ group=
 
 [https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=latest&key=ckey_key&group={"_id":"block_signed_at","product":{"$multiply":[10,100,15]},"productWithFields":{"$multiply":["block_height","log_offset","tx_offset"]},"quotient":{"$divide":["tx_offset",2]},"differenceBetweenDates":{"$subtract":["2021-08-03T21:51:36Z","2021-07-03T06:23:43Z"]},"differenceBetweenNumbers":{"$subtract":[10,2]}}](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=latest&key=ckey_key&group={"_id":"block_signed_at","product":{"$multiply":[10,100,15]},"productWithFields":{"$multiply":["block_height","log_offset","tx_offset"]},"quotient":{"$divide":["tx_offset",2]},"differenceBetweenDates":{"$subtract":["2021-08-03T21:51:36Z","2021-07-03T06:23:43Z"]},"differenceBetweenNumbers":{"$subtract":[10,2]}})
 
-##4.1| Example usages of _$pow_
+## 4.1| Example usages of _$pow_
 
 The `$pow` operator takes in two expressions. The first expression is the number and the second expression is the exponent. Raising 0 to the power of a negative exponent will return `Infinity`.  
 
@@ -472,7 +472,7 @@ primer=
 [https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"ethPrice":{"$divide":[89000000000000000,{"$pow": [10,18]}]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"ethPrice":{"$divide":[89000000000000000,{"$pow":[10,18]}]}}}])
 
 
-##4.2| Example usages of string concatenation with _$concat_
+## 4.2| Example usages of string concatenation with _$concat_
 
 The `$concat` operator takes in expressions in an array format and can only take in expressions that resolves to a string. If the the string is null or missing, `$concat` will return a `null`. 
 
@@ -502,7 +502,7 @@ primer=
 [https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}])
 
 
-##4.3| Using $toInt
+## 4.3| Using $toInt
 
 The `$toInt` operator converts any valid expression that resolves to a number or a number value to an integer. If there are any `null` or `missing values`, `$toInt` will return a null value. The `$toInt` operator also converts hex values into integers. 
 

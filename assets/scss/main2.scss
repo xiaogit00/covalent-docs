@@ -77,9 +77,20 @@
         }
     }
 
-    pre {
+    code, pre {
         @apply bg-gray-500 text-white py-1 px-2 rounded-md;
         display: inline;
+    }
+
+    .highlight {
+        @apply bg-gray-300 py-1 px-2;
+
+        code, pre {
+
+            @apply font-mono bg-gray-300 text-white px-0 py-0  rounded-md;
+
+        }
+
     }
 
     .section-index {

@@ -4,7 +4,7 @@ updated: 2021-05-27
 order: 3
 hidden: false
 author: Dennis
-description: Learn how to query historical aave borrow rate with primer
+description: Learn how to query historical AAVE borrow rate with Primer.
 tags: 
   - Primer
   - MongoDB
