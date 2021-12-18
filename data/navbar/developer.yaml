@@ -55,6 +55,10 @@
           published: true
 
   -
+    title: API FAQ
+    link: /docs/developer/faq/
+    published: true
+  -
     title: Changelog
     link: /docs/changelog/
     published: true
