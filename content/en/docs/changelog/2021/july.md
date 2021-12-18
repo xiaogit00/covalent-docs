@@ -22,7 +22,7 @@ Example: `https://api.covalenthq.com/v1/1/tokens/0xbbbee5503a40d51893674f3dd2341
 
 - `XY=K` - Added `ens` resolution so now we can get user transactions for example using an `ens` address such as `demo.eth` 
 
-- Added RSK `gas` price map. We indexed RSK in the month of [June](./june). RSK is the first general purpose smart contract platform secured by the Bitcoin Network. Developers building on RSK using Covalent now have the extra feature of being able to calculate the gas cost of a transaction.
+- Added RSK `gas` price map. We indexed RSK in the month of [June](/docs/changelog/2021/june). RSK is the first general purpose smart contract platform secured by the Bitcoin Network. Developers building on RSK using Covalent now have the extra feature of being able to calculate the gas cost of a transaction.
 
 - Add NFTs Metadata `burned` field. This is a new feature where a burned NFT will not be returned when it has been burned, thus the metadata holds the information that it has been transferred to a null address, which is what is means for an NFT that has been burned 
 

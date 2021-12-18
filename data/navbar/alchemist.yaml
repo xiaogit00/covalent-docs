@@ -4,21 +4,21 @@
     published: true
   -
     title: Alchemist Cookbook
-    link: /docs/alchemist
+    link: /docs/alchemist/
     published: true
     subsection:
       - 
         title: Research Training
-        link: /docs/alchemist/research-training
+        link: /docs/alchemist/research-training/
         published: true
         subsection:
           -
             title: Research Training Assignment 1
-            link: /docs/alchemist/research-training/research-assignment-1
+            link: /docs/alchemist/research-training/research-assignment-1/
             published: true
           -
             title: Research Training Assignment 2
-            link: /docs/alchemist/research-training/research-assignment-2
+            link: /docs/alchemist/research-training/research-assignment-2/
             published: true
       - 
         title: Case Studies
