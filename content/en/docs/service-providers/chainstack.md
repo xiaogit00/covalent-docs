@@ -19,10 +19,14 @@ Created by developers for developers, Chainstack allows you to easily create, ma
 - Ropsten testnet — a proof-of-work public Ethereum testnet.
 - Rinkeby testnet — a proof-of-authority public Ethereum testnet.
 
-### Polygon/Matic
+### [Polygon/Matic](https://chainstack.com/build-better-with-polygon/)
 - Polygon PoS mainnet — public mainnet of the Polygon PoS sidechain to the Ethereum mainnet.
 - Mumbai testnet — public testnet of the Polygon PoS sidechain to the Ethereum Goerli testnet.
 
-### Binance Smart Chain
+### [Fantom](https://chainstack.com/build-better-with-fantom/)
+- Mainnet — public Fantom mainnet.
+- Testnet — public Fantom testnet.
+
+### [Binance Smart Chain](https://chainstack.com/build-better-with-binance-smart-chain/)
 - Mainnet — public Binance Smart Chain mainnet.
 - Testnet — public Binance Smart Chain testnet.

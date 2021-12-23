@@ -99,3 +99,7 @@ For the current token mapping list, see: https://netapi.anyswap.net/bridge/v2/in
 ### Token prices
 
 For tokens that have a mapping back to Ethereum mainnet, the Covalent API is able to return the mapped prices.
+
+### Infrastructure Providers
+The following provide infrastructure for this blockchain network:
+* [Chainstack](../../service-providers/chainstack)
