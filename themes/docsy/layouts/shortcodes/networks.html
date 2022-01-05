@@ -1,5 +1,5 @@
 
-{{ $dataJ := getJSON "https://www.covalenthq.com/static/blockchains.json" }}
+{{ $dataJ := getJSON "https://www.covalenthq.com/static/js/blockchains.json" }}
 
 <div id="ecosystem" class="covalent-light pt-12 pb-24 max-w-4xl">
     <div class="font-light text-4xl text-covalent-black pb-12 max-w-screen-md">
@@ -10,6 +10,11 @@
       <div class="col-span-1 flex md:px-0 md:justify-start lg:responsive-box-2x border-l border-b border-t border-r">
           <img class="md:w-80 h-full w-full sm:w-full" src="{{ trim $element.imgWhite ` `}}" />
       </div>
+      <script>
+        console.log(`
+          {{ $element.imgWhite }}
+        `)
+      </script>
       {{ end }}
     </div>
 </div>
