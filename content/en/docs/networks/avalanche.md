@@ -98,3 +98,8 @@ For the current token mapping list, see: https://github.com/ava-labs/bridge-toke
 ### Token prices
 
 For tokens that have a mapping back to Ethereum mainnet, Covalent is able to return the mapped prices.
+
+### Infrastructure Providers
+
+The following provide infrastructure for this blockchain network:
+* [Chainstack](../../service-providers/chainstack)
