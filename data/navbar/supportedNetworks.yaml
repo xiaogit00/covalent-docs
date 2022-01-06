@@ -89,11 +89,11 @@
         banner:
         published: true
       - 
-        title: EVMOS
+        title: Evmos
         link: /docs/networks/evmos/
-        icon: "//covalenthq.com/static/images/blockchains/svgs/iotex.svg"
+        icon: "//covalenthq.com/static/images/blockchains/svgs/evmos.svg"
         banner:
-        published: false
+        published: true
       - 
         title: Astar
         link: /docs/networks/astar/
