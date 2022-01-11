@@ -36,21 +36,18 @@ To set a Chain Id on an API request, simply change the `{chain_id}` query parame
 - For decoded log events and other endpoints where you are asked to specify a block range, you are limited to a million block range after which point you need to make a follow up call using the pagination info.
 
 
-## How to increase concurrent API calls?
-
-In most of the cases, we have noticed that clients don't actually need higher concurrency; they need to either:
+## How to address concurrency issues?
+In most of the cases, we have noticed that clients don't actually need higher concurrency limits; they need to either:
 
 - for random access, distribute/queue their load at a gateway level, to smooth unpredicted spikes.
 - for per-client polling, distribute their clients' polls within the polling period using client-ID hashing.
 
-Following are some steps we strictly recommend before requesting higher concurrency to optimize code on client side:
+The following are some steps we recommend to optimize code on client side:
 
 * Create a queue for the requests you are submitting to us.
 * Have `N` worker threads pull requests from that queue and synchronously submit them, only taking another request from the queue when the previous one completes.
 * Tweak the concurrency-level `N` value. At a certain level, you should not see any `429` errors or socket hangups given the limit rules in our middleware. The ideal `N` is currently ~`24`, but this could be changed at any time to protect our architecture from DoS attacks. Please verify and find the optimal `N` for yourself (or write code that dynamically lowers `N` incrementally upon receiving a 429 error).
-
-If you still face concurrency issues, please fill out this [TypeForm](https://covalenthq.typeform.com/to/husUVmhA). 
-
+ 
 
 ## I only get back 100 items (or rows) of data when I expected a lot more.
 By default, the API returns 100 items in a single page. To get all the data, simply include the `page-size` parameter with a large value in your request.
