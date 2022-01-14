@@ -3,8 +3,7 @@ title: WebSocket Connections
 order: 3
 hidden: false
 author: anadipandharkar
-description: Learn how to open a WebSocket connection to API endpoints
-draft: true
+description: Learn how to open a WebSocket connection to API endpoints.
 ---
 
 
