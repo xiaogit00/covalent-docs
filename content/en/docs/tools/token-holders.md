@@ -2,6 +2,7 @@
 title: Token Holders
 order: 4
 hidden: false
+draft: true
 ---
 
 import TokenHolders from "../../components/token-holders.js";

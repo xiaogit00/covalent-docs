@@ -2,6 +2,7 @@
 title: Get Log Data
 order: 5
 hidden: false
+draft: true
 ---
 
 import GetLogData from "../../components/get-log-data/get-log-data.js";
