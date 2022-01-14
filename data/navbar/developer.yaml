@@ -6,12 +6,12 @@
   -
     title: Developer Tools
     link: /docs/tools
-    published: false
+    published: true
     subsection:
       - 
         title: Community Tools
         link: /docs/tools/community
-        published: false
+        published: true
       - 
         title: Get Log Data
         link: /docs/tools/get-log-data
