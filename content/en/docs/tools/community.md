@@ -1,7 +1,7 @@
 ---
 title: Community Tools
 order: 6
-hidden: false
+description: Tools build by the community to provide value to users of the Covalent API.
 ---
 
 # Community Tools
