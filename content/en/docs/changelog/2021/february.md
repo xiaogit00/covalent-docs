@@ -1,6 +1,6 @@
 ---
 title: February 2021
-weight: 2
+weight: -2
 hidden: false
 description: BSC indexed. All Class A endpoints now supported.
 

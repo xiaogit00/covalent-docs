@@ -104,6 +104,14 @@
         link: /docs/changelog/2021/october/
         published: true
       - 
+        title: November 2021
+        link: /docs/changelog/2021/november/
+        published: true
+      - 
+        title: December 2021
+        link: /docs/changelog/2021/december/
+        published: true
+      - 
         title: Changelog guide
         link: /docs/changelog/guide
         published: false

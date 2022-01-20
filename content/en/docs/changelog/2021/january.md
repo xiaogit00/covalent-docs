@@ -1,6 +1,6 @@
 ---
 title: January 2021
-weight: 1
+weight: -1
 hidden: false
 description: Matic/Polygon indexed. All Class A endpoints now supported.
 ---
