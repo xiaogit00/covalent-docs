@@ -1,6 +1,6 @@
 ---
 title: October 2021
-order: 11
+weight: 10
 hidden: false
 description: Axie/Ronin Mainnet fully indexed.
 ---
