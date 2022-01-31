@@ -1,20 +1,20 @@
 ---
-title: Astar
+title: Shiden
 order: 15
 hidden: false
-featuredImage: /static/images/networks/banners/Astar.png
-description: Support for the Astar network
+featuredImage: /static/images/networks/banners/Shiden.png
+description: Support for the Shiden Network on Kusama parachain
 ---
 
-![Astar banner](/static/images/networks/banners/Astar.png)
+![Shiden banner](/static/images/networks/banners/Shiden.png)
 
-# Astar Network
+# Shiden Network
 
 ## Introduction
 
-[Astar Network](https://astar.network/) is a scalable and interoperable infrastructure for Web3.0. Since Astar Network is built with [Parity’s Substrate framework](https://substrate.io/), it can be a future [Polkadot](https://polkadot.network/) parachain that also acts as a scalable smart contract platform. The Polkadot Relaychain, by design, does not support smart contracts. This allows Astar the opportunity to fill in this gap. Scalability is obviously one of the most crucial demands dApp developers have. Ideally, the developers can build whatever applications on Astar Network without having to consider its scalability.
+The [Shiden Network](https://shiden.astar.network/) is a scalable and interoperable infrastructure for Web3.0. Since the Shiden Network is built with [Parity’s Substrate framework](https://substrate.io/), it can be a future [Kusama](https://kusama.network/) parachain that also acts as a scalable smart contract platform. The Kusama Relaychain, by design, does not support smart contracts. This allows the Shiden Network the opportunity to fill in this gap. Scalability is obviously one of the most crucial demands dApp developers have. Ideally, the developers can build whatever applications on the Shiden Network without having to consider its scalability.
 
-The [Astar Shiden](https://docs.astar.network/integration/network-details) network is built on the Kusama parent chain. 
+The Shiden Network is built on the Kusama parent chain.
 
 ### Quick facts
 
@@ -22,7 +22,7 @@ The [Astar Shiden](https://docs.astar.network/integration/network-details) netwo
 
 | Property              | Value                |
 | --------------------- | -------------------- |
-| Astar Shiden          | `336`         |
+| Shiden          | `336`         |
 | Blockchain Explorer|https://blockscout.com/shiden/|
 | Block time            | ~20 seconds           |
 
@@ -34,7 +34,7 @@ The [Astar Shiden](https://docs.astar.network/integration/network-details) netwo
 
 <Aside>
 
-All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Astar Shiden network. You can query the network via the unified API by changing the `chainId`.
+All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the Shiden Network. You can query the network via the unified API by changing the `chainId`.
 
 </Aside>
 
@@ -73,4 +73,4 @@ All [**Class A**](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints a
 
 ### Shiden token
 
-The Shiden token `SDN` is the native token of the Astar Shiden network. This is similar to Ether in Ethereum. To interact with the Astar Shiden network, `SDN` tokens are required to pay gas fees. The Covalent API response returns `gas_*` fields in fiat units.
+The Shiden token `SDN` is the native token of the Shiden Network. This is similar to Ether in Ethereum. To interact with the Shiden Network, `SDN` tokens are required to pay gas fees. The Covalent API response returns `gas_*` fields in fiat units.
