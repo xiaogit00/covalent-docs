@@ -6,12 +6,12 @@
   -
     title: Developer Tools
     link: /docs/tools
-    published: false
+    published: true
     subsection:
       - 
         title: Community Tools
         link: /docs/tools/community
-        published: false
+        published: true
       - 
         title: Get Log Data
         link: /docs/tools/get-log-data
@@ -64,44 +64,52 @@
     published: true
     subsection:
       - 
-        title: January 2021
-        link: /docs/changelog/2021/january/
+        title: December 2021
+        link: /docs/changelog/2021/december/
         published: true
       - 
-        title: February 2021
-        link: /docs/changelog/2021/february/
+        title: November 2021
+        link: /docs/changelog/2021/november/
         published: true
       - 
-        title: March 2021
-        link: /docs/changelog/2021/march/
-        published: true
-      - 
-        title: April 2021
-        link: /docs/changelog/2021/april/
-        published: true
-      - 
-        title: May 2021
-        link: /docs/changelog/2021/may/
-        published: true
-      - 
-        title: June 2021
-        link: /docs/changelog/2021/june/
-        published: true
-      - 
-        title: July 2021
-        link: /docs/changelog/2021/july/
-        published: true
-      - 
-        title: August 2021
-        link: /docs/changelog/2021/august/
+        title: October 2021
+        link: /docs/changelog/2021/october/
         published: true
       - 
         title: September 2021
         link: /docs/changelog/2021/september/
         published: true
       - 
-        title: October 2021
-        link: /docs/changelog/2021/october/
+        title: August 2021
+        link: /docs/changelog/2021/august/
+        published: true
+      - 
+        title: July 2021
+        link: /docs/changelog/2021/july/
+        published: true
+      - 
+        title: June 2021
+        link: /docs/changelog/2021/june/
+        published: true
+      - 
+        title: May 2021
+        link: /docs/changelog/2021/may/
+        published: true
+      - 
+        title: April 2021
+        link: /docs/changelog/2021/april/
+        published: true
+      - 
+        title: March 2021
+        link: /docs/changelog/2021/march/
+        published: true
+      - 
+        title: February 2021
+        link: /docs/changelog/2021/february/
+        published: true
+      - 
+        title: January 2021
+        link: /docs/changelog/2021/january/
         published: true
       - 
         title: Changelog guide

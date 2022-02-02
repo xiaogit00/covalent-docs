@@ -23,6 +23,10 @@ Created by developers for developers, Chainstack allows you to easily create, ma
 - Polygon PoS mainnet — public mainnet of the Polygon PoS sidechain to the Ethereum mainnet.
 - Mumbai testnet — public testnet of the Polygon PoS sidechain to the Ethereum Goerli testnet.
 
+### [Avalanche](https://chainstack.com/build-better-with-avalanche/)
+- Mainnet — public Avalanche mainnet.
+- Fuji testnet — public Avalanche testnet.
+
 ### [Fantom](https://chainstack.com/build-better-with-fantom/)
 - Mainnet — public Fantom mainnet.
 - Testnet — public Fantom testnet.

@@ -1,6 +1,6 @@
 ---
 title: September 2021
-weight: 9
+weight: -9
 hidden: false
 description: Added historical portfolio view.
 ---
