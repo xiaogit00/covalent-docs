@@ -87,8 +87,8 @@ function expand (type, className, link){
         <div id="parent-{{ $parentTitle }}" class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent opacity-50 text-white flex justify-between items-center cursor-pointer hover:bg-white hover:bg-opacity-5 rounded-md py-1 px-2 mb-2 hover:text-white hover:opacity-100 " onclick="expand('child','{{ $parentTitle }}', '{{ .link }}')">
           <div class="flex items-center">
             {{ if .icon }}
-            <div class="flex items-center justify-center text-white w-4 mr-4">
-              <img class="" src="{{ .icon }}"></img>
+            <div class="flex items-center justify-center">
+              <img class=" text-white h-6 w-6 mr-4" src="{{ .icon }}"></img>
             </div>
             {{ end }}
             <a href="{{ .link }}">{{ .title }}</a>
