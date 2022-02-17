@@ -66,7 +66,7 @@
     }
 
     a{  
-        @apply text-covalent-pink;
+        @apply text-covalent-pink break-all;
     }
 
     ul {
@@ -78,7 +78,7 @@
     }
 
     code, pre {
-        @apply text-sm bg-gray-500 text-white py-1 px-2 rounded-md;
+        @apply text-sm bg-gray-500 text-white py-1 px-2 whitespace-nowrap rounded-md;
         display: inline;
     }
 
@@ -87,7 +87,6 @@
         @apply bg-gray-100 py-8 pl-8 pr-12 my-8 shadow-md whitespace-normal overflow-x-auto max-w-5xl  rounded-md;
 
         code, pre {
-
             @apply font-mono bg-gray-100 text-white px-0 py-0  rounded-md;
 
         }
@@ -114,13 +113,13 @@
             @apply bg-gray-50;
 
             th {
-                @apply px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider;
+                @apply px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider ;
             }
         }
 
         tbody {
             td {
-                @apply px-6 py-4 text-gray-500;
+                @apply px-6 py-4 text-gray-500 break-all;
             }
         }
     }

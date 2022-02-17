@@ -1,9 +1,6 @@
-  - 
-    title: Alchemist Overview
-    link: /docs/alchemist/
-    published: true
+
   -
-    title: Alchemist Cookbook
+    title: Alchemist Overview
     link: /docs/alchemist/
     published: true
     subsection:

@@ -5,7 +5,7 @@
         banner:
         published: true
       - 
-        title: Polygon/Matic
+        title: Polygon
         link: /docs/networks/matic/
         icon: "//covalenthq.com/static/images/blockchains/svgs/matic.svg"
         banner:

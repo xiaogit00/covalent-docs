@@ -1,6 +1,6 @@
 ---
 title: Polygon/Matic indexing & querying data API
-LinkTitle: Polygon/Matic
+LinkTitle: Polygon
 weight: 2
 hidden: false
 featuredImage: /static/images/networks/banners/Matic.png
