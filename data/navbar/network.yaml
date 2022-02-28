@@ -24,12 +24,12 @@
   published: true
   subsection:
     -
-      title: Staking on the Covalent Network
+      title: Staking
       link: /docs/network/covalent-query-token/staking-covalent-network
       published: true
       subsection:
     -
-      title: Network Governance
+      title: Governance
       link: /docs/network/covalent-query-token/governance
       published: true
       subsection:
