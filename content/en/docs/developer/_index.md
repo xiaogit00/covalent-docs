@@ -6,7 +6,7 @@ weight: 0
 # API Overview
 
 <section class="overview">    
-    <div class="font-light text-4xl text-covalent-black mt-12 pb-6  max-w-screen-md">
+    <div class="font-light font-sans text-4xl text-covalent-black mt-12 pb-6  max-w-screen-md">
      Overview
     </div>
     <p class="text-xl max-w-5xl text-gray-800 mb-6">
@@ -15,7 +15,7 @@ weight: 0
     <p class="text-xl max-w-5l text-gray-800 mb-6">
         Developers use Covalent to build exciting multi-chain applications like <a href="/docs/project-showcase/wallet">crypto wallets</a>, <a href="/docs/project-showcase/nft">NFT galleries</a>, and <a href="/docs/project-showcase/tools">investor dashboard tools</a> utilizing data from <a href="/docs/networks/">26+ blockchains</a>. Covalent is trusted by a community of 15,000+ developers and 500+ applications including 0x, Zerion, Rainbow Wallet, Rotki, Bitski and many others.
     </p>
-    <div class="font-light text-4xl mt-12 text-covalent-black max-w-screen-md">
+    <div class="font-light font-sans text-4xl mt-12 text-covalent-black max-w-screen-md">
      Getting started with the Unified API
     </div>
     <ol class="list-decimal max-w-3xl pb-6 text-lg ">
