@@ -7,7 +7,7 @@ weight: 0
 
 
 <section class="">    
-    <div class="font-light text-4xl text-covalent-black pb-12  max-w-screen-md">
+    <div class="font-light font-sans text-4xl text-covalent-black pb-12  max-w-screen-md">
      Overview
     </div>
     <p class="text-xl max-w-4xl text-gray-800 mb-6">

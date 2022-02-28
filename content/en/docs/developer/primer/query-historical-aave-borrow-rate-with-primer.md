@@ -80,6 +80,7 @@ After feeding the parameters, this is what the endpoint looks like [https://api.
 
 Our response from the Covalent API looks something like this (only first couple records shown):
 
+{{% code-blocks %}}
 ```json
 {
   "data": {
@@ -220,6 +221,7 @@ Our response from the Covalent API looks something like this (only first couple 
         }
       },
 ```
+{{%/ code-blocks %}}
 
 We will add Primer to the endpoint to filter out the response to get the historical borrow rates. Before we do that, there are some quick references to know.
 

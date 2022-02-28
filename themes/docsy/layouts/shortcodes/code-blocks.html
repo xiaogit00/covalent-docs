@@ -1,0 +1,17 @@
+<div class="code-block bg-covalent-blue-dark flex-col text-white rounded-lg my-6 shadow-sm">
+    <div class="flex hidden justify-between border-b border-gray-500 py-2 px-4">
+        <div>Code sample</div>
+        <div class="cursor-pointer" onclick="copy()">Copy</div>
+    </div>
+    {{ .Inner }}
+</div>
+
+<script>
+    function copy() {
+        var code = document.querySelector('.code-block pre > code')
+        console.log(code.innerText)
+        // navigator.clipboard.writeText(code.innerText);
+    }
+
+</script>
+

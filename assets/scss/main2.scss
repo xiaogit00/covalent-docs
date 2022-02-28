@@ -31,15 +31,16 @@
 }
 
 
+
 .right-nav{
     li{
-        @apply text-lg my-4 ; 
+        @apply text-lg my-6; 
 
     }
 }
 
 .main-content {
-
+    font-family: -apple-system, “BlinkMacSystemFont”, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Open Sans”, “Helvetica Neue”, “Icons16”, sans-serif;
     .pageinfo {
         @apply text-base tracking-widest text-covalent-pink font-semibold uppercase mt-12 mb-12 flex;
 
@@ -48,48 +49,85 @@
         }
     }
 
+    
+
     h1 {
-        @apply mb-12 max-w-2xl text-5xl font-sans text-gray-900 text-5xl tracking-wide border-b py-6 sm:text-4xl ;
+        @apply mb-6 max-w-5xl font-sans text-gray-900 text-5xl tracking-wide border-b py-6 sm:text-4xl ;
     }
 
     h2 {
-        @apply  mt-2 mb-6 max-w-2xl text-4xl font-sans font-light tracking-tight text-gray-900 border-b py-4 sm:text-3xl ;
+        @apply  mt-2 mb-6 max-w-5xl text-4xl font-sans font-light tracking-tight text-gray-900 border-b py-4 mt-16 mb-6 sm:text-3xl ;
     }
 
     h3 {
-        @apply  mt-2 mb-4 max-w-2xl text-3xl font-sans font-light tracking-tight text-gray-900 sm:text-2xl ;
+        @apply  mt-2 mb-4 max-w-5xl text-3xl font-sans font-light tracking-tight text-gray-900  mt-16 mb-6 sm:text-2xl ;
+    }
+
+    h4 {
+        @apply  mt-2 mb-4 max-w-5xl text-2xl font-sans font-light tracking-tight text-gray-900  mt-16 mb-6 sm:text-2xl ;
+    }
+
+    h5 {
+        @apply  mt-2 mb-4 max-w-5xl text-xl font-sans font-light tracking-tight text-gray-900  mt-16 mb-6 sm:text-2xl ;
+    }
+    
+    hr {
+        @apply my-6;
     }
 
     p {
-        @apply text-xl text-gray-800 mb-6 w-4/5 sm:text-lg;
-        font-family: -apple-system, “BlinkMacSystemFont”, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Open Sans”, “Helvetica Neue”, “Icons16”, sans-serif;
+        @apply text-xl text-gray-800 mb-6 max-w-5xl font-light sm:text-lg;
+
+        img {
+            @apply my-10;
+        }
     }
 
-    a{  
-        @apply text-covalent-pink;
+
+
+    a {  
+        @apply text-covalent-pink break-all;
     }
 
     ul {
         @apply my-6 text-lg text-gray-800 ml-6 list-disc;
 
+        li::marker{
+            @apply text-gray-400;
+        }
+
         li {
-            @apply my-8 ;    
+            @apply my-8 font-light max-w-5xl;    
         }
     }
+    .overview{
+        ol{
+            @apply my-6 text-lg text-gray-800 ml-6;
+            
+            li{
+                @apply my-8 font-light max-w-5xl; 
+            }
+        }
+    }
+    
+
 
     code, pre {
-        @apply text-sm bg-gray-500 text-white py-1 px-2 rounded-md;
+        @apply font-normal text-sm bg-gray-500 text-white py-1 px-2 whitespace-nowrap rounded-md;
         display: inline;
     }
 
     .highlight {
 
-        @apply bg-gray-100 py-8 pl-8 pr-12 my-8 shadow-md whitespace-normal overflow-x-auto max-w-5xl  rounded-md;
+        @apply relative bg-covalent-blue-dark  pl-3 pr-4 py-4 shadow-lg rounded-xl overflow-auto max-w-5xl max-h-xl rounded-md;
 
-        code, pre {
+        code, pre{
+            @apply font-mono px-0 py-0 whitespace-pre bg-covalent-blue-dark rounded-md;
+        }
 
-            @apply font-mono bg-gray-100 text-white px-0 py-0  rounded-md;
 
+        td{
+            @apply bg-covalent-blue-dark;
         }
 
     }
@@ -108,20 +146,29 @@
     }
 
     table {
-        @apply my-8 divide-y divide-gray-200;
+        @apply my-12 divide-y divide-gray-200 overflow-x-auto whitespace-nowrap max-w-5xl;
+        
+        display: block;
+        max-width: -moz-fit-content;
+        overflow-x: auto;
+        white-space: nowrap;
 
         thead {
-            @apply bg-gray-50;
+            @apply bg-covalent-blue-dark;
 
             th {
-                @apply px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider;
+                @apply px-6 py-3 text-left text-lg font-sans text-white font-light ;
             }
         }
 
         tbody {
             td {
-                @apply px-6 py-4 text-gray-500;
+                @apply px-6 py-4 text-gray-500 break-all;
             }
+            tr:nth-child(even) {
+                @apply bg-covalent-gray-light;
+              }
+
         }
     }
 

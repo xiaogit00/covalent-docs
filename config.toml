@@ -97,7 +97,17 @@ weight = 1
       unsafe = true
   [markup.highlight]
       # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
-      style = "tango"
+      style = "dracula"
+	   codeFences = true
+      guessSyntax = true
+      #hl_Lines = ""
+      #lineNoStart = 1
+      #lineNos = true
+      #lineNumbersInTable = true
+      tabWidth = 4
+	  pygmentsUseClasses = true
+	  pygmentsCodefences = true
+	  
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
       # guessSyntax = "true"
 
@@ -221,4 +231,5 @@ enable = false
 	url = "https://example.org/mail"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
+
 
