@@ -1,0 +1,86 @@
+-
+  title: Network Overview
+  link: /docs/network/
+  published: true
+  subsection:
+-
+  title: Network Operators
+  link: /docs/network/network-operators
+  published: true
+  subsection:
+    -
+      title: Block Specimen Producer
+      link: /docs/network/network-operators/block-specimen-producer
+      published: true
+      subsection:
+    -
+      title: Network Rewards
+      link: /docs/network/network-operators/network-rewards
+      published: true
+      subsection:
+-
+  title: Covalent Query Token
+  link: /docs/network/covalent-query-token
+  published: true
+  subsection:
+    -
+      title: Staking on the Covalent Network
+      link: /docs/network/covalent-query-token/staking-covalent-network
+      published: true
+      subsection:
+    -
+      title: Network Governance
+      link: /docs/network/covalent-query-token/governance
+      published: true
+      subsection:
+    -
+      title: Tokenomics
+      link: /docs/network/covalent-query-token/tokenomics
+      published: true
+      subsection:
+-
+  title: Learn
+  published: true
+  subsection:
+    -
+      title: Our Vision for the Covalent Network
+      link: /docs/network/learn-network/network-vision
+      published: true
+      subsection:
+    -
+      title: The Covalent Network Pipeline
+      link: /docs/network/learn-network/network-pipeline
+      published: true
+      subsection:
+    -
+      title: About Covalent
+      link: /docs/network/learn-network/about-covalent
+      published: true
+      subsection:
+-
+  title: Resources
+  link: /docs/network/resources
+  published: true
+  subsection:
+    -
+      title: Papers
+      link: /docs/network/resources/papers
+      published: true
+      subsection:
+    -
+      title: Source Code
+      link: /docs/network/resources/source-code
+      published: true
+      subsection:
+    -
+      title: Operator FAQ 
+      link: /docs/network/resources/operator-faq
+      published: true
+      subsection:
+    -
+      title: Delegator FAQ
+      link: /docs/network/resources/delegator-faq
+      published: true
+      subsection:
+
+
