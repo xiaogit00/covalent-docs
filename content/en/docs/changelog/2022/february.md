@@ -9,7 +9,7 @@ description: Solana balances, NFT market data updates.
 
 ### ADDED
 
-- For quite some time it has been highly requested by our community to index Solana. After months of hard word dissecting this non-EVM chain, we have added [Solana support](https://www.covalenthq.com/blog/solana-balances-announcement/) to our most-used endpoint, [`Get token balances for address`](https://www.covalenthq.com/docs/api/#/0/Class-A/Get-token-balances-for-address/lng=en). This enables developers to fetch token balances including NFTs for any wallet address on Solana with a single API call. Simply use the `chain_id` 1399811149 to get started!
+- For quite some time it has been highly requested by our community to index Solana. After months of hard work dissecting this non-EVM chain, we have added [Solana support](https://www.covalenthq.com/blog/solana-balances-announcement/) to our most-used endpoint, [`Get token balances for address`](https://www.covalenthq.com/docs/api/#/0/Class-A/Get-token-balances-for-address/lng=en). This enables developers to fetch token balances including NFTs for any wallet address on Solana with a single API call. Simply use the `chain_id` 1399811149 to get started!
 
 ```javascript
 {
