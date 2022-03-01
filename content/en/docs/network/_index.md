@@ -6,10 +6,11 @@ description: Network Overview
 # Overview
 
 <section class="">    
-
+    <div>
     <p class="text-xl max-w-4xl text-gray-800 mb-6">
         The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol.
     </p>
+    </div>
     <p class="text-xl max-w-4xl text-gray-800 mb-6">
       The Covalent Network works by capturing and indexing blockchain data and storing it across multiple points on the network. Anyone can then access this data instantly through querying the unified Covalent API.
 
@@ -54,5 +55,5 @@ description: Network Overview
      Questions?
      Join the Covalent community Discord server
     </div>
-    
+
 </section>
