@@ -16,7 +16,7 @@
     -
       title: Network Rewards
       link: /docs/network/network-operators/network-rewards
-      published: false
+      published: true
       subsection:
 -
   title: Covalent Query Token
@@ -36,7 +36,7 @@
     -
       title: Tokenomics
       link: /docs/network/covalent-query-token/tokenomics
-      published: true
+      published: false
       subsection:
 -
   title: Learn
