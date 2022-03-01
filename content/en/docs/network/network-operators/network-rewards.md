@@ -20,7 +20,7 @@ As time elapses, the staking contract will emit rewards based on a rate determin
 
 ## Becoming Self-Sustainable
 
-Ultimately, the aim is for the Covalent Network to become economically self-sustainable. As documented in @CQT Operating on the Covalent Network, users will eventually be paying Query Operators to query the Covalent API. Query Operators will then “pay into” a network fund (proportionate to the amount they’ve fetched from the network) that pays out in turn to the production operators (i.e. Block Specimen Producers) as “network rewards”.  
+Ultimately, the aim is for the Covalent Network to become economically self-sustainable. As documented in @CQT Operating on the Covalent Network, users will eventually be paying Query Operators to query the Covalent API. Query Operators will then “pay into” a network fund (proportionate to the amount they’ve fetched from the network) that pays out in turn to the production operators (i.e. Block Specimen Producers) as network rewards.  
 
 ## Network Operator Reward Models
 
