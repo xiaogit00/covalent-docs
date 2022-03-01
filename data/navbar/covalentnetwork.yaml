@@ -1,5 +1,5 @@
 -
-  title: Network Overview
+  title: Overview
   link: /docs/network/
   published: true
   subsection:
@@ -43,7 +43,7 @@
   published: true
   subsection:
     -
-      title: Our Vision for the Covalent Network
+      title: Why the Covalent Network
       link: /docs/network/learn-network/network-vision
       published: true
       subsection:
@@ -73,7 +73,7 @@
       published: true
       subsection:
     -
-      title: Operator FAQ 
+      title: Operator FAQ
       link: /docs/network/resources/operator-faq
       published: true
       subsection:
@@ -82,5 +82,8 @@
       link: /docs/network/resources/delegator-faq
       published: true
       subsection:
-
-
+    -
+      title: Glossary
+      link: /docs/network/resources/glossary
+      published: true
+      subsection:
