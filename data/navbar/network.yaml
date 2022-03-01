@@ -16,7 +16,7 @@
     -
       title: Network Rewards
       link: /docs/network/network-operators/network-rewards
-      published: true
+      published: false
       subsection:
 -
   title: Covalent Query Token
