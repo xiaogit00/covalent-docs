@@ -3,6 +3,9 @@ title: Covalent Query Token
 description: Covalent Query Token
 ---
 
+<div class="font-light font-sans text-4xl text-covalent-black pt-12 max-w-screen-md">
+ CQT (Covalent Query Token)
+</div>
 
 A critical component of the Covalent Network is CQT. CQT is the native token of the network wherein all settlements are denominated in this currency. CQT's functions can be broadly broken down into the following:
 

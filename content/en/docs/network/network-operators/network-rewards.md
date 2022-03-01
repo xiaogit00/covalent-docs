@@ -2,6 +2,9 @@
 title: Network Rewards
 description: Network Rewards
 ---
+<div class="font-light font-sans text-4xl text-covalent-black pt-12 max-w-screen-md">
+ Network Rewards
+</div>
 
 The Covalent Network will reward Operators who perform tasks for the network i.e. Block Specimen Producers.
 
@@ -21,7 +24,7 @@ Ultimately, the aim is for the Covalent Network to become economically self-sust
 
 ## Network Operator Reward Models
 
-As further Operator roles are developed, the reward model will be displayed below. 
+As further Operator roles are developed, the reward model will be displayed below.
 
 ### Block Specimen Producers
 
