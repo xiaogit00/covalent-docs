@@ -17,16 +17,7 @@ Network Operators may function in one or all of the live network roles. The role
 Currently, whitelisted operators are only operating as Block-Specimen Producers. As the network is developed, this whitelist will expanded and overtime, extinguished. Furthermore, as other roles beyond Block Specimen Producers are developed and go live, operators will be able to expand into such.
 </div>
 
-#### Live Roles**
-
-- Block-Specimen Producer
-
-#### In Development**
-
-- Refiner
-- Storage-Request Responder
-- Query Operator
-- Directory Service Node
+<IMAGE OF ROLES FROM NETWORK LP>
 
 ### Operator Expectations
 
