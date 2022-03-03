@@ -26,14 +26,14 @@ CQT is not a payment token, rather a means of settlement (settlement will take p
 
 <img src="/static/static/images/network/cqtnetwork.jpg"></img>
 
-1. The application/developer loads their deposit account with stablecoin assets into the network smart contract.
-2. The application queries the Covalent API.
-3. A check is made to verify that there are sufficient funds in the deposit account before sending the respective query request to operators.
-4. The query is sent to the Query operator to fulfill the request.
-5. The desired data is sent back to the application.
-6. An entry is made on the Moonbeam ledger regarding the data that is being consumed, and which operator(s) are fulfilling the request and their cost.
-7. The balances between the network contract, CQT and the work performed are reconciled.
-8. The USD funds are drawn down from the developer's deposit account and swapped for CQT via a market buy mechanism and settled against a validator's outstanding balance.
+- 1. The application/developer loads their deposit account with stablecoin assets into the network smart contract.
+- 2. The application queries the Covalent API.
+- 3. A check is made to verify that there are sufficient funds in the deposit account before sending the respective query request to operators.
+- 4. The query is sent to the Query operator to fulfill the request.
+- 5. The desired data is sent back to the application.
+- 6. An entry is made on the Moonbeam ledger regarding the data that is being consumed, and which operator(s) are fulfilling the request and their cost.
+- 7. The balances between the network contract, CQT and the work performed are reconciled.
+- 8. The USD funds are drawn down from the developer's deposit account and swapped for CQT via a market buy mechanism and settled against a validator's outstanding balance.
 
 The reason for implementing a stablecoin mechanism is that:
 
