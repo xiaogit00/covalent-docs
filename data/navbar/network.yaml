@@ -1,5 +1,5 @@
 -
-  title: Overview
+  title: Network Overview
   link: /docs/network/
   published: true
   subsection:
@@ -29,7 +29,7 @@
       published: false
       subsection:
     -
-      title: Governance
+      title: Token Governance
       link: /docs/network/covalent-query-token/governance
       published: true
       subsection:
@@ -59,31 +59,31 @@
       subsection:
 -
   title: Resources
-  link: /docs/network/resources
+  link: /docs/network/network-resources
   published: true
   subsection:
     -
       title: Papers
-      link: /docs/network/resources/papers
+      link: /docs/network/network-resources/papers
       published: true
       subsection:
     -
       title: Source Code
-      link: /docs/network/resources/source-code
+      link: /docs/network/network-resources/source-code
       published: false
       subsection:
     -
       title: Operator FAQ
-      link: /docs/network/resources/operator-faq
+      link: /docs/network/network-resources/operator-faq
       published: false
       subsection:
     -
       title: Delegator FAQ
-      link: /docs/network/resources/delegator-faq
+      link: /docs/network/network-resources/delegator-faq
       published: true
       subsection:
     -
       title: Glossary
-      link: /docs/network/resources/glossary
+      link: /docs/network/network-resources/glossary
       published: true
       subsection:

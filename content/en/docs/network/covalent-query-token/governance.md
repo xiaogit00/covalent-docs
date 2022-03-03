@@ -1,5 +1,5 @@
 ---
-title: Governance
+title: Token Governance
 description: Governance of the Covalent Network
 ---
 
