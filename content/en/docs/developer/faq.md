@@ -12,9 +12,8 @@ These FAQs are a self-serve support resource for the [Covalent API](https://www.
 4. [Pricing Endpoints](#pricing-endpoints)
 5. [Miscellaneous](#miscellaneous)
 
-
 ---
-&nbsp;
+
 ## General Use
 ### How do I query an endpoint?
 The API host for all requests is `https://api.covalenthq.com/v1/`. 
