@@ -26,7 +26,7 @@
     -
       title: Staking
       link: /docs/network/covalent-query-token/staking-covalent-network
-      published: true
+      published: false
       subsection:
     -
       title: Governance
