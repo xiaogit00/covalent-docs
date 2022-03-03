@@ -8,15 +8,21 @@ description: Network Overview
 <section class="">    
     <div>
     <p class="text-xl max-w-4xl text-gray-800 mb-6">
-        The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol.
-    </p>
+        The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol
 
-    <p class="text-xl max-w-4xl text-gray-800 mb-6">
+        Serving as the universal data model for multi-chain indexing and querying, it will have the following capabilities:
+
+1. Big data tools compatible
+2. Multi-chain compatible
+3. Storage efficient
+4. Network efficient
+5. Low resource intense to run on commercial /retail infra
+
+
       The Covalent Network works by capturing and indexing blockchain data and storing it across multiple points on the network. Anyone can then access this data instantly through querying the unified Covalent API.
 
       Network operators, who can assume one or multiple roles in the network, are the workers in this process; from extracting granular and historical blockchain data all the way to returning API queries.
 
-    </p>
     </div>
 
     <div class="font-light font-sans text-4xl text-covalent-black pt-12 max-w-screen-md">
