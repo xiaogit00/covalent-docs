@@ -29,32 +29,13 @@ There are other stakeholders involved beyond blockchains, network operators and 
 
 
 
+## Network Operators
+
+## CQT Scan
+View in real-time data being fed into Covalent.
 
 
+## Latest Updates
 
-    <div class="font-light text-xl text-covalent-black pt-1 max-w-screen-md">
-    Network Operators.
-    </div>
-    {{< networks >}}
-
-    <div class="font-light text-xl text-covalent-black pt-1 max-w-screen-md">
-    CQT Scan.
-    </div>
-      <p class="text-xl max-w-4xl text-gray-800 mb-6">
-      View in real-time data being fed into Covalent.
-    {{< networks >}}
-
-
-
-    <div class="font-light text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
-        Latest Updates
-    </div>
-    <!-- Network Updates -->
-    {{< updateTimeline >}}
-
-    <div class="font-light font-sans text-4xl text-covalent-black pb-12 pt-12 max-w-screen-md">
-     Questions?
-     Join the Covalent community Discord server
-    </div>
-
-</section>
+## Questions?
+Join the Covalent community Discord server
