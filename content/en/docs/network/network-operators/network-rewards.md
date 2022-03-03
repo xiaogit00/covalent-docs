@@ -6,11 +6,11 @@ description: Network Rewards
  Network Rewards
 </div>
 
-The Covalent Network will reward Operators who perform tasks for the network i.e. Block Specimen Producers.
+The Covalent Network will reward Operators who perform tasks for the network i.e. produce Block Specimens.
 
 Rewards are based on a) contribution to the Network and b) how much the respective Operator has staked.
 
-When an Operator fulfils more network roles, more rewards are available to them.
+When an Operator fulfils more network roles, further rewards are available to them.
 
 ## Bootstrapping the Network
 

@@ -56,7 +56,7 @@ Install the given versions of the following software
 
 A lot happens from the client node to the block-specimen production-proof transaction being uploaded to the Covalent virtual chain. Let's break down each step, assuming that the validator is using go-ethereum as the underlying EVM-based blockchain node that houses the BSP modifications.
 
-IMAGE OF ARCH
+<img src="/static/static/images/network/bsparch.png"></img>
 
 Once go-ethereum is run with the correct configurations, Block Specimens are created as the node catches up historically from block 0 or even if it just starts syncing from the block number where it left last off after the Geth process was stopped (with or without the patch). The operators have the ability to decide from which block they would like to start producing specimens.
 
