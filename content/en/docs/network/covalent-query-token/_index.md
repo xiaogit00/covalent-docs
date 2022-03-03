@@ -20,7 +20,7 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 - Link to staking
 - Link to Goverance
 
-## CQT Operting on the Covalent Network
+## CQT Operating on the Covalent Network
 
 CQT is not a payment token, rather a means of settlement (settlement will take place on MoonBeam). In the future, when an individual makes a call for the API, they will pay in a US denominated stablecoin such as USDC. The contract will then perform a market buy of CQT using this USDC, driving demand for the token. The CQT is then distributed to the wallets of nodes as a reward for answering the API query.
 

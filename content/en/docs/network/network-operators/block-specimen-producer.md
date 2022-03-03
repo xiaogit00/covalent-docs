@@ -8,8 +8,8 @@ Interested in the build specification? Check out the [Github Repo](https://githu
 
 Essential to the Covalent Network is the Block Specimen and the Block Specimen Producer (BSP), a bulk export method that ultimately leads to the generation of a canonical representation of a blockchains historical state. Currently implemented on existing blockchain clients running Geth. It functions currently as an -
 
-1. Blockchain data extractor
-2. Blockchain data normalizer
+- 1. Blockchain data extractor
+- 2. Blockchain data normalizer
 
 What is ultimately created is a ‘Block Specimen’, a universal canonical representation of a blockchains historical state.
 

@@ -70,12 +70,12 @@
     -
       title: Source Code
       link: /docs/network/resources/source-code
-      published: true
+      published: false
       subsection:
     -
       title: Operator FAQ
       link: /docs/network/resources/operator-faq
-      published: true
+      published: false
       subsection:
     -
       title: Delegator FAQ
