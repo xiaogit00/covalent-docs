@@ -1,0 +1,52 @@
+
+      - 
+        title: 1kx
+        link: /docs/validators/1kx/
+        banner:
+        published: true
+      - 
+        title: Aquanow
+        link: /docs/validators/aquanow/
+        banner:
+        published: true
+      - 
+        title: Bware Labs
+        link: /docs/validators/bware-labs/
+        banner:
+        published: true
+      - 
+        title: Chorus
+        link: /docs/validators/chorus/
+        banner:
+        published: true
+      - 
+        title: Claystack
+        link: /docs/validators/claystack/
+        banner:
+        published: true
+      - 
+        title: P-ops Team
+        link: /docs/validators/pops-team/
+        banner:
+        published: true
+      - 
+        title: Stakely
+        link: /docs/validators/stakely/
+        banner:
+        published: true
+      - 
+        title: Stakewithus
+        link: /docs/validators/stakewithus/
+        banner:
+        published: true
+      - 
+        title: Woodstock
+        link: /docs/validators/woodstock/
+        banner:
+        published: true
+      - 
+        title: LowFeeValidation
+        link: /docs/validators/low-fee-validation/
+        banner:
+        published: true
+      
