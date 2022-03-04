@@ -32,9 +32,9 @@ While a Block Specimen contains a block's data and its constituent elements, the
 
 As mentioned, when a Block Specimen is created, a production proof is created and published to the Covalent proof contract. As there will be multiple BSPs, a number of scenarios can arise:
 
-1. Every proof matches and thus every BSP has produced the same Block Specimen.  
-2. Some proofs mismatch but there is a majority that match.
-3. There are no matching proofs.
+- 1. Every proof matches and thus every BSP has produced the same Block Specimen.  
+- 2. Some proofs mismatch but there is a majority that match.
+- 3. There are no matching proofs.
 
 To determine what scenario has transpired and who should be rewarded per epoch, a check is done off-chain (initially by Covalent). Critical to this check is the role of the auditor which is to examine an epoch of proofs, be it historic or present. Rewards are not calculated or generated until the auditors approve or falsify a given quorum was attained by the independent distinct set of operators. To communicate this, the auditor(s) messages the Covalent proof contract.
 
