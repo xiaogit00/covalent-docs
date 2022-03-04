@@ -1,27 +1,11 @@
 [
     {
       "date": "Feb 2022",
-      "title": "Network 1",
-      "desc": "Covalent launches non-EVM support with Solana balances, bringing the industry-leading unified API experience to tens of thousands of developers in the Solana ecosystem. The `Get token balances for address` endpoint enables developers to fetch token balances including NFTs for any wallet address on Solana with a single API call. With this new data, developers can include Solana assets in multi-chain crypto wallets, NFT galleries and more. This is just step one in the process of fully indexing Solana across all of our Class A endpoints.",
-      "cta": "https://www.covalenthq.com/blog/solana-balances-announcement/"
+      "title": "Open Sourcing the Block Specimen",
+      "desc": "Covalent is excited to finally announce and open-source
+      the Block Specimen, a novel invention that is pivotal to the decentralized Covalent Network. The anticipated Covalent Network roadmap 
+      is also live and can be viewed on the new Covalent Network homepage.",
+      "cta": "https://www.covalenthq.com/blog/bsp-launch-announcement/"
     },
-      {
-        "date": "Jan 2022",
-        "title": "Network 2",
-        "desc": "Covalent has introduced 2 new Class A endpoints which provide granular NFT market data for numerous marketplaces across 5 blockchains – Ethereum, Binance Smart Chain, Polygon, Avalanche, and Moonriver. The new endpoints provide both a global view of NFT collections ranked by market cap, as well as a detailed view of historical sale and floor price information for a particular collection. Thus far, it’s been hard to understand markets outside of Ethereum/OpenSea. These APIs address this gap by providing unprecedented access to this much-requested on-chain data.",
-        "cta": "https://www.covalenthq.com/blog/nft-market-data-announcement/"
-      },
-      {
-          "date": "Dec 2021",
-          "title": "Network 3",
-          "desc": "Covalent has introduced a list of Class B endpoints under the XY=K family which provide the richest and most robust on-chain DEX data available today. The Unified xy=k endpoints return all the required data for any UniswapV2-like protocol such as SpiritSwap, Pangolin, SushiSwap and more, on a variety of blockchains, enabling developers to access these protocols in a matter of minutes.",
-          "cta": "https://www.covalenthq.com/blog/xyk-announcement/"
-      },
-      {
-          "date": "Nov 2021",
-          "title": "Network 4",
-          "desc": "Today, we at Covalent are excited to launch a new reference documentation experience for our Unified Blockchain APIs. This new product is a complete re-thinking of the experience after speaking with thousands of developers who have come to rely on the Covalent API for their everyday blockchain data needs.",
-          "cta": "https://www.covalenthq.com/blog/api-docs-announcement/"
-      }
+
   ]
-  
