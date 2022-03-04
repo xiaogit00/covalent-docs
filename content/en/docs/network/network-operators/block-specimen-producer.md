@@ -15,8 +15,8 @@ What is ultimately created is a ‘Block Specimen’, a universal canonical repr
 
 There are two further considerations regarding the Block Specimen.
 
-1. The BSP is completely standalone on forks of Geth.
-2. The separation of data storage layer from the block execution and distributed consensus functionality leads to better segregation and upgrades of functionality in the blockhain data processing pipeline.
+- 1. The BSP is completely standalone on forks of Geth.
+- 2. The separation of data storage layer from the block execution and distributed consensus functionality leads to better segregation and upgrades of functionality in the blockhain data processing pipeline.
 
 As a result, anyone can run full tracing on the block specimen and accurately recreate the blockchain without access to a blockchain client software.
 
