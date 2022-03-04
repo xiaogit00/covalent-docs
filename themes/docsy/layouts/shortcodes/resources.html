@@ -1,0 +1,28 @@
+{{$number := len .Site.Data.resources}}
+<div id="pressSection" class="lg:flex w-full space-x-12 sm:space-x-0 md:space-x-0 sm:px-6 my-12">
+    <div class="max-w-4xl">
+        <div class="grid grid-cols-2 gap-6 sm:grid-cols-1">
+            {{ range first 2 .Site.Data.resources}}
+                <div class="" >
+                    <a class="hover:text-covalent-pink text-gray-600" href="{{.link}}">
+                        <div class="shadow-md rounded-md overflow-hidden max-h-60 relative bg-black">
+                            <img class="h-60 mx-auto object-cover" src="{{.image}}"/>
+                            <div class="uppercase rounded-sm bg-white absolute bottom-0 text-base font-semibold text-gray-500 tracking-widest pl-4 pr-8 py-3">{{.category}}</div>
+                        </div>
+                        <div class="text-2xl py-6">{{.title}}</div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+        <div class="grid grid-cols-2 gap-6 sm:grid-cols-1">
+            {{ range first 4 (after 2 .Site.Data.resources) }}
+            <div class="border-t border-gray-100 pt-6" >
+                <a class="hover:text-covalent-pink text-gray-600" href="{{ .link }}">
+                    <img width="150px" src="{{ .image }}">
+                    <div class="text-xl font-base  pt-3">{{.title}}</div>
+                    </a>
+        </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

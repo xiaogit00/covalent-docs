@@ -1,4 +1,0 @@
----
-title: Woodstock
-description: Woodstock
----
