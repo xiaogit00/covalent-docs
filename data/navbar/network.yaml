@@ -65,7 +65,7 @@
     -
       title: Papers
       link: /docs/network/network-resources/papers
-      published: true
+      published: false
       subsection:
     -
       title: Source Code

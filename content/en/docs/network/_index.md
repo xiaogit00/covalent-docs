@@ -1,6 +1,5 @@
 ---
 title: Network Overview
-
 ---
 
 # Network Overview
@@ -34,11 +33,73 @@ There are other stakeholders involved beyond blockchains, network operators and 
 
 ## Network Operators
 
+  <div class="grid-page-area-wide sm:px-6 max-w-5xl my-12">
+    <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-y-20 gap-x-20">
+      <div class="max-w-md">
+        <div class="flex justify-center">
+          <img src="/static/images/network/roles/bsp.png">
+        </div>        
+        <div class="text-xl mb-2 text-covalent-pink text-center">
+          Block Specimen Producers
+        </div>
+        <div class="text-sm my-2 text-black text-center">
+         Technical
+        </div>
+        <div class="text-md text-black text-center">
+          A blockchain client that asynchronously exports rich, cryptographically-secure data as block specimens.
+        </div>
+      </div>
+       <div class="max-w-md">
+        <div class="flex justify-center">
+          <img src="/static/images/network/roles/indexer.png">
+        </div>
+        <div class="text-xl mb-2 text-covalent-pink text-center">
+          Indexing Nodes<br/>&nbsp;
+        </div>
+        <div class="text-sm my-2 text-black text-center">
+         Technical
+        </div>
+        <div class="text-md text-black text-center">
+           An indexing engine to trace, decode and enrich the block specimens into aggregatable traces.
+        </div>
+      </div>
+        <div class="max-w-sm">
+        <div class="flex justify-center">
+          <img src="/static/images/network/roles/query-op.png">
+        </div>
+        <div class="text-xl mb-2 text-covalent-pink text-center">
+          Query Nodes<br/>&nbsp;
+        </div>
+        <div class="text-sm my-2 text-black text-center">
+         Technical
+        </div>
+        <div class="text-md text-black text-center">
+          Compute nodes that serve up the Covalent Unified API to developers requesting blockchain data.
+        </div>
+      </div>
+        <div class="max-w-md">
+        <div class="flex justify-center">
+          <img src="/static/images/network/roles/delegator.png">
+        </div>
+        <div class="text-xl mb-2 text-covalent-pink text-center">
+          Delegators<br/>&nbsp;
+        </div>
+        <div class="text-sm my-2 text-black text-center">
+         Non-Technical
+        </div>
+        <div class="text-md text-black text-center">
+          Token holders who outsource the responsibility of running infrastructure to others.
+        </div>
+      </div>
+   </div>
+
+
 ## [CQT Scan](https://cqtscan.com/#/)
 View, in real-time, data being fed into Covalent.
 
 
 ## Latest Updates
+{{< updateTimeline type="network" >}}
 
 ## Questions?
 Join the Covalent community Discord server

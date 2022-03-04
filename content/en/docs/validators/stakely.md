@@ -1,4 +1,0 @@
----
-title: Stakely
-description: Stakely
----

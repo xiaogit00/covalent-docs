@@ -1,4 +1,0 @@
----
-title: Claystack
-description: Claystack
----
