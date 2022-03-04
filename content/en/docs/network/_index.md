@@ -32,7 +32,7 @@ There are other stakeholders involved beyond blockchains, network operators and 
 
 ## Network Operators
 
-## CQT Scan
+## [CQT Scan](https://cqtscan.com/#/)
 View, in real-time, data being fed into Covalent.
 
 
