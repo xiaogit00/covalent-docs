@@ -57,7 +57,7 @@ Query Operators will observe these events while running a local data warehouse. 
 
 To fetch data from the network, query operators will have to pay, in CQT, into a “network fund”. How much they have to pay is proportionate to the amount of data they’ve fetched from the network. This fund pays out in turn to the production operators such as BSP and Refiners, as network rewards.
 
-## A note on Storage
+## A Note on Storage
 
 As mentioned, operators that produce data such as BSPs will be pushing such to a storage instance. They can run this storage instance locally or make use of Storage Operators. Storage Operators are expected to observe proofs, fetch them through IPFS, and store them into their own node, to increase the availability of that data. The Storage Operator can charge the BSP for doing so.
 
