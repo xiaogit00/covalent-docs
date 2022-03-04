@@ -13,6 +13,8 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 **CQT** **Contract Address:** 0xd417144312dbf50465b1c641d016962017ef6240
 
+**[CQT Economics](https://www.covalenthq.com/token/)**
+
 
 
 ## Using your CQT
@@ -23,7 +25,7 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 CQT is not a payment token, rather a means of settlement (settlement will take place on MoonBeam). In the future, when an individual makes a call for the API, they will pay in a US denominated stablecoin such as USDC. The contract will then perform a market buy of CQT using this USDC, driving demand for the token. The CQT is then distributed to the wallets of nodes as a reward for answering the API query.
 
-<img src="/static/static/images/network/cqtnetwork.jpg"></img>
+<img src="/static/images/network/cqtnetwork.jpg"></img>
 
 - 1. The application/developer loads their deposit account with stablecoin assets into the network smart contract.
 - 2. The application queries the Covalent API.

@@ -17,7 +17,7 @@ vendors on the network that provide data during the initial phases of the projec
 incentivizing those that are net beneficial to the network, we are curating a community
 of the world’s best data-vendors to manage the Covalent Network.
 
-*[Covalent Network Governance Forum](https://gov.covalenthq.com/)*
+**[Covalent Network Governance Forum](https://gov.covalenthq.com/)**
 
 
 # Pitching a Covalent Network Improvement Proposal
@@ -39,7 +39,7 @@ Proposals could include but are not limited to:
 - Token burning
 - Anything that could cause others harm/ and that is illegal
 
-### Governance Forum Template
+## Governance Forum Template
 The proposal you are submitting should include the following:
 
 - A concise title
