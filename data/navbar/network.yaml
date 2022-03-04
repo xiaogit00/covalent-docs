@@ -43,20 +43,11 @@
   published: true
   subsection:
     -
-      title: Why the Covalent Network
-      link: /docs/network/learn-network/network-vision
-      published: true
-      subsection:
-    -
       title: The Covalent Network Pipeline
       link: /docs/network/learn-network/network-pipeline
       published: true
       subsection:
-    -
-      title: About Covalent
-      link: /docs/network/learn-network/about-covalent
-      published: true
-      subsection:
+
 -
   title: Resources
   link: /docs/network/network-resources
