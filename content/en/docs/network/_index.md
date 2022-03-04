@@ -1,6 +1,6 @@
 ---
 title: Network Overview
-description: Network Overview
+
 ---
 
 # Network Overview
@@ -16,6 +16,8 @@ Serving as the universal data model for multi-chain indexing and querying, the C
 - 3. Storage efficient
 - 4. Network efficient
 - 5. Low resource intense to run on commercial /retail infra
+
+
 
 
 ## Built for Modularity and Extensibility

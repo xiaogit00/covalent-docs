@@ -1,10 +1,8 @@
 ---
 title: Network Rewards
-description: Network Rewards
+
 ---
-<div class="font-light font-sans text-4xl text-covalent-black pt-12 max-w-screen-md">
- Network Rewards
-</div>
+# Network Rewards
 
 The Covalent Network will reward Operators who perform tasks for the network i.e. produce Block Specimens.
 

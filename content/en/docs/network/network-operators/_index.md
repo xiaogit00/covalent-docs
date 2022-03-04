@@ -1,9 +1,8 @@
 ---
 title: Network Operators
-description: Network Operators
 ---
 
-## Network Operators
+# Network Operators
 
 Critical to the Covalent Network are the Network Operators. These act as points of presence on the network that fulfil various duties necessary to enable a decentralized blockchain data indexing and querying model. Each operator is compensated in CQT for the work performed.
 
@@ -37,7 +36,7 @@ Find the hardware and software requirements for each respective operator role be
 
 *As these are developed, more information will be provided.*
 
-#### Link to BSP Page
+- [Block Specimen Producer](https://covalent-docs-git-network-docs-covalenthq.vercel.app/docs/network/network-operators/block-specimen-producer)
 
 ## Covalent Network Operators
 

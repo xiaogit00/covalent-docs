@@ -1,7 +1,9 @@
 ---
-title: Token Governance
-description: Governance of the Covalent Network
+title: Governance
+
 ---
+
+# Covalent Network Governance
 
 <div class="font-light font-sans text-4xl text-covalent-black pt-12 max-w-screen-md">
 Goverance
