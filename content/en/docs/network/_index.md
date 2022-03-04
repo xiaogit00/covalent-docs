@@ -7,7 +7,7 @@ description: Network Overview
 
 The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol.
 
-<img src="/static/static/images/network/network.png"></img>
+<img src="/static/images/network/network.png"></img>
 
 Serving as the universal data model for multi-chain indexing and querying, the Covalent Network will have the following capabilities:
 
@@ -17,7 +17,6 @@ Serving as the universal data model for multi-chain indexing and querying, the C
 - 4. Network efficient
 - 5. Low resource intense to run on commercial /retail infra
 
-<DIAGRAM>
 
 ## Built for Modularity and Extensibility
 
@@ -34,7 +33,7 @@ There are other stakeholders involved beyond blockchains, network operators and 
 ## Network Operators
 
 ## CQT Scan
-View in real-time data being fed into Covalent.
+View, in real-time, data being fed into Covalent.
 
 
 ## Latest Updates
