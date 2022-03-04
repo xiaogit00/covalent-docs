@@ -11,13 +11,15 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 **Governance:** Those who hold CQT and have a vested interest in the network will be able to vote using CQT for on-chain proposals put forward by the community.
 
 
-**CQT** **Contract Address:** 0xd417144312dbf50465b1c641d016962017ef6240
+**[CQT Contract Address](https://etherscan.io/token/0xd417144312dbf50465b1c641d016962017ef6240):** 0xd417144312dbf50465b1c641d016962017ef6240
 
 **[CQT Economics](https://www.covalenthq.com/token/)**
 
 
 
 ## Using your CQT
+
+- Staking (*coming soon*)
 
 - [Governance](https://covalent-docs-git-network-docs-covalenthq.vercel.app/docs/network/covalent-query-token/governance)
 
@@ -44,7 +46,4 @@ The reason for implementing a stablecoin mechanism is that:
 
 Nonetheless, demand for CQT is directly correlated with API Demand.
 
-## Resources
-
-Link to CQT audits
-CQT Tokenomics page
+## Audits
