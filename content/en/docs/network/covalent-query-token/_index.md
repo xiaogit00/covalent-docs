@@ -16,8 +16,8 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 
 ## Using your CQT
-- Link to staking
-- Link to Goverance
+
+- [Governance](https://covalent-docs-git-network-docs-covalenthq.vercel.app/docs/network/covalent-query-token/governance)
 
 ## CQT Operating on the Covalent Network
 

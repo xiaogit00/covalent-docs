@@ -3,11 +3,7 @@ title: Governance
 
 ---
 
-# Covalent Network Governance
-
-<div class="font-light font-sans text-4xl text-covalent-black pt-12 max-w-screen-md">
-Goverance
-</div>
+# Governance
 
 The CQT token will be gradually used to remove the need for the Covalent team to be a
 key player for the management, storage, and relaying of data on the network, by
@@ -21,7 +17,7 @@ vendors on the network that provide data during the initial phases of the projec
 incentivizing those that are net beneficial to the network, we are curating a community
 of the world’s best data-vendors to manage the Covalent Network.
 
-*Governance Forum*
+*[Covalent Network Governance Forum](https://gov.covalenthq.com/)*
 
 
 # Pitching a Covalent Network Improvement Proposal
