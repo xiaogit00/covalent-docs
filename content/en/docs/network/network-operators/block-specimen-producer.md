@@ -4,9 +4,9 @@ title: Block Specimen Producer
 ---
 # Block Specimen Producer
 
-Interested in the build specification? Check out the [Github Repo](https://github.com/covalenthq/go-ethereum/)
+**Interested in the build specification? Check out the [Github Repo](https://github.com/covalenthq/go-ethereum/)**
 
-Essential to the Covalent Network is the Block Specimen and the Block Specimen Producer (BSP), a bulk export method that ultimately leads to the generation of a canonical representation of a blockchains historical state. Currently implemented on existing blockchain clients running Geth. It functions currently as an -
+Essential to the Covalent Network is the Block Specimen and the Block Specimen Producer (BSP), a bulk export method that ultimately leads to the generation of a canonical representation of a blockchains historical state. Currently implemented on existing blockchain clients running Geth. It functions currently as an:
 
 - 1. Blockchain data extractor
 - 2. Blockchain data normalizer
@@ -78,4 +78,4 @@ The process of evaluating a message, segmenting multiple messages into a single 
 
 [Github Repo](https://github.com/covalenthq/go-ethereum/)
 
-Block Specimen Whitepaper
+[Block Specimen Whitepaper](https://www.covalenthq.com/static/documents/Block%20Specimen%20Whitepaper%20V1.1.pdf)

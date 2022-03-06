@@ -1,5 +1,5 @@
 -
-  title: Network Overview
+  title: Covalent Network Overview
   link: /docs/network/
   published: true
   subsection:
@@ -29,7 +29,7 @@
       published: false
       subsection:
     -
-      title: Token Governance
+      title: Governance
       link: /docs/network/covalent-query-token/governance
       published: true
       subsection:

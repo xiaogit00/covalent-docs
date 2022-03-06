@@ -14,7 +14,7 @@ Serving as the universal data model for multi-chain indexing and querying, the C
 - 2. Multi-chain compatible
 - 3. Storage efficient
 - 4. Network efficient
-- 5. Low resource intense to run on commercial /retail infra
+- 5. Low resource intense to run on commercial / retail infra
 
 
 
@@ -31,7 +31,7 @@ There are other stakeholders involved beyond blockchains, network operators and 
 
 
 
-## Network Operators
+## Network Operator Roles
 
   <div class="grid-page-area-wide sm:px-6 max-w-5xl my-12">
     <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-y-20 gap-x-20">
@@ -93,6 +93,7 @@ There are other stakeholders involved beyond blockchains, network operators and 
       </div>
    </div>
 
+## Network Operators
 
 ## [CQT Scan](https://cqtscan.com/#/)
 View, in real-time, data being fed into Covalent.

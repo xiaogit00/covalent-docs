@@ -38,8 +38,5 @@ Find the hardware and software requirements for each respective operator role be
 
 - [Block Specimen Producer](https://covalent-docs-git-network-docs-covalenthq.vercel.app/docs/network/network-operators/block-specimen-producer)
 
-## Covalent Network Operators
-
-Images of all of the Network Operators
 
 </section>
