@@ -16,7 +16,7 @@ Serving as the universal data model for multi-chain indexing and querying, the C
 - 4. Network efficient
 - 5. Low resource intense to run on commercial / retail infra
 
-## Validators
+## Network Operators
 {{< network-validators >}}
 
 
@@ -104,4 +104,4 @@ Check out data being pulled in realtime to the Covalent database
 {{< updateTimeline type="network" >}}
 
 ## Questions?
-Join the Covalent community Discord server
+Join the Covalent community [Discord server](www.covalenthq.com/discord)
