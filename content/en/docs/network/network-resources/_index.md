@@ -1,7 +1,6 @@
 ---
 title: Resources
-description: Resources
 ---
 
-## Resources
+# Resources
 {{<  resources >}}

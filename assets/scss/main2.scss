@@ -85,7 +85,7 @@
 
 
 
-    a {  
+    a:not(.covalent-button-pink) {  
         @apply text-covalent-pink break-all;
     }
 

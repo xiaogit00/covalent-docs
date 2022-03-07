@@ -1,5 +1,5 @@
 ---
-title: Network Overview
+title: Covalent Network Overview
 ---
 
 # Covalent Network Overview
@@ -16,7 +16,8 @@ Serving as the universal data model for multi-chain indexing and querying, the C
 - 4. Network efficient
 - 5. Low resource intense to run on commercial / retail infra
 
-
+## Validators
+{{< network-validators >}}
 
 
 ## Built for Modularity and Extensibility
