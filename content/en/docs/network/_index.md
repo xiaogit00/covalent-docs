@@ -96,7 +96,7 @@ There are other stakeholders involved beyond blockchains, network operators and 
 ## Network Operators
 
 ## [CQT Scan](https://cqtscan.com/#/)
-View, in real-time, data being fed into Covalent.
+Check out data being pulled in realtime to the Covalent database
 
 
 ## Latest Updates
