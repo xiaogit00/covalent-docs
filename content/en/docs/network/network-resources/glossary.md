@@ -1,6 +1,7 @@
 ---
 title: Glossary
 ---
+## Glossary
 
 ### Covalent Network
 

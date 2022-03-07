@@ -2,7 +2,7 @@
 title: Network Overview
 ---
 
-# Network Overview
+# Covalent Network Overview
 
 The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol.
 
