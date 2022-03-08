@@ -24,10 +24,10 @@ Currently, whitelisted operators are only operating as Block-Specimen Producers.
 
 ### Staking Parameters
 
-- The minimum staking amount for a validator is 175,000 CQT.
-- There is an unbonding period of 180 days for validators. During this period, rewards cease to be added to the principal amount staked.
-- The fees which delegates pay to validators can be changed by the owner and has a minimum of 2%. It can be different for each validator.
-- There is a maximum ratio of delegated CQT to validator-staked CQT. The ratio can be changed by the contract owner and will be set to 10:1 at launch.
+- The minimum staking amount for an operator is 175,000 CQT.
+- There is an unbonding period of 180 days for operators. During this period, rewards cease to be added to the principal amount staked.
+- The fees which delegates pay to operators can be changed by the owner and has a minimum of 2%. It can be different for each operator as they ultimately control the fee.
+- There is a maximum ratio of delegated CQT to operator-staked CQT. The ratio can be changed by the contract owner and will be set to 10:1 at launch.
 
 ## Running as an Operator
 
