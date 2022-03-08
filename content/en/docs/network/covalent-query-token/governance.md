@@ -1,5 +1,5 @@
 ---
-title: Governance
+title: Network Governance
 
 ---
 
