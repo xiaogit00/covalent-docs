@@ -4,11 +4,13 @@ title: Covalent Network Overview
 
 # Covalent Network Overview
 
-The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol.
+The Covalent Network serves as the universal data model for multi-chain indexing and querying.
 
 <img src="/static/images/network/network.png"></img>
 
-Serving as the universal data model for multi-chain indexing and querying, the Covalent Network will have the following capabilities:
+The Covalent Network represents the progressive decentralization of Covalent toward a community-owned and community-run protocol.
+
+The Covalent Network will have the following capabilities:
 
 - 1. Big data tools compatible
 - 2. Multi-chain compatible

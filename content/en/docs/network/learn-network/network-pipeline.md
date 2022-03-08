@@ -6,7 +6,7 @@ title: The Covalent Network Pipeline
 
 *The goal of this page is to provide a high-level overview of the Covalent Network data pipeline.*
 
-A lot happens between blockchain data being extracted and indexed to a developer querying the unified Covalent API. Currently, this entire process is hosted centrally by Covalent. However, the Covalent Network shifts this responsibility from Covalent to Network Operators, each of which can be imagined as a node on the Covalent Network.
+A lot happens between blockchain data being extracted and indexed to a developer querying the unified Covalent API. With the Covalent Network, each of the steps - starting with the production of Block Specimens - will be responsibility of Network Operators, each of which is a node on the Covalent Network.
 
 <img src="/static/images/network/pipeline.jpg"></img>
 
