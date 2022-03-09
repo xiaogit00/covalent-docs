@@ -20,14 +20,8 @@ A critical component of the Covalent Network is CQT. CQT is the native token of 
 
 ## Using your CQT
 
-
-<a class="text-white tracking-wide text-lg font-light md:text-sm covalent-button-pink lg:px-4 lg:pb-2 lg:pt-2 md:px-4 md:pb-2 md:pt-2"
-href="https://cqtscan.com/#/">CQT SCAN</a>
-
-
-
 - Staking (*coming soon*)
- 
+
 - [Governance](https://covalent-docs-git-network-docs-covalenthq.vercel.app/docs/network/covalent-query-token/governance)
 
 ## CQT Operating on the Covalent Network

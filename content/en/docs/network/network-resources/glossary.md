@@ -31,7 +31,7 @@ The subset of operators that delegate their CQT to stake within a pool of produc
 
 ### Auditors
 
-The subset of operators from the pool that check the work of producers and prove when asked to - the work done by them on a public EVM chain
+The subset of operators from the pool that check the work of producers and prove when asked to - the work done by them on a public EVM chain.
 
 ### Block Specimen
 

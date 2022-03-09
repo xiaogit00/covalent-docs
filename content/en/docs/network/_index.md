@@ -26,7 +26,7 @@ The Covalent Network will have the following capabilities:
 
 A multi-sided platform designed to eventually be self-sufficient, the Covalent Network works by capturing and indexing blockchain data and storing it across multiple points on the network. Anyone can then access this data instantly through querying the unified Covalent API.
 
-The supply side consists of both blockchains and the network operators. Both play a critical role in the Covalent Network. For one, blockchains are the source of the data the network is interested in. The more blockchains that the Covalent Network indexes, the more data flowing throughout the Covalent Network. Meanwhile, network operators, who can assume one or multiple roles in the network, are the workers in this process; from extracting granular and historical blockchain data all the way to returning API queries.
+The supply side consists of both blockchains and the network operators. Both play a critical role in the Covalent Network. For one, blockchains are the source of the data the network is interested in. More blockchains that the Covalent Network indexes, more data thats flows through it. Meanwhile, network operators, who can assume one or multiple roles in the network, are the workers in this process; from extracting granular and historical blockchain data all the way to returning API queries.
 
 The demand side consists of protocols, developers, analysts and everyone in between who uses the unified Covalent API to power a plethora of use cases. The greater number of API queries, the greater demand that exists on the Covalent Network.
 
