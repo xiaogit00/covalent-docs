@@ -9,7 +9,7 @@ The CQT token will be gradually used to remove the need for the Covalent team to
 key player for the management, storage, and relaying of data on the network, by
 allowing holders to vote on network features.
 
-Instead, we will have an ecosystem of multiple data- providers who are also able to make decisions about fee models, nature of the interaction between buyers and sellers, and the variety of data sold on the network without a single party deciding on it (for the avoidance of doubt, the right to vote is restricted solely to voting on features of the Covalent Network; the right to vote
+Instead, we will have an ecosystem of multiple data-providers and a variety of data queried through the network without a single party deciding on it (for the avoidance of doubt, the right to vote is restricted solely to voting on features of the Covalent Network; the right to vote
 does not entitle CQT holders to vote on the operation and management of any entity
 developing the Network, its affiliates, or their assets, and does not constitute an equity
 interest in any of these entities). This is part of the reason why we give tokens to
@@ -52,7 +52,7 @@ The proposal you are submitting should include the following:
 - Poll (Using the Discourse poll feature)
 
 ## Proposal Consensus Levels
-The consensus levels for a specific proposal move from one stage to the next. First, the proposer writes the proposal on our Governance Forum 9, followed by the proposal dropping on our Discord server 1 by the proposer on the #community-proposal channel. Based on the responses and soft votes on the forum as well as Discord, the Covalent team will decide to take the proposal to Snapshot for final approval/voting.
+The consensus levels for a specific proposal move from one stage to the next. First, the proposer writes the proposal on our Governance Forum, followed by a proposal voting in the Covalent [Discord server](www.covalenthq.com/discord). Based on the responses and soft votes on the forum as well as Discord, the Covalent team will decide to take the proposal to Snapshot for final approval/voting.
 
 To summarize,
 

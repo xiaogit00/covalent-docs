@@ -14,7 +14,7 @@ When a Network Operator fulfils more network roles, further rewards are availabl
 
 The initial staking yield and network rewards are supplied through the Staking allocation (view [here](https://www.covalenthq.com/token/)) and this will be used to supplement network rewards for up to 4 years.
 
-As time elapses, the staking contract will emit rewards based on a rate determined by the smart contract such that the proof-of-stake validation remains profitable. The reward emission rate is denominated in CQT per epoch (24 hours) which means the staking yield will change as the staked CQT changes. The CQT emission will be monitored and updated by the contract owner as the quantity of staked CQT grows such that a reasonable staking yield is maintained.
+As time elapses, the staking contract will emit rewards based on a rate determined by the smart contract such that the proof-of-stake validation remains profitable. The reward emission rate is denominated in CQT per epoch (24 hours) which means the staking yield will change as the staked CQT changes. The CQT emission will be monitored and updated by the contract owner (Covalent) as the quantity of staked CQT grows such that a reasonable staking yield is maintained.
 
 ## Becoming Self-Sustainable
 
@@ -32,6 +32,6 @@ The BSP reward model plays out over the course of an epoch; every 24 hours. A se
 
 To determine the price of a Block Specimen, the number of Block Specimen Produced, as well as the number of BSPs, is considered. With that being said, the formulae are as follows:
 
-`BlockSpecimen_price = token_emission * (operator_stake / total_stake) * (1 / blocks_per_epoch)`
+`block_specimen_price = token_emission_rate * (operator_stake / total_stake) * (1 / blocks_per_epoch)`
 
-`BSP_reward_per_epoch = BS_price * num_specimens_produced`
+`bsp_reward_per_epoch = block_specimen_price * num_specimens_produced`

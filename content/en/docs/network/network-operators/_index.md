@@ -10,7 +10,7 @@ Critical to the Covalent Network are the Network Operators. These act as points 
 
 Network Operators may function in one or all of the live network roles. The roles have very different operational requirements and duties. It is expected that node-operators will self-select into the subset of roles that best suit their capabilities.
 
-Currently, whitelisted operators are only operating as Block-Specimen Producers. As the network is developed, this whitelist will expanded and over time, extinguished. Furthermore, as other roles beyond Block Specimen Producers are developed and go live, operators will be able to expand into such.
+Currently, whitelisted operators are only operating as Block-Specimen Producers. As the network is developed, this whitelist will expanded and over time, extinguished. Furthermore, as other roles beyond Block Specimen Producers are developed and go live, operators will be able to expand into those as well.
 
 {{< network-validators >}}
 
@@ -27,7 +27,7 @@ Currently, whitelisted operators are only operating as Block-Specimen Producers.
 - The minimum staking amount for an operator is 175,000 CQT.
 - There is an unbonding period of 180 days for operators. During this period, rewards cease to be added to the principal amount staked.
 - The fees which delegates pay to operators can be changed by the owner and has a minimum of 2%. It can be different for each operator as they ultimately control the fee.
-- There is a maximum ratio of delegated CQT to operator-staked CQT. The ratio can be changed by the contract owner and will be set to 10:1 at launch.
+- There is a maximum ratio of delegated CQT to operator-staked CQT. The ratio can be changed by the contract owner (Covalent) and will be set to 10:1 at launch.
 
 ## Running as an Operator
 
