@@ -25,14 +25,14 @@ As a result, anyone can run full tracing on the block specimen and accurately re
 
 The recommended configurations will make sure the sync is not lag prone and the node is able to keep up with the Ethereum network.
 
-Minimum requirements
+*Minimum requirements*
 
 - CPU with 2+ cores
 - 4GB RAM
 - 320GB free storage space to sync the Mainnet
 - 8 MBit/sec download Internet service
 
-Recommended
+*Recommended*
 
 - Fast CPU (eg:-Intel Core i7-4770) with 4+ cores
 - >= 32 GB+ RAM
