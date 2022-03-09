@@ -1,4 +1,11 @@
-{{ $dataJ := getJSON "https://www.covalenthq.com/static/documents/latestUpdates.json" }}
+{{ $dataJ := "" }}
+{{ $type := .Get "type" }}
+
+{{ if eq $type "network" }}
+    {{ $dataJ = .Site.Data.networkTimeline }}
+{{ else }}
+    {{ $dataJ = getJSON "https://www.covalenthq.com/static/documents/latestUpdates.json" }}
+{{ end }}
 
 <div class="drop-shadow-md filter shadow-sm rounded-xl px-12 py-6 bg-gray-50 max-w-6xl mb-28">
     <div class="flex flex-col border-l-2">

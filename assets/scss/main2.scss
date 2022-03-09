@@ -76,7 +76,7 @@
     }
 
     p {
-        @apply text-xl text-gray-800 mb-6 max-w-5xl font-light sm:text-lg;
+        @apply text-xl text-gray-800 mb-6 max-w-5xl font-light sm:text-lg break-words;
 
         img {
             @apply my-10;
@@ -85,8 +85,8 @@
 
 
 
-    a {  
-        @apply text-covalent-pink break-all;
+    a:not(.covalent-button-pink) {  
+        @apply text-covalent-pink break-words;
     }
 
     ul {
@@ -163,7 +163,7 @@
 
         tbody {
             td {
-                @apply px-6 py-4 text-gray-500 break-all;
+                @apply px-6 py-4 text-gray-500 break-words;
             }
             tr:nth-child(even) {
                 @apply bg-covalent-gray-light;

@@ -1,0 +1,26 @@
+-
+  title: "Covalent Query Token Utility"
+  description: ""
+  link: "//covalenthq.com/static/documents/CQT_Utility_v1.3.pdf"
+  image: "//covalenthq.com/static/images/resources/CQT_whitepaper.jpg"
+  icon: "//covalenthq.com/static/images/icons/display-icons/PDF.svg"
+  stream: "token"
+  category: "one-pager"
+
+-
+  title: "Covalent Network Whitepaper"
+  description: ""
+  image: "//covalenthq.com/static/images/resources/Network Whitepaper 1.jpg"
+  icon: "//covalenthq.com/static/images/icons/display-icons/PDF.svg"
+  link: "//covalenthq.com/static/documents/Covalent Whitepaper Apr 2021 v1 Branded.pdf"
+  stream: "token"
+  category: "whitepaper"
+
+-
+  title: "Covalent Block Specimen Whitepaper"
+  description: ""
+  image: "//covalenthq.com/static/images/resources/Network Whitepaper 2.jpg"
+  icon: "//covalenthq.com/static/images/icons/display-icons/PDF.svg"
+  link: "//covalenthq.com/static/documents/Block Specimen Whitepaper V1.1.pdf"
+  stream: "token"
+  category: "whitepaper"

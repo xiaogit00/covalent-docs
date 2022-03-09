@@ -90,7 +90,7 @@ Over 500 projects building with Covalent.
         Latest Updates
     </div>
     <!-- Updates -->
-    {{< updateTimeline >}}
+    {{< updateTimeline type="overview" >}}
 </section>
 
 
