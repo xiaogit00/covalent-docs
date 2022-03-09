@@ -111,10 +111,6 @@ Using our [API Reference](https://www.covalenthq.com/docs/api), you can also swi
 
 One workaround is to use this [extension](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino?hl=en).
 
-&nbsp;
-### How do I scrape the metadata for a large number of NFTs without exceeding the rate-limits?
-We can offer you a one-time bulk export of NFT metadata for a specific collection. Please send an email to support@covalenthq.com with the subject line: `NFT metdata export request for collection {address} on {blockchain name}`.
-
 
 ---
 &nbsp;
