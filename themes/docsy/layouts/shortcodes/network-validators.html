@@ -1,3 +1,11 @@
+{{ $arr := "" }}
+
+{{ with getJSON "https://www.covalenthq.com/static/js/validators.json" }}
+  {{ $arr = getJSON "https://www.covalenthq.com/static/js/validators.json" }}
+{{ else }}
+  {{ $arr = ".Site.Data.networkValidators" }}
+{{ end }}
+
 <div id="ecosystem" class="covalent-light max-w-4xl">
     <div class="sm:mt-8 sm:mb-4 grid place-items-center grid-cols-5 md:grid-cols-4 sm:grid-cols-2 z-10">
         {{range $index, $element := .Site.Data.networkValidators }}
