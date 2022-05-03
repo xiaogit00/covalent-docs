@@ -37,7 +37,7 @@ To use the Covalent API, the process is as follows:
 - In the smart contract, set the `oracle` node address, `jobId` and `fee` in the constructor. Also, set the [`LINK` token contract address](https://docs.chain.link/docs/link-token-contracts/) for the network being used. 
 
 - Copy the full Covalent API URL for the request struct in the smart contract. 
-    > **Note:** the smart contract examples below make use of the Chainlink DevRel oracle nodes on the Kovan testnet with a fee of 0.1 LINK. The limit of a single Covalent API response size that can be processed by these nodes seems to be approximately 28K bytes. Use the `page-size` and other query parameters on the Covalent API when making the request to limit your response size. 
+    > **Note:** the smart contract examples below make use of the Chainlink DevRel oracle nodes on the Kovan testnet with a fee of 0.1 LINK. The limit of a single Covalent API response size that can be processed by these nodes seems to be approximately 28KB. Use the `page-size` and other query parameters on the Covalent API when making the request to limit your response size. 
 
 - Set the appropriate path to find the desired data in the API JSON response.
 
