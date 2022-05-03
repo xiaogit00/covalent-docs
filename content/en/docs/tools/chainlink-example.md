@@ -32,20 +32,20 @@ In general, the smart contract inherit from `ChainlinkClient` to consume an API 
 
 To use the Covalent API, the process is as follows:
 
-1. Identify an appropriate Chainlink node to use, which supports HTTP GET, from https://market.link/search/jobs . Note that there are unique jobs (and thus `jobId`s) for different response data formats such as `Bytes32` (strings) or Uint256 (integers). Note the node's `address`, `jobId` and `fee`. In the code examples below, we are using both the `Get > Bytes32` and `Get > Uint256` jobs. 
+- Identify an appropriate Chainlink node to use, which supports HTTP GET, from https://market.link/search/jobs . Note that there are unique jobs (and thus `jobId`s) for different response data formats such as `Bytes32` (strings) or Uint256 (integers). Note the node's `address`, `jobId` and `fee`. In the code examples below, we are using both the `Get > Bytes32` and `Get > Uint256` jobs. 
 
-2. In the smart contract, set the `oracle` node address, `jobId` and `fee` in the constructor. Also, set the [`LINK` token contract address](https://docs.chain.link/docs/link-token-contracts/) for the network being used. 
+- In the smart contract, set the `oracle` node address, `jobId` and `fee` in the constructor. Also, set the [`LINK` token contract address](https://docs.chain.link/docs/link-token-contracts/) for the network being used. 
 
-3. Copy the full Covalent API URL for the request struct in the smart contract. 
+- Copy the full Covalent API URL for the request struct in the smart contract. 
     > **Note:** the smart contract examples below make use of the Chainlink DevRel oracle nodes on the Kovan testnet with a fee of 0.1 LINK. The limit of a single Covalent API response size that can be processed by these nodes seems to be approximately 28K bytes. Use the `page-size` and other query parameters on the Covalent API when making the request to limit your response size. 
 
-4. Set the appropriate path to find the desired data in the API JSON response.
+- Set the appropriate path to find the desired data in the API JSON response.
 
-5. Compile and deploy the contract. Note the contract `address`. 
+- Compile and deploy the contract. Note the contract `address`. 
 
-6. Send the contract `address` some LINK tokens which will be paid by the contract to the oracle node processing the API request. You can use the [LINK testnet faucet](https://faucets.chain.link/) to get some test tokens.
+- Send the contract `address` some LINK tokens which will be paid by the contract to the oracle node processing the API request. You can use the [LINK testnet faucet](https://faucets.chain.link/) to get some test tokens.
 
-7. Call your smart contract data fetch function, which in turn makes the call to the Covalent API for a custom data feed into the contract!
+- Call your smart contract data fetch function, which in turn makes the call to the Covalent API for a custom data feed into the contract!
 
 
 # Code Examples
