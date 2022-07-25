@@ -2,7 +2,8 @@
 title: Polygon indexing & querying data API
 LinkTitle: Polygon
 weight: 2
-hidden: false
+aliases: 
+  - /docs/networks/matic/
 featuredImage: /static/images/networks/banners/Matic.png
 description: Working together to bring massive scale to Ethereum
 favicon: polygon-matic-logo
@@ -14,7 +15,7 @@ favicon: polygon-matic-logo
 
 ## Introduction
 
-The [Polygon Network](https://matic.network/) brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains that provides a solution for faster and extremely low-cost transactions with finality on the main chain. The Polygon network ensures liveliness using PoS checkpoints which are pushed to the Ethereum mainchain. This enables a single Polygon sidechain to theoretically achieve `2^16` transactions per block, and possibly millions of transactions on multiple chains in the future.
+The [Polygon Network](https://polygon.technology/) brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains that provides a solution for faster and extremely low-cost transactions with finality on the main chain. The Polygon network ensures liveliness using PoS checkpoints which are pushed to the Ethereum mainchain. This enables a single Polygon sidechain to theoretically achieve `2^16` transactions per block, and possibly millions of transactions on multiple chains in the future.
 
 
 
