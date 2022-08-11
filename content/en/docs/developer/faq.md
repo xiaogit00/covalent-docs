@@ -159,6 +159,10 @@ You can try the PancakeSwap `XY=K` endpoints [here](https://www.covalenthq.com/d
 ### Why are the token quote rates different than the rates from another provider like CoinGecko?
 Token quote rates are currently fetched in BTC and then coverted into USD which likely causes the discrepancies. This will be changed soon with the launch of a new pricing endpoint powered by AMMs across all supported blockchains.
 
+&nbsp;
+### Why are `quote_rates` for some tokens unusually high?
+When token prices are not available from our pricing provider, we attempt to calculate the `quote_rate` ourselves based on its trading parameters from an automated market maker (AMM). Certain tokens that are being traded this way have extremely low trading volume, which when used as an input to an AMM pricing calculation leads to very high token prices. At this time, we recommend users implement a `quote_rate` threshold to filter out these low-volume tokens where the quote_rate is much too high.
+
 
 ---
 &nbsp;
