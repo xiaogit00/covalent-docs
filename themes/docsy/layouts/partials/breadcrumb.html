@@ -1,8 +1,8 @@
-<nav class="flex" aria-label="Breadcrumb">
-    <ol role="list" class="flex items-center space-x-4">
+<nav class="flex mb-10" aria-label="Breadcrumb">
+    <div role="list" class="flex items-center space-x-4">
 
 
-        <li>
+        <div>
             <div>
                 <a href="/docs/" class="text-gray-400 hover:text-gray-500">
                     <!-- Heroicon name: solid/home -->
@@ -14,7 +14,7 @@
                     <span class="sr-only">Home</span>
                 </a>
             </div>
-        </li>
+        </div>
 
         {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 
@@ -46,7 +46,7 @@
 
         */}}
 
-    </ol>
+    </div>
 </nav>
 
 {{ define "breadcrumbnav" }}
@@ -58,13 +58,11 @@
 {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
 {{ end }}
 {{ $isActive :=  eq .p1 .p2  }}
-<li class="  {{ if $isActive }}  {{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
-
-    
-        <a class="" href="{{ .p1.Permalink }}">{{ .p1.LinkTitle }}</a>
-</li>
+<div class="  {{ if $isActive }}  {{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
+    <a class="" href="{{ .p1.Permalink }}">{{ .p1.LinkTitle }}</a>
+</div>
 {{ if (not $isActive) }}
-<li><span class="mx-2">/</span></li>
+<div><span class="mx-2">/</span></div>
 {{ end }}
 {{ end }}
 

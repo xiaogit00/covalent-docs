@@ -517,7 +517,7 @@ primer=
 [https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}]](https://api.covalenthq.com/v1/1/events/address/0xcd4EC7b66fbc029C116BA9Ffb3e59351c20B5B06/?ending-block=12894073&key=ckey_66c94c405aae4cb38d94092f634&primer=[{"$match":{"decoded.name":"Buy"}},{"$group":{"_id":{"buyer":"decoded.params.7.value"},"concatString":{"$concat":["block_signed_at","-","tx_hash"]}}}])
 
 
-## 4.3| Using $toInt
+## 4.3 | Using $toInt
 
 The `$toInt` operator converts any valid expression that resolves to a number or a number value to an integer. If there are any `null` or `missing values`, `$toInt` will return a null value. The `$toInt` operator also converts hex values into integers. 
 

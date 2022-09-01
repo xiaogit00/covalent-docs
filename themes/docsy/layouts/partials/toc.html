@@ -1,7 +1,14 @@
 {{ if not .Params.notoc }}
 {{ with .TableOfContents }}
 {{ if ge (len .) 200 }}
-<div class="td-toc ">
+<div class="panel-line relative mt-6">
+        <div class="relative flex justify-start">
+          <span class="pr-2 text-sm text-gray-500">
+            Table of Contents
+          </span>
+        </div>
+      </div>
+<div class="td-toc pt-10">
         {{ . }}
 </div>
 {{ end }}

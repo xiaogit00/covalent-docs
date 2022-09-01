@@ -1,10 +1,4 @@
 [
-  {
-    "date": "August 2022",
-    "title": "BSP Geth & Agent Version Update",
-    "desc": "BSP Geth and BSP Agent have been tested and upgraded to v1.2.1 and v1.2.3, respectively. Included in this update are node updates as well as performance and schema improvements. Some improvements have been designed to tackle the storage bloat issue Network Operators have raised. The Covalent team will be monitoring if this issue continues with this upgrade. With this upgrade, please note that these versions must be run together. For questions and support on these upgrades, please use Discord and the appropriate Covalent Network channel.",
-    "cta": "https://github.com/covalenthq/bsp-geth/releases/tag/v1.2.1-bsp"
-  },
     {
       "date": "May 2022",
       "title": "Block Specimen Producers are Live alongside Covalent Network Staking",

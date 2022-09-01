@@ -1,175 +1,397 @@
+.text-xs {
+  font-weight: 400 !important;
 
-// @import "tailwindcss/base.css";
-
-// @import "/node_modules/tailwindcss/dist/base.css";
-// @import "/node_modules/tailwindcss/dist/components.css";
-// @import "/node_modules/tailwindcss/dist/utilities.css";
-// @import "/node_modules/tailwindcss/dist/forms.css";
-
-
-#td-sidebar-menu {
-    .ul {
-        @apply ml-2;
-    }
-
-    .ul-0, .ul-1 {
-        li {
-            @apply mb-1 text-xl;
-        }
-    }
-    .ul-1 {
-        @apply mt-1;
-    }
-
-    .ul-2 {
-        @apply ml-4;
-    }
-
-    .ul-3 {
-        @apply ml-6;
-    }
+  @apply antialiased;
 }
 
+.text-sm {
+  font-weight: 400 !important;
 
+  @apply antialiased;
+}
 
-.right-nav{
-    li{
-        @apply text-lg my-6; 
+.text-base {
+  font-weight: 600 !important;
 
-    }
+  @apply antialiased;
+}
+
+.text-lg {
+  font-weight: 400 !important;
+
+  @apply antialiased;
+}
+
+.text-2xl {
+  font-weight: 400 !important;
+
+  @apply antialiased font-sans;
+}
+
+.text-4xl {
+  font-weight: 300 !important;
+
+  @apply antialiased font-sans;
+}
+
+.text-6xl {
+  font-weight: 200 !important;
+
+  @apply antialiased font-sans;
+}
+
+.uppercase {
+  font-weight: 600 !important;
+
+  @apply tracking-wider;
+}
+
+.right-nav {
+  li {
+    @apply text-lg my-6;
+  }
 }
 
 .main-content {
-    font-family: -apple-system, “BlinkMacSystemFont”, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Open Sans”, “Helvetica Neue”, “Icons16”, sans-serif;
-    .pageinfo {
-        @apply text-base tracking-widest text-covalent-pink font-semibold uppercase mt-12 mb-12 flex;
+  @apply max-w-screen-2xl;
 
-        p {
-            @apply mt-4  bg-gray-100 pt-4 pb-4 pl-4 ;
-        }
-    }
+  font-family: -apple-system, “BlinkMacSystemFont”, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Open Sans”, “Helvetica Neue”, “Icons16”, sans-serif;
 
-    
+  h1 {
+    @apply text-4xl pb-8 capitalize;
+  }
 
-    h1 {
-        @apply mb-6 max-w-5xl font-sans text-gray-900 text-5xl border-b py-6 sm:text-4xl ;
-    }
+  h2 {
+    @apply text-2xl pb-4;
+  }
 
-    h2 {
-        @apply  mt-2 mb-6 max-w-5xl text-4xl font-sans font-light tracking-tight text-gray-900 border-b py-4 mt-16 mb-6 sm:text-3xl ;
-    }
+  h3 {
+    @apply text-2xl pt-6;
+  }
 
-    h3 {
-        @apply  mt-8 mb-4 max-w-5xl text-3xl font-sans font-light tracking-tight text-gray-900 mb-6 sm:text-2xl ;
-    }
+  h4 {
+    @apply text-lg pt-4;
+  }
 
-    h4 {
-        @apply  mt-2 mb-8 max-w-5xl text-2xl font-sans font-semibold tracking-tight text-gray-900 mb-6 sm:text-2xl ;
-    }
+  ul {
+    @apply lg:max-w-none lg:row-start-1 lg:col-start-1 list-disc pl-12 font-readable;
+  }
 
-    h5 {
-        @apply  mt-8 max-w-5xl text-xl font-sans font-semibold tracking-tight text-gray-900 mb-4 sm:text-2xl ;
+  ul li {
+    @apply my-6 -ml-7;
+  }
+
+  ul li::marker {
+    @apply text-gray-300;
+  }
+
+  ol {
+    @apply list-decimal pl-12 mt-6;
+  }
+
+  ol li {
+    @apply mb-6 -ml-7;
+  }
+
+  figcaption {
+    @apply -mt-7 text-sm text-gray-400;
+  }
+
+  iframe {
+    @apply w-full my-8 rounded-lg shadow-lg w-full;
+
+    height: calc(44vw - -3.67px);
+    max-height: calc(800.66px - 5.99vw);
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  hr {
+    @apply my-6;
+  }
+
+  blockquote {
+    @apply text-lg p-8 rounded-md border bg-white shadow-2xl font-readable my-4;
+  }
+
+  code:not(.chroma > *) {
+    @apply font-mono whitespace-pre-wrap text-sm px-2 py-1 bg-gray-500 rounded-md text-white sm:break-all;
+  }
+
+  .highlight code:not(.chroma > *) {
+    @apply bg-gray-800;
+  }
+
+  pre .blog-content code:not(.chroma) {
+    @apply whitespace-pre-wrap text-sm px-0 py-1 bg-gray-500 rounded-md text-white sm:break-all;
+  }
+
+  pre:not(.chroma) {
+    @apply text-white rounded-lg bg-gray-500 py-2 px-4;
+  }
+
+  .alert {
+    @apply bg-gray-100 p-6 rounded-sm;
+  }
+
+  .highlight {
+    @apply overflow-auto rounded-md transition-all mt-6 max-w-max mb-4;
+  }
+
+  .highlight pre {
+    @apply py-5 px-6;
+  }
+
+  .quote {
+    @apply text-lg p-8 rounded-md border bg-white shadow-2xl font-readable;
+  }
+
+  .quote span {
+    @apply text-lg;
+  }
+
+  .overview {
+    ol {
+      @apply my-6 text-lg text-gray-800 ml-6;
+
+      li {
+        @apply my-8 font-light max-w-5xl;
+      }
     }
-    
-    hr {
-        @apply my-6;
-    }
+  }
+
+  .pageinfo {
+    @apply text-base tracking-widest text-covalent-pink font-semibold uppercase mt-12 mb-12 flex;
 
     p {
-        @apply text-xl text-gray-800 mb-6 max-w-5xl font-light sm:text-lg break-words;
+      @apply mt-4  bg-gray-100 pt-4 pb-4 pl-4 ;
+    }
+  }
 
-        img {
-            @apply my-10;
-        }
+  .section-index {
+    .panel-line {
+      @apply mt-4 mb-4;
     }
 
+    .entry {
+      a {
+        @apply text-2xl mb-4 block w-max font-sans;
+      }
 
+      p {
+        @apply text-lg;
+      }
 
-    a:not(.covalent-button-pink) {  
-        @apply text-covalent-pink break-words;
+      @apply mb-8;
+    }
+  }
+
+  a:not(.btn.btn-primary, .block-link, #ecosystem a) {
+    @apply border-b-2 border-covalent-pink hover:text-covalent-pink hover:no-underline;
+  }
+
+  .table tr {
+    @apply border-b-2;
+  }
+
+  table {
+    @apply my-12 divide-y divide-gray-200 overflow-x-auto whitespace-nowrap border rounded-md block max-w-full w-max;
+
+    max-width: -moz-fit-content;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    thead {
+      @apply bg-covalent-blue-dark w-full;
+
+      th {
+        @apply px-6 py-3 text-left text-lg font-sans text-white capitalize font-semibold;
+      }
     }
 
-    ul {
-        @apply my-6 text-lg text-gray-800 ml-6 list-disc;
+    tbody {
+      td {
+        @apply px-6 py-4 break-words text-lg;
+      }
 
-        li::marker{
-            @apply text-gray-400;
-        }
-
-        li {
-            @apply my-8 font-light max-w-5xl;    
-        }
-    }
-    .overview{
-        ol{
-            @apply my-6 text-lg text-gray-800 ml-6;
-            
-            li{
-                @apply my-8 font-light max-w-5xl; 
-            }
-        }
-    }
-    
-
-
-    code, pre {
-        @apply font-normal text-sm bg-gray-500 text-white py-1 px-2 whitespace-nowrap rounded-md;
-        display: inline;
-    }
-
-    .highlight {
-
-        @apply relative bg-covalent-blue-dark  pl-3 pr-4 py-4 shadow-lg rounded-xl overflow-auto max-w-5xl max-h-xl rounded-md;
-
-        code, pre{
-            @apply font-mono px-0 py-0 whitespace-pre bg-covalent-blue-dark rounded-md;
-        }
-
-
-        td{
-            @apply bg-covalent-blue-dark;
+      tr:nth-child(even) {
+        @apply bg-covalent-gray-light;
         }
 
     }
+  }
 
-    .section-index {
-        .panel-line {
-            @apply mt-4 mb-4;
-        }
+  .table {
+    @apply table-fixed w-full text-center rounded-md;
+  }
 
-        .entry {
-            a {
-                @apply text-2xl font-semibold mb-4 w-4/5 font-sans;
-            }
-            @apply mb-8;
-        }
+  .table thead {
+    @apply text-xs text-covalent-purple-dark;
+  }
+
+  .table thead th {
+    @apply font-semibold capitalize pb-4;
+  }
+
+  .table tbody {
+    @apply text-xs;
+  }
+
+  .table td {
+    @apply py-4;
+  }
+
+  .highlight table {
+    @apply overflow-scroll;
+  }
+}
+
+.btn.btn-primary {
+  @apply rounded-md px-16 md:px-8 sm:px-6 py-3 sm:w-full text-white text-lg;
+
+  background-size: 100% 200%;
+  background-image: linear-gradient(to top, #00d8d5 50%, #ff4c8b 50%);
+  -webkit-transition: background-position 0.2s;
+  -moz-transition: background-position 0.2s;
+  transition: background-position 0.2s;
+  color: white;
+}
+
+.btn.btn-primary.small {
+  @apply rounded-md px-10 md:px-6 sm:px-4 py-2 sm:w-full text-white text-lg;
+}
+
+.btn.a.btn-primary {
+  @apply hover:no-underline;
+}
+
+.btn.btn-primary:hover {
+  background-position: 0 100%;
+  color: #000426;
+}
+
+/* Background */ .chroma {
+  color: #f8f8f2;
+  background-color: #000426;
+  width: max-content;
+}
+
+/* Error */ .chroma .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+/* LineTableTD */ .chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* LineTable */ .chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: auto;
+  overflow: auto;
+  display: block;
+}
+
+/* LineHighlight */ .chroma .hl {
+  display: block;
+  width: 100%;
+  background-color: #ffc;
+}
+
+/* LineNumbersTable */ .chroma .lnt {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+  color: #7f7f7f;
+}
+
+/* LineNumbers */ .chroma .ln {
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+  color: #7f7f7f;
+}
+
+/* Keyword */ .chroma .k { color: #66d9ef; }
+/* KeywordConstant */ .chroma .kc { color: #66d9ef; }
+/* KeywordDeclaration */ .chroma .kd { color: #66d9ef; }
+/* KeywordNamespace */ .chroma .kn { color: #f92672; }
+/* KeywordPseudo */ .chroma .kp { color: #66d9ef; }
+/* KeywordReserved */ .chroma .kr { color: #66d9ef; }
+/* KeywordType */ .chroma .kt { color: #66d9ef; }
+/* NameAttribute */ .chroma .na { color: #a6e22e; }
+/* NameClass */ .chroma .nc { color: #a6e22e; }
+/* NameConstant */ .chroma .no { color: #66d9ef; }
+/* NameDecorator */ .chroma .nd { color: #a6e22e; }
+/* NameException */ .chroma .ne { color: #a6e22e; }
+/* NameFunction */ .chroma .nf { color: #a6e22e; }
+/* NameOther */ .chroma .nx { color: #a6e22e; }
+/* NameTag */ .chroma .nt { color: #f92672; }
+/* Literal */ .chroma .l { color: #ae81ff; }
+/* LiteralDate */ .chroma .ld { color: #e6db74; }
+/* LiteralString */ .chroma .s { color: #e6db74; }
+/* LiteralStringAffix */ .chroma .sa { color: #e6db74; }
+/* LiteralStringBacktick */ .chroma .sb { color: #e6db74; }
+/* LiteralStringChar */ .chroma .sc { color: #e6db74; }
+/* LiteralStringDelimiter */ .chroma .dl { color: #e6db74; }
+/* LiteralStringDoc */ .chroma .sd { color: #e6db74; }
+/* LiteralStringDouble */ .chroma .s2 { color: #e6db74; }
+/* LiteralStringEscape */ .chroma .se { color: #ae81ff; }
+/* LiteralStringHeredoc */ .chroma .sh { color: #e6db74; }
+/* LiteralStringInterpol */ .chroma .si { color: #e6db74; }
+/* LiteralStringOther */ .chroma .sx { color: #e6db74; }
+/* LiteralStringRegex */ .chroma .sr { color: #e6db74; }
+/* LiteralStringSingle */ .chroma .s1 { color: #e6db74; }
+/* LiteralStringSymbol */ .chroma .ss { color: #e6db74; }
+/* LiteralNumber */ .chroma .m { color: #ae81ff; }
+/* LiteralNumberBin */ .chroma .mb { color: #ae81ff; }
+/* LiteralNumberFloat */ .chroma .mf { color: #ae81ff; }
+/* LiteralNumberHex */ .chroma .mh { color: #ae81ff; }
+/* LiteralNumberInteger */ .chroma .mi { color: #ae81ff; }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #ae81ff; }
+/* LiteralNumberOct */ .chroma .mo { color: #ae81ff; }
+/* Operator */ .chroma .o { color: #f92672; }
+/* OperatorWord */ .chroma .ow { color: #f92672; }
+/* Comment */ .chroma .c { color: #75715e; }
+/* CommentHashbang */ .chroma .ch { color: #75715e; }
+/* CommentMultiline */ .chroma .cm { color: #75715e; }
+/* CommentSingle */ .chroma .c1 { color: #75715e; }
+/* CommentSpecial */ .chroma .cs { color: #75715e; }
+/* CommentPreproc */ .chroma .cp { color: #75715e; }
+/* CommentPreprocFile */ .chroma .cpf { color: #75715e; }
+/* GenericDeleted */ .chroma .gd { color: #f92672; }
+/* GenericEmph */ .chroma .ge { font-style: italic; }
+/* GenericInserted */ .chroma .gi { color: #a6e22e; }
+/* GenericStrong */ .chroma .gs { font-weight: bold; }
+/* GenericSubheading */ .chroma .gu { color: #75715e; }
+
+#td-sidebar-menu {
+  .ul {
+    @apply ml-2;
+  }
+
+  .ul-0,
+  .ul-1 {
+    li {
+      @apply mb-1 text-xl;
     }
+  }
 
-    table {
-        @apply my-12 divide-y divide-gray-200 overflow-x-auto whitespace-nowrap max-w-5xl;
-        
-        display: block;
-        max-width: -moz-fit-content;
-        overflow-x: auto;
-        white-space: nowrap;
+  .ul-1 {
+    @apply mt-1;
+  }
 
-        thead {
-            @apply bg-covalent-blue-dark;
+  .ul-2 {
+    @apply ml-4;
+  }
 
-            th {
-                @apply px-6 py-3 text-left text-lg font-sans text-white font-light ;
-            }
-        }
-
-        tbody {
-            td {
-                @apply px-6 py-4 text-gray-500 break-words;
-            }
-            tr:nth-child(even) {
-                @apply bg-covalent-gray-light;
-              }
-
-        }
-    }
+  .ul-3 {
+    @apply ml-6;
+  }
 
 }

@@ -53,11 +53,11 @@ function expand (type, className, link){
 
 </script>
 
-<div class="flex justify-between items-center mb-3 cursor-pointer " onclick="expand('parent', '{{ $type }}')">
-    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} text-lg tracking-wide relative font-sans cursor-pointer hover:text-covalent-pink transition-all" >
+<div class="text-white mb-3 text-lg relative font-sans cursor-pointer flex justify-between items-center" onclick="expand('parent', '{{ $type }}')">
+    <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }}" >
       <a>{{ $Title }}</a>
     </div>
-    <div id="plus-{{ .type }}" style="display:block" class="flex items-center justify-center fill-current text-covalent-pink w-4" >
+    <div id="plus-{{ .type }}" style="display:block" class="flex items-center justify-center fill-current text-covalent-pink w-4 mr-1" >
         <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
         <g id="plus_11_">
@@ -68,7 +68,7 @@ function expand (type, className, link){
         </g>
         </svg>
     </div>
-    <div id="minus-{{ .type }}" style="display:none"  class="hidden flex items-center mt-1 justify-center fill-current text-covalent-pink w-4">
+    <div id="minus-{{ .type }}" style="display:none"  class="hidden flex items-center mt-1 justify-center fill-current text-covalent-pink w-4 mr-1">
       <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
       <g id="minus_6_">
@@ -84,7 +84,7 @@ function expand (type, className, link){
     {{ range .arr }}
     {{ $parentTitle := replaceRE "(\\s)" "" .title }}
     {{ if eq .published true }}
-        <div id="parent-{{ $parentTitle }}" class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent opacity-50 text-white flex justify-between items-center cursor-pointer hover:bg-white hover:bg-opacity-5 rounded-md py-1 px-2 mb-2 hover:text-white hover:opacity-100 " onclick="expand('child','{{ $parentTitle }}', '{{ .link }}')">
+        <div id="parent-{{ $parentTitle }}" class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent opacity-50 text-white text-sm flex font-readable justify-between items-center cursor-pointer hover:bg-white hover:bg-opacity-5 rounded-md py-1 px-6 mb-2 hover:text-white hover:opacity-100 " onclick="expand('child','{{ $parentTitle }}', '{{ .link }}')">
           <div class="flex items-center">
             {{ if .icon }}
             <div class="flex items-center justify-center">
@@ -136,7 +136,7 @@ function expand (type, className, link){
                 {{ end }}
                 {{ if eq .published true }}
                     <div class="relative">
-                      <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent text-sm truncate ml-8 mb-3 text-xs cursor-pointer hover:text-covalent-pink hover:opacity-100 transition-all"> 
+                      <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent text-sm truncate ml-8 mb-3 cursor-pointer hover:text-covalent-pink hover:opacity-100 transition-all font-readable"> 
                           <a href="{{ .link }}">{{ .title }}</a>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ function expand (type, className, link){
                             </script>
                         {{ end }}
                         {{ if eq .published true }}
-                            <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent text-sm truncate pl-12 my-2 mb-3 text-xs cursor-pointer hover:text-covalent-pink hover:opacity-100 transition-all">
+                            <div class="{{ if eq .title $LinkTitle }} text-covalent-pink {{ else }} text-white {{ end }} parent text-sm truncate pl-12 my-2 mb-3 cursor-pointer hover:text-covalent-pink hover:opacity-100 transition-all">
                                 <a href="{{ .link }}">{{ .title }}</a>
                             </div>
                         {{ end }}

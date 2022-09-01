@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: [
@@ -11,9 +11,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Titillium Web', "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
-      mono: ['Roboto Mono', "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+      sans: ["Titillium Web", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      mono: ["Roboto Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
       serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+      readable: ["ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
     },
     colors: {
       'covalent-pink': '#FF4C8B',
@@ -46,44 +47,30 @@ module.exports = {
       black: '#000',
       gray: colors.trueGray
     },
-    fontFamily: {
-      sans: ['Titillium Web', "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
-      mono: ['Roboto Mono', "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
-      serif: ["ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
-    },
     fontSize: {
-      'xxs': ['.50rem', {lineHeight: '0.75rem'}],
-      'xs': ['.75rem', {lineHeight: '1rem'}],
-      'sm': ['.875rem', {lineHeight: '1.25rem'}],
-      'base': ['1rem', {lineHeight: '1.5rem'}],
-      'lg': ['1.125rem', {lineHeight: '1.75rem'}],
-      'xl': ['1.25rem', {lineHeight: '1.75rem'}],
-      '2xl': ['1.5rem', {lineHeight: '2rem'}],
-      '3xl': ['1.875rem', {lineHeight: '2.25rem'}],
-      '4xl': ['2.18rem', {lineHeight: '3rem'}],
-      '5xl': ['3rem', {lineHeight: '3.75rem'}],
-      '6xl': ['4rem', {lineHeight: '4.5rem'}],
-      '7xl': ['5rem', {lineHeight: '8rem'}],
-      'responsive-4xl': ['8vw', {lineHeight: '8vw'}],
-      'responsive-3xl': ['6vw', {lineHeight: '6vw'}],
-      'responsive-2xl': ['3vw', {lineHeight: '3vw'}],
-      'responsive-xl': ['2.5vw', {lineHeight: '3vw'}],
-      'responsive-lg': ['1.5vw', {lineHeight: '1.5vw'}],
-      'responsive-base': ['1.1vw', {lineHeight: '1.2vw'}],
-      'responsive-md': ['1vw', {lineHeight: '1vw'}],
-      'responsive-sm': ['0.8vw', {lineHeight: '0.8vw'}],
+      "xxs": [".50rem", { lineHeight: "0.75rem", letterSpacing: "0em" }],
+      "xs": [".75rem", { lineHeight: "1rem", letterSpacing: "0em" }],
+      "sm": [".875rem", { lineHeight: "1.25rem", letterSpacing: "0em" }],
+      "base": ["1rem", { lineHeight: "1.5rem", letterSpacing: "0em" }],
+      "lg": ["1.125rem", { lineHeight: "1.75rem", letterSpacing: "0.02em" }],
+      "xl": ["1.125rem", { lineHeight: "1.75rem", letterSpacing: "0.02em" }],
+      "2xl": ["1.5rem", { lineHeight: "2rem", letterSpacing: "0em" }],
+      "3xl": ["1.5rem", { lineHeight: "2rem", letterSpacing: "0em" }],
+      "4xl": ["2.18rem", { lineHeight: "3rem", letterSpacing: "0em" }],
+      "5xl": ["2.18rem", { lineHeight: "3rem", letterSpacing: "0em" }],
+      "6xl": ["4rem", { lineHeight: "4.5rem", letterSpacing: "0em" }],
     },
     letterSpacing: {
-        tightest: '-.075em',
-        tighter: '-.05em',
-        tight: '-.025em',
-        normal: '0.025em',
-        wide: '.08em',
-        wider: '.2em',
-        widest: '.5em',
+      tightest: "-.075em",
+      tighter: "-.05em",
+      tight: "-.025em",
+      normal: "0.025em",
+      wide: ".08em",
+      wider: ".2em",
+      widest: ".5em",
     },
     maxHeight: {
-      '8' : '2rem',
+      '8': '2rem',
       '96': '24rem',
       'xl': '40rem',
     },
@@ -105,10 +92,10 @@ module.exports = {
       'min': "min-content",
       'max': "max-content",
       'prose': "65ch",
-      'screen-sm' : "640px",
-      'screen-md' : "768px",
-      'screen-lg' : "1024px",
-      'screen-xl' : "1280px",
+      'screen-sm': "640px",
+      'screen-md': "768px",
+      'screen-lg': "1024px",
+      'screen-xl': "1280px",
       'screen-2xl': "1536px",
     },
     extend: {
@@ -172,8 +159,8 @@ module.exports = {
     },
     screens: {
       // just three devices: mobile, tablet and desktop
-      'sm': {'min': '0px', 'max': '600px'},
-      'md': {'min': '601px', 'max': '1024px'},
+      'sm': { 'min': '0px', 'max': '600px' },
+      'md': { 'min': '601px', 'max': '1024px' },
       'lg': '1025px',
     },
     zIndex: {
@@ -201,5 +188,5 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
     require('tailwindcss-border-gradient-radius'),
-]
-}
+  ]
+};
