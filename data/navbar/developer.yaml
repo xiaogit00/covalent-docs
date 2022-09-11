@@ -8,35 +8,39 @@
     link: /docs/tools
     published: true
     subsection:
-      - 
+      -
         title: WebSocket Connections
         link: /docs/tools/websocket-get-log-events
         published: true
-      - 
+      -
         title: Chainlink Example
         link: /docs/tools/chainlink-example
         published: true
-      - 
+      -
         title: Moralis Plugin
         link: /docs/tools/moralis
         published: true
-      - 
+      -
         title: Community Tools
         link: /docs/tools/community
+        published: true
+      -
+        title: Covalent Postman Collection
+        link: /docs/tools/covalent-postman-collection
         published: true
       -
         title: Get Log Data
         link: /docs/tools/get-log-data
         published: false
-      - 
+      -
         title: Token Holders
         link: /docs/tools/token-holders
         published: false
-      - 
+      -
         title: Topic Calculator
         link: /docs/tools/topic-calculator
         published: false
-      - 
+      -
         title: Topic Calculator (SQL)
         link: /docs/tools/topic-calculator-sql
         published: false
@@ -71,83 +75,83 @@
     link: /docs/changelog/
     published: true
     subsection:
-      - 
+      -
         title: July 2022
         link: /docs/changelog/2022/july/
         published: true
-      - 
+      -
         title: June 2022
         link: /docs/changelog/2022/june/
         published: true
-      - 
+      -
         title: May 2022
         link: /docs/changelog/2022/may/
         published: true
-      - 
+      -
         title: April 2022
         link: /docs/changelog/2022/april/
         published: true
-      - 
+      -
         title: March 2022
         link: /docs/changelog/2022/march/
         published: true
-      - 
+      -
         title: February 2022
         link: /docs/changelog/2022/february/
         published: true
-      - 
+      -
         title: January 2022
         link: /docs/changelog/2022/january/
         published: true
-      - 
+      -
         title: December 2021
         link: /docs/changelog/2021/december/
         published: true
-      - 
+      -
         title: November 2021
         link: /docs/changelog/2021/november/
         published: true
-      - 
+      -
         title: October 2021
         link: /docs/changelog/2021/october/
         published: true
-      - 
+      -
         title: September 2021
         link: /docs/changelog/2021/september/
         published: true
-      - 
+      -
         title: August 2021
         link: /docs/changelog/2021/august/
         published: true
-      - 
+      -
         title: July 2021
         link: /docs/changelog/2021/july/
         published: true
-      - 
+      -
         title: June 2021
         link: /docs/changelog/2021/june/
         published: true
-      - 
+      -
         title: May 2021
         link: /docs/changelog/2021/may/
         published: true
-      - 
+      -
         title: April 2021
         link: /docs/changelog/2021/april/
         published: true
-      - 
+      -
         title: March 2021
         link: /docs/changelog/2021/march/
         published: true
-      - 
+      -
         title: February 2021
         link: /docs/changelog/2021/february/
         published: true
-      - 
+      -
         title: January 2021
         link: /docs/changelog/2021/january/
         published: true
-      - 
+      -
         title: Changelog guide
         link: /docs/changelog/guide
         published: false
@@ -156,17 +160,17 @@
     link: /docs/service-providers/
     published: true
     subsection:
-      - 
+      -
         title: Ankr
         link: /docs/service-providers/ankr/
         published: true
         subsection:
-      - 
+      -
         title: Chainstack
         link: /docs/service-providers/chainstack/
         published: true
         subsection:
-      - 
+      -
         title: GetBlock
         link: /docs/service-providers/getblock/
         published: true
@@ -177,7 +181,7 @@
     link: /docs/project-showcase/
     published: true
     subsection:
-      - 
+      -
         title: Wallets
         link: /docs/project-showcase/wallet/
         published: true
@@ -202,7 +206,7 @@
             title: Stack WatchOS Wallet
             link: /docs/project-showcase/wallet/stacks-watchos-wallet/
             published: true
-      - 
+      -
         title: DEXs
         link: /docs/project-showcase/dex/
         published: true
@@ -243,7 +247,7 @@
             title: GoSwapp
             link: /docs/project-showcase/dex/goswapp/
             published: true
-      - 
+      -
         title: Governance
         link: /docs/project-showcase/governance/
         published: false
@@ -252,7 +256,7 @@
             title: Aave Governance
             link: /docs/project-showcase/governance/aave-governance/
             published: false
-      - 
+      -
         title: Multi-chain Analysis
         link: /docs/project-showcase/multichain-analysis/
         published: true
@@ -269,7 +273,7 @@
             title: Poolz Finance
             link: /docs/project-showcase/multichain-analysis/poolz/
             published: true
-      - 
+      -
         title: NFTs
         link: /docs/project-showcase/nft/
         published: true
@@ -302,7 +306,7 @@
             title: Nifty NFTs
             link: /docs/project-showcase/nft/nifty-nfts/
             published: true
-      - 
+      -
         title: Tools
         link: /docs/project-showcase/tools/
         published: true
@@ -312,7 +316,7 @@
             link: /docs/project-showcase/tools/coindefit/
             published: true
           -
-            title: Crypto Trust 
+            title: Crypto Trust
             link: /docs/project-showcase/tools/crypto-trust/
             published: true
           -
