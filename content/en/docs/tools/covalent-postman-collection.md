@@ -7,9 +7,9 @@ description: Quickly sample Covalent API data using Postman Collections
 # Covalent API Postman Collection
 
 ## Quick Start
-If you are already familiar with Postman, you can find the Covalent API Postman collection at:
+If you are already familiar with Postman, you can import the following link into your Postman workspace:
 
-https://www.postman.com/collections/4404a73c93ff9d6abe6a
+`https://www.postman.com/collections/4404a73c93ff9d6abe6a`
 
 &nbsp;
 ## What is Postman?  
